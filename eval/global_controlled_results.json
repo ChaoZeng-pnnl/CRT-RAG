@@ -1,0 +1,86 @@
+{
+  "judge": "claude-fable-5-1-project",
+  "questions": 20,
+  "judgements": 80,
+  "coverage_controlled": true,
+  "position_flipped": "41/80",
+  "metric_collapse": "70/80",
+  "median_answer_chars": {
+    "graphrag_mapall": 9527,
+    "graphrag_prefiltered": 9967,
+    "vector_large_k": 5780,
+    "long_context": 4687
+  },
+  "cost": {
+    "graphrag_mapall": {
+      "llm_calls": 9740,
+      "seconds": 5698.3,
+      "calls_per_question": 487.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 487.0
+    },
+    "graphrag_prefiltered": {
+      "llm_calls": 820,
+      "seconds": 1030.9,
+      "calls_per_question": 41.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 41.0
+    },
+    "vector_large_k": {
+      "llm_calls": 20,
+      "seconds": 541.0,
+      "calls_per_question": 1.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 1.0
+    },
+    "long_context": {
+      "llm_calls": 20,
+      "seconds": 541.8,
+      "calls_per_question": 1.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 1.0
+    }
+  },
+  "pairs": {
+    "graphrag_mapall_vs_vector_large_k": {
+      "a": "graphrag_mapall",
+      "b": "vector_large_k",
+      "a_wins": 10,
+      "b_wins": 5,
+      "ties": 5,
+      "a_win_rate_of_decided": 0.6666666666666666
+    },
+    "graphrag_prefiltered_vs_vector_large_k": {
+      "a": "graphrag_prefiltered",
+      "b": "vector_large_k",
+      "a_wins": 10,
+      "b_wins": 4,
+      "ties": 6,
+      "a_win_rate_of_decided": 0.7142857142857143
+    },
+    "graphrag_mapall_vs_graphrag_prefiltered": {
+      "a": "graphrag_mapall",
+      "b": "graphrag_prefiltered",
+      "a_wins": 6,
+      "b_wins": 5,
+      "ties": 9,
+      "a_win_rate_of_decided": 0.5454545454545454
+    },
+    "vector_large_k_vs_long_context": {
+      "a": "vector_large_k",
+      "b": "long_context",
+      "a_wins": 9,
+      "b_wins": 7,
+      "ties": 4,
+      "a_win_rate_of_decided": 0.5625
+    }
+  }
+}

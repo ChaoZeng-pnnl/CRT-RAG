@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch 041-050</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch 041-050</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q040", "question": "For a C-section, do we give the prophylactic antibiotic before the skin incision or wait until after the cord is clamped?", "question_type": "timing", "reference": "Give the prophylactic antibiotics before the skin incision, not intraoperatively after umbilical cord clamping. This is a strong recommendation (based on moderate-quality evidence). Routine antibiotic prophylaxis is recommended for all women having either elective or emergency caesarean section (strong recommendation, moderate-quality evidence), and a single dose of a first-generation cephalosporin or penicillin should be used in preference to other antibiotic classes (conditional recommendation, very low-quality evidence).", "chunk_id": "1277ed65e8ca:0060", "source": "WHO Recommendations on Maternal Health (2018, tier 1, p.18)", "fields": {"action": [{"i": 0, "text": "PROMOTE, PREVENT AND PROTECT MATERNAL AND PERINATAL HEALTH", "start": 8, "end": 66}, {"i": 1, "text": "\u25a0The choice of an antiseptic agent and its method of application for skin preparation", "start": 69, "end": 154}, {"i": 2, "text": "prior to caesarean section should be based primarily on the clinician\u2019s experience with", "start": 155, "end": 242}, {"i": 3, "text": "that particular antiseptic agent and method of application, its cost and local availability.", "start": 243, "end": 335}, {"i": 4, "text": "(Conditional recommendation based on low-quality evidence).", "start": 336, "end": 395}, {"i": 5, "text": "\u25a0Routine antibiotic prophylaxis is recommended for women undergoing elective or emergency", "start": 405, "end": 494}, {"i": 6, "text": "(Strong recommendation based on moderate-quality evidence).", "start": 514, "end": 573}, {"i": 7, "text": "\u25a0For caesarean section, prophylactic antibiotics should be given prior to skin incision, rather", "start": 583, "end": 678}, {"i": 8, "text": "than intraoperatively after umbilical cord clamping.", "start": 679, "end": 731}, {"i": 9, "text": "(Strong recommendation based on", "start": 732, "end": 763}, {"i": 10, "text": "moderate-quality evidence).", "start": 764, "end": 791}, {"i": 11, "text": "\u25a0For antibiotic prophylaxis for caesarean section, a single dose of first-generation", "start": 801, "end": 885}, {"i": 12, "text": "cephalosporin or penicillin should be used in preference to other classes of antibiotics.", "start": 886, "end": 975}, {"i": 13, "text": "(Conditional recommendation based on very low-quality evidence).", "start": 976, "end": 1040}], "quantity": []}}, {"qid": "q041", "question": "If we can only get one monitor for our theatre \u2014 pulse oximeter or capnograph \u2014 which one should we prioritise for our gynae cases?", "question_type": "general", "reference": "Prioritise the pulse oximeter. Although the weight of evidence is that oximetry and capnography together improve safety, much of the safety gain can be obtained from oximetry alone. Oximetry gives early warning in a greater variety of situations than capnography: it will alert you to problems in every situation that capnography would detect \u2014 perhaps later, but still in time to act \u2014 whereas there are many situations in which oximetry is potentially life-saving and capnography alone might not help. Oximetry is also less expensive (oximeters are typically under US$1000, and far cheaper in some places) and easier to maintain than capnography. Budget separately for probes, though \u2014 they are easily damaged and their replacement cost over time is likely to equal or exceed the cost of the device itself, so buy reliable, resistant probes.", "chunk_id": "45f9865b55b3:0065", "source": "Safe Surgery Saves Lives: The Second Global Patient Safety Challenge (2009, tier 1, p.22)", "fields": {"action": [{"i": 0, "text": "While the cost of pulse oximetry has fallen dramatically over the past", "start": 0, "end": 70}, {"i": 1, "text": "years, concern about capital outlay and resource constraints is", "start": 72, "end": 135}, {"i": 2, "text": "Oximeters are relatively inexpensive (e.g. less than US$1000)", "start": 145, "end": 206}, {"i": 3, "text": "and may be much cheaper in many places, such as China, where they", "start": 207, "end": 272}, {"i": 4, "text": "are available at a fraction of this price.", "start": 273, "end": 315}, {"i": 5, "text": "When calculated over the life", "start": 316, "end": 345}, {"i": 6, "text": "of the machine and the number of patients on whom it can be used,", "start": 346, "end": 411}, {"i": 7, "text": "this simple monitoring device becomes exceedingly cost\u2013effective.", "start": 412, "end": 477}, {"i": 8, "text": "addition, harm due to anaesthetic mishaps is not cost-free, and a single", "start": 481, "end": 553}, {"i": 9, "text": "error averted with pulse oximetry justifies its initial cost.", "start": 554, "end": 615}, {"i": 10, "text": "The devices themselves have excellent visual and auditory outputs, are", "start": 616, "end": 686}, {"i": 11, "text": "reliable and robust and do not require much maintenance.", "start": 687, "end": 743}, {"i": 12, "text": "are, however, readily damaged and their replacement represents a", "start": 755, "end": 819}, {"i": 13, "text": "relatively high proportion of the overall cost of oximetry.", "start": 820, "end": 879}, {"i": 14, "text": "calculate the cost per patient of use of pulse oximetry, but the cost of", "start": 898, "end": 970}, {"i": 15, "text": "probes over time is likely to equal or exceed that of the actual device.", "start": 971, "end": 1043}, {"i": 16, "text": "Reliable, resistant probes are needed.", "start": 1044, "end": 1082}, {"i": 17, "text": "The cost of capnography is", "start": 1083, "end": 1109}, {"i": 18, "text": "somewhat higher, and maintenance is a little more challenging than for", "start": 1110, "end": 1180}, {"i": 19, "text": "Mandated use of pulse oximetry and capnography in", "start": 1203, "end": 1252}, {"i": 20, "text": "the developed world has stood the test of time.", "start": 1253, "end": 1300}, {"i": 21, "text": "resources, the issue is somewhat less clear because of arguments", "start": 1326, "end": 1390}, {"i": 22, "text": "about priorities for health-care funds.", "start": 1391, "end": 1430}, {"i": 23, "text": "The overwhelming weight of", "start": 1431, "end": 1457}, {"i": 24, "text": "evidence is that these techniques together improve safety, but it", "start": 1458, "end": 1523}, {"i": 25, "text": "seems likely that much of the gain can be obtained from oximetry", "start": 1524, "end": 1588}, {"i": 26, "text": "Oximetry appears to provide early warning in a greater variety", "start": 1596, "end": 1658}, {"i": 27, "text": "of situations than capnography (46).", "start": 1659, "end": 1695}, {"i": 28, "text": "It will alert clinicians to problems", "start": 1696, "end": 1732}, {"i": 29, "text": "in every situation that would be detected by capnography, perhaps", "start": 1733, "end": 1798}, {"i": 30, "text": "later but certainly in time for action to be taken.", "start": 1799, "end": 1850}, {"i": 31, "text": "many situations in which oximetry is potentially life-saving and in which", "start": 1873, "end": 1946}, {"i": 32, "text": "capnography alone might not be as helpful.", "start": 1947, "end": 1989}, {"i": 33, "text": "Finally, oximetry is less", "start": 1990, "end": 2015}, {"i": 34, "text": "expensive and less difficult to maintain than capnography.", "start": 2016, "end": 2074}], "quantity": []}}, {"qid": "q042", "question": "If we're expecting more than 500 ml blood loss on a case, what IV access should be in place before we make the incision?", "question_type": "threshold", "reference": "When there's a significant risk of losing more than 500 ml (7 ml/kg in children), it is highly recommended that at least two large bore intravenous lines or a central venous catheter be placed before skin incision. The team should also confirm that fluids or blood are available for resuscitation. If the anaesthetist doesn't know the expected blood loss for the case, they should discuss it with the surgeon before the operation starts \u2014 and the surgeon will restate expected blood loss again before skin incision as a second safety check for anaesthesia and nursing staff.", "chunk_id": "45f9865b55b3:0384", "source": "Safe Surgery Saves Lives: The Second Global Patient Safety Challenge (2009, tier 1, p.108)", "fields": {"action": [{"i": 0, "text": "Does the patient have a risk of >500 ml blood loss (7 ml/kg in children)\u2009?", "start": 0, "end": 74}, {"i": 1, "text": "In this safety step, the Checklist coordinator asks the anaesthesia", "start": 75, "end": 142}, {"i": 2, "text": "team whether the patient risks losing more than half a litre of blood", "start": 143, "end": 212}, {"i": 3, "text": "during surgery in order to ensure recognition of and preparation for this", "start": 213, "end": 286}, {"i": 4, "text": "Large volume blood loss is among the most common", "start": 303, "end": 351}, {"i": 5, "text": "and important dangers for surgical patients, with risk of hypovolaemic", "start": 352, "end": 422}, {"i": 6, "text": "shock escalating when blood loss exceeds 500 ml (7 ml/kg in", "start": 423, "end": 482}, {"i": 7, "text": "Adequate preparation and resuscitation may mitigate the", "start": 494, "end": 549}, {"i": 8, "text": "consequences considerably.", "start": 550, "end": 576}, {"i": 9, "text": "Section I. | Introduction", "start": 577, "end": 602}, {"i": 10, "text": "Section IV. | Implementation Manual for the World Health Organization Surgical Safety Checklist", "start": 607, "end": 702}, {"i": 11, "text": "Surgeons may not consistently communicate the risk of blood loss", "start": 707, "end": 771}, {"i": 12, "text": "to anaesthesia and nursing staff.", "start": 772, "end": 805}, {"i": 13, "text": "Therefore, if the anaesthetist does", "start": 806, "end": 841}, {"i": 14, "text": "not know what the risk of major blood loss is for the case, he or she", "start": 842, "end": 911}, {"i": 15, "text": "should discuss the risk with the surgeon before the operation begins.", "start": 912, "end": 981}, {"i": 16, "text": "there is a significant risk of a greater than 500 ml blood loss, it is highly", "start": 985, "end": 1062}, {"i": 17, "text": "recommended that at least two large bore intravenous lines or a central", "start": 1063, "end": 1134}, {"i": 18, "text": "venous catheter be placed prior to skin incision.", "start": 1135, "end": 1184}, {"i": 19, "text": "should confirm the availability of fluids or blood for resuscitation.", "start": 1207, "end": 1276}, {"i": 20, "text": "that the expected blood loss will be reviewed again by the surgeon", "start": 1283, "end": 1349}, {"i": 21, "text": "This will provide a second safety check for the", "start": 1372, "end": 1419}, {"i": 22, "text": "anaesthetist and nursing staff.)", "start": 1420, "end": 1452}, {"i": 23, "text": "At this point this phase is completed and the team may proceed with", "start": 1453, "end": 1520}], "quantity": [{"i": 0, "text": "500 ml", "start": 33, "end": 39}, {"i": 1, "text": "7 ml", "start": 52, "end": 56}, {"i": 2, "text": "500 ml", "start": 464, "end": 470}, {"i": 3, "text": "7 ml", "start": 472, "end": 476}, {"i": 4, "text": "500 ml", "start": 1031, "end": 1037}]}}, {"qid": "q043", "question": "For our ERAS prolapse patients, when should we start the preop teaching and does it need to be written or is verbal enough \u2014 and should family be in the room?", "question_type": "timing", "reference": "Start the ERAS discussion at the preoperative visit, explaining what the ERAS protocol involves and why it's being used in their perioperative care. Ideally give information in both written and oral form \u2014 don't rely on verbal alone. Written leaflets, videos, and psychological preparation all reduce anxiety and raise satisfaction (video education in a same-day discharge sacrocolpopexy protocol yielded high satisfaction in 98% of patients). Yes, include a support person: the patient plus a relative or care provider should meet with all members of the team for counseling and detailed information, so the team can clarify the patient's expectations and explain the postoperative plan. The aim is to set expectations about the surgical and anesthetic procedures and give the postoperative care plan; this also helps reduce pain and nausea and improves well-being. This is a strong recommendation, though based on low-quality evidence.", "chunk_id": "4edd937b5877:0008", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.3)", "fields": {"action": [{"i": 0, "text": "A large contributor to the success of ERAS protocols is", "start": 15, "end": 70}, {"i": 1, "text": "clear communication between the patient and physician.", "start": 71, "end": 125}, {"i": 2, "text": "Discussion of ERAS can be initiated at the preoperative", "start": 126, "end": 181}, {"i": 3, "text": "visit, with an explanation of what an ERAS protocol entails", "start": 182, "end": 241}, {"i": 4, "text": "and why it is being utilized in the patient\u2019s perioperative", "start": 242, "end": 301}, {"i": 5, "text": "The goal of preoperative counseling is to set expectations about surgical and anesthetic procedures and to provide information regarding a care plan in the postoperative", "start": 308, "end": 477}, {"i": 6, "text": "Preoperative education (with the help of educational leaflets, video, etc.) and psychological preparation", "start": 490, "end": 595}, {"i": 7, "text": "can reduce anxiety and increase patient satisfaction.", "start": 596, "end": 649}, {"i": 8, "text": "education was utilized as part of a same-day discharge", "start": 656, "end": 710}, {"i": 9, "text": "(SDD) protocol after sacrocolpopexy and was associated", "start": 711, "end": 765}, {"i": 10, "text": "with high satisfaction in 98% of patients [8].", "start": 766, "end": 812}, {"i": 11, "text": "the chosen approach, education with thorough anticipatory", "start": 827, "end": 884}, {"i": 12, "text": "guidance is essential for patient engagement in and preparation for their own care.", "start": 885, "end": 968}, {"i": 13, "text": "Preoperative education is also effective in reducing pain", "start": 969, "end": 1026}, {"i": 14, "text": "and nausea and improving well-being when added to an", "start": 1027, "end": 1079}, {"i": 15, "text": "existing ERAS protocol [2].", "start": 1080, "end": 1107}, {"i": 16, "text": "Interventions and endpoints in", "start": 1108, "end": 1138}, {"i": 17, "text": "this field vary widely, but most studies show that counseling", "start": 1139, "end": 1200}, {"i": 18, "text": "provides beneficial effects with no evidence of harm.", "start": 1201, "end": 1254}, {"i": 19, "text": "Ideally, patients should receive information in both written", "start": 1270, "end": 1330}, {"i": 20, "text": "The patient and a support person, such as a", "start": 1346, "end": 1389}, {"i": 21, "text": "relative or care provider, should meet with all members of", "start": 1390, "end": 1448}, {"i": 22, "text": "the team for counseling, detailed information, and opportunities to understand the patient expectations and to explain", "start": 1449, "end": 1567}], "quantity": []}}, {"qid": "q044", "question": "For our same-day gyn surgery patients, what's the best way to catch surgical site infections after they go home \u2014 mailing surveys to the surgeons or calling the patients?", "question_type": "technique", "reference": "No single detection method can be recommended; the choice depends on your available resources and data needs, and which operations you decide to monitor. That said, response rates differ a lot by method: questionnaires mailed to surgeons yield high response rates (72% to over 90%), telephone questionnaires to patients are more variable (38%, 81%, and 85% in different studies), and questionnaires mailed to patients yield quite low rates (15% and 33%). Direct methods such as home visits by nurses combined with a surgeon-completed survey at the 2-week postoperative clinic visit achieved essentially 100% ascertainment but are impractical for widespread use. Whatever method you use, apply the CDC NNIS definitions of SSI without modification in the outpatient setting.", "chunk_id": "99fccebb0aaa:0058", "source": "CDC Guideline for the Prevention of Surgical Site Infection 1999 (1999, tier 1, p.19)", "fields": {"action": [{"i": 0, "text": "Methods chosen will necessarily reflect the hospital\u2019s unique", "start": 0, "end": 61}, {"i": 1, "text": "mix of operations, personnel resources, and data needs.", "start": 62, "end": 117}, {"i": 2, "text": "Outpatient SSI surveillance", "start": 119, "end": 146}, {"i": 3, "text": "Both direct and indirect methods have been used to", "start": 147, "end": 197}, {"i": 4, "text": "detect SSIs that complicate outpatient operations.", "start": 198, "end": 248}, {"i": 5, "text": "One 8year study of operations for hernia and varicose veins used", "start": 249, "end": 313}, {"i": 6, "text": "home visits by district health nurses combined with a survey completed by the surgeon at the patient\u2019s 2-week postoperative clinic visit to identify SSIs.459 While ascertainment was essentially 100%, this method is impractical for", "start": 314, "end": 544}, {"i": 7, "text": "widespread implementation.", "start": 545, "end": 571}, {"i": 8, "text": "been obtained from questionnaires mailed to surgeons", "start": 597, "end": 649}, {"i": 9, "text": "(72%->90%).443,444,446,455,459-461 Response rates from telephone", "start": 650, "end": 714}, {"i": 10, "text": "questionnaires administered to patients were more variable", "start": 715, "end": 773}, {"i": 11, "text": "(38%,444 81%,457 and 85%455), and response rates from questionnaires mailed to patients were quite low (15%455 and", "start": 774, "end": 888}, {"i": 12, "text": "33%446).", "start": 889, "end": 897}, {"i": 13, "text": "At this time, no single detection method can be recommended.", "start": 898, "end": 958}, {"i": 14, "text": "Available resources and data needs determine", "start": 959, "end": 1003}, {"i": 15, "text": "which method(s) should be used and which operations", "start": 1004, "end": 1055}, {"i": 16, "text": "Regardless of which detection", "start": 1077, "end": 1106}, {"i": 17, "text": "method is used, it is recommended that the CDC NNIS definitions of SSI (Tables 1 and 2) be used without modification in the outpatient setting.", "start": 1107, "end": 1250}, {"i": 18, "text": "GUIDELINE EVALUATION PROCESS", "start": 1252, "end": 1280}, {"i": 19, "text": "The value of the HICPAC guidelines is determined", "start": 1281, "end": 1329}, {"i": 20, "text": "To help assess that value, HICPAC", "start": 1353, "end": 1386}, {"i": 21, "text": "is developing an evaluation tool to learn how guidelines", "start": 1387, "end": 1443}, {"i": 22, "text": "meet user expectations, and how and when these guidelines are disseminated and implemented.", "start": 1444, "end": 1535}, {"i": 23, "text": "RECOMMENDATIONS FOR PREVENTION", "start": 1540, "end": 1570}, {"i": 24, "text": "OF SURGICAL SITE INFECTION", "start": 1571, "end": 1597}], "quantity": [{"i": 0, "text": "85%", "start": 795, "end": 798}, {"i": 1, "text": "15%", "start": 878, "end": 881}, {"i": 2, "text": "33%", "start": 889, "end": 892}]}}, {"qid": "q045", "question": "For a post-op patient on our ward who I think might be septic, should I be using NEWS2 to score her, or is that only for certain patients?", "question_type": "threshold", "reference": "Yes \u2014 use NEWS2 for people aged 16 or over with suspected sepsis who are in an acute hospital setting (also acute mental health settings or ambulances), provided they are not currently pregnant and have not recently been pregnant. If your patient is currently or recently pregnant, NEWS2 is not the tool to use. In community or custodial settings, an early warning score should only be considered rather than routinely used. Whatever the setting, assess with a structured set of observations face-to-face to stratify risk when sepsis is suspected.", "chunk_id": "137be68c201c:0009", "source": "Suspected Sepsis in People Aged 16 or Over: Recognition, Assessment and Early Management (2025, tier 1, p.6)", "fields": {"action": [{"i": 0, "text": "Full details of the evidence and the committee's discussion are in evidence review\u00a0I:", "start": 0, "end": 85}, {"i": 1, "text": "During a remote assessment, when deciding whether to offer a face-to-face", "start": 108, "end": 181}, {"i": 2, "text": "assessment and, if so, on the urgency of it, identify:", "start": 182, "end": 236}, {"i": 3, "text": "\u2022 factors that increase risk of sepsis (see people who are most vulnerable to", "start": 237, "end": 314}, {"i": 4, "text": "\u2022 indications of clinical concern such as new-onset abnormalities of behaviour,", "start": 327, "end": 406}, {"i": 5, "text": "circulation or respiration. [2016]", "start": 407, "end": 441}, {"i": 6, "text": "Suspected sepsis in people aged 16 or over: recognition, assessment and early", "start": 442, "end": 519}, {"i": 7, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 573, "end": 664}, {"i": 8, "text": "Use a structured set of observations to assess people in a face-to-face setting to", "start": 679, "end": 761}, {"i": 9, "text": "stratify risk if sepsis is suspected.", "start": 762, "end": 799}, {"i": 10, "text": "(See the recommendations on face-to-face", "start": 800, "end": 840}, {"i": 11, "text": "assessment and the recommendations on evaluating risk). [2016]", "start": 841, "end": 903}, {"i": 12, "text": "Use the national early warning score (NEWS2) to assess people with suspected", "start": 905, "end": 981}, {"i": 13, "text": "sepsis who are aged 16 or over, are not and have not recently been pregnant, and", "start": 982, "end": 1062}, {"i": 14, "text": "are in an acute hospital setting, acute mental health setting or ambulance. [2024]", "start": 1063, "end": 1145}, {"i": 15, "text": "For a short explanation of why the committee made the 2024 recommendation on", "start": 1146, "end": 1222}, {"i": 16, "text": "using NEWS2 and how it might affect practice, see the rationale and impact section", "start": 1223, "end": 1305}, {"i": 17, "text": "on evaluating risk level in people with suspected sepsis in acute hospital settings,", "start": 1306, "end": 1390}, {"i": 18, "text": "acute mental health settings and ambulances.", "start": 1391, "end": 1435}, {"i": 19, "text": "Full details of the evidence and the committee's discussion are in evidence review\u00a0A:", "start": 1436, "end": 1521}, {"i": 20, "text": "stratifying risk of severe illness or death from sepsis.", "start": 1522, "end": 1578}, {"i": 21, "text": "Consider using an early warning score to assess people with suspected sepsis", "start": 1580, "end": 1656}, {"i": 22, "text": "who are 16 or over, in a community or custodial setting. [2016, amended 2024]", "start": 1657, "end": 1734}], "quantity": []}}, {"qid": "q046", "question": "How long before her anaesthetic does my pre-op hysterectomy patient actually need to stop clear fluids, and can I give her a carbohydrate drink?", "question_type": "timing", "reference": "Clear fluid fasting only needs to be 2 hours prior to the anaesthetic \u2014 this has been shown to be safe without increasing aspiration risk, and it helps avoid dehydration. Complex carbohydrate drinks can be given: they have been shown to be beneficial in colorectal surgery, reducing length of stay, and patients like them. Also avoid long-acting sedative premedication, as it can impair postoperative mobility, and mechanical bowel preparation should generally be avoided in gynaecological surgery. Do give antibiotics before incision and venous thromboembolic prophylaxis, as there is evidence of benefit.", "chunk_id": "dc197582a4b2:0005", "source": "Enhanced recovery in gynaecology (2013, tier 1, p.3)", "fields": {"action": [{"i": 0, "text": "Admission on the day of surgery has many advantages \u2013 these", "start": 19, "end": 78}, {"i": 1, "text": "include reduction in preoperative bed usage.", "start": 79, "end": 123}, {"i": 2, "text": "avoided by reducing the period of \ufb02uid fasting to 2 hours", "start": 140, "end": 197}, {"i": 3, "text": "prior to anaesthetic, which has been shown to be safe without", "start": 198, "end": 259}, {"i": 4, "text": "an increase the risk of aspiration.13 The use of complex", "start": 260, "end": 316}, {"i": 5, "text": "carbohydrate drinks have been shown to be bene\ufb01cial in", "start": 317, "end": 371}, {"i": 6, "text": "colorectal surgery,14 reducing the length of stay and liked by", "start": 372, "end": 434}, {"i": 7, "text": "patients.15 Mechanical bowel preparation can be associated", "start": 435, "end": 493}, {"i": 8, "text": "with morbidity and there is no evidence that it improves the", "start": 494, "end": 554}, {"i": 9, "text": "outcome for patients having elective rectal surgery, in whom", "start": 555, "end": 615}, {"i": 10, "text": "bowel continuity is restored.16 The role of mechanical bowel", "start": 616, "end": 676}, {"i": 11, "text": "preparation should therefore be investigated and generally", "start": 677, "end": 735}, {"i": 12, "text": "avoided in patients undergoing gynaecological surgery.", "start": 736, "end": 790}, {"i": 13, "text": "postoperative mobility.17 Antibiotics prior to incision and", "start": 838, "end": 897}, {"i": 14, "text": "venous thromboembolic prophylaxis should be included as", "start": 898, "end": 953}, {"i": 15, "text": "there is evidence for their bene\ufb01t.18,19", "start": 954, "end": 994}, {"i": 16, "text": "Enhanced recovery pathways advocate minimal access", "start": 995, "end": 1045}, {"i": 17, "text": "techniques.20,21 If considered necessary for the procedure to", "start": 1046, "end": 1107}, {"i": 18, "text": "be performed safely, abdominal incisions should be as small as", "start": 1108, "end": 1170}, {"i": 19, "text": "Nasogastric, abdominal and vaginal drains have little", "start": 1182, "end": 1235}, {"i": 20, "text": "bene\ufb01t and should be avoided as they increase morbidity and", "start": 1236, "end": 1295}, {"i": 21, "text": "prolong hospital stay.22\u201324 The routine use of vaginal packs", "start": 1296, "end": 1356}, {"i": 22, "text": "has been questioned, not only because they are uncomfortable", "start": 1357, "end": 1417}, {"i": 23, "text": "for patients but also because they may hinder, if not prevent,", "start": 1418, "end": 1480}, {"i": 24, "text": "However, because of the lack of evidence, a", "start": 1496, "end": 1539}, {"i": 25, "text": "departmental approach for their use should be adopted to", "start": 1540, "end": 1596}, {"i": 26, "text": "This is another area for research.", "start": 1618, "end": 1652}], "quantity": [{"i": 0, "text": "2 hours", "start": 190, "end": 197}]}}, {"qid": "q047", "question": "For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be giving instead?", "question_type": "threshold", "reference": "PCA should be needed in fewer than 5% of patients undergoing laparotomy. Instead, pain should be managed with an opioid-sparing multimodal approach: routine pre-operative oral acetaminophen, celecoxib, and gabapentin to reduce pain and opioid requirements, with non-opioids (NSAIDs, acetaminophen, gabapentin, dexamethasone) as first-line post-operatively. Give all post-operative medications orally in patients tolerating a diet; IV acetaminophen should not be used routinely since it is equally effective as the oral form but much more expensive. IV medications can be used for breakthrough pain, but PCA should rarely be required.", "chunk_id": "4a934c41413a:0031", "source": "Guidelines for perioperative care in gynecologic/oncology: Enhanced Recovery After Surgery (ERAS) Society recommendations \u2014 2019 update (2019, tier 1, p.9)", "fields": {"action": [{"i": 0, "text": "Opioid Sparing Multimodal Post-operative Analgesia", "start": 0, "end": 50}, {"i": 1, "text": "Post-operative pain after gynecologic surgery plays a major role", "start": 51, "end": 115}, {"i": 2, "text": "in patient quality of life and it may also be associated with higher", "start": 117, "end": 185}, {"i": 3, "text": "rates of complications, longer hospital stays, increased readmission rates, and higher cost.172 173 When patients rely on opioid alone", "start": 187, "end": 321}, {"i": 4, "text": "for post-operative analgesia, this may cause nausea, sedation,", "start": 323, "end": 385}, {"i": 5, "text": "and fatigue while increasing the risk of addiction, thus leading to", "start": 387, "end": 454}, {"i": 6, "text": "associated financial and social costs.174\u2013176 Avoiding opioid use", "start": 456, "end": 521}, {"i": 7, "text": "within a multimodal post-operative analgesia pathway, with greater", "start": 523, "end": 589}, {"i": 8, "text": "emphasis on non-opioid medications, preserves or improves patient", "start": 591, "end": 656}, {"i": 9, "text": "experience and functional recovery after surgery.37 177 Non-opioid", "start": 658, "end": 724}, {"i": 10, "text": "alternatives include non-steroidal anti-inflammatory drugs, acetaminophen, gabapentin, and dexamethasone.", "start": 726, "end": 831}, {"i": 11, "text": "Pre-operative education should stress the use of non-opioid alternatives as first-line", "start": 833, "end": 919}, {"i": 12, "text": "therapy, and set expectations for post-operative pain control.", "start": 921, "end": 983}, {"i": 13, "text": "When used together, analgesics with different mechanisms of", "start": 985, "end": 1044}, {"i": 14, "text": "action may be synergistic, a concept which lays the foundation", "start": 1046, "end": 1108}, {"i": 15, "text": "for post-operative pain management within ERAS protocols.178", "start": 1110, "end": 1170}, {"i": 16, "text": "We recommend routine pre-operative administration of oral acetaminophen, celecoxib, and gabapentin to reduce pain and opioid", "start": 1172, "end": 1296}, {"i": 17, "text": "requirements.179 Intravenous acetaminophen should not be used", "start": 1298, "end": 1359}, {"i": 18, "text": "routinely, recognizing its equivalent efficacy to the oral preparation at much higher expense.", "start": 1361, "end": 1455}, {"i": 19, "text": "In general, oral administration of all", "start": 1457, "end": 1495}, {"i": 20, "text": "post-operative medications in patients who can tolerate a diet is", "start": 1497, "end": 1562}, {"i": 21, "text": "preferable to the intravenous route.", "start": 1564, "end": 1600}, {"i": 22, "text": "While intravenous medications", "start": 1602, "end": 1631}, {"i": 23, "text": "may be required for breakthrough pain, patient-controlled analgesia", "start": 1633, "end": 1700}, {"i": 24, "text": "should be required in <5% of patients undergoing laparotomy.", "start": 1702, "end": 1762}], "quantity": []}}, {"qid": "q048", "question": "For a pregnant patient just diagnosed with a leg DVT, should I keep her on bed rest with the leg up, or get her walking \u2014 and do compression stockings go on straight away?", "question_type": "technique", "reference": "In the initial management of DVT, elevate the leg and apply a graduated elastic compression stocking to reduce oedema. She should not be kept immobile \u2014 mobilisation is encouraged, with the graduated elastic compression stocking in place.", "chunk_id": "f9bcd815e930:0007", "source": "GTG37b - Thrombosis and Embolism during Pregnancy Acute Management (2018, tier 1, p.4)", "fields": {"action": [{"i": 0, "text": "Should graduated elastic compression stockings be employed in the acute management of VTE in pregnancy?", "start": 21, "end": 124}, {"i": 1, "text": "In the initial management of DVT, the leg should be elevated and a graduated elastic compression", "start": 125, "end": 221}, {"i": 2, "text": "stocking applied to reduce oedema.", "start": 222, "end": 256}, {"i": 3, "text": "Mobilisation with graduated elastic compression stockings", "start": 257, "end": 314}, {"i": 4, "text": "What is the role of inferior vena cava filters in the management of VTE in pregnancy?", "start": 337, "end": 422}, {"i": 5, "text": "Consideration should be given to the use of a temporary inferior vena cava filter in the peripartum", "start": 423, "end": 522}, {"i": 6, "text": "period for patients with iliac vein VTE to reduce the risk of PE or in patients with proven DVT and", "start": 523, "end": 622}, {"i": 7, "text": "who have recurrent PE despite adequate anticoagulation.", "start": 623, "end": 678}], "quantity": []}}, {"qid": "q049", "question": "We're at a rural unit and a post-op patient with suspected sepsis is waiting on ambulance transfer that'll take over an hour \u2014 do we hold antibiotics until she reaches the ED, and does she need her sepsis risk rescored on handover?", "question_type": "escalation", "reference": "No, don't wait. Where combined transfer and handover time to the emergency department is more than 1 hour, antibiotics should be given pre-hospital to people meeting high-risk criteria (see table 1): GPs in remote and rural locations where transfer routinely exceeds 1 hour should have mechanisms in place to give antibiotics in pre-hospital settings, and ambulance services should consider whether they need mechanisms to give antibiotics to people at high risk of severe illness or death from sepsis if a GP has not already given them. Paramedics considering giving antibiotics should follow local guidelines and the recommendations on choice of antibiotic therapy. And yes \u2014 when ambulance or acute hospital staff take over care of someone whose sepsis risk was originally evaluated in the community (or a custodial setting), they must re-evaluate that risk of severe illness or death from sepsis using NEWS2.", "chunk_id": "137be68c201c:0032", "source": "Suspected Sepsis in People Aged 16 or Over: Recognition, Assessment and Early Management (2025, tier 1, p.24)", "fields": {"action": [{"i": 0, "text": "Managing the condition while awaiting transfer", "start": 0, "end": 46}, {"i": 1, "text": "In ambulances and acute hospital settings, on taking over care for someone", "start": 53, "end": 127}, {"i": 2, "text": "whose risk of severe illness or death from sepsis has originally been evaluated in", "start": 128, "end": 210}, {"i": 3, "text": "the community or in a custodial setting, evaluate their risk of severe illness or", "start": 211, "end": 292}, {"i": 4, "text": "death from sepsis using NEWS2. [2024]", "start": 293, "end": 330}, {"i": 5, "text": "In remote and rural locations where transfer time to emergency department is", "start": 337, "end": 413}, {"i": 6, "text": "routinely more than 1\u00a0hour, ensure GPs have mechanisms in place to give", "start": 414, "end": 485}, {"i": 7, "text": "Suspected sepsis in people aged 16 or over: recognition, assessment and early", "start": 486, "end": 563}, {"i": 8, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 617, "end": 708}, {"i": 9, "text": "antibiotics to people with high-risk criteria in pre-hospital settings.", "start": 723, "end": 794}, {"i": 10, "text": "criteria, see table 1. [2016, amended 2024]", "start": 809, "end": 852}, {"i": 11, "text": "In remote and rural locations where combined transfer and handover times to", "start": 859, "end": 934}, {"i": 12, "text": "emergency department are greater than 1\u00a0hour:", "start": 935, "end": 980}, {"i": 13, "text": "\u2022 ambulance services should consider whether they need to put mechanisms", "start": 981, "end": 1053}, {"i": 14, "text": "in place to be able to give antibiotics to people at high risk of severe illness or", "start": 1054, "end": 1137}, {"i": 15, "text": "death from sepsis if antibiotics have not been given before by a GP (see", "start": 1138, "end": 1210}, {"i": 16, "text": "recommendation 1.6.1 on evaluating risk of severe illness or death from", "start": 1211, "end": 1282}, {"i": 17, "text": "\u2022 paramedics who are thinking about giving antibiotics should follow local", "start": 1292, "end": 1366}, {"i": 18, "text": "guidelines. [2016, amended 2024]", "start": 1367, "end": 1399}, {"i": 19, "text": "See also the recommendations on choice of antibiotic therapy.", "start": 1400, "end": 1461}, {"i": 20, "text": "For a short explanation of why the committee made the 2024 recommendations and", "start": 1462, "end": 1540}, {"i": 21, "text": "how they might affect practice, see the rationale and impact section on managing", "start": 1541, "end": 1621}, {"i": 22, "text": "suspected sepsis while awaiting transfer to an acute hospital setting.", "start": 1622, "end": 1692}, {"i": 23, "text": "Full details of the evidence and the committee's discussion are in evidence review\u00a0B:", "start": 1693, "end": 1778}, {"i": 24, "text": "managing and treating suspected sepsis in acute hospital settings; antibiotic", "start": 1779, "end": 1856}, {"i": 25, "text": "treatment in people with suspected sepsis.", "start": 1857, "end": 1899}], "quantity": [{"i": 0, "text": "1\u00a0hour", "start": 434, "end": 440}, {"i": 1, "text": "1\u00a0hour", "start": 973, "end": 979}]}}];
+const BATCH = "041-050";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

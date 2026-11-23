@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch study-011-020</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch study-011-020</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q289", "question": "For tetanus toxoid in pregnancy, does a single dose actually cut newborn tetanus deaths, or do we need to get two or three doses in before delivery?", "question_type": "dose", "reference": "The evidence favours completing two or three doses. With one dose only, neonatal tetanus deaths were 9/224 (4%) vs 19/270 (7%) in controls \u2014 RR 0.57 (95% CI 0.26\u20131.24), about 30 fewer deaths per 1000 but with a confidence interval crossing no effect (very low certainty). With two or three doses, there were 0/341 (0%) vs 27/347 (7.8%) \u2014 RR 0.02 (0 to 0.3), roughly 76 fewer deaths per 1000 (low certainty). All-cause neonatal death also only clearly improved with two or three doses: 14/341 (4.1%) vs 46/347 (13.3%), RR 0.31 (0.17\u20130.55), about 91 fewer per 1000 (moderate certainty), whereas one dose showed no benefit (RR 1.08, 0.65\u20131.79). Any dose reduced neonatal tetanus cases (9/565 vs 49/617; RR 0.2, 0.1\u20130.4).", "chunk_id": "9e0f86a82f44:0119", "source": "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience (2016, tier 1, p.83)", "fields": {"action": [{"i": 0, "text": "Neonatal tetanus cases \u2013 any dose", "start": 161, "end": 194}, {"i": 1, "text": "(from 48 fewer to 71 fewer)", "start": 336, "end": 363}, {"i": 2, "text": "Neonatal tetanus deaths \u2013 one dose", "start": 368, "end": 402}, {"i": 3, "text": "(from 52 fewer to 17 more)", "start": 566, "end": 592}, {"i": 4, "text": "Neonatal tetanus deaths \u2013 two or three doses", "start": 602, "end": 646}, {"i": 5, "text": "(from 54 fewer to 78 fewer)", "start": 801, "end": 828}, {"i": 6, "text": "All causes of death \u2013 one dose", "start": 833, "end": 863}, {"i": 7, "text": "(from 36 fewer to 82 more)", "start": 1025, "end": 1051}, {"i": 8, "text": "All causes of death \u2013 two or three doses", "start": 1056, "end": 1096}, {"i": 9, "text": "Most of the pooled effect provided by studies \u201cB\u201d or \u201cC\u201d without a substantial proportion (i.e. < 40%) from studies \u201cC\u201d.", "start": 1314, "end": 1434}, {"i": 10, "text": "Small sample size and/or few events.", "start": 1463, "end": 1499}, {"i": 11, "text": "Wide CI crossing the line of no effect.", "start": 1503, "end": 1542}], "quantity": []}}, {"qid": "q271", "question": "For a high-risk C-section, when do we give the prophylactic antibiotic \u2014 at induction like other cases, or later?", "question_type": "timing", "reference": "For high-risk cesarean sections the prophylactic antimicrobial agent should be given immediately after the umbilical cord is clamped, not at induction (CDC Category IA recommendation).", "chunk_id": "99fccebb0aaa:0063", "source": "CDC Guideline for the Prevention of Surgical Site Infection 1999 (1999, tier 1, p.21)", "fields": {"action": [{"i": 0, "text": "Before elective colorectal operations in addition to", "start": 13, "end": 65}, {"i": 1, "text": "d2 above, mechanically prepare the colon by use of enemas", "start": 66, "end": 123}, {"i": 2, "text": "Administer nonabsorbable oral", "start": 146, "end": 175}, {"i": 3, "text": "antimicrobial agents in divided doses on the day before the", "start": 176, "end": 235}, {"i": 4, "text": "For high-risk cesarean section, administer the prophylactic antimicrobial agent immediately after the umbilical cord is clamped.", "start": 260, "end": 388}, {"i": 5, "text": "Do not routinely use vancomycin for antimicrobial", "start": 402, "end": 451}, {"i": 6, "text": "Maintain positive-pressure ventilation in the operating room with respect to the corridors and adjacent", "start": 507, "end": 610}, {"i": 7, "text": "Maintain a minimum of 15 air changes per hour, of", "start": 631, "end": 680}, {"i": 8, "text": "which at least 3 should be fresh air.", "start": 681, "end": 718}, {"i": 9, "text": "Filter all air, recirculated and fresh, through the", "start": 732, "end": 783}, {"i": 10, "text": "appropriate filters per the American Institute of Architects\u2019", "start": 784, "end": 845}, {"i": 11, "text": "recommendations.299 Category IB", "start": 846, "end": 877}, {"i": 12, "text": "Introduce all air at the ceiling, and exhaust near", "start": 879, "end": 929}, {"i": 13, "text": "Do not use UV radiation in the operating room to", "start": 954, "end": 1002}, {"i": 14, "text": "Keep operating room doors closed except as needed for passage of equipment, personnel, and the patient.", "start": 1029, "end": 1132}, {"i": 15, "text": "Consider performing orthopedic implant operations in operating rooms supplied with ultraclean air.", "start": 1146, "end": 1244}, {"i": 16, "text": "Limit the number of personnel entering the operating room to necessary personnel.", "start": 1258, "end": 1339}, {"i": 17, "text": "Cleaning and disinfection of environmental", "start": 1353, "end": 1395}, {"i": 18, "text": "When visible soiling or contamination with blood", "start": 1421, "end": 1469}, {"i": 19, "text": "or other body fluids of surfaces or equipment occurs during an operation, use an EPA-approved hospital disinfectant", "start": 1470, "end": 1585}, {"i": 20, "text": "to clean the affected areas before the next operation.", "start": 1586, "end": 1640}, {"i": 21, "text": "Do not perform special cleaning or closing of operating rooms after contaminated or dirty operations.", "start": 1655, "end": 1756}, {"i": 22, "text": "Do not use tacky mats at the entrance to the operating room suite or individual operating rooms for infection", "start": 1770, "end": 1879}, {"i": 23, "text": "Wet vacuum the operating room floor after the last", "start": 1902, "end": 1952}, {"i": 24, "text": "operation of the day or night with an EPA-approved hospital disinfectant.", "start": 1953, "end": 2026}], "quantity": []}}, {"qid": "q272", "question": "Se togliamo il drenaggio addominale precocemente invece di aspettare la sesta giornata o il calo del volume drenato, aumentiamo il rischio di infezione della ferita?", "question_type": "timing", "reference": "No, non risulta una differenza dimostrata: le evidenze disponibili (di qualit\u00e0 molto scarsa) non mostrano n\u00e9 un beneficio n\u00e9 un danno chiaro della rimozione precoce del drenaggio rispetto a quella tardiva sui tassi di SSI (OR 0.86; IC 95%: 0.49\u20131.50). Il risultato resta invariato anche quando la rimozione tardiva \u00e8 definita come una giornata specifica (dalla sesta in poi: OR 0.63; IC 95%: 0.07\u20135.70) oppure in base al volume drenato (OR 0.93; IC 95%: 0.51\u20131.70). Da tenere presente che queste evidenze riguardano solo pazienti adulti \u2014 non ci sono studi pediatrici \u2014 e non esistono dati sulla mortalit\u00e0 attribuibile a SSI. Inoltre non sono stati inclusi in questi confronti gli studi che confrontavano rimozione in prima vs. seconda giornata o poche ore vs. 24 ore dopo l'intervento.", "chunk_id": "2678907578d4:0481", "source": "WHO Global Guidelines for Prevention of Surgical Site Infection (2016, tier 1, p.176)", "fields": {"action": [{"i": 0, "text": "due studi che confrontavano la rimozione del", "start": 10, "end": 54}, {"i": 1, "text": "drenaggio il primo giorno vs. il secondo (23) e nelle", "start": 55, "end": 108}, {"i": 2, "text": "ore post intervento vs. le 24 (24), non sono stati", "start": 110, "end": 160}, {"i": 3, "text": "presi in considerazione per questi confronti di", "start": 161, "end": 208}, {"i": 4, "text": "Per quanto riguarda i tassi di SSI, vi sono evidenze di", "start": 222, "end": 277}, {"i": 5, "text": "qualit\u00e0 molto scarsa rispetto ai benefici o ai danni", "start": 278, "end": 330}, {"i": 6, "text": "apportati dalla rimozione precoce dei drenaggi", "start": 331, "end": 377}, {"i": 7, "text": "rispetto alla rimozione tardiva (OR:", "start": 378, "end": 414}, {"i": 8, "text": "Quando questo confronto \u00e8 stato sottoclassificato in rimozione tardiva in giornate", "start": 441, "end": 523}, {"i": 9, "text": "specifiche (dal sesto giorno in poi) o per volume di", "start": 524, "end": 576}, {"i": 10, "text": "drenaggio, i risultati sono rimasti invariati (OR:", "start": 577, "end": 627}, {"i": 11, "text": "Il corpus delle evidenze recuperate si focalizzava su", "start": 701, "end": 754}, {"i": 12, "text": "pazienti adulti e non c'erano studi disponibili sulla", "start": 755, "end": 808}, {"i": 13, "text": "La ricerca bibliografica non", "start": 833, "end": 861}, {"i": 14, "text": "ha identificato studi che riportassero dati sulla", "start": 862, "end": 911}, {"i": 15, "text": "mortalit\u00e0 SSI attribuibile.", "start": 912, "end": 939}], "quantity": []}}, {"qid": "q166", "question": "For my post-op gyn surgery patients, should I be giving acetaminophen and an NSAID as scheduled doses or just PRN, and when can I switch them from IV to oral?", "question_type": "technique", "reference": "Acetaminophen and an NSAID should be given together on a regular scheduled basis to all patients unless there is a contraindication \u2014 the combination is more effective than either drug alone, and this multimodal approach reduces opioid requirements (opioids worsen quality of recovery, delay mobilization, and contribute to ileus). Use the parenteral route until GI function has resumed, but switch to the oral route as soon as possible. Dexamethasone may also be a useful adjunct, since it has analgesic effects in addition to preventing postoperative nausea and vomiting.", "chunk_id": "82b0c8949b89:0017", "source": "Guidelines for postoperative care in gynecologic/oncology surgery: Enhanced Recovery After Surgery (ERAS) Society recommendations - Part II (2016, tier 1, p.4)", "fields": {"action": [{"i": 0, "text": "Pain following gynecological abdominal surgery can be severe [39].", "start": 54, "end": 120}, {"i": 1, "text": "[43] and poorer quality of recovery [44] and may prolong time to mobi-", "start": 122, "end": 192}, {"i": 2, "text": "Opioid analgesics also contribute to the development of ileus.", "start": 203, "end": 265}, {"i": 3, "text": "return to oral diet whilst reducing the need for opiates.", "start": 267, "end": 324}, {"i": 4, "text": "the last 20 years in open surgery have focused on epidural analgesia,", "start": 338, "end": 407}, {"i": 5, "text": "The literature base is developing rapidly and may", "start": 425, "end": 474}, {"i": 6, "text": "well impact on future recommendations.", "start": 475, "end": 513}, {"i": 7, "text": "tic effects of different types of analgesics is not new [45].", "start": 515, "end": 576}, {"i": 8, "text": "anti-in\ufb02ammatory drugs (NSAIDs) have been extensively investigated,", "start": 591, "end": 658}, {"i": 9, "text": "acetaminophen is more effective than either drug alone [48].", "start": 660, "end": 720}, {"i": 10, "text": "should be administered regularly unless contraindication exists.", "start": 726, "end": 790}, {"i": 11, "text": "timing of administration.", "start": 792, "end": 817}, {"i": 12, "text": "Dexamethasone appears to have analgesic", "start": 818, "end": 857}, {"i": 13, "text": "effects [50,51], as well as preventing post-operative nausea and", "start": 863, "end": 927}, {"i": 14, "text": "vomiting, so may be useful as part of an ERP for gynecologic surgery.", "start": 928, "end": 997}, {"i": 15, "text": "consumption and time to bowel recovery were reduced, though the ef-", "start": 999, "end": 1066}, {"i": 16, "text": "fect on these outcomes was small [26].", "start": 1067, "end": 1105}, {"i": 17, "text": "until resumption of GI function, but the oral route should be used as", "start": 1107, "end": 1176}, {"i": 18, "text": "Acetaminophen and NSAIDs in combination should be administered", "start": 1196, "end": 1258}, {"i": 19, "text": "regularly to all patients unless contraindication exists.", "start": 1259, "end": 1316}], "quantity": []}}, {"qid": "q014", "question": "Our ergometrine vials have been sitting in the theatre drug cupboard at room temperature \u2014 is that okay to give for PPH prevention, or do we need to switch to something else?", "question_type": "technique", "reference": "No \u2014 ergometrine/methylergometrine requires refrigerated transport and storage at 2\u20138 \u00b0C. If that cold chain cannot be guaranteed, its quality and effectiveness may be adversely affected, and in that situation another effective uterotonic should be considered instead.", "chunk_id": "f45f67bdfa20:0063", "source": "WHO Recommendations for Uterotonics for Prevention of PPH (2018, tier 1, p.26)", "fields": {"action": [{"i": 0, "text": "RECOMMENDATIONS AND SUPPORTING EVIDENCE", "start": 0, "end": 39}, {"i": 1, "text": "UTEROTONICS FOR THE PREVENTION OF POSTPARTUM HAEMORRHAGE", "start": 61, "end": 117}, {"i": 2, "text": "\" The GDG placed its emphasis on the danger of the increased risk of hypertension", "start": 123, "end": 204}, {"i": 3, "text": "(50 per 1000 births) associated with ergometrine/methylergometrine use and", "start": 205, "end": 279}, {"i": 4, "text": "therefore made a context-specific recommendation.", "start": 280, "end": 329}, {"i": 5, "text": "The group noted that women", "start": 330, "end": 356}, {"i": 6, "text": "with underlying cardiovascular disorders may be prone to further exacerbation by", "start": 357, "end": 437}, {"i": 7, "text": "\" The narrative evidence supporting this recommendation and the corresponding SoF", "start": 457, "end": 538}, {"i": 8, "text": "table can be found in Web Annex 4.", "start": 539, "end": 573}, {"i": 9, "text": "\" In the context of this recommendation, hypertensive disorders of pregnancy include", "start": 584, "end": 668}, {"i": 10, "text": "chronic hypertension, gestational hypertension, pre-eclampsia and eclampsia.", "start": 669, "end": 745}, {"i": 11, "text": "\" This recommendation applies to women undergoing a vaginal birth or caesarean", "start": 748, "end": 826}, {"i": 12, "text": "Skilled health personnel who are trained to administer injectable", "start": 836, "end": 901}, {"i": 13, "text": "uterotonics are required.", "start": 902, "end": 927}, {"i": 14, "text": "\" Women need to be informed of the possible side-effects (including hypertension,", "start": 930, "end": 1011}, {"i": 15, "text": "nausea, headache, vomiting and abdominal pain) prior to use.", "start": 1012, "end": 1072}, {"i": 16, "text": "are available, women may be offered the choice of an alternative uterotonic with a", "start": 1093, "end": 1175}, {"i": 17, "text": "better side-effect profile.", "start": 1176, "end": 1203}, {"i": 18, "text": "\" Ergometrine/methylergometrine is relatively inexpensive and widely available;", "start": 1206, "end": 1285}, {"i": 19, "text": "however, it requires refrigerated transport and storage (2\u20138\u00a0\u00b0C).", "start": 1286, "end": 1351}, {"i": 20, "text": "where this cannot be guaranteed, the quality and effectiveness of ergometrine/", "start": 1364, "end": 1442}, {"i": 21, "text": "methylergometrine may be adversely affected.", "start": 1443, "end": 1487}, {"i": 22, "text": "In these situations, another effective", "start": 1488, "end": 1526}, {"i": 23, "text": "uterotonic can be considered.", "start": 1527, "end": 1556}], "quantity": [{"i": 0, "text": "2\u20138\u00a0\u00b0C", "start": 1343, "end": 1349}]}}, {"qid": "q131", "question": "If we're giving oxytocin IV as a bolus for a PPH, should I push it fast or slow?", "question_type": "technique", "reference": "Push it slowly. There isn't enough evidence to say an oxytocin infusion is better than an IV bolus in terms of blood loss, but because of concerns about potential adverse haemodynamic effects, if an IV bolus is used a slow injection rate is preferred and a rapid injection should be avoided.", "chunk_id": "7209e8fb38bd:0047", "source": "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage (2012, tier 1, p.19)", "fields": {"action": [{"i": 0, "text": "There is insufficient evidence to recommend the antenatal distribution of misoprostol to pregnant", "start": 0, "end": 97}, {"i": 1, "text": "women for self-administration for the prevention of PPH.", "start": 98, "end": 154}, {"i": 2, "text": "There is insufficient evidence to recommend the measurement of blood loss over clinical estimation of", "start": 156, "end": 257}, {"i": 3, "text": "The GDG noted that there are three ongoing trials in which the IV and IM routes for oxytocin administra", "start": 280, "end": 383}, {"i": 4, "text": "tion are being compared for the prevention of PPH.", "start": 384, "end": 434}, {"i": 5, "text": "The GDG considered there to be insufficient evidence to recommend the use of oxytocin infusion over", "start": 437, "end": 536}, {"i": 6, "text": "IV bolus injection with regard to blood loss.", "start": 537, "end": 582}, {"i": 7, "text": "However, in light of concerns about the potential adverse", "start": 583, "end": 640}, {"i": 8, "text": "haemodynamic effects, the GDG considered that if IV bolus injection treatment is to be used then a", "start": 641, "end": 739}, {"i": 9, "text": "slow injection rate is preferred and a rapid injection rate should be avoided.", "start": 740, "end": 818}, {"i": 10, "text": "In the context of PPH, the GDP considered that the use of recombinant factor VIIa should be limited to", "start": 821, "end": 923}, {"i": 11, "text": "women with specific haematological indications.", "start": 924, "end": 971}, {"i": 12, "text": "The group regarded the recombinant factor VIIa as a", "start": 972, "end": 1023}, {"i": 13, "text": "potentially life-saving drug, but noted that it is also associated with life-threatening side-effects.", "start": 1024, "end": 1126}, {"i": 14, "text": "over, recombinant factor VIIa is expensive and may be difficult to administer.", "start": 1132, "end": 1210}, {"i": 15, "text": "The GDG acknowledged that while there is a paucity of data to recommend intraumbilical vein injec", "start": 1213, "end": 1310}, {"i": 16, "text": "tion of oxytocin as a treatment for retained placenta, the procedure itself has not been shown to cause", "start": 1311, "end": 1414}, {"i": 17, "text": "harm and demonstrates a non-significant trend towards a lower risk of requiring the manual removal of", "start": 1415, "end": 1516}, {"i": 18, "text": "The GDG acknowledged that a number of countries have embarked on community-level programmes of", "start": 1533, "end": 1627}, {"i": 19, "text": "misoprostol distribution and considered that this should be done in the context of research (where reli", "start": 1628, "end": 1731}, {"i": 20, "text": "able data on coverage, safety and health outcomes can be collected).", "start": 1732, "end": 1800}, {"i": 21, "text": "The GDG noted that all trials included in the systematic review on the measurement of blood loss were", "start": 1803, "end": 1904}, {"i": 22, "text": "conducted in developed countries and views the applicability of this evidence to low- and middleincome countries as very uncertain.", "start": 1905, "end": 2036}], "quantity": []}}, {"qid": "q220", "question": "Is P6 acupressure wristbands actually worth recommending for my patients with pregnancy nausea, and how strong is the evidence?", "question_type": "general", "reference": "The evidence for P6 acupressure is weak and inconsistent, so it can't be relied on. Across single small randomized trials: one trial (50 vs 50) found nausea severity on a 10 cm VAS was 1.7 points lower after 4 days of treatment (95% CI 0.99 to 2.41 lower) \u2014 low certainty; but other trials showed no benefit: no improvement in symptom intensity 28.3% vs 36.4% (RR 0.78, 95% CI 0.44\u20131.39, i.e. 80 fewer per 1000, from 204 fewer to 142 more) \u2014 low certainty; mean nausea score after day 3 was 0.1 higher (1.49 lower to 1.69 higher) \u2014 low certainty; mean nausea score for days 1\u20133 was 0.39 higher (0.8 lower to 1.58 higher) \u2014 very low certainty; mean total Rhodes Index days 1\u20133 was 1.17 higher (1.52 lower to 3.86 higher) \u2014 very low certainty; and Rhodes Index on day 3 was 1.48 lower (4.1 lower to 1.14 higher) \u2014 very low certainty. All estimates came from single trials with very serious imprecision and mostly serious risk of bias, giving low to very low certainty overall.", "chunk_id": "9e0f86a82f44:0121", "source": "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience (2016, tier 1, p.84)", "fields": {"action": [{"i": 0, "text": "Severity of nausea after treatment (of 4 days) using a 10 cm visual analogue scale (VAS; better indicated by lower values)", "start": 165, "end": 287}, {"i": 1, "text": "No improvement in intensity of symptoms", "start": 431, "end": 470}, {"i": 2, "text": "Mean nausea score after day 3 using VAS (MD; better indicated by lower values)", "start": 670, "end": 748}, {"i": 3, "text": "(1.49 lower to 1.69 higher)", "start": 867, "end": 894}, {"i": 4, "text": "Mean nausea score days 1\u20133 (average) (MD; better indicated by lower values)", "start": 901, "end": 976}, {"i": 5, "text": "(0.8 lower to 1.58 higher)", "start": 1100, "end": 1126}, {"i": 6, "text": "Mean total scores (Rhodes Index) days 1\u20133 (average) (MD; better indicated by lower values)", "start": 1138, "end": 1228}, {"i": 7, "text": "(1.52 lower to 3.86 higher)", "start": 1347, "end": 1374}, {"i": 8, "text": "Total Rhodes Index score on the 3rd day of intervention (MD; better indicated by lower values)", "start": 1386, "end": 1480}, {"i": 9, "text": "(4.1 lower to 1.14 higher)", "start": 1613, "end": 1639}], "quantity": [{"i": 0, "text": "4 days", "start": 204, "end": 210}]}}, {"qid": "q285", "question": "My post-op patient has expressive aphasia and can't tell me her pain level \u2014 what's the best way to set up communication with her at the bedside?", "question_type": "technique", "reference": "Modify the environment to cut excess noise and reduce emotional distress, and adjust your style: stand in front of her while speaking, listen attentively, present one idea or thought at a time, speak slowly without shouting, use written communication, or ask the family to help interpret her speech. Phrase questions so she can answer with a simple 'Yes' or 'No,' but be aware that clients with expressive aphasia may give automatic responses that are incorrect \u2014 so repeat back what she said to confirm accuracy, and instruct her to speak slowly. Offer alternative communication methods such as a writing tablet, flash cards, eye blinking, a communication board with pictures and letters, hand signals or gestures, or a computer. Ensure the call light is within her reach and that the central call light system is marked to indicate she has difficulty with speech. Monitor her for frustration, anger, depression, or other reactions to her impaired speech, and collaborate with the family and a speech therapist to develop a plan for effective communication.", "chunk_id": "e4a0406819b1:0125", "source": "OpenRN Nursing Fundamentals 2e - Full Textbook (PDF) (2023, tier 2, p.135)", "fields": {"action": [{"i": 0, "text": "Aphasia. https://www.nidcd.nih.gov/health/aphasia", "start": 0, "end": 49}, {"i": 1, "text": "interventions classification (NIC) (8th ed.).", "start": 115, "end": 160}, {"i": 2, "text": "136 | 2.3 Communicating With Patients", "start": 172, "end": 209}, {"i": 3, "text": "Modify the environment to minimize excess noise and", "start": 214, "end": 265}, {"i": 4, "text": "decrease emotional distress", "start": 267, "end": 294}, {"i": 5, "text": "Phrase questions so the client can answer using a simple", "start": 299, "end": 355}, {"i": 6, "text": "\u201cYes\u201d or \u201cNo,\u201d being aware that clients with expressive", "start": 357, "end": 412}, {"i": 7, "text": "aphasia may provide automatic responses that are", "start": 414, "end": 462}, {"i": 8, "text": "Monitor the client for frustration, anger, depression, or", "start": 478, "end": 535}, {"i": 9, "text": "other responses to impaired speech capabilities", "start": 537, "end": 584}, {"i": 10, "text": "Provide alternative methods of speech communication", "start": 589, "end": 640}, {"i": 11, "text": "(e.g., writing tablet, flash cards, eye blinking,", "start": 642, "end": 691}, {"i": 12, "text": "communication board with pictures and letters, hand", "start": 693, "end": 744}, {"i": 13, "text": "signals or gestures, and computer)", "start": 746, "end": 780}, {"i": 14, "text": "Adjust your communication style to meet the needs of", "start": 785, "end": 837}, {"i": 15, "text": "the client (e.g., stand in front of the client while speaking,", "start": 839, "end": 901}, {"i": 16, "text": "listen attentively, present one idea or thought at a time,", "start": 903, "end": 961}, {"i": 17, "text": "speak slowly but avoid shouting, use written", "start": 963, "end": 1007}, {"i": 18, "text": "communication, or solicit family\u2019s assistance in", "start": 1009, "end": 1057}, {"i": 19, "text": "understanding the client\u2019s speech)", "start": 1059, "end": 1093}, {"i": 20, "text": "Ensure the call light is within reach and central call light", "start": 1098, "end": 1158}, {"i": 21, "text": "system is marked to indicate the client has difficulty with", "start": 1160, "end": 1219}, {"i": 22, "text": "Repeat what the client said to ensure accuracy", "start": 1232, "end": 1278}, {"i": 23, "text": "Instruct the client to speak slowly", "start": 1283, "end": 1318}, {"i": 24, "text": "Collaborate with the family and a speech therapist to", "start": 1323, "end": 1376}, {"i": 25, "text": "develop a plan for effective communication", "start": 1378, "end": 1420}, {"i": 26, "text": "Maintaining Confidentiality", "start": 1422, "end": 1449}, {"i": 27, "text": "When communicating with clients, their friends, their family members, and", "start": 1451, "end": 1524}, {"i": 28, "text": "other members of the health care team, it is vital for the nurse to maintain", "start": 1526, "end": 1602}, {"i": 29, "text": "The Health Insurance Portability and Accountability", "start": 1628, "end": 1679}], "quantity": []}}, {"qid": "q184", "question": "When we set a patient up with a system navigator at discharge, what timeframe are we watching for ED visits and readmissions as the marker of a good handoff?", "question_type": "timing", "reference": "Within 30 days of the transition in care. For navigator support, the prioritized outcomes are emergency department visits within 30 days of a transition in care and readmission rates within 30 days of a transition in care, along with patient quality of life, whether a follow-up visit with a health or social service provider occurs, and patient satisfaction.", "chunk_id": "25af75b59210:0147", "source": "Transitions in Care and Services (Best Practice Guideline) (2023, tier 2, p.99)", "fields": {"action": [{"i": 0, "text": "BEST PRACTICE GUIDELINES \u2022 www.RNAO.ca", "start": 0, "end": 38}, {"i": 1, "text": "Following the internal review process, the expert panel was sent a confidential online survey to rate the relative", "start": 50, "end": 164}, {"i": 2, "text": "importance of each outcome (per recommendation question).", "start": 165, "end": 222}, {"i": 3, "text": "The expert panel co-chairs did not participate", "start": 224, "end": 270}, {"i": 4, "text": "in rating the relative importance of the outcomes.", "start": 271, "end": 321}, {"i": 5, "text": "The RNAO guideline development and research team then", "start": 323, "end": 376}, {"i": 6, "text": "reviewed the\u00a0results and calculated the top three to five most critical and important outcomes per recommendation", "start": 377, "end": 490}, {"i": 7, "text": "The expert panel was provided an update via email regarding the final list of outcomes prioritized for each", "start": 502, "end": 609}, {"i": 8, "text": "The six recommendation questions and their respective PICO research questions are presented below.", "start": 636, "end": 734}, {"i": 9, "text": "Recommendation Question #1:", "start": 736, "end": 763}, {"i": 10, "text": "Should support from a system navigator be recommended or not for persons", "start": 764, "end": 836}, {"i": 11, "text": "encountering a transition in care?", "start": 837, "end": 871}, {"i": 12, "text": "PICO Research Question #1", "start": 873, "end": 898}, {"i": 13, "text": "Adult and pediatric populations experiencing a transition in care.", "start": 911, "end": 977}, {"i": 14, "text": "Support from a system navigator.", "start": 993, "end": 1025}, {"i": 15, "text": "No support from a system navigator.", "start": 1039, "end": 1074}, {"i": 16, "text": "Patient quality of life, emergency department visits (within 30 days of a transition in care), followup visit with a health or social service provider, patient satisfaction and readmission rates (within 30 days of a", "start": 1086, "end": 1301}, {"i": 17, "text": "Recommendation Question #2:", "start": 1324, "end": 1351}, {"i": 18, "text": "Should a formal interprofessional cross-sectoral approach be recommended or not", "start": 1352, "end": 1431}, {"i": 19, "text": "to support persons encountering a transition in care?", "start": 1432, "end": 1485}, {"i": 20, "text": "PICO Research Question #2", "start": 1487, "end": 1512}, {"i": 21, "text": "A formal interprofessional cross-sectoral approach.", "start": 1607, "end": 1658}, {"i": 22, "text": "No formal interprofessional cross-sectoral approach.", "start": 1672, "end": 1724}], "quantity": [{"i": 0, "text": "30 days", "start": 1147, "end": 1154}]}}, {"qid": "q288", "question": "For a robotic hysterectomy where we can't keep tidal volumes low, what ventilation targets should we be aiming for and is a higher tidal volume a problem?", "question_type": "threshold", "reference": "The lung-protective target is a low tidal volume of about 6 cc/kg ideal body weight with plateau pressure kept under 30 cmH2O. During robotic and laparoscopic hysterectomy this may be difficult or impossible because pneumoperitoneum, steep Trendelenburg, and high BMI reduce chest wall compliance. If adequate oxygenation and ventilation can't be maintained with a low-tidal-volume strategy, using higher tidal volumes does not appear to be detrimental.", "chunk_id": "4edd937b5877:0013", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.4)", "fields": {"action": [{"i": 0, "text": "Standardized anesthetic protocol", "start": 0, "end": 32}, {"i": 1, "text": "Standardized anesthetic protocols are a cornerstone of", "start": 33, "end": 87}, {"i": 2, "text": "Anesthetic regimens should be designed", "start": 104, "end": 142}, {"i": 3, "text": "to facilitate rapid recovery.", "start": 143, "end": 172}, {"i": 4, "text": "Routine administration of sedatives to reduce anxiety preoperatively should be avoided", "start": 174, "end": 260}, {"i": 5, "text": "General and regional anesthesia and local anesthesia", "start": 267, "end": 319}, {"i": 6, "text": "plus sedation [21] have all been used successfully for urogynecological surgery.", "start": 320, "end": 400}, {"i": 7, "text": "There is no evidence that one approach", "start": 402, "end": 440}, {"i": 8, "text": "is superior to the others for operations in which multiple", "start": 441, "end": 499}, {"i": 9, "text": "Anesthetic choice should depend", "start": 526, "end": 557}, {"i": 10, "text": "on patient characteristics, the specific operation, and institutional factors.", "start": 558, "end": 636}, {"i": 11, "text": "If general anesthesia is chosen, sevoflurane and desflurane", "start": 638, "end": 697}, {"i": 12, "text": "are preferred over isoflurane because of their fast-on, fast-off", "start": 698, "end": 762}, {"i": 13, "text": "Propofol-based total IV anesthesia also facilitates rapid recovery.", "start": 776, "end": 843}, {"i": 14, "text": "It has the added benefit of decreasing", "start": 845, "end": 883}, {"i": 15, "text": "Nitrous oxide, on the contrary, may", "start": 908, "end": 943}, {"i": 16, "text": "increase the likelihood of PONV.", "start": 944, "end": 976}, {"i": 17, "text": "However, with aggressive PONV prophylaxis (see below), this increased risk is", "start": 978, "end": 1055}, {"i": 18, "text": "Also, propofol may be more environmentally", "start": 1069, "end": 1111}, {"i": 19, "text": "sustainable than anesthetic gases, especially desflurane and", "start": 1112, "end": 1172}, {"i": 20, "text": "Lung-protective ventilatory strategies (low-tidal volume", "start": 1194, "end": 1250}, {"i": 21, "text": "of approximately 6 cc/kg ideal body weight and maintenance", "start": 1251, "end": 1309}, {"i": 22, "text": "of plateau pressure < 30 cmH2O) have been advocated for", "start": 1310, "end": 1365}, {"i": 23, "text": "intraoperative mechanical ventilation [24, 25].", "start": 1366, "end": 1413}, {"i": 24, "text": "may be difficult or impossible during robotic and laparoscopic hysterectomy because of factors that decrease chest", "start": 1429, "end": 1543}, {"i": 25, "text": "wall compliance such as pneumoperitoneum, steep Trendelenburg position, and high body mass index.", "start": 1544, "end": 1641}, {"i": 26, "text": "of higher tidal volumes does not appear to be detrimental if", "start": 1656, "end": 1716}, {"i": 27, "text": "adequate oxygenation and ventilation cannot be maintained", "start": 1717, "end": 1774}, {"i": 28, "text": "using low-tidal volume strategies [26].", "start": 1775, "end": 1814}, {"i": 29, "text": "Residual neuromuscular blockade is associated with respiratory complications,", "start": 1816, "end": 1893}, {"i": 30, "text": "increased length of stay, and mortality.", "start": 1894, "end": 1934}, {"i": 31, "text": "neuromuscular block is used, it should be fully reversed at", "start": 1955, "end": 2014}, {"i": 32, "text": "the end of the operation [27].", "start": 2015, "end": 2045}], "quantity": [{"i": 0, "text": "30 cmH2O", "start": 1332, "end": 1340}]}}];
+const BATCH = "study-011-020";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

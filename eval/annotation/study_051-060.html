@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch study-051-060</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch study-051-060</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q174", "question": "We've just admitted a pregnant woman to the gynae ward with ovarian hyperstimulation syndrome \u2014 does she need LMWH even though she's only in her first trimester?", "question_type": "threshold", "reference": "Yes. Women admitted to hospital when pregnant, including admissions to the gynaecology ward with hyperemesis gravidarum or ovarian hyperstimulation syndrome, should usually be offered thromboprophylaxis with LMWH, unless there is a specific contraindication such as risk of labour or active bleeding. Her VTE risk assessment should be repeated on this admission (risk assessment is repeated whenever a woman is admitted to hospital for any reason or develops intercurrent problems), and the reasons for the recommendation should be discussed with her.", "chunk_id": "144cabf03653:0001", "source": "GTG37a - Reducing Risk of Thrombosis and Embolism during Pregnancy (2015, tier 1, p.2)", "fields": {"action": [{"i": 0, "text": "Prepregnancy and antenatal risk assessment", "start": 0, "end": 42}, {"i": 1, "text": "What are the risk factors for venous thromboembolism (VTE) in pregnancy and the puerperium and", "start": 43, "end": 137}, {"i": 2, "text": "what is the magnitude of risk for these factors?", "start": 138, "end": 186}, {"i": 3, "text": "All women should undergo a documented assessment of risk factors for VTE in early pregnancy", "start": 188, "end": 279}, {"i": 4, "text": "Risk assessment should be repeated if the woman is admitted to hospital for any reason or develops", "start": 298, "end": 396}, {"i": 5, "text": "other intercurrent problems.", "start": 397, "end": 425}, {"i": 6, "text": "Risk assessment should be repeated again intrapartum or immediately postpartum.", "start": 427, "end": 506}, {"i": 7, "text": "Any woman with four or more current risk factors shown in Appendix I and Table 1 (other than", "start": 508, "end": 600}, {"i": 8, "text": "previous VTE or thrombophilia) should be considered for prophylactic low-molecular-weight", "start": 601, "end": 690}, {"i": 9, "text": "heparin (LMWH) throughout the antenatal period and will usually require prophylactic LMWH for 6", "start": 691, "end": 786}, {"i": 10, "text": "weeks postnatally but a postnatal risk reassessment should be made.", "start": 787, "end": 854}, {"i": 11, "text": "Any woman with three current risk factors shown in Appendix I and Table 1 (other than previous", "start": 856, "end": 950}, {"i": 12, "text": "VTE or thrombophilia) should be considered for prophylactic LMWH from 28 weeks and will", "start": 951, "end": 1038}, {"i": 13, "text": "usually require prophylactic LMWH for 6 weeks postnatally but a postnatal risk reassessment", "start": 1039, "end": 1130}, {"i": 14, "text": "Any woman with two current risk factors shown in Appendix I and Table 1 (other than previous VTE", "start": 1148, "end": 1244}, {"i": 15, "text": "or thrombophilia) should be considered for prophylactic LMWH for at least 10 days postpartum.", "start": 1245, "end": 1338}, {"i": 16, "text": "Women admitted to hospital when pregnant (including to the gynaecology ward with hyperemesis", "start": 1340, "end": 1432}, {"i": 17, "text": "gravidarum or ovarian hyperstimulation syndrome) should usually be offered thromboprophylaxis", "start": 1433, "end": 1526}, {"i": 18, "text": "with LMWH unless there is a specific contraindication such as risk of labour or active bleeding.", "start": 1527, "end": 1623}, {"i": 19, "text": "The risk of VTE should be discussed with women at risk and the reasons for individual", "start": 1625, "end": 1710}, {"i": 20, "text": "recommendations explained.", "start": 1711, "end": 1737}, {"i": 21, "text": "How should women with previous VTE be managed in pregnancy?", "start": 1752, "end": 1811}, {"i": 22, "text": "Women with previous VTE should be offered prepregnancy counselling and a prospective", "start": 1851, "end": 1935}, {"i": 23, "text": "management plan for thromboprophylaxis in pregnancy made.", "start": 1936, "end": 1993}], "quantity": [{"i": 0, "text": "6\nweeks", "start": 785, "end": 792}, {"i": 1, "text": "28 weeks", "start": 1021, "end": 1029}, {"i": 2, "text": "10 days", "start": 1319, "end": 1326}]}}, {"qid": "q249", "question": "My patient is going for a CT with IV contrast before her surgery \u2014 what do I need to check and how long should she be NPO?", "question_type": "timing", "reference": "Keep her NPO for four to six hours before the scan if contrast is being used. Before sending her, check for previous allergies to iodine or other contrast dyes \u2014 if she's had a prior allergic reaction she may be prescribed diphenhydramine or corticosteroids beforehand. Verify kidney function by checking BUN, creatinine, and eGFR, since IV contrast can worsen kidney function; if those labs are abnormal, notify the provider before the contrast is given. Also check whether she takes metformin, as there may be restrictions on giving it before or after the procedure. Remove all jewelry before the procedure.", "chunk_id": "e4a0406819b1:0963", "source": "OpenRN Nursing Fundamentals 2e - Full Textbook (PDF) (2023, tier 2, p.1183)", "fields": {"action": [{"i": 0, "text": "A computer creates separate", "start": 0, "end": 27}, {"i": 1, "text": "images, called slices, that can be viewed on a monitor or printed on film.", "start": 29, "end": 103}, {"i": 2, "text": "National Library of Medicine.", "start": 110, "end": 139}, {"i": 3, "text": "https://medlineplus.gov/ency/article/003817.htm", "start": 176, "end": 223}, {"i": 4, "text": "1178 | 16.9 Applying the Nursing Process", "start": 225, "end": 265}, {"i": 5, "text": "Three-dimensional models of the area can be made by stacking the slices", "start": 267, "end": 338}, {"i": 6, "text": "for an image of a CT scan.", "start": 369, "end": 395}, {"i": 7, "text": "A special dye, called contrast, is administered to clients before some tests so", "start": 419, "end": 498}, {"i": 8, "text": "that certain areas show up better on the X-rays.", "start": 500, "end": 548}, {"i": 9, "text": "If contrast is used, the client", "start": 549, "end": 580}, {"i": 10, "text": "may be required to be NPO for four to six hours before the test.", "start": 582, "end": 646}, {"i": 11, "text": "be administered orally, rectally, or intravenously.", "start": 661, "end": 712}, {"i": 12, "text": "Oral contrast has a chalky taste and will pass out of your body through the", "start": 714, "end": 789}, {"i": 13, "text": "Clients receiving IV contrast may feel a slight burning sensation,", "start": 799, "end": 865}, {"i": 14, "text": "metallic taste in the mouth, or warm flushing of the body that resolves in a", "start": 867, "end": 943}, {"i": 15, "text": "Before sending the client for a procedure using contrast, check for previous", "start": 959, "end": 1035}, {"i": 16, "text": "allergies to iodine or other contrast dyes.", "start": 1037, "end": 1080}, {"i": 17, "text": "Some clients may be prescribed", "start": 1081, "end": 1111}, {"i": 18, "text": "diphenhydramine or corticosteroids before receiving the contrast if they have", "start": 1113, "end": 1190}, {"i": 19, "text": "had a previous allergic reaction.", "start": 1192, "end": 1225}, {"i": 20, "text": "Verify their kidney functioning status by", "start": 1226, "end": 1267}, {"i": 21, "text": "checking BUN, creatinine, and EGFR values because IV contrast can worsen", "start": 1269, "end": 1341}, {"i": 22, "text": "https://medlineplus.gov/ency/article/003789.htm", "start": 1419, "end": 1466}, {"i": 23, "text": "\u201cUW_Medical_Center_PET-CT-Scan.jpg\u201d by Clare McLean for UW Medicine is", "start": 1468, "end": 1538}, {"i": 24, "text": "Applying the Nursing Process | 1179", "start": 1566, "end": 1601}, {"i": 25, "text": "If kidney function labs are abnormal, the nurse should notify", "start": 1620, "end": 1681}, {"i": 26, "text": "the provider prior to the administration of IV contrast.", "start": 1683, "end": 1739}, {"i": 27, "text": "If the client is currently", "start": 1740, "end": 1766}, {"i": 28, "text": "taking the antidiabetic medication metformin, there may be restrictions", "start": 1768, "end": 1839}, {"i": 29, "text": "placed on the administration of metformin before or after the procedure.", "start": 1841, "end": 1913}, {"i": 30, "text": "Jewelry should be removed before the procedure.", "start": 1915, "end": 1962}], "quantity": []}}, {"qid": "q144", "question": "One of my pre-op patients is due for hysterectomy and says the daily iron tablets are making her feel awful \u2014 can we switch her to taking it every other day instead?", "question_type": "dose", "reference": "Yes, for people who get unpleasant side effects from daily oral iron, consider switching to an alternate-day regimen to reduce side effects and encourage adherence. Bear in mind that alternate-day dosing doesn't fix problems with tolerability or absorption, and it may be more complicated for patients already taking several daily medicines \u2014 so weigh the potential benefit against that. There's no evidence comparing the effectiveness of daily versus alternate-day oral iron regimens.", "chunk_id": "39d63f844d2e:0051", "source": "Perioperative Care in Adults (NG180) (2020, tier 1, p.21)", "fields": {"action": [{"i": 0, "text": "Oral iron supplements are usually taken daily but some people have unpleasant side", "start": 19, "end": 101}, {"i": 1, "text": "The committee thought that, for these people, switching to an", "start": 127, "end": 188}, {"i": 2, "text": "alternate-day regimen should be considered as a means of reducing side effects and", "start": 189, "end": 271}, {"i": 3, "text": "They noted that an alternate-day regimen does not address", "start": 295, "end": 352}, {"i": 4, "text": "problems with tolerability or absorption, and the potential benefits need to be balanced", "start": 353, "end": 441}, {"i": 5, "text": "against the risk that an alternate-day regimen might be more complicated for people", "start": 442, "end": 525}, {"i": 6, "text": "taking multiple daily medicines.", "start": 526, "end": 558}, {"i": 7, "text": "There was no evidence on the comparative effectiveness", "start": 559, "end": 613}, {"i": 8, "text": "of daily and alternate-day oral iron regimens.", "start": 614, "end": 660}, {"i": 9, "text": "Perioperative care in adults (NG180)", "start": 661, "end": 697}, {"i": 10, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 732, "end": 823}], "quantity": []}}, {"qid": "q267", "question": "For a woman admitted in preterm labour, when do we actually start antibiotics, and which one do we use if her membranes have ruptured?", "question_type": "general", "reference": "Antibiotics are only indicated if the membranes have ruptured. If she is in preterm labour with intact membranes and no clinical signs of infection, do not give routine antibiotics (strong recommendation, moderate-quality evidence). If she has preterm prelabour rupture of membranes, antibiotic prophylaxis is recommended (strong recommendation, moderate-quality evidence), and erythromycin is the antibiotic of choice (conditional recommendation, moderate-quality evidence). Do not use amoxicillin plus clavulanic acid (co-amoxiclav) in these women (strong recommendation, moderate-quality evidence).", "chunk_id": "1277ed65e8ca:0057", "source": "WHO Recommendations on Maternal Health (2018, tier 1, p.17)", "fields": {"action": [{"i": 0, "text": "Antibiotics for preterm labour", "start": 0, "end": 30}, {"i": 1, "text": "\u25a0Routine antibiotic administration is not recommended for women in preterm labour with", "start": 33, "end": 119}, {"i": 2, "text": "intact amniotic membranes and no clinical signs of infection.", "start": 120, "end": 181}, {"i": 3, "text": "(Strong recommendation based", "start": 182, "end": 210}, {"i": 4, "text": "on moderate-quality evidence).", "start": 211, "end": 241}, {"i": 5, "text": "\u25a0Antibiotic administration is recommended for women with preterm prelabour rupture of", "start": 251, "end": 336}, {"i": 6, "text": "(Strong recommendation based on moderate-quality evidence).", "start": 348, "end": 407}, {"i": 7, "text": "\u25a0Erythromycin is recommended as the antibiotic of choice for prophylaxis in women with", "start": 417, "end": 503}, {"i": 8, "text": "preterm prelabour rupture of membranes.", "start": 504, "end": 543}, {"i": 9, "text": "(Conditional recommendation based on moderatequality evidence).", "start": 544, "end": 607}, {"i": 10, "text": "\u25a0The use of a combination of amoxicillin and clavulanic acid (\u201cco-amoxiclav\u201d) is not recommended for women with preterm prelabour rupture of membranes.", "start": 617, "end": 768}], "quantity": []}}, {"qid": "q173", "question": "Our unit does D&Cs in a small procedure room down the hall \u2014 should that room be counted as an operating room when we report our OR numbers?", "question_type": "threshold", "reference": "No, not unless it actually meets the definition of an operating room. An operating room is an enclosed room specifically dedicated to surgical procedures and equipped to deliver monitored anaesthesia, whether or not it is inside a hospital facility. Rooms used for procedures like dilation and curettage, endoscopy, or incision and drainage that are not suitable for other invasive operations are minor procedure rooms and should be excluded from the count unless they meet that full definition (dedicated, enclosed, and equipped for monitored anaesthesia).", "chunk_id": "45f9865b55b3:0335", "source": "Safe Surgery Saves Lives: The Second Global Patient Safety Challenge (2009, tier 1, p.92)", "fields": {"action": [{"i": 0, "text": "the number of in-hospital deaths after surgery.", "start": 2, "end": 49}, {"i": 1, "text": "These basic measures are the structural, process and outcome", "start": 50, "end": 110}, {"i": 2, "text": "components of surgical delivery systems.", "start": 111, "end": 151}, {"i": 3, "text": "indicate the capacity of a country for delivering care.", "start": 175, "end": 230}, {"i": 4, "text": "operating rooms and the number of trained surgeons and anaesthetists", "start": 245, "end": 313}, {"i": 5, "text": "are measures of the resources available for delivery of surgical care.", "start": 314, "end": 384}, {"i": 6, "text": "The number of operations performed in operating rooms is a measure", "start": 385, "end": 451}, {"i": 7, "text": "of the services actually delivered within a country.", "start": 452, "end": 504}, {"i": 8, "text": "death and overall in-hospital death numbers, when converted into", "start": 524, "end": 588}, {"i": 9, "text": "ratios, provide basic indicators of surgical outcomes, much as maternal", "start": 589, "end": 660}, {"i": 10, "text": "and neonatal mortality rates do for obstetric outcomes.", "start": 661, "end": 716}, {"i": 11, "text": "The number of operating rooms in each country:", "start": 717, "end": 763}, {"i": 12, "text": "surgical services is an important component of health systems.", "start": 776, "end": 838}, {"i": 13, "text": "Knowing the operating room density will help evaluate the availability,", "start": 839, "end": 910}, {"i": 14, "text": "access and distribution of surgical services and coverage.", "start": 911, "end": 969}, {"i": 15, "text": "room is defined as an enclosed room specifically dedicated to surgical", "start": 983, "end": 1053}, {"i": 16, "text": "procedures and equipped to deliver monitored anaesthesia, whether", "start": 1054, "end": 1119}, {"i": 17, "text": "or not it is located in a hospital facility.", "start": 1120, "end": 1164}, {"i": 18, "text": "Potential sources of data for", "start": 1165, "end": 1194}, {"i": 19, "text": "this measure include administrative records based on reported data by", "start": 1195, "end": 1264}, {"i": 20, "text": "inpatient and outpatient facilities and censuses of health facilities with", "start": 1265, "end": 1339}, {"i": 21, "text": "possible adjustment for underreporting (e.g. missing private facilities).", "start": 1340, "end": 1413}, {"i": 22, "text": "Certain procedures, such as incision and drainage of wounds,", "start": 1414, "end": 1474}, {"i": 23, "text": "endoscopy and dilation and curettage, may be performed in procedure", "start": 1475, "end": 1542}, {"i": 24, "text": "rooms that are not suit-able for other types of invasive operations.", "start": 1543, "end": 1611}, {"i": 25, "text": "Minor procedure rooms should not be included unless they meet the", "start": 1612, "end": 1677}, {"i": 26, "text": "definition of an operating room.", "start": 1678, "end": 1710}, {"i": 27, "text": "The number of surgical procedures performed in operating rooms", "start": 1711, "end": 1773}, {"i": 28, "text": "The number of surgical procedures performed in an", "start": 1791, "end": 1840}, {"i": 29, "text": "operating room is an indication of access to and use of health care,", "start": 1841, "end": 1909}, {"i": 30, "text": "particularly surgical services.", "start": 1910, "end": 1941}, {"i": 31, "text": "A surgical procedure is defined as the", "start": 1942, "end": 1980}, {"i": 32, "text": "Section I. | Introduction", "start": 1981, "end": 2006}], "quantity": []}}, {"qid": "q209", "question": "How many opioid tablets should we be sending our vaginal prolapse repair patients home with, and what should they be taking as their baseline pain control?", "question_type": "dose", "reference": "Discharge with no more than 15 narcotic tablets \u2014 recent urogynecology data support \u226415 tablets to limit the consequences of excess opioids. Baseline pain control should be scheduled oral acetaminophen plus an NSAID (anti-inflammatory) after vulvar and vaginal surgery unless contraindicated; this is a strong recommendation based on high-quality evidence. Opioids are reserved for breakthrough pain when acetaminophen and NSAIDs aren't sufficient, using the lowest dose for the shortest period. Educate the patient preoperatively about opioid risks and common side effects \u2014 constipation, nausea, vomiting, and somnolence. Also favor the oral route over IV for all postoperative medications in patients tolerating a diet, and use incisional local anesthetic injection to reduce the need for systemic medications.", "chunk_id": "4edd937b5877:0029", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.9)", "fields": {"action": [{"i": 0, "text": "Postoperative multimodal medications", "start": 0, "end": 36}, {"i": 1, "text": "Postoperative pain control is an important factor affecting patient recovery and satisfaction.", "start": 37, "end": 131}, {"i": 2, "text": "pain delays the return to normal bowel function, reduces", "start": 150, "end": 206}, {"i": 3, "text": "daily activity, and decreases ambulation [87].", "start": 207, "end": 253}, {"i": 4, "text": "high-level evidence, acetaminophen and NSAIDs should", "start": 263, "end": 315}, {"i": 5, "text": "be used postoperatively after vulvar and vaginal surgery", "start": 316, "end": 372}, {"i": 6, "text": "unless contraindicated [52, 65].", "start": 373, "end": 405}, {"i": 7, "text": "Many of the trials specific", "start": 406, "end": 433}, {"i": 8, "text": "to urogynecology utilize this and have shown reduction in", "start": 434, "end": 491}, {"i": 9, "text": "opioid utilization and postoperative pain as well as providing high patient satisfaction [59].", "start": 492, "end": 586}, {"i": 10, "text": "Opioids can be used for breakthrough pain when acetaminophen and NSAIDs are not sufficient.", "start": 587, "end": 678}, {"i": 11, "text": "patient education should review the risks of opioid use and", "start": 692, "end": 751}, {"i": 12, "text": "stress using low doses for short periods of time if necessary.", "start": 752, "end": 814}, {"i": 13, "text": "Patients should also be educated on common side effects,", "start": 815, "end": 871}, {"i": 14, "text": "including constipation, nausea, vomiting, and somnolence.", "start": 872, "end": 929}, {"i": 15, "text": "The specific opiate chosen for treatment most likely has little impact on the incidence of pruritus and nausea/vomiting,", "start": 930, "end": 1050}, {"i": 16, "text": "although greater differences between opioids were observed", "start": 1051, "end": 1109}, {"i": 17, "text": "regarding sedation and patient satisfaction, and selecting the", "start": 1110, "end": 1172}, {"i": 18, "text": "appropriate opioid may help to improve the overall pain control [88].", "start": 1173, "end": 1242}, {"i": 19, "text": "Recent data in urogynecology support discharge", "start": 1243, "end": 1289}, {"i": 20, "text": "with \u2264 15 tablets of narcotics to minimize potential consequences of excess opioids [56, 58\u201360].", "start": 1290, "end": 1386}, {"i": 21, "text": "A multimodal postoperative analgesic protocol successfully reduces opioid administration, both in the hospital and", "start": 1387, "end": 1501}, {"i": 22, "text": "This can be accomplished using non-opioid", "start": 1519, "end": 1560}, {"i": 23, "text": "oral medications and incisional injection of local anesthetic", "start": 1561, "end": 1622}, {"i": 24, "text": "to decrease the need for systemic medications.", "start": 1623, "end": 1669}, {"i": 25, "text": "oral administration of all postoperative medications in", "start": 1682, "end": 1737}, {"i": 26, "text": "patients who can tolerate a diet is preferable to the IV route.", "start": 1738, "end": 1801}, {"i": 27, "text": "Utilize preoperative multimodal medications and postoperative oral acetaminophen and anti-inflammatory drugs to", "start": 1817, "end": 1928}, {"i": 28, "text": "decrease postoperative opioid use.", "start": 1929, "end": 1963}, {"i": 29, "text": "Strength of recommendation:", "start": 1964, "end": 1991}], "quantity": []}}, {"qid": "q076", "question": "My pre-op patient says she can't afford her blood pressure pills and has no drug coverage \u2014 which antihypertensive classes are the cheapest per day so I can flag options to the prescriber?", "question_type": "general", "reference": "Cost can legitimately be a deciding factor in choosing an antihypertensive when a patient has no coverage through the Ontario Drug Benefits Program or a third-party plan. Based on example drugs from each class (prices current as of June 2005), thiazide diuretics are by far the least expensive \u2014 hydrochlorothiazide 25 mg at about $0.006/day \u2014 followed by beta-blockers (atenolol 50 mg, $0.35/day), ACE inhibitors (ramipril 10 mg, $0.95/day), ARBs (candesartan 8 or 16 mg, $1.08/day), and long-acting calcium channel blockers (amlodipine 10 mg, $1.90/day), the costliest of the examples. Note that prices vary within a class \u2014 some drugs are flat-priced across doses and others priced incrementally per dose \u2014 so check exact cost per dose in the searchable Ontario Drug Benefit Formulary/Comparative Drug Index e-formulary (http://www.health.gov.on.ca/english/providers/program/drugs/odbf_mn.html). Programs are also available to help patients with prescription medication costs.", "chunk_id": "2836fd2a5622:0269", "source": "Nursing Management of Hypertension (2011, tier 2, p.99)", "fields": {"action": [{"i": 0, "text": "The cost of prescription medications is a significant barrier for many Ontarians without drug", "start": 0, "end": 93}, {"i": 1, "text": "coverage through the Ontario Drug Benefits Program or third party drug plans.", "start": 94, "end": 171}, {"i": 2, "text": "factor when developing an antihypertensive treatment plan.", "start": 195, "end": 253}, {"i": 3, "text": "The following overview provides details regarding", "start": 254, "end": 303}, {"i": 4, "text": "the costs associated with common classes of antihypertensive therapy, and provides information on programs", "start": 304, "end": 410}, {"i": 5, "text": "available to assist clients with prescription medication costs.", "start": 411, "end": 474}, {"i": 6, "text": "Antihypertensive drugs within a particular medication class have a range of retail prices.", "start": 475, "end": 565}, {"i": 7, "text": "flat pricing across a dose, others have incremental pricing per dose.", "start": 582, "end": 651}, {"i": 8, "text": "Detailed cost per dose information for", "start": 652, "end": 690}, {"i": 9, "text": "drugs can be found at the Ontario Drug Benefit Formulary/Comparative Drug Index.", "start": 691, "end": 771}, {"i": 10, "text": "http://www.health.gov.on.ca/english/providers/program/drugs/odbf_mn.html", "start": 806, "end": 878}, {"i": 11, "text": "An example of the cost of a drug within each medication class prescribed for hypertension is provided in the", "start": 879, "end": 987}, {"i": 12, "text": "Hydrochlorothiazide 25 mg", "start": 1045, "end": 1070}, {"i": 13, "text": "Atenolol 50 mg", "start": 1100, "end": 1114}, {"i": 14, "text": "Angiotensin Converting Enzyme (ACE) Inhibitors", "start": 1129, "end": 1175}, {"i": 15, "text": "Ramipril 10 mg", "start": 1176, "end": 1190}, {"i": 16, "text": "Angiotensin II Receptor Blockers (ARBs)", "start": 1205, "end": 1244}, {"i": 17, "text": "Candesartan 8 or 16 mg", "start": 1245, "end": 1267}, {"i": 18, "text": "Long-acting Calcium Channel Blockers (CCBs)", "start": 1282, "end": 1325}, {"i": 19, "text": "Amlodipine 10 mg", "start": 1326, "end": 1342}, {"i": 20, "text": "(Prices are current as of June 2005)", "start": 1357, "end": 1393}, {"i": 21, "text": "Refer to Appendix O for a summary of medication classes prescribed for hypertension.", "start": 1394, "end": 1478}], "quantity": [{"i": 0, "text": "25 mg", "start": 1065, "end": 1070}, {"i": 1, "text": "50 mg", "start": 1109, "end": 1114}, {"i": 2, "text": "10 mg", "start": 1185, "end": 1190}, {"i": 3, "text": "16 mg", "start": 1262, "end": 1267}]}}, {"qid": "q177", "question": "If a labouring woman with a penicillin allergy needs GBS cover for a fever, can we still just use clindamycin?", "question_type": "dose", "reference": "No \u2014 clindamycin is no longer recommended as the routine alternative because GBS resistance to it reached 31% in 2022. For beta-lactam allergic women needing GBS prophylaxis in labour, substitute a cephalosporin or vancomycin. Any woman with pyrexia and suspected infection in labour should be offered an antibiotic regimen covering GBS plus continuous fetal monitoring, and be screened for sepsis with the source of infection identified and managed. Check your local formulary, as empirical choice should be tailored to local epidemiology and resistance.", "chunk_id": "0870a91a7cc1:0033", "source": "GTG64 - Identification and Management of Maternal Sepsis (2024, tier 1, p.11)", "fields": {"action": [{"i": 0, "text": "Maternal pyrexia is an important potential marker of infection,", "start": 0, "end": 63}, {"i": 1, "text": "but may not always be present in maternal sepsis and is not", "start": 64, "end": 123}, {"i": 2, "text": "necessarily related to the severity of illness.", "start": 124, "end": 171}, {"i": 3, "text": "Indeed, it is important to recognise that sepsis can present with hypothermia.", "start": 173, "end": 251}, {"i": 4, "text": "Pyrexia in labour can be managed with supportive measures", "start": 253, "end": 310}, {"i": 5, "text": "such as increased fluid intake, paracetamol, tepid sponging", "start": 311, "end": 370}, {"i": 6, "text": "and lowering the environmental temperature.", "start": 371, "end": 414}, {"i": 7, "text": "causes of maternal hyperthermia such as epidural anaesthesia and misoprostol are diagnoses of exclusion.", "start": 427, "end": 531}, {"i": 8, "text": "fever during labour should be screened for sepsis as already described, and the underlying source of infection identified and", "start": 546, "end": 671}, {"i": 9, "text": "Women with pyrexia and suspected infection in", "start": 687, "end": 732}, {"i": 10, "text": "labour should be offered an antibiotic regimen which covers", "start": 733, "end": 792}, {"i": 11, "text": "GBS, [70, 71] and they should be offered continuous fetal monitoring [85]. [Evidence level 3]", "start": 793, "end": 886}, {"i": 12, "text": "If genital tract sepsis is suspected, GAS and E.Coli are likely", "start": 887, "end": 950}, {"i": 13, "text": "Prompt treatment with a combination of high-dose", "start": 967, "end": 1015}, {"i": 14, "text": "broad-spectrum intravenous antibiotics, active against Gramnegative bacteria and capable of preventing exotoxin production", "start": 1016, "end": 1138}, {"i": 15, "text": "from Gram-positive bacteria, may be lifesaving.", "start": 1139, "end": 1186}, {"i": 16, "text": "choice of antimicrobials should be tailored to local epidemiology and resistance.", "start": 1202, "end": 1283}, {"i": 17, "text": "Local formularies should be consulted,", "start": 1285, "end": 1323}, {"i": 18, "text": "narrowing the agent spectrum to that of the causative organism(s) once identified.", "start": 1324, "end": 1406}, {"i": 19, "text": "Early oral switch and a documented duration should be included in the individual's medical notes [61].", "start": 1408, "end": 1510}, {"i": 20, "text": "Source control should be a priority, e.g. surgery to drain pus,", "start": 1512, "end": 1575}, {"i": 21, "text": "expedited birth where necessary.", "start": 1576, "end": 1608}, {"i": 22, "text": "Women suspected of having", "start": 1610, "end": 1635}, {"i": 23, "text": "infected retained products of conception should be given antibiotics and surgery to remove the infected products of conception", "start": 1636, "end": 1762}, {"i": 24, "text": "should be performed promptly [4]. [Evidence level 4]", "start": 1763, "end": 1815}, {"i": 25, "text": "Increasing resistance of GBS to clindamycin (31% resistance in", "start": 1816, "end": 1878}, {"i": 26, "text": "2022) has necessitated recommendations for substituting cephalosporins or vancomycin for beta-lactam allergic women needing prophylaxis in labour [44, 71, 72].", "start": 1879, "end": 2038}], "quantity": []}}, {"qid": "q282", "question": "Our OR runs off an oxygen concentrator instead of pipeline oxygen \u2014 what FiO2 should I actually expect it to deliver, and do I still need a cylinder in the room?", "question_type": "threshold", "reference": "With an oxygen concentrator, the delivered fraction of inspired oxygen varies between 0.93 and 0.99 rather than being a true 100%, so you should expect a maximum in that range. Yes, you still need a back-up source of oxygen such as a reserve cylinder \u2014 there should always be one available regardless of whether the hospital system is based on liquid oxygen, central cylinder banks or concentrators. Before starting anaesthesia there must also be a method for confirming the oxygen supply is adequate. Note that concentrators vary in capacity: some supply a whole hospital, others are intended as the oxygen source for a single machine.", "chunk_id": "45f9865b55b3:0071", "source": "Safe Surgery Saves Lives: The Second Global Patient Safety Challenge (2009, tier 1, p.25)", "fields": {"action": [{"i": 0, "text": "In both systems, a vaporizer is needed to deliver an accurate", "start": 0, "end": 61}, {"i": 1, "text": "concentration of the volatile agent.", "start": 62, "end": 98}, {"i": 2, "text": "In hospitals with unreliable compressed gas supplies, continuousflow anaesthesia machines cannot function safely; in this situation,", "start": 100, "end": 232}, {"i": 3, "text": "drawover equipment or machines based on oxygen concentrators have", "start": 233, "end": 298}, {"i": 4, "text": "When anaesthesia machines are purchased,", "start": 325, "end": 365}, {"i": 5, "text": "the local environment must be taken into account to ensure that the", "start": 366, "end": 433}, {"i": 6, "text": "machine will function correctly and can be maintained or repaired.", "start": 434, "end": 500}, {"i": 7, "text": "Gas Supplies in anaesthesia:", "start": 502, "end": 530}, {"i": 8, "text": "Oxygen is essential for almost", "start": 531, "end": 561}, {"i": 9, "text": "all anaesthesia and must be readily available during induction,", "start": 562, "end": 625}, {"i": 10, "text": "maintenance and recovery.", "start": 626, "end": 651}, {"i": 11, "text": "Many patients require additional oxygen", "start": 653, "end": 692}, {"i": 12, "text": "Oxygen may be supplied to operating rooms", "start": 719, "end": 760}, {"i": 13, "text": "in cylinders or via pipelines from a central oxygen distribution point.", "start": 761, "end": 832}, {"i": 14, "text": "Hospital oxygen systems may be based on liquid oxygen plants,", "start": 834, "end": 895}, {"i": 15, "text": "large cylinders in central banks or oxygen concentrators.", "start": 896, "end": 953}, {"i": 16, "text": "system is used, there must be a method for confirming that the oxygen", "start": 965, "end": 1034}, {"i": 17, "text": "supplies are adequate before starting anaesthesia.", "start": 1035, "end": 1085}, {"i": 18, "text": "always be a back-up source of oxygen, such as a reserve cylinder.", "start": 1100, "end": 1165}, {"i": 19, "text": "Medical gas pipeline systems, connectors, pressure regulators and", "start": 1167, "end": 1232}, {"i": 20, "text": "terminal units should meet national standards for identification,", "start": 1233, "end": 1298}, {"i": 21, "text": "construction and installation.", "start": 1299, "end": 1329}, {"i": 22, "text": "All safety regulations for the preparation,", "start": 1331, "end": 1374}, {"i": 23, "text": "storage, identification and use of medical gases, anaesthetic drugs and", "start": 1375, "end": 1446}, {"i": 24, "text": "related materials must be met.", "start": 1447, "end": 1477}, {"i": 25, "text": "Wherever anaesthetic gases are used,", "start": 1479, "end": 1515}, {"i": 26, "text": "scavenging systems within the airway circuit should be in place to", "start": 1516, "end": 1582}, {"i": 27, "text": "reduce the risk for long-term exposure.", "start": 1583, "end": 1622}, {"i": 28, "text": "When oxygen concentrators are installed, users must be aware that", "start": 1624, "end": 1689}, {"i": 29, "text": "the fraction of inspired oxygen (FiO2) delivered can vary between 0.93", "start": 1690, "end": 1760}, {"i": 30, "text": "Concentrators differ in size: some are capable of supplying", "start": 1772, "end": 1831}, {"i": 31, "text": "an entire hospital, while others are designed to be used as the oxygen", "start": 1832, "end": 1902}, {"i": 32, "text": "source for a single machine.", "start": 1903, "end": 1931}, {"i": 33, "text": "Air is commonly used during anaesthesia.", "start": 1933, "end": 1973}], "quantity": []}}, {"qid": "q202", "question": "For a patient having an elective knee replacement, what dose of aspirin do we use for VTE prophylaxis and how many days does it run for?", "question_type": "dose", "reference": "Aspirin 75 mg or 150 mg once daily for 14 days is one of the first-line options for people undergoing elective knee replacement whose VTE risk outweighs their bleeding risk. The alternative first-line choices are LMWH for 14 days combined with anti-embolism stockings until discharge, or rivaroxaban (as per NICE TA170). If none of these can be used, consider apixaban (TA245) or dabigatran etexilate (TA157); if pharmacological prophylaxis is contraindicated, consider intermittent pneumatic compression continued until the person is mobile.", "chunk_id": "5f6d5754c4ad:0033", "source": "VTE Prevention in Adults (NG89) (2019, tier 1, p.22)", "fields": {"action": [{"i": 0, "text": "Elective knee replacement", "start": 0, "end": 25}, {"i": 1, "text": "\u2022 the use of LMWH and rivaroxaban in young people under\u00a018 in recommendation", "start": 41, "end": 117}, {"i": 2, "text": "\u2022 the use of aspirin in recommendation 1.11.8 was off label", "start": 139, "end": 198}, {"i": 3, "text": "\u2022 the use of apixaban and dabigatran etexilate in young people under\u00a018 in", "start": 199, "end": 273}, {"i": 4, "text": "recommendation 1.11.9 was off label.", "start": 274, "end": 310}, {"i": 5, "text": "See NICE's information on prescribing medicines.", "start": 311, "end": 359}, {"i": 6, "text": "Offer VTE prophylaxis to people undergoing elective knee replacement surgery", "start": 367, "end": 443}, {"i": 7, "text": "whose VTE risk outweighs their risk of bleeding.", "start": 444, "end": 492}, {"i": 8, "text": "\u2022 Aspirin (75 mg\u00a0or 150\u00a0mg) for 14\u00a0days.", "start": 512, "end": 552}, {"i": 9, "text": "\u2022 LMWH for 14\u00a0days combined with anti-embolism stockings until discharge.", "start": 553, "end": 626}, {"i": 10, "text": "\u2022 Rivaroxaban, which is recommended as an option in NICE technology", "start": 627, "end": 694}, {"i": 11, "text": "appraisal guidance for preventing venous thromboembolism in adults after", "start": 695, "end": 767}, {"i": 12, "text": "elective knee replacement surgery.", "start": 768, "end": 802}, {"i": 13, "text": "For full details, see the guidance on", "start": 803, "end": 840}, {"i": 14, "text": "rivaroxaban (TA170, 2009). [2018]", "start": 841, "end": 874}, {"i": 15, "text": "Venous thromboembolism in over 16s: reducing the risk of hospital-acquired deep vein", "start": 875, "end": 959}, {"i": 16, "text": "thrombosis or pulmonary embolism (NG89)", "start": 960, "end": 999}, {"i": 17, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 1034, "end": 1125}, {"i": 18, "text": "Consider one of the following if none of the options in recommendation 1.11.8 can", "start": 1147, "end": 1228}, {"i": 19, "text": "\u2022 Apixaban, which is recommended as an option in NICE technology appraisal", "start": 1238, "end": 1312}, {"i": 20, "text": "guidance for preventing venous thromboembolism in adults after elective", "start": 1313, "end": 1384}, {"i": 21, "text": "knee replacement surgery.", "start": 1385, "end": 1410}, {"i": 22, "text": "For full details, see the guidance on apixaban", "start": 1411, "end": 1457}, {"i": 23, "text": "\u2022 Dabigatran etexilate, which is recommended as an option in NICE technology", "start": 1473, "end": 1549}, {"i": 24, "text": "dabigatran etexilate (TA157, 2008). [2018]", "start": 1696, "end": 1738}, {"i": 25, "text": "Consider intermittent pneumatic compression if pharmacological prophylaxis is", "start": 1747, "end": 1824}, {"i": 26, "text": "contraindicated in people undergoing elective knee replacement surgery.", "start": 1825, "end": 1896}, {"i": 27, "text": "Continue until the person is mobile. [2018]", "start": 1897, "end": 1940}], "quantity": [{"i": 0, "text": "75 mg", "start": 523, "end": 528}, {"i": 1, "text": "150\u00a0mg", "start": 532, "end": 538}, {"i": 2, "text": "14\u00a0days", "start": 544, "end": 551}]}}];
+const BATCH = "study-051-060";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

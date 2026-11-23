@@ -1,0 +1,34 @@
+{
+  "documents_total": 237,
+  "documents_ingested": 237,
+  "documents_failed": 0,
+  "chunks": 13462,
+  "chunks_by_tier": {
+    "1": 3689,
+    "2": 2500,
+    "3": 83,
+    "4": 7190
+  },
+  "chunks_by_format": {
+    "PDF": 9271,
+    "HTML": 135,
+    "XML": 4056
+  },
+  "chunks_by_source": {
+    "OpenAlex": 3134,
+    "PubMed_PMC": 2577,
+    "WHO": 2091,
+    "OpenRN": 1742,
+    "Elsevier": 1479,
+    "RNAO": 671,
+    "CDC": 507,
+    "NICE": 503,
+    "RCOG": 421,
+    "ERAS_Society": 166,
+    "AUGS": 87,
+    "AHRQ_PSNet": 83,
+    "ACOG": 1
+  },
+  "openrn_chunks_dropped": 589,
+  "failures": []
+}

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch 021-030</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch 021-030</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q020", "question": "How much daily weight gain in my post-op patient do I need to call the provider about?", "question_type": "threshold", "reference": "Report any weight change greater than 1 kg in 24 hours to the provider. Be sure the weight is measured consistently \u2014 same scale and same type of clothing \u2014 so the change is reliable. Alongside this, monitor edema location and extent using the 1+ to 4+ scale, track intake and output over 24 hours (watching for decreasing urine output relative to fluid intake as a sign of developing fluid volume excess), and check labs such as serum osmolarity, serum sodium, BUN, and hematocrit. For patients on IV fluids, also auscultate lung sounds for crackles and ask about dyspnea, reporting any new abnormal findings to the provider.", "chunk_id": "e4a0406819b1:0911", "source": "OpenRN Nursing Fundamentals 2e - Full Textbook (PDF) (2023, tier 2, p.1111)", "fields": {"action": [{"i": 0, "text": "A weight change of greater", "start": 0, "end": 26}, {"i": 1, "text": "than 1 kg in 24 hours (using the same scale and type of clothing) should", "start": 28, "end": 100}, {"i": 2, "text": "be reported to the provider.", "start": 102, "end": 130}, {"i": 3, "text": "\u2022 Monitor location and extent of edema using the 1+ to 4+ scale to quantify", "start": 132, "end": 207}, {"i": 4, "text": "Ackley, B., Ladwig, G., Makic, M.", "start": 209, "end": 242}, {"i": 5, "text": "B., Martinez-Kratz, M., & Zanotti, M.", "start": 243, "end": 280}, {"i": 6, "text": "Nursing diagnosis handbook:", "start": 290, "end": 317}, {"i": 7, "text": "An evidence-based guide to planning care", "start": 318, "end": 358}, {"i": 8, "text": "1112 | 15.6 Applying the Nursing Process", "start": 405, "end": 445}, {"i": 9, "text": "\u2022 Monitor intake and output over a 24-hour period; note trends of", "start": 455, "end": 520}, {"i": 10, "text": "decreasing urine output in relation to fluid intake indicating potential", "start": 522, "end": 594}, {"i": 11, "text": "development of Fluid Volume Excess.", "start": 596, "end": 631}, {"i": 12, "text": "\u2022 Monitor lab work such as serum osmolarity, serum sodium, BUN, and", "start": 633, "end": 700}, {"i": 13, "text": "hematocrit for abnormalities.", "start": 702, "end": 731}, {"i": 14, "text": "(For example, a client receiving IV fluids", "start": 732, "end": 774}, {"i": 15, "text": "may develop Fluid Volume Excess, resulting in decreased levels of serum", "start": 776, "end": 847}, {"i": 16, "text": "osmolarity, serum sodium, BUN, and hematocrit.", "start": 849, "end": 895}, {"i": 17, "text": "receiving IV diuretics can quickly become dehydrated, resulting in", "start": 918, "end": 984}, {"i": 18, "text": "elevated levels of serum osmolarity, serum sodium, BUN, and hematocrit.)", "start": 986, "end": 1058}, {"i": 19, "text": "\u2022 For clients receiving intravenous fluids, monitor for the development of", "start": 1060, "end": 1134}, {"i": 20, "text": "Monitor lung sounds for crackles and ask about", "start": 1160, "end": 1206}, {"i": 21, "text": "Report new abnormal findings to the provider.", "start": 1233, "end": 1278}, {"i": 22, "text": "\u2022 For clients receiving diuretic therapy, monitor for fluid volume deficit and", "start": 1280, "end": 1358}, {"i": 23, "text": "electrolyte imbalances such as hypokalemia and hyponatremia.", "start": 1360, "end": 1420}, {"i": 24, "text": "Implement fall precautions for clients with orthostatic hypotension,", "start": 1422, "end": 1490}, {"i": 25, "text": "restlessness, anxiety, or confusion related to fluid imbalances.", "start": 1492, "end": 1556}, {"i": 26, "text": "The effectiveness of interventions implemented to maintain fluid balance", "start": 1570, "end": 1642}, {"i": 27, "text": "must be continuously evaluated.", "start": 1644, "end": 1675}, {"i": 28, "text": "Evaluation helps the nurse determine", "start": 1676, "end": 1712}, {"i": 29, "text": "whether goals and outcomes are met and if interventions are still appropriate", "start": 1714, "end": 1791}, {"i": 30, "text": "If outcomes and goals are met, the plan of care can likely be", "start": 1809, "end": 1870}, {"i": 31, "text": "If outcomes and goals are not met, they may need to be", "start": 1886, "end": 1940}, {"i": 32, "text": "It is also possible that interventions may need to be added or revised", "start": 1951, "end": 2021}, {"i": 33, "text": "to help the client meet their goals and outcomes.", "start": 2023, "end": 2072}, {"i": 34, "text": "Table 15.6e provides a list of", "start": 2073, "end": 2103}, {"i": 35, "text": "assessment findings indicating imbalances are improved.", "start": 2105, "end": 2160}, {"i": 36, "text": "Table 15.6e Evaluating for Improvement of Imbalances", "start": 2162, "end": 2214}], "quantity": [{"i": 0, "text": "1 kg", "start": 33, "end": 37}, {"i": 1, "text": "24 hours", "start": 41, "end": 49}]}}, {"qid": "q021", "question": "What AUDIT score should make me flag a pre-op patient as a problem drinker, and what do I do next?", "question_type": "threshold", "reference": "A total AUDIT score of 10 or more (out of a possible 40, with each item scored 0-4) indicates problem drinking. If alcohol overuse is suspected or identified, counsel the client on the negative health effects of alcohol and consider referral to an alcohol treatment specialist or program. Note that the AUDIT emphasizes heavy drinking and frequency of intoxication rather than signs of dependency; in its WHO pilot across six countries, sensitivity averaged 80% and specificity 98% for detecting excessive alcohol consumption. Also relevant to pre-op assessment: about half of clients with excessive alcohol use have blood pressures >160/90, and these readings normalize with abstinence, since the effect appears to come from alcohol consumed in the days immediately before measurement and is rapidly reversible.", "chunk_id": "2836fd2a5622:0126", "source": "Nursing Management of Hypertension (2011, tier 2, p.50)", "fields": {"action": [{"i": 0, "text": "The AUDIT tool takes slightly longer to administer and consists of", "start": 0, "end": 66}, {"i": 1, "text": "Responses are scored from 0-4 with a total possible score of 40 points.", "start": 79, "end": 150}, {"i": 2, "text": "points indicates problem drinking.", "start": 173, "end": 207}, {"i": 3, "text": "This tool places the emphasis on heavy drinking and frequency of", "start": 208, "end": 272}, {"i": 4, "text": "intoxication rather than signs of dependency.", "start": 273, "end": 318}, {"i": 5, "text": "The tool was developed by the World Health Organization", "start": 319, "end": 374}, {"i": 6, "text": "In its initial pilot in six different countries, the sensitivity averaged 80% and specificity averaged", "start": 382, "end": 484}, {"i": 7, "text": "98% for detecting excessive alcohol consumption (Haggerty,1994).", "start": 485, "end": 549}, {"i": 8, "text": "If alcohol overuse is suspected or identified, the client should be counseled on the negative health effects", "start": 550, "end": 658}, {"i": 9, "text": "and referral to an alcohol treatment specialist or program may be appropriate (Cushman, 2001).", "start": 659, "end": 753}, {"i": 10, "text": "Examples of the CAGE questions and AUDIT tools are listed in Appendix L, along with a list of other", "start": 754, "end": 853}, {"i": 11, "text": "This list of tools is not all-inclusive, and some of the tools are designed for use with", "start": 872, "end": 960}, {"i": 12, "text": "specialized populations or as part of a broader substance use evaluation.", "start": 961, "end": 1034}, {"i": 13, "text": "Research has shown that approximately half of clients with excessive alcohol use have blood pressure", "start": 1035, "end": 1135}, {"i": 14, "text": "readings >160/90, and these values were found to normalize during abstinence.", "start": 1136, "end": 1213}, {"i": 15, "text": "Similar trends were found", "start": 1214, "end": 1239}, {"i": 16, "text": "within a broader population base leading researchers to believe the blood pressure effects of alcohol are", "start": 1240, "end": 1345}, {"i": 17, "text": "due to alcohol consumed in the days immediately prior to measurement and the effect is rapidly reversible", "start": 1346, "end": 1451}, {"i": 18, "text": "(Seppa & Sillanaukee, 1999).", "start": 1452, "end": 1480}], "quantity": []}}, {"qid": "q022", "question": "At what blood sugar level should I start an insulin infusion on my post-op gyn onc patients, and what do I need to watch for?", "question_type": "threshold", "reference": "Hyperglycemia above roughly 180\u2013200 mg/dL should be treated with an insulin infusion along with regular blood glucose monitoring (strong recommendation, high-level evidence). The key risk to monitor for is iatrogenic hypoglycemia \u2014 the most common adverse effect of intensive insulin therapy, which can cause morbidity such as seizures and brain damage \u2014 so the goal is to control significant hyperglycemia while avoiding driving the glucose too low.", "chunk_id": "82b0c8949b89:0016", "source": "Guidelines for postoperative care in gynecologic/oncology surgery: Enhanced Recovery After Surgery (ERAS) Society recommendations - Part II (2016, tier 1, p.4)", "fields": {"action": [{"i": 0, "text": "tion for its use at the present time as cost-effectiveness and ef\ufb01cacy data", "start": 0, "end": 75}, {"i": 1, "text": "in patients with gynecologic malignancies continues to be collected.", "start": 76, "end": 144}, {"i": 2, "text": "A meta-analysis of randomized trials investigating", "start": 163, "end": 213}, {"i": 3, "text": "prokinetics such as erythromycin, the cholecystokinin-like drugs,", "start": 214, "end": 279}, {"i": 4, "text": "cisapride, dopamine-antagonists, propranolol, vasopressin, and intrave-", "start": 281, "end": 352}, {"i": 5, "text": "nous lidocaine [26] or neostigmine [27] failed to demonstrate bene\ufb01t.", "start": 353, "end": 422}, {"i": 6, "text": "The use of postoperative laxatives and chewing gum should be", "start": 424, "end": 484}, {"i": 7, "text": "Hypoglycemia is the most common adverse effect of IIT", "start": 595, "end": 648}, {"i": 8, "text": "and can lead to unwanted morbidity such as seizures, brain damage,", "start": 649, "end": 715}, {"i": 9, "text": "ni\ufb01cant hyperglycemia whilst avoiding iatrogenic hypoglycemia", "start": 717, "end": 778}, {"i": 10, "text": "ments include avoidance of oral mechanical preoperative bowel prepa-", "start": 789, "end": 857}, {"i": 11, "text": "ration and avoidance of preoperative fasting until 2 h prior to surgery,", "start": 858, "end": 930}, {"i": 12, "text": "tion by early resumption of postoperative oral intake and optimal \ufb02uid", "start": 932, "end": 1002}, {"i": 13, "text": "range should be treated with insulin infusions and regular blood glucose", "start": 1017, "end": 1089}, {"i": 14, "text": "monitoring to avoid the risk of hypoglycemia.", "start": 1090, "end": 1135}, {"i": 15, "text": "Use of stress reducing elements:", "start": 1152, "end": 1184}, {"i": 16, "text": "Treating hyperglycemia above 180\u2013200 mg/dL:", "start": 1191, "end": 1234}], "quantity": [{"i": 0, "text": "2 h", "start": 909, "end": 912}, {"i": 1, "text": "180\u2013200 mg", "start": 1220, "end": 1230}]}}, {"qid": "q023", "question": "When drugs aren't stopping a PPH from uterine atony, what surgical step do we set up for first, and what's the order of escalation from there?", "question_type": "escalation", "reference": "Move to surgical intervention sooner rather than later once pharmacological measures fail. Intrauterine balloon tamponade is the appropriate first-line 'surgical' intervention for most women when uterine atony is the only or main cause of bleeding. Conservative surgical interventions (e.g. brace/compression sutures \u2014 keep a laminated diagram of the brace suture technique in theatre) can be attempted as second line, depending on clinical circumstances and available expertise. Do not delay hysterectomy \u2014 resort to it sooner rather than later, especially with placenta accreta or uterine rupture, and ideally a second experienced clinician should be involved in that decision when feasible. If retained products are suspected, a pelvic ultrasound may help exclude retained products of conception, and surgical evacuation of retained placental tissue should be done or supervised by an experienced clinician.", "chunk_id": "0ccb0502d3aa:0011", "source": "GTG52 - Prevention and Management of Postpartum Haemorrhage (2016, tier 1, p.6)", "fields": {"action": [{"i": 0, "text": "e111 of e149 \u00aa 2016 Royal College of Obstetricians and Gynaecologists", "start": 2, "end": 71}, {"i": 1, "text": "What surgical treatments can be employed to arrest the bleeding?", "start": 72, "end": 136}, {"i": 2, "text": "If pharmacological measures fail to control the haemorrhage, surgical interventions should be", "start": 138, "end": 231}, {"i": 3, "text": "initiated sooner rather than later.", "start": 232, "end": 267}, {"i": 4, "text": "Intrauterine balloon tamponade is an appropriate \ufb01rst-line \u2018surgical\u2019 intervention for most", "start": 269, "end": 360}, {"i": 5, "text": "women where uterine atony is the only or main cause of haemorrhage.", "start": 361, "end": 428}, {"i": 6, "text": "Conservative surgical interventions may be attempted as second line, depending on clinical", "start": 430, "end": 520}, {"i": 7, "text": "circumstances and available expertise.", "start": 521, "end": 559}, {"i": 8, "text": "It is recommended that a laminated diagram of the brace suture technique be kept in theatre.", "start": 563, "end": 655}, {"i": 9, "text": "Resort to hysterectomy sooner rather than later (especially in cases of placenta accreta or", "start": 657, "end": 748}, {"i": 10, "text": "Ideally and when feasible, a second experienced clinician should be involved in the decision for", "start": 768, "end": 864}, {"i": 11, "text": "A pelvic ultrasound may help to exclude the presence of retained products of conception,", "start": 882, "end": 970}, {"i": 12, "text": "Surgical evacuation of retained placental tissue should be undertaken or supervised by an", "start": 972, "end": 1061}], "quantity": []}}, {"qid": "q024", "question": "How much blood loss after delivery counts as a postpartum hemorrhage, and within what time frame?", "question_type": "threshold", "reference": "PPH is commonly defined as blood loss of 500 ml or more within 24 hours after birth. It affects about 5% of all women giving birth worldwide. Severe complications such as organ dysfunction or death generally follow substantial blood loss that compromises the mother's haemodynamic stability, and uterine atony is the most common cause of PPH as well as a leading cause of PPH-related maternal mortality.", "chunk_id": "f45f67bdfa20:0012", "source": "WHO Recommendations for Uterotonics for Prevention of PPH (2018, tier 1, p.11)", "fields": {"action": [{"i": 0, "text": "An estimated 303\u00a0000 women and adolescent girls died as a result of pregnancy and", "start": 11, "end": 92}, {"i": 1, "text": "childbirth-related complications in 2015, and around 99% of these deaths occurred in lowresource settings (1).", "start": 93, "end": 203}, {"i": 2, "text": "Obstetric haemorrhage, especially postpartum haemorrhage (PPH), is", "start": 205, "end": 271}, {"i": 3, "text": "responsible for more than a quarter of all maternal deaths worldwide (1).", "start": 272, "end": 345}, {"i": 4, "text": "countries, PPH is the leading cause of maternal deaths.", "start": 366, "end": 421}, {"i": 5, "text": "Thus, improving access to safe", "start": 423, "end": 453}, {"i": 6, "text": "and effective interventions to prevent PPH is critical to World Health Organization (WHO)", "start": 454, "end": 543}, {"i": 7, "text": "strategic priorities (particularly universal health coverage) for achieving the targets of the", "start": 544, "end": 638}, {"i": 8, "text": "third Sustainable Development Goal (SDG\u00a03) (2,3).", "start": 639, "end": 688}, {"i": 9, "text": "International human rights law includes fundamental commitments of States to enable", "start": 690, "end": 773}, {"i": 10, "text": "women and adolescent girls to survive pregnancy and childbirth, as part of their enjoyment", "start": 774, "end": 864}, {"i": 11, "text": "of sexual and reproductive health and rights, and living a life of dignity (4).", "start": 865, "end": 944}, {"i": 12, "text": "a world where \u201cevery pregnant woman and newborn receives quality care throughout", "start": 960, "end": 1040}, {"i": 13, "text": "pregnancy, childbirth and the postnatal period\u201d (5).", "start": 1041, "end": 1093}, {"i": 14, "text": "To provide good-quality care, skilled", "start": 1095, "end": 1132}, {"i": 15, "text": "health personnel at all levels of the health system need to have access to appropriate", "start": 1133, "end": 1219}, {"i": 16, "text": "medications and training in relevant procedures\u00a0(6).", "start": 1220, "end": 1272}, {"i": 17, "text": "Health care providers, health managers,", "start": 1274, "end": 1313}, {"i": 18, "text": "health policy-makers and other stakeholders also need up-to-date, evidence-informed", "start": 1314, "end": 1397}, {"i": 19, "text": "recommendations to guide clinical policies and practices, in order to optimize quality of care", "start": 1398, "end": 1492}, {"i": 20, "text": "and improve health care outcomes.", "start": 1493, "end": 1526}, {"i": 21, "text": "PPH is commonly defined as a blood loss of 500\u00a0ml or more within 24 hours after birth,", "start": 1528, "end": 1614}, {"i": 22, "text": "and affects about 5% of all women giving birth around the world (7,8).", "start": 1615, "end": 1685}, {"i": 23, "text": "complications, such as organ dysfunction or death, generally occur following substantial", "start": 1703, "end": 1791}, {"i": 24, "text": "blood loss that compromises maternal haemodynamic stability.", "start": 1792, "end": 1852}, {"i": 25, "text": "Uterine atony is the most", "start": 1854, "end": 1879}, {"i": 26, "text": "common cause of PPH and a leading cause of PPH-related maternal mortality worldwide\u202f(1).", "start": 1880, "end": 1968}], "quantity": [{"i": 0, "text": "500\u00a0ml", "start": 1571, "end": 1577}, {"i": 1, "text": "24 hours", "start": 1593, "end": 1601}]}}, {"qid": "q025", "question": "When we're revamping our maternity unit's quality improvement work, do we actually need to bring women and community members into it, or is it enough for staff to define the quality standards ourselves?", "question_type": "general", "reference": "Community members should be brought in \u2014 community participation in quality-improvement processes for maternity services is strongly recommended (based on low-quality evidence) because it improves quality of care from the perspectives of women, communities and health care providers alike. Communities should be involved in jointly defining and assessing quality, not just consulted after standards are set by staff. In addition, you should put mechanisms in place that ensure women's voices are meaningfully included in that process.", "chunk_id": "1277ed65e8ca:0091", "source": "WHO Recommendations on Maternal Health (2018, tier 1, p.27)", "fields": {"action": [{"i": 0, "text": "Community participation in quality improvement processes", "start": 0, "end": 56}, {"i": 1, "text": "\u25a0Community participation in quality-improvement processes for maternity care services", "start": 59, "end": 144}, {"i": 2, "text": "is recommended to improve quality of care from women\u2019s, communities\u2019 and health care", "start": 145, "end": 229}, {"i": 3, "text": "Communities should be involved in jointly defining and assessing", "start": 255, "end": 319}, {"i": 4, "text": "Mechanisms that ensure women\u2019s voices are meaningfully included are also", "start": 329, "end": 401}, {"i": 5, "text": "(Strong recommendation, low-quality evidence).", "start": 415, "end": 461}], "quantity": []}}, {"qid": "q026", "question": "How long does a trip have to be before we count travel as a VTE risk factor in a pregnant patient, and does it only count if she flew?", "question_type": "threshold", "reference": "Any long-distance travel of more than four hours counts as a VTE risk factor in pregnancy \u2014 it is not restricted to air travel. Although NICE antenatal care guidance and the RCOG Scientific Impact Paper on air travel specifically identify long-haul flights as increasing VTE risk, this guidance extends the risk factor to all travel over four hours regardless of mode. Note that pregnancy-specific data are limited, so this is extrapolated from studies in non-pregnant patients.", "chunk_id": "144cabf03653:0024", "source": "GTG37a - Reducing Risk of Thrombosis and Embolism during Pregnancy (2015, tier 1, p.11)", "fields": {"action": [{"i": 0, "text": "4.1.4 \t Immobility and long-distance travel", "start": 0, "end": 43}, {"i": 1, "text": "For immobility and long-distance travel, data for pregnancy-related risk are limited and extrapolation", "start": 44, "end": 146}, {"i": 2, "text": "from studies in nonpregnant patients is necessary.34", "start": 147, "end": 199}, {"i": 3, "text": "The NICE guideline on antenatal care42 and the RCOG Scientific Impact Paper on air travel in", "start": 200, "end": 292}, {"i": 4, "text": "pregnancy43,44 state that long-haul air travel increases the risk of VTE; this guideline considers", "start": 293, "end": 391}, {"i": 5, "text": "all long-distance (more than four hours) travel (not exclusively by air) to be a risk factor for", "start": 392, "end": 488}, {"i": 6, "text": "Some studies have demonstrated interaction between the effects of the risk factors listed", "start": 507, "end": 596}, {"i": 7, "text": "in Table 1 and Appendix II.", "start": 597, "end": 624}, {"i": 8, "text": "For example, in a Norwegian case\u2013control study,12 BMI greater", "start": 625, "end": 686}, {"i": 9, "text": "than 25 and antepartum immobilisation (defined as strict bed rest 1 week or more prior to", "start": 687, "end": 776}, {"i": 10, "text": "delivery) had a multiplicative effect on the risk for antepartum (aOR 62.3, 95% CI 11.5\u2013337.7)", "start": 875, "end": 969}, {"i": 11, "text": "and postpartum VTE (aOR 40.1, 95% CI 8.0\u2013201.5).", "start": 970, "end": 1018}], "quantity": [{"i": 0, "text": "1 week", "start": 753, "end": 759}]}}, {"qid": "q027", "question": "During a PPH, what's the scribe actually meant to be doing, and should the team leader be checking in with them?", "question_type": "technique", "reference": "The scribe is the team member who records events on the structured PPH proforma, and this role is crucial to managing the haemorrhage. The proforma functions as a checklist of the available interventions, so the team leader should be actively communicating with the scribe throughout the PPH to confirm no steps have been missed. Accurate documentation matters for ongoing clinical management, continuity of care and teamwork, and poor documentation increases the risk of medicolegal consequences. The PPH should also be notified through the clinical incident reporting or risk management system.", "chunk_id": "0ccb0502d3aa:0096", "source": "GTG52 - Prevention and Management of Postpartum Haemorrhage (2016, tier 1, p.32)", "fields": {"action": [{"i": 0, "text": "Accurate documentation is important for further clinical management, continuity of care and team work.", "start": 2, "end": 104}, {"i": 1, "text": "addition, inadequate documentation can contribute to the likelihood", "start": 108, "end": 175}, {"i": 2, "text": "consequences.197 The team member recording events on the structured proforma, the scribe, is crucial in the", "start": 203, "end": 310}, {"i": 3, "text": "management of PPH (see Appendix V); the proforma is effectively a checklist of available interventions, and", "start": 311, "end": 418}, {"i": 4, "text": "team leaders should communicate with the scribe during the PPH to ensure that no steps have been omitted.", "start": 419, "end": 524}, {"i": 5, "text": "PPH should be noti\ufb01ed through a clinical incident reporting or risk management system.", "start": 525, "end": 611}, {"i": 6, "text": "It is important to record:", "start": 629, "end": 655}], "quantity": []}}, {"qid": "q028", "question": "When I'm suctioning a patient in PACU and need more than one pass, how long should I wait between passes?", "question_type": "timing", "reference": "Allow 30 seconds to 1 minute between suction passes so the patient can reoxygenate and reventilate. After suctioning is finished, remove the supplemental oxygen you placed for suctioning if appropriate, perform oral hygiene, and reassess respiratory status \u2014 respiratory rate, effort, oxygen saturation, and lung sounds.", "chunk_id": "47eabb153abc:0895", "source": "Nursing Skills 2e (2024, tier 2, p.1296)", "fields": {"action": [{"i": 0, "text": "minute between passes to allow reoxygenation and reventilation.", "start": 23, "end": 86}, {"i": 1, "text": "When suctioning is completed, remove gloves from the dominant", "start": 90, "end": 151}, {"i": 2, "text": "hand over the coiled catheter, pulling them off inside out.", "start": 153, "end": 212}, {"i": 3, "text": "Remove the glove from the nondominant hand and dispose of gloves,", "start": 214, "end": 279}, {"i": 4, "text": "catheter, and the container with solution in the appropriate", "start": 281, "end": 341}, {"i": 5, "text": "Remove the supplemental oxygen placed for", "start": 378, "end": 419}, {"i": 6, "text": "suctioning, if appropriate.", "start": 421, "end": 448}, {"i": 7, "text": "Remove face shield or goggles and mask; perform hand hygiene.", "start": 450, "end": 511}, {"i": 8, "text": "Perform oral hygiene on the patient after suctioning.", "start": 513, "end": 566}, {"i": 9, "text": "Reassess the patient\u2019s respiratory status, including respiratory rate,", "start": 568, "end": 638}, {"i": 10, "text": "effort, oxygen saturation, and lung sounds.", "start": 640, "end": 683}, {"i": 11, "text": "Oronasopharyngeal suctioning.", "start": 685, "end": 714}, {"i": 12, "text": "Lippincott procedures. http://procedures.lww.com", "start": 723, "end": 771}, {"i": 13, "text": "Oronasopharyngeal suctioning.", "start": 773, "end": 802}, {"i": 14, "text": "Lippincott procedures. http://procedures.lww.com", "start": 811, "end": 859}, {"i": 15, "text": "1286 | 22.4 Oropharyngeal and Nasopharyngeal Suctioning Checklist & Sample Documentation", "start": 861, "end": 949}, {"i": 16, "text": "Assist the patient to a comfortable position, ask if they have any", "start": 951, "end": 1017}, {"i": 17, "text": "questions, and thank them for their time.", "start": 1019, "end": 1060}, {"i": 18, "text": "Ensure safety measures when leaving the room:", "start": 1062, "end": 1107}, {"i": 19, "text": "Low and locked (in lowest position and brakes on)", "start": 1144, "end": 1193}, {"i": 20, "text": "Risk-free for falls (scan room and clear any obstacles)", "start": 1249, "end": 1304}], "quantity": []}}, {"qid": "q029", "question": "Our unit is being asked to justify hiring a dedicated ERAS nurse \u2014 is that role actually recommended, and how do we show it's worth the cost?", "question_type": "general", "reference": "Yes \u2014 a patient care coordinator or a dedicated ERAS perioperative nurse is recommended as helpful for communication and patient compliance (strong recommendation, low quality of evidence). There is some upfront cost in starting the protocol, but this has been shown to be offset by reduced length of stay and fewer complications that follow from increased compliance. To demonstrate the value, compliance should be closely tracked, since it is directly tied to outcomes, and patient-reported outcomes should be consistently collected and documented so the institution can monitor, understand, and compare functional recovery in a patient-centered way. Implementation should be led by people familiar with current institutional protocols, with regular auditing and protocol updates communicated from the ERAS team to perioperative staff.", "chunk_id": "4edd937b5877:0041", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.12)", "fields": {"action": [{"i": 0, "text": "These studies show that time is a key factor in implementation.", "start": 0, "end": 63}, {"i": 1, "text": "While there may be some upfront cost in initiation", "start": 65, "end": 115}, {"i": 2, "text": "of protocols, such as use of patient care coordinators or", "start": 116, "end": 173}, {"i": 3, "text": "enhanced recovery nurses to aid in communication and", "start": 174, "end": 226}, {"i": 4, "text": "patient compliance, this has been shown to be offset by", "start": 227, "end": 282}, {"i": 5, "text": "reduction in length of stay and decreased complications", "start": 283, "end": 338}, {"i": 6, "text": "that follow increased compliance [125].", "start": 339, "end": 378}, {"i": 7, "text": "Consistent collection and documentation of patient-reported outcomes", "start": 380, "end": 448}, {"i": 8, "text": "within ERAS programs allow institutions to monitor,", "start": 449, "end": 500}, {"i": 9, "text": "understand, and compare functional recovery in a patientcentered fashion.", "start": 501, "end": 574}, {"i": 10, "text": "Implementation of ERAS is a coordinated effort and should", "start": 591, "end": 648}, {"i": 11, "text": "be led by those familiar with current institutional protocols.", "start": 649, "end": 711}, {"i": 12, "text": "During implementation, regular auditing and updates to the", "start": 713, "end": 771}, {"i": 13, "text": "protocol may be necessary.", "start": 772, "end": 798}, {"i": 14, "text": "This information should be communicated from the ERAS team to perioperative staff.", "start": 800, "end": 882}, {"i": 15, "text": "patient care coordinator or a dedicated ERAS perioperative", "start": 886, "end": 944}, {"i": 16, "text": "nurse may be helpful in communication and patient compliance.", "start": 945, "end": 1006}, {"i": 17, "text": "Compliance should be closely tracked as it is tied to", "start": 1008, "end": 1061}], "quantity": []}}];
+const BATCH = "021-030";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

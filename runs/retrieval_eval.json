@@ -1,0 +1,2686 @@
+{
+ "summary": {
+  "k": 6,
+  "questions": 290,
+  "gold_live": 290,
+  "all": {
+   "hybrid_rag": {
+    "n": 290,
+    "recall@1": 0.383,
+    "recall@3": 0.555,
+    "recall@6": 0.697,
+    "mrr@6": 0.488
+   },
+   "neo4j_graphrag": {
+    "n": 290,
+    "recall@1": 0.383,
+    "recall@3": 0.555,
+    "recall@6": 0.697,
+    "mrr@6": 0.488
+   },
+   "ours": {
+    "n": 290,
+    "recall@1": 0.383,
+    "recall@3": 0.559,
+    "recall@6": 0.662,
+    "mrr@6": 0.482
+   }
+  },
+  "live_gold_only": {
+   "hybrid_rag": {
+    "n": 290,
+    "recall@1": 0.383,
+    "recall@3": 0.555,
+    "recall@6": 0.697,
+    "mrr@6": 0.488
+   },
+   "neo4j_graphrag": {
+    "n": 290,
+    "recall@1": 0.383,
+    "recall@3": 0.555,
+    "recall@6": 0.697,
+    "mrr@6": 0.488
+   },
+   "ours": {
+    "n": 290,
+    "recall@1": 0.383,
+    "recall@3": 0.559,
+    "recall@6": 0.662,
+    "mrr@6": 0.482
+   }
+  },
+  "neo4j_graphrag_recall@12": 0.71,
+  "recall@6_ci": {
+   "hybrid_rag": [
+    0.641,
+    0.747
+   ],
+   "neo4j_graphrag": [
+    0.641,
+    0.747
+   ],
+   "ours": [
+    0.606,
+    0.714
+   ]
+  },
+  "ours_vs_hybrid_k6": {
+   "hybrid_only": 15,
+   "ours_only": 5,
+   "mcnemar_exact_p": 0.041
+  },
+  "seconds": 20
+ },
+ "rows": [
+  {
+   "question": "For a vaginal hysterectomy, what should I use for the vaginal prep and how does that differ from the abdominal skin prep?",
+   "gold": "4edd937b5877:0024",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My pre-op patient's BP is still high on her antihypertensives and she tells me she drinks heavily on weekends \u2014 could the alcohol be why her meds aren't working, and how much BP drop could she get by cutting back?",
+   "gold": "2836fd2a5622:0127",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 4
+  },
+  {
+   "question": "For a myeloma patient on lenalidomide and steroids, what can I give for clot prevention and what aspirin dose, and how long do we keep it going?",
+   "gold": "5f6d5754c4ad:0025",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "At what point do we need to start talking about ECMO referral for a pregnant patient with flu or COVID pneumonia?",
+   "gold": "0870a91a7cc1:0026",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My patient is ASA 3 because of known COPD and she's booked for an elective hysterectomy \u2014 do I need to get lung function and blood gases done, or should I be calling someone?",
+   "gold": "dc64864bfb3f:0017",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When we're rewriting our unit's PPH protocol, are we allowed to change any of the WHO recommendations to fit what we actually have available here?",
+   "gold": "7209e8fb38bd:0053",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "Which practices did WHO actually build the Safe Surgery Checklist from \u2014 everything in their review, or just a subset?",
+   "gold": "45f9865b55b3:0029",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "We're 3 hours into an open debulking case with about 1800 mL blood loss \u2014 do I need to redose the cefazolin, and does her BMI of 38 change the dose?",
+   "gold": "2552a848e495:0018",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "Do we actually need a written protocol for transferring a PPH patient to a higher level of care, or is it enough to have our hemorrhage treatment protocol on the unit?",
+   "gold": "7209e8fb38bd:0014",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient on chronic diuretics has a magnesium of 1.2 mg/dL and is complaining of leg cramps and tremors \u2014 what am I watching for and how do we correct it?",
+   "gold": "e4a0406819b1:0873",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient's heels are looking red and marked under her TED stockings \u2014 do I take them off, and what do I use instead?",
+   "gold": "5f6d5754c4ad:0015",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If we're doing a manual removal of a retained placenta, do I need to give antibiotics, and which one?",
+   "gold": "7209e8fb38bd:0013",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "For a post-caesarean woman we think is septic, do I need to get both sets of blood cultures before the first dose of antibiotics, and how far apart should they be?",
+   "gold": "0870a91a7cc1:0022",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "Our ergometrine vials have been sitting in the theatre drug cupboard at room temperature \u2014 is that okay to give for PPH prevention, or do we need to switch to something else?",
+   "gold": "f45f67bdfa20:0063",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient on calcium supplements, does the dose matter for preterm birth risk \u2014 I've heard low-dose might actually be worse?",
+   "gold": "9e0f86a82f44:0038",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "What proportion of ED attendances could actually be handled by a GP instead \u2014 is there a figure we can quote when we're pushing for a primary care service alongside our emergency department?",
+   "gold": "bd76076c871f:0025",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We've given three doses of carboprost 250 micrograms IM for atonic bleeding and she's still oozing \u2014 how many more doses can we give before we need to think about theatre?",
+   "gold": "0ccb0502d3aa:0082",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How much blood loss after delivery counts as postpartum haemorrhage, and what's the window I should be watching for it?",
+   "gold": "7209e8fb38bd:0006",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": 5
+  },
+  {
+   "question": "My post-op patient is being switched to immediate-release tramadol \u2014 can I schedule it PRN for breakthrough pain, and how long should she stay on it?",
+   "gold": "efb16f8bfcbe:0004",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How much daily weight gain in my post-op patient do I need to call the provider about?",
+   "gold": "e4a0406819b1:0911",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "What AUDIT score should make me flag a pre-op patient as a problem drinker, and what do I do next?",
+   "gold": "2836fd2a5622:0126",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "At what blood sugar level should I start an insulin infusion on my post-op gyn onc patients, and what do I need to watch for?",
+   "gold": "82b0c8949b89:0016",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 5
+  },
+  {
+   "question": "When drugs aren't stopping a PPH from uterine atony, what surgical step do we set up for first, and what's the order of escalation from there?",
+   "gold": "0ccb0502d3aa:0011",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "How much blood loss after delivery counts as a postpartum hemorrhage, and within what time frame?",
+   "gold": "f45f67bdfa20:0012",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When we're revamping our maternity unit's quality improvement work, do we actually need to bring women and community members into it, or is it enough for staff to define the quality standards ourselves?",
+   "gold": "1277ed65e8ca:0091",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How long does a trip have to be before we count travel as a VTE risk factor in a pregnant patient, and does it only count if she flew?",
+   "gold": "144cabf03653:0024",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "During a PPH, what's the scribe actually meant to be doing, and should the team leader be checking in with them?",
+   "gold": "0ccb0502d3aa:0096",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I'm suctioning a patient in PACU and need more than one pass, how long should I wait between passes?",
+   "gold": "47eabb153abc:0895",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "Our unit is being asked to justify hiring a dedicated ERAS nurse \u2014 is that role actually recommended, and how do we show it's worth the cost?",
+   "gold": "4edd937b5877:0041",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We're starting the surgical safety checklist in our gynae theatres next month \u2014 should we roll it out in all our ORs at once or just start in one room?",
+   "gold": "b8cbcf492507:0033",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When exactly do we need to run the sign-out checks \u2014 can I do them after the surgeon steps out to dictate, or does it have to be before?",
+   "gold": "b8cbcf492507:0024",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My post-op patient with suspected sepsis is hypotensive \u2014 how big should each fluid bolus be, and at what point do I need to call for senior help?",
+   "gold": "137be68c201c:0115",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "At what blood loss volumes do we call a PPH minor versus major, and when does it count as severe?",
+   "gold": "0ccb0502d3aa:0015",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a C-section, how quickly after the baby is out do I need to get the uterotonic in, and does giving it mean we can't delay cord clamping?",
+   "gold": "f45f67bdfa20:0055",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If our patient's postpartum bleeding isn't settling with IV oxytocin, what's the next drug and dose we should be pulling up?",
+   "gold": "1277ed65e8ca:0095",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": 8,
+   "ours": null
+  },
+  {
+   "question": "My patient had a hysterectomy and came out with a JP drain in place \u2014 do I need to keep giving her the prophylactic cefazolin doses until the drain comes out?",
+   "gold": "1a12d3183519:0009",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My pre-op patient just told me his smoking has never caused him any problems so he doesn't want to hear about quitting \u2014 how should I respond without getting into an argument?",
+   "gold": "2836fd2a5622:0283",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "Before I discharge a postpartum woman, what specific warning signs should I tell her to call us about right away?",
+   "gold": "1277ed65e8ca:0076",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a C-section, do we give the prophylactic antibiotic before the skin incision or wait until after the cord is clamped?",
+   "gold": "1277ed65e8ca:0060",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If we can only get one monitor for our theatre \u2014 pulse oximeter or capnograph \u2014 which one should we prioritise for our gynae cases?",
+   "gold": "45f9865b55b3:0065",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If we're expecting more than 500 ml blood loss on a case, what IV access should be in place before we make the incision?",
+   "gold": "45f9865b55b3:0384",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For our ERAS prolapse patients, when should we start the preop teaching and does it need to be written or is verbal enough \u2014 and should family be in the room?",
+   "gold": "4edd937b5877:0008",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For our same-day gyn surgery patients, what's the best way to catch surgical site infections after they go home \u2014 mailing surveys to the surgeons or calling the patients?",
+   "gold": "99fccebb0aaa:0058",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a post-op patient on our ward who I think might be septic, should I be using NEWS2 to score her, or is that only for certain patients?",
+   "gold": "137be68c201c:0009",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "How long before her anaesthetic does my pre-op hysterectomy patient actually need to stop clear fluids, and can I give her a carbohydrate drink?",
+   "gold": "dc197582a4b2:0005",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be giving instead?",
+   "gold": "4a934c41413a:0031",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient just diagnosed with a leg DVT, should I keep her on bed rest with the leg up, or get her walking \u2014 and do compression stockings go on straight away?",
+   "gold": "f9bcd815e930:0007",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": null
+  },
+  {
+   "question": "We're at a rural unit and a post-op patient with suspected sepsis is waiting on ambulance transfer that'll take over an hour \u2014 do we hold antibiotics until she reaches the ED, and does she need her sepsis risk rescored on handover?",
+   "gold": "137be68c201c:0032",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If one of our postpartum patients suddenly collapses and we suspect a massive PE, what do I need to get organised and how fast \u2014 and what anticoagulant do they go on?",
+   "gold": "f9bcd815e930:0006",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My pregnant patient on LMWH has developed an itchy rash at her injection sites \u2014 do I just switch her to a different LMWH brand, or does she need something else?",
+   "gold": "f9bcd815e930:0043",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-op hysterectomy patient still has her Foley in from surgery yesterday \u2014 how soon should it come out if there's no ongoing indication?",
+   "gold": "daa3ae9ad92e:0081",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We've got a suspected environmental outbreak on our surgical unit \u2014 do we need to step up cleaning in the OR area, and what agent should we be using?",
+   "gold": "c682893b253d:0459",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "Half our surgeons roll their eyes at the safety checklist and say it's a waste of time \u2014 what actually needs to happen from above to get them on board?",
+   "gold": "b8cbcf492507:0032",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If I'm not sure the incision edges are holding well, should I still take out all the sutures at once or stagger them?",
+   "gold": "47eabb153abc:0800",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My postpartum patient's pulse and BP still look normal but I think she's bleeding a lot \u2014 at what blood loss do vital signs actually start to change, and what readings tell me she's over 1500 ml?",
+   "gold": "0ccb0502d3aa:0033",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient has COPD and her NEWS2 came out low, but she just doesn't look right to me \u2014 can I rely on the score alone to decide whether to escalate?",
+   "gold": "137be68c201c:0094",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "For our gyn onc patients going to the OR, do I start the heparin or lovenox before they go under, or wait until they're back on the floor?",
+   "gold": "4a934c41413a:0013",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 5
+  },
+  {
+   "question": "If a mom got her betamethasone course over a week ago and still hasn't delivered, can we give another round \u2014 and how much do we give?",
+   "gold": "1277ed65e8ca:0054",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a Foley going in preop in the OR, what exactly do I need on my sterile setup \u2014 and do I have to use an antiseptic lubricant?",
+   "gold": "daa3ae9ad92e:0010",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I use an alcohol hand rub instead of scrubbing at the sink, how long do I keep rubbing before I gown and glove?",
+   "gold": "afef8f41656d:0014",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-C-section patient has suspected sepsis with high risk criteria and a lactate of 4.8 \u2014 how fast do I need to get fluids in, and do I need to call critical care?",
+   "gold": "7250d773b47a:0030",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How close to the incision do I need to get the prophylactic antibiotic in, and when do we need to redose during the case?",
+   "gold": "4a934c41413a:0016",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a C-section, should we be giving the oxytocin as an IV bolus or an infusion \u2014 and if we push it, how fast?",
+   "gold": "7209e8fb38bd:0037",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "With our ERAS patients going home so fast, when should I actually start the discharge teaching?",
+   "gold": "4a934c41413a:0044",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I'm handing off a task in the OR, what's the right way to make sure the person I'm delegating to actually got it?",
+   "gold": "c682893b253d:0281",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When I'm handing off a complex post-op patient going from our unit to a long-term care home, is a written discharge summary enough or do I need to actually speak with someone there \u2014 and who should that be?",
+   "gold": "25af75b59210:0081",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If the anaesthetist grades our patient's airway as a Mallampati 3 before induction, what do we need to have in place before they start?",
+   "gold": "b8cbcf492507:0013",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When should we be introducing patient safety teaching to the nursing students who rotate through our unit \u2014 is it better to wait until they're in their later years and actually handling patients, or start it earlier?",
+   "gold": "c682893b253d:0063",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a patient going for a hysterectomy in the morning, how late can she have clear fluids and when does she need to stop solid food \u2014 and does she still get the carb drink if she's diabetic?",
+   "gold": "2552a848e495:0012",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "What haemoglobin levels in pregnancy should prompt investigation and possible iron treatment, and when should we switch from oral to IV iron?",
+   "gold": "0ccb0502d3aa:0022",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a patient coming back from elective spinal surgery, when do we start their LMWH, and can we ever give it sooner?",
+   "gold": "5f6d5754c4ad:0037",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We've got a postpartum patient with suspected sepsis and the CT shows a pelvic collection \u2014 who do I need to get involved and how quickly does the drainage need to happen?",
+   "gold": "7250d773b47a:0046",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a post-op patient with a catheter, what hourly urine output puts her in the high-risk versus moderate-risk band for sepsis?",
+   "gold": "7250d773b47a:0022",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My pre-op patient says she can't afford her blood pressure pills and has no drug coverage \u2014 which antihypertensive classes are the cheapest per day so I can flag options to the prescriber?",
+   "gold": "2836fd2a5622:0269",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "It's Saturday and my post-op emergency admission needs mobilising \u2014 can I get physio and OT in over the weekend or do I have to wait until Monday?",
+   "gold": "bd76076c871f:0014",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "What SOFA total score should make me flag a post-op obstetric patient as having sepsis with organ dysfunction?",
+   "gold": "0870a91a7cc1:0071",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My post-op hysterectomy patient still has her Foley in \u2014 how soon should it come out, and do I need to clamp it first to retrain the bladder?",
+   "gold": "daa3ae9ad92e:0101",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For our open abdominal gyn-onc cases, what tidal volume and PEEP settings should anesthesia be using to cut down on postoperative lung complications?",
+   "gold": "2552a848e495:0019",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For our gyn-onc patients with a thoracic epidural, how long can we expect it to actually control pain and cut opioid use, and what do we do if her blood pressure drops?",
+   "gold": "82b0c8949b89:0022",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": 9,
+   "ours": null
+  },
+  {
+   "question": "How many days can I keep my post-op patient on IV ketorolac for breakthrough pain, and do I need to adjust anything if she's 72?",
+   "gold": "efb16f8bfcbe:0002",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We've got a nursing student on the gynae theatre list this week \u2014 the surgeons here don't really do multidisciplinary rounds, so where should I place her to get team experience, and what should I have her do afterwards?",
+   "gold": "c682893b253d:0293",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My patient is day 3 post-op after a total abdominal hysterectomy and her wound has been opened to drain pus \u2014 can I clean it with tap water or do I still need sterile saline?",
+   "gold": "a09c53c2bd03:0026",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "Do I need to scrub with a brush again between cases, or is alcohol hand rub enough for the second hysterectomy on the list?",
+   "gold": "a09c53c2bd03:0015",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If my pregnant patient's leg ultrasound comes back negative but we're still really suspicious of a DVT, do I keep her on the anticoagulant and when does she need rescanning?",
+   "gold": "f9bcd815e930:0018",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We've got a patient at 39 weeks with gestational diabetes as her only issue and a big baby on ultrasound \u2014 is that enough to book her for an induction now, or do we wait?",
+   "gold": "1277ed65e8ca:0061",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a patient coming to the OR with suspected TB, do I just set up airborne precautions, or do I need to layer on more than one type?",
+   "gold": "386cc16b74a2:0009",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We just changed our pre-op prep routine on the gyn unit and it's working \u2014 how long do we need to keep it going before we can say the improvement actually stuck, and what do we have to put in place so it doesn't slip back?",
+   "gold": "c682893b253d:0379",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 5
+  },
+  {
+   "question": "For a hysterectomy where we end up entering the bowel, does the usual cefazolin cover it or do I need to ask for something else?",
+   "gold": "4a934c41413a:0015",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If my post-op patient is short of breath and we suspect a PE, do we need a chest X-ray before booking her for a V/Q scan or CTPA, and what's the radiation risk to the baby?",
+   "gold": "f9bcd815e930:0021",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op hysterectomy patient is septic and we can't find a source after examining her and doing the initial bloods, urine dip and chest X-ray \u2014 what's the next step, and when do I get surgery involved?",
+   "gold": "137be68c201c:0059",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "A family member keeps using her phone at the bedside in pre-op and then touching the patient \u2014 how often should phones be disinfected and what should I tell her?",
+   "gold": "386cc16b74a2:0022",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient is booked for LMWH prophylaxis but she has a documented allergy to it \u2014 what do I do, and who should I involve?",
+   "gold": "144cabf03653:0014",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a vulvectomy where the prep will be right up against mucosa, which skin prep should I be setting up instead of the usual alcoholic chlorhexidine?",
+   "gold": "a09c53c2bd03:0019",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If a pregnant woman has one previous DVT, do we need to start LMWH antenatally or can we wait until she delivers?",
+   "gold": "144cabf03653:0028",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "If I'm prepping a patient and move from the perineal area to the abdomen, do I need to swap gloves or can I just keep the same pair since it's the same patient?",
+   "gold": "afef8f41656d:0111",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "At what expected blood loss do we need to have IV access and fluids ready before we induce \u2014 and is the cutoff different for a paediatric case?",
+   "gold": "45f9865b55b3:0416",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "One of our postnatal women rang in \u2014 she went home yesterday after a vaginal birth and now has abdominal pain that paracetamol isn't touching, plus some ongoing bleeding. Do I tell her to wait for the community midwife visit or send her in?",
+   "gold": "0870a91a7cc1:0018",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "After a woman has had a major PPH, what do I need to cover in her debrief and follow-up before she goes home?",
+   "gold": "0ccb0502d3aa:0099",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "If a pregnant patient can't tolerate her daily iron because of GI side effects, what weekly dose of iron and folic acid can we switch her to?",
+   "gold": "1277ed65e8ca:0006",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient's NEWS2 just came back at 5 \u2014 is that the point where I should be treating her as at risk of sepsis, and how often do I need to re-score her?",
+   "gold": "137be68c201c:0093",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When our SSI prevention policy lists a practice as Category IA versus IB versus II, does that change whether we have to follow it on our unit?",
+   "gold": "99fccebb0aaa:0059",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op day 1 C-section patient has suspected sepsis but only meets one moderate to high risk criterion \u2014 how quickly does she need to be seen, and when do I need to escalate to someone senior?",
+   "gold": "7250d773b47a:0034",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My postnatal patient had a wound infection and is still in hospital 12 days after her section \u2014 how long do I keep her on the LMWH, since she was only flagged as intermediate risk for 10 days?",
+   "gold": "144cabf03653:0010",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "What's the window for giving nasal mupirocin with chlorhexidine body wash around a patient's surgery date?",
+   "gold": "a09c53c2bd03:0049",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op hysterectomy patient hasn't passed a decent volume since her catheter came out \u2014 what should I be checking, and can she still go home if she isn't voiding properly?",
+   "gold": "dc197582a4b2:0007",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We're setting up for a C-section under spinal \u2014 what do we need to have ready in the room for the baby, and what infection precautions apply to the spinal itself?",
+   "gold": "45f9865b55b3:0070",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-op patient's urine culture came back positive but she has no fever, no pain, nothing \u2014 do we need to start antibiotics to keep her from developing a real UTI?",
+   "gold": "daa3ae9ad92e:0040",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If we bring a peer support worker in to help a patient transition home, what training and supervision should they have in place before they start?",
+   "gold": "25af75b59210:0113",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I catch a prescribing error before it gets to my patient, is that actually making much difference \u2014 what proportion of prescribing errors reach patients anyway?",
+   "gold": "c682893b253d:0529",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We're tracking hand hygiene compliance on our OR unit \u2014 what exactly should we be measuring and how do we calculate it?",
+   "gold": "afef8f41656d:0112",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If my post-op pregnant patient has a negative leg ultrasound but we're still really suspicious of a DVT, do I keep her heparin going and when does she get rescanned?",
+   "gold": "f9bcd815e930:0001",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "My patient's had a total abdominal hysterectomy and her pain isn't controlled on IV morphine alone \u2014 what ketamine dose can we give and when?",
+   "gold": "39d63f844d2e:0029",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My post-op patient's urine dip came back positive for leukocyte esterase and her protein is over 10 mg/dL \u2014 do I need to send a urine culture, or is that enough to just start antibiotics?",
+   "gold": "e4a0406819b1:0955",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "What do I need to cover with a patient at the pre-admission clinic before her surgery, and how early does this prep actually start?",
+   "gold": "dc197582a4b2:0004",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If we end up doing something different from our unit's VTE protocol for a pregnant patient, do we need to record that anywhere?",
+   "gold": "f9bcd815e930:0085",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient on daily iron supplements, what haemoglobin cut-offs should I be watching at term \u2014 both for anaemia and for a high Hb \u2014 and how much does iron actually change those numbers?",
+   "gold": "9e0f86a82f44:0027",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "If we've decided to admit a surgical patient for a hysterectomy and she needs pharmacological VTE prophylaxis, how quickly do I need to get that first dose started?",
+   "gold": "5f6d5754c4ad:0009",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My patient on prophylactic LMWH is booked for an elective section tomorrow morning \u2014 when does she get her last dose and how long do we have to wait before anaesthetics can do her spinal?",
+   "gold": "144cabf03653:0046",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My post-op day 1 hysterectomy patient has a heart rate of 118 and a systolic BP of 96 \u2014 does that put her in the high risk or moderate risk group for sepsis?",
+   "gold": "7250d773b47a:0021",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": null
+  },
+  {
+   "question": "If I'm running a fluid bolus through an infusion pump for a postpartum patient with suspected sepsis, what flow rate does the pump need to be able to handle?",
+   "gold": "7250d773b47a:0042",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I'm putting ear drops in an adult in PACU, which way do I pull the pinna and how long do they need to stay lying on that side before I do the other ear?",
+   "gold": "47eabb153abc:0614",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My post-op hysterectomy patient just got diagnosed with sepsis and her husband and daughter are in the waiting room asking what's going on \u2014 who on the team should be talking to them and what do I need to cover?",
+   "gold": "137be68c201c:0062",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "For my pre-op patients who aren't due for surgery for a while \u2014 how often should I be rechecking blood pressure if their last reading was normal versus borderline?",
+   "gold": "2836fd2a5622:0070",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": 9,
+   "ours": null
+  },
+  {
+   "question": "If one of our antenatal patients can't tolerate daily iron and asks about switching to intermittent dosing, is there any evidence that it raises her risk of preterm birth or a low-birth-weight baby?",
+   "gold": "9e0f86a82f44:0035",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "When I have to sit down with a post-op patient to tell her something went wrong in surgery, how should I set up the room and position myself before I start talking?",
+   "gold": "c682893b253d:0424",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a postpartum woman with a mechanical heart valve who's on LMWH, how many days after delivery can we switch her back to warfarin, and is it OK if she's breastfeeding?",
+   "gold": "144cabf03653:0063",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "For our gyn onc patients waiting for surgery, is it worth setting up a prehab program before their operation, and which patients would actually get something out of it?",
+   "gold": "4a934c41413a:0006",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 5
+  },
+  {
+   "question": "If we're giving oxytocin IV as a bolus for a PPH, should I push it fast or slow?",
+   "gold": "7209e8fb38bd:0047",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 5
+  },
+  {
+   "question": "When we're putting together in-house education for our OR nurses on a new best practice guideline, what adult learning principles should we build the sessions around?",
+   "gold": "25af75b59210:0178",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For PPH prevention in our C-section patients, is it worth adding misoprostol to the oxytocin, or should we just stick with oxytocin alone?",
+   "gold": "f45f67bdfa20:0070",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We're discharging a post-op patient who was worked up for sepsis but ruled out \u2014 what exactly do I need to cover in her discharge teaching before she leaves?",
+   "gold": "7250d773b47a:0050",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If a mum tells me her baby is feeding every hour and a half and her breasts feel empty, but the doctor already said everything was fine \u2014 should I still escalate that?",
+   "gold": "c682893b253d:0434",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "My post-op gynae patient is medically fit but stuck waiting on a social care assessment over the weekend \u2014 is there any standard about social care being available at weekends, and how common is this hold-up?",
+   "gold": "bd76076c871f:0023",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When a patient has wound discharge a few days after her hysterectomy, where do the bugs causing most surgical site infections actually come from \u2014 the ward environment or the patient herself?",
+   "gold": "a09c53c2bd03:0061",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When I'm looking at the CDC's 2017 SSI recommendations to build our pre-op checklist, how many of them are actually strong enough to act on versus still unsettled?",
+   "gold": "1a12d3183519:0038",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If I use hand lotion before gloving for a case, does it matter what kind \u2014 and do I still need to wash my hands after I pull the gloves off?",
+   "gold": "afef8f41656d:0100",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": null
+  },
+  {
+   "question": "If a patient's hysterectomy incision looks infected, how long after surgery does it still count as a superficial incisional surgical site infection?",
+   "gold": "45f9865b55b3:0176",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "When exactly should we be giving the prophylactic antibiotic for an elective hysterectomy, and does it cover infections that start after surgery?",
+   "gold": "99fccebb0aaa:0031",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If my postpartum patient isn't responding to her first-line antibiotics, when should I be pushing for IV aciclovir to be added?",
+   "gold": "0870a91a7cc1:0017",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "One of my pre-op patients is due for hysterectomy and says the daily iron tablets are making her feel awful \u2014 can we switch her to taking it every other day instead?",
+   "gold": "39d63f844d2e:0051",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How much bacterial contamination does it actually take to put a surgical site at real risk of infection, and does that change if there's suture or other foreign material in the wound?",
+   "gold": "99fccebb0aaa:0012",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My patient going for a long abdominal case has Graves' disease \u2014 is povidone-iodine prep OK for her, or should I pull a different antiseptic?",
+   "gold": "45f9865b55b3:0211",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "I'm precepting a nursing student in the OR this week \u2014 what am I actually responsible for versus what the school covers?",
+   "gold": "25af75b59210:0176",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient with nausea and vomiting, is ginger actually any better than vitamin B6 by about day 3 of treatment, or can I tell her either one is fine?",
+   "gold": "9e0f86a82f44:0136",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "If a postpartum woman keeps ringing back or turning up again to triage or her GP with the same symptoms, does that change how urgently I need to see her?",
+   "gold": "0870a91a7cc1:0011",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-caesarean patient is still in hospital on day 10 with a wound infection \u2014 how long do I need to keep her on thromboprophylaxis?",
+   "gold": "144cabf03653:0054",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "Before I insert a Foley, should I be cleaning the periurethral area with an antiseptic or is sterile solution enough \u2014 is one clearly better?",
+   "gold": "daa3ae9ad92e:0037",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-op patient is getting confused and agitated in PACU \u2014 what should I be doing at the bedside before I reach for anything sedating?",
+   "gold": "e4a0406819b1:1139",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When would we actually need a temporary IVC filter for a pregnant patient with a clot, and what complications should I be watching for afterwards?",
+   "gold": "f9bcd815e930:0040",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If we're out of oxytocin, what can I give instead for PPH prevention after delivery, and at what dose?",
+   "gold": "f45f67bdfa20:0010",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We can't track every case on our GYN service \u2014 which surgeries should we prioritize for SSI surveillance, and who decides that?",
+   "gold": "99fccebb0aaa:0055",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": 5
+  },
+  {
+   "question": "My post-op hysterectomy patient still has a drain in \u2014 do we keep her on prophylactic antibiotics until it comes out, and what blood sugar should I be aiming for?",
+   "gold": "1a12d3183519:0039",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient is septic and her chart says 'penicillin allergy' \u2014 how do I know if that rules out cephalosporins or carbapenems, and what can we give instead?",
+   "gold": "0870a91a7cc1:0027",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a hip fracture patient going home, how long do they need the LMWH or fondaparinux injections, and can we switch them to aspirin instead if they can't manage self-injecting?",
+   "gold": "5f6d5754c4ad:0066",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "My patient says she had a DVT years ago but we have no scan reports or discharge summary \u2014 can I still count that as a previous VTE when deciding on her thromboprophylaxis?",
+   "gold": "144cabf03653:0029",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "My pre-op patient for an elective hysterectomy has a murmur and says she gets breathless walking upstairs \u2014 do I need to arrange an echo, and is there anything I should do first?",
+   "gold": "dc64864bfb3f:0014",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "What blood glucose level should I be keeping my post-op gyn patients under, and does it matter if they're not diabetic?",
+   "gold": "4a934c41413a:0019",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If I'm seeing a post-op patient at home who's got moderate-to-high risk sepsis signs and I can't pin down what's causing it, do I have to send her in?",
+   "gold": "137be68c201c:0033",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If our unit's surgical death rates look high, does that mean our nursing and OR care is substandard \u2014 and should we ever hold off on discharging a dying patient because of how it affects our numbers?",
+   "gold": "45f9865b55b3:0342",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "I'm discharging a postpartum patient who was treated for sepsis after her emergency caesarean \u2014 what do I need to cover with her and her partner before she leaves, and what has to go in the GP letter?",
+   "gold": "7250d773b47a:0052",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "My post-op patient who was treated for sepsis after her hysterectomy is going home tomorrow \u2014 what do I need to cover before discharge and what has to go in the GP letter?",
+   "gold": "137be68c201c:0066",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For my post-op gyn surgery patients, should I be giving acetaminophen and an NSAID as scheduled doses or just PRN, and when can I switch them from IV to oral?",
+   "gold": "82b0c8949b89:0017",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My postpartum patient is high-risk for sepsis \u2014 what lactate level means I need to escalate, and how fast do the IV antibiotics need to go in?",
+   "gold": "0870a91a7cc1:0001",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When I'm measuring undermining on a post-op abdominal incision, how far do I advance the probe and where do I measure from?",
+   "gold": "47eabb153abc:0779",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How long should I be scrubbing my hands and forearms before a case, and how far up do I need to go?",
+   "gold": "99fccebb0aaa:0061",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If we're dealing with a VRE or MRSA outbreak in the unit, is it worth putting everyone in gloves for every patient, or just the colonized ones?",
+   "gold": "afef8f41656d:0098",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be using for pain control instead?",
+   "gold": "4a934c41413a:0032",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My ankle arthrodesis patient is still in a cast \u2014 how long do we keep the VTE prophylaxis going before we think about stopping it?",
+   "gold": "5f6d5754c4ad:0035",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "Our unit does D&Cs in a small procedure room down the hall \u2014 should that room be counted as an operating room when we report our OR numbers?",
+   "gold": "45f9865b55b3:0335",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "We've just admitted a pregnant woman to the gynae ward with ovarian hyperstimulation syndrome \u2014 does she need LMWH even though she's only in her first trimester?",
+   "gold": "144cabf03653:0001",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": null
+  },
+  {
+   "question": "One of my emergency medical admissions came in overnight \u2014 how quickly does she need to be seen by a consultant, and will she still be reviewed over the bank holiday weekend?",
+   "gold": "bd76076c871f:0013",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For our PPH prevention stock, what strengths of ergometrine and misoprostol are on the WHO essential medicines list, and is the combined oxytocin/ergometrine ampoule included?",
+   "gold": "f45f67bdfa20:0021",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "If a labouring woman with a penicillin allergy needs GBS cover for a fever, can we still just use clindamycin?",
+   "gold": "0870a91a7cc1:0033",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": null
+  },
+  {
+   "question": "For a C-section, should I give the prophylactic antibiotic before the skin incision or wait until the cord is clamped?",
+   "gold": "45f9865b55b3:0226",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If my gloves still look clean after prepping one patient, can I just wash the gloves and keep them on for the next patient, or do I have to take them off and do hand hygiene?",
+   "gold": "afef8f41656d:0081",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "We're bringing a patient with suspected C. diff back from the OR \u2014 can I just use the alcohol foam between contacts, or do I have to go to the sink every time?",
+   "gold": "386cc16b74a2:0012",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": 4
+  },
+  {
+   "question": "One of our new nurses gave the wrong medication in the OR because she skipped the double-check \u2014 do I write her up, or is there something else I should be looking at first?",
+   "gold": "c682893b253d:0239",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a major PPH, how do I dose carboprost \u2014 how much, how often, and what's the max number of doses?",
+   "gold": "0ccb0502d3aa:0135",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "For the oral nutritional supplements we're giving post-op, what volume and protein content should I be looking for on the label?",
+   "gold": "82b0c8949b89:0011",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When we set a patient up with a system navigator at discharge, what timeframe are we watching for ED visits and readmissions as the marker of a good handoff?",
+   "gold": "25af75b59210:0147",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "Can we add a VTE prophylaxis check to our surgical safety checklist for gynae cases, and are there any items we're not allowed to drop?",
+   "gold": "b8cbcf492507:0031",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We've got a 35-weeker with severe pre-eclampsia \u2014 do we need to deliver her now or can we hold off?",
+   "gold": "1277ed65e8ca:0098",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "How often should I be emptying my patient's urostomy pouch, and at what point does it need emptying?",
+   "gold": "47eabb153abc:0844",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For an inpatient having a laparoscopic sling repair who's low VTE risk, do I need to give heparin or is early ambulation and SCDs enough?",
+   "gold": "4edd937b5877:0044",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "How soon after pelvic reconstructive surgery should I be pulling the Foley, and what do I need to check before she goes home?",
+   "gold": "4edd937b5877:0037",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If labour looks slow but delay hasn't been formally confirmed yet, can we go ahead and start the oxytocin drip, and should we use a high starting dose to get things moving?",
+   "gold": "1277ed65e8ca:0067",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": 4
+  },
+  {
+   "question": "If we're delaying cord clamping on our deliveries, is there anything extra we need to watch for in the baby afterward?",
+   "gold": "7209e8fb38bd:0054",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-op hysterectomy patient is starting scheduled oxycodone \u2014 when do I need to start a bowel regimen and what do I begin with?",
+   "gold": "efb16f8bfcbe:0010",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "What tidal volume and PEEP settings should we be using intraoperatively for our open abdominal gyn cases?",
+   "gold": "4a934c41413a:0023",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My patient is still on her combined oral contraceptive pill and is going for surgery tomorrow \u2014 does she need VTE prophylaxis, and when should it start?",
+   "gold": "2552a848e495:0016",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-caesarean patient was flagged as intermediate risk for VTE, but she's now on day 8 with a wound infection and still admitted \u2014 how long do I keep her on the LMWH?",
+   "gold": "144cabf03653:0053",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "The mesh implant we need was never sterilized and the surgeon wants me to flash it \u2014 can I do that, and when is flash sterilization actually appropriate?",
+   "gold": "99fccebb0aaa:0040",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op hysterectomy patient just got transferred to ICU \u2014 how often do I need to recheck her VTE and bleeding risk while she's there?",
+   "gold": "5f6d5754c4ad:0027",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We have carboprost in our fridge for the C-section \u2014 can we give it routinely with the oxytocin to prevent bleeding, or is it only for when she's already haemorrhaging?",
+   "gold": "f45f67bdfa20:0066",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My pre-op patient was just started on an antihypertensive plus lifestyle changes \u2014 how often should she be getting her BP rechecked, and when can we stretch that out?",
+   "gold": "2836fd2a5622:0182",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": 6
+  },
+  {
+   "question": "If a hysterectomy is running long, when do I need to give a second dose of the prophylactic antibiotic?",
+   "gold": "a09c53c2bd03:0014",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a woman coming in with secondary PPH, what should we be checking before she's booked for a surgical evacuation, and who should be doing the procedure?",
+   "gold": "0ccb0502d3aa:0093",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a patient having an elective knee replacement, what dose of aspirin do we use for VTE prophylaxis and how many days does it run for?",
+   "gold": "5f6d5754c4ad:0033",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient can't keep anything down and needs stronger pain relief \u2014 do I push for a PCA or an epidural, and does it matter what surgery she had?",
+   "gold": "39d63f844d2e:0074",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My postpartum patient weighs 135 kg \u2014 what dose of enoxaparin should she get for thromboprophylaxis, and can it be split?",
+   "gold": "144cabf03653:0058",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "If the placenta hasn't delivered on its own, what do we give and can I use ergometrine to help it along?",
+   "gold": "7209e8fb38bd:0043",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient's temperature is normal but she just says she feels really unwell and her husband says she's not acting like herself \u2014 is that enough to start thinking sepsis?",
+   "gold": "7250d773b47a:0008",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": 6
+  },
+  {
+   "question": "On our oxytocin drips, what kind of pump-rate error should I be watching for when the fetal heart rate suddenly drops into the 70s?",
+   "gold": "c682893b253d:0518",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": 5
+  },
+  {
+   "question": "If a mum refuses the routine uterotonic for preventing PPH after we've explained it, what do we do \u2014 and when should that conversation have happened?",
+   "gold": "f45f67bdfa20:0054",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "How many opioid tablets should we be sending our vaginal prolapse repair patients home with, and what should they be taking as their baseline pain control?",
+   "gold": "4edd937b5877:0029",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a delivery where mom is HIV-positive, how long should I wait before clamping the cord?",
+   "gold": "7209e8fb38bd:0035",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My hysterectomy patient is asking if she can have a drink this morning \u2014 how close to her surgery can she keep drinking clear fluids, and should I be offering her a carbohydrate drink too?",
+   "gold": "39d63f844d2e:0058",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "What dose and route of ergometrine do we give to prevent postpartum haemorrhage, and who shouldn't get it?",
+   "gold": "f45f67bdfa20:0062",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": 8,
+   "ours": null
+  },
+  {
+   "question": "Our catheter policy lists some items as Category I and others as Category II \u2014 do I have to follow the Category II ones exactly, or is there room to individualize for my patient?",
+   "gold": "daa3ae9ad92e:0064",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "Which of our uterotonics can I keep at room temperature on the ward, and which ones have to stay in the fridge?",
+   "gold": "f45f67bdfa20:0020",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": null
+  },
+  {
+   "question": "My pre-op patient has a large upper arm and I only have a standard cuff on the cart \u2014 how much will that skew her pressure, and how do I know if a cuff is the right size?",
+   "gold": "2836fd2a5622:0072",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We're prepping a patient with alcohol-based antiseptic and the surgeon plans to use diathermy \u2014 what precautions do I need to take before they start?",
+   "gold": "a09c53c2bd03:0052",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "When I'm arguing for switching our unit to alcohol-based hand rub, how many hand hygiene opportunities per hour should I expect my ICU nurses to have, and does that cost more than the infections we'd prevent?",
+   "gold": "afef8f41656d:0074",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If I'm sending a patient home and they deteriorate later, up to what time can they still get hold of their own GP practice before out-of-hours takes over?",
+   "gold": "bd76076c871f:0021",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If our surgical scrub sink only has a PCMX product, is that as good as chlorhexidine for scrubbing in?",
+   "gold": "afef8f41656d:0043",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "Is P6 acupressure wristbands actually worth recommending for my patients with pregnancy nausea, and how strong is the evidence?",
+   "gold": "9e0f86a82f44:0121",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "If an OG or NG tube was placed during a robotic hysterectomy to decompress the stomach, when do we pull it \u2014 can it stay for the first few hours on the floor?",
+   "gold": "2552a848e495:0022",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "If a pregnant patient on iron supplements asks me whether the iron is causing her heartburn or vomiting, what can I tell her about how common those side effects actually are?",
+   "gold": "9e0f86a82f44:0029",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a patient admitted acutely overnight, how quickly do we need to get a consultant to review them, and does that review need repeating?",
+   "gold": "bd76076c871f:0042",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "My pre-op patient keeps saying she doesn't want to keep taking her blood pressure pills after surgery \u2014 what should I be drawing out of her to figure out if she'll actually stay on them?",
+   "gold": "2836fd2a5622:0164",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient starting treatment-dose enoxaparin for a VTE, which weight do I use to calculate the dose, and is it once or twice daily?",
+   "gold": "f9bcd815e930:0029",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient has a moderate risk NEWS2 score and a raised lactate but I'm not sure whether that's enough to start IV fluids \u2014 what should I be basing that call on?",
+   "gold": "137be68c201c:0114",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "My ovarian cancer patient is really anxious in pre-op and asking for something to calm her down \u2014 can I give a sedative before she goes back?",
+   "gold": "2552a848e495:0013",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How long before the skin incision should I give the prophylactic antibiotic, and when do we have to stop it after surgery?",
+   "gold": "45f9865b55b3:0221",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "For our morning gyn-onc cases, how long before anesthesia can patients have a light meal versus their carbohydrate drink, and does that change if they have gastroparesis?",
+   "gold": "4a934c41413a:0010",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "My post-op patient is still in a lot of pain on IV morphine alone \u2014 what dose of IV ketamine can we add on?",
+   "gold": "39d63f844d2e:0075",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When is it actually appropriate to use vancomycin for our surgical prophylaxis instead of a cephalosporin, and who needs to sign off on that?",
+   "gold": "99fccebb0aaa:0035",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If I use a 3% hexachlorophene scrub regularly, how long does its antibacterial effect last and is there any absorption risk I should worry about?",
+   "gold": "afef8f41656d:0045",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "At the start of my shift, what do I need to check before I do a full head-to-toe general survey on my post-op patient, and when do I call the provider?",
+   "gold": "47eabb153abc:0057",
+   "gold_live": true,
+   "hybrid_rag": 5,
+   "neo4j_graphrag": 5,
+   "neo4j_graphrag_k12": 5,
+   "ours": null
+  },
+  {
+   "question": "What infection rate should we expect for hip and knee replacements going forward \u2014 is it still around 2% or is it climbing?",
+   "gold": "1a12d3183519:0016",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 3
+  },
+  {
+   "question": "For our hysterectomy cases, do we need to prep the skin with an alcohol-based agent, and is a plastic adhesive drape or microbial sealant worth adding on top of it?",
+   "gold": "1a12d3183519:0014",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": 4
+  },
+  {
+   "question": "For my post-op patient with suspected sepsis, what oxygen saturation should I be titrating to \u2014 and is it different if she's a COPD retainer?",
+   "gold": "137be68c201c:0057",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If the surgeon is already moving on to close and we haven't finished the sign-out items, am I allowed to hold the team up as the checklist coordinator?",
+   "gold": "b8cbcf492507:0007",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When we call a major PPH, who do I need to escalate to and what does someone on the team have to be documenting?",
+   "gold": "0ccb0502d3aa:0041",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If we're out of oxytocin on the unit, is it actually acceptable to give something like misoprostol or ergometrine on its own for PPH prevention, or do those only count as add-ons?",
+   "gold": "f45f67bdfa20:0023",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient asking about her coffee habit, is there an amount of caffeine that's low enough not to raise her miscarriage risk, and how much does the risk climb as she drinks more?",
+   "gold": "9e0f86a82f44:0084",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "What IV rate should I keep my post-op urogyn patient on until she's drinking, and when can I stop the fluids?",
+   "gold": "4edd937b5877:0016",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When we report our unit's CAUTI numbers, what exactly do we count on the top and bottom, and how do we express the rate?",
+   "gold": "daa3ae9ad92e:0030",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "The next hysterectomy case is delayed and we're short one instrument set \u2014 can I flash sterilize the set from the previous case to keep things moving?",
+   "gold": "99fccebb0aaa:0064",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a post-op obstetric patient I'm worried might be septic, which observations do I need to chart and how should I escalate?",
+   "gold": "0870a91a7cc1:0019",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "My post-op patient is nil by mouth after an open abdominal hysterectomy and is expected to have severe pain \u2014 should I be setting her up for PCA or asking about an epidural?",
+   "gold": "39d63f844d2e:0028",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For our post-op pelvic reconstructive patients, which bowel regimen should I be sending home or starting on the floor \u2014 docusate with Senokot or docusate with polyethylene glycol?",
+   "gold": "4edd937b5877:0035",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My patient is going for a CT with IV contrast before her surgery \u2014 what do I need to check and how long should she be NPO?",
+   "gold": "e4a0406819b1:0963",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When I'm orienting to a new OR, what should I be checking about the unit's protocols before I rely on them for things like drug administration or setting up equipment?",
+   "gold": "c682893b253d:0216",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "We're taking a PPH patient to theatre \u2014 is she better off with a spinal or a general?",
+   "gold": "0ccb0502d3aa:0074",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How often should I be checking and changing the incontinence pads on my post-op patient who's still incontinent and at risk for skin breakdown?",
+   "gold": "e4a0406819b1:0620",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I'm writing a problem-focused nursing diagnosis for my post-op patient, what has to be documented before I can call it accurate \u2014 and how do I pick what to aim my interventions at?",
+   "gold": "e4a0406819b1:0243",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": null
+  },
+  {
+   "question": "For a pregnant patient from a malaria-endemic area in Africa, when do we start her sulfadoxine-pyrimethamine doses and how far apart do they need to be spaced?",
+   "gold": "1277ed65e8ca:0034",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I'm cutting the new wafer, how much skin around the stoma can I leave exposed before the fit is wrong?",
+   "gold": "47eabb153abc:0872",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a woman who already got prophylactic oxytocin after delivery, do I still need to do continuous fundal massage, or is checking tone enough?",
+   "gold": "7209e8fb38bd:0026",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient is nil by mouth and vomiting after her laparoscopic hysterectomy \u2014 can I give her an IV NSAID for pain, and which one should I ask for?",
+   "gold": "39d63f844d2e:0027",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "The oxytocin vials in our theatre cupboard say they're fine at room temperature \u2014 can I just leave them out, and what temperature should they actually be kept at?",
+   "gold": "f45f67bdfa20:0078",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient has a suspected wound infection and a NEWS2 of 3 \u2014 how quickly does someone need to review her, and do I have to start antibiotics straight away?",
+   "gold": "137be68c201c:0048",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a woman with HIV coming in for delivery, what should we be doing intrapartum and right after birth to cut down the transmission risk to the baby?",
+   "gold": "1277ed65e8ca:0104",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For our laparoscopic urogyn cases, when should we be injecting local into the port sites \u2014 at insertion or at closure?",
+   "gold": "4edd937b5877:0014",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a patient who's completely bedfast after surgery, how often should I be turning her and doing skin checks, and how high can I put the head of the bed?",
+   "gold": "e4a0406819b1:0597",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "During a C-section, should we deliver the placenta with cord traction or just have the surgeon manually remove it \u2014 and which uterotonic do we give to cut down the bleeding?",
+   "gold": "7209e8fb38bd:0027",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "If I hand a scalpel or needle to someone else during a case, who's responsible for disposing of it \u2014 me or whoever used it last?",
+   "gold": "c682893b253d:0471",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My post-op patient had chemo about three weeks ago and is now spiking a temp \u2014 do I need to suspect neutropenic sepsis and where does she need to go?",
+   "gold": "7250d773b47a:0009",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "For a woman admitted in preterm labour, when do we actually start antibiotics, and which one do we use if her membranes have ruptured?",
+   "gold": "1277ed65e8ca:0057",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "During the time-out before we make the incision, what exactly am I as the scrub nurse supposed to speak up about, versus what the surgeon and anaesthetist cover?",
+   "gold": "45f9865b55b3:0316",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My patient is on therapeutic LMWH for a DVT and is booked for a caesarean tomorrow \u2014 how long before the section do I need to stop her LMWH, and how long must anaesthetics wait before siting a spinal or epidural?",
+   "gold": "f9bcd815e930:0047",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If my post-op patient still has her Foley in, how fast does her risk of bacteriuria climb each day, and at what point is she essentially guaranteed to be colonized?",
+   "gold": "daa3ae9ad92e:0045",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a high-risk C-section, when do we give the prophylactic antibiotic \u2014 at induction like other cases, or later?",
+   "gold": "99fccebb0aaa:0063",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My hypertensive pre-op patient says she has a glass of wine most nights \u2014 what daily and weekly alcohol limit should I be telling her, and how much wine counts as one drink?",
+   "gold": "2836fd2a5622:0123",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When we're counting a maternal sepsis case, how long after delivery does it still count as pregnancy-related sepsis, and how common is it as a cause of maternal death?",
+   "gold": "0870a91a7cc1:0004",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "One of my patients on the gyn floor has C. diff diarrhea and we're in the middle of an outbreak \u2014 is my alcohol foam enough after I pull off my gloves, or do I need to go to the sink?",
+   "gold": "afef8f41656d:0053",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "How long can I leave a warm compress or ice pack on my post-op patient's incision site, and is there anywhere I shouldn't put them?",
+   "gold": "efb16f8bfcbe:0017",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "We're out of oxytocin \u2014 what can I give instead for third-stage PPH prevention, and at what dose?",
+   "gold": "7209e8fb38bd:0030",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": 5
+  },
+  {
+   "question": "For our outpatient gyn cases in the ambulatory surgery suite, do we follow the same SSI prevention practices as we do for inpatient OR cases, or is there a separate standard?",
+   "gold": "99fccebb0aaa:0003",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For a patient scheduled for a hysterectomy tomorrow morning, when do I tell her to do her pre-op wash, and does it have to be a chlorhexidine product?",
+   "gold": "1a12d3183519:0000",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "When my post-op laparotomy patients on our ERAS pathway ask how long before they can walk around without much trouble, what timeframe should I tell them \u2014 and is it faster with laparoscopic surgery?",
+   "gold": "4a934c41413a:0040",
+   "gold_live": true,
+   "hybrid_rag": 2,
+   "neo4j_graphrag": 2,
+   "neo4j_graphrag_k12": 2,
+   "ours": 2
+  },
+  {
+   "question": "When I'm setting up for a case, what exactly counts as standard precautions \u2014 is it just hand hygiene and gloves, or is there more I need to be doing for every patient?",
+   "gold": "d5b77b069d4b:0000",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "Our OR runs off an oxygen concentrator instead of pipeline oxygen \u2014 what FiO2 should I actually expect it to deliver, and do I still need a cylinder in the room?",
+   "gold": "45f9865b55b3:0071",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My pre-op patient just refused her ordered medication \u2014 what do I need to document and who do I have to notify?",
+   "gold": "47eabb153abc:0568",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "During the time out, who am I supposed to ask about the patient's allergies, and what do I do if I know about an allergy the anaesthetist hasn't mentioned?",
+   "gold": "45f9865b55b3:0383",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My post-op patient has expressive aphasia and can't tell me her pain level \u2014 what's the best way to set up communication with her at the bedside?",
+   "gold": "e4a0406819b1:0125",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "If one of my post-op patients who's pregnant has a swollen calf and pleuritic chest pain, do I wait for the ultrasound and CTPA results before we start anticoagulation?",
+   "gold": "f9bcd815e930:0017",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "My pre-op patient says she's ready to quit smoking before her surgery \u2014 what steps should I walk through with her, and when do I set up the follow-up call?",
+   "gold": "47eabb153abc:0393",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a robotic hysterectomy where we can't keep tidal volumes low, what ventilation targets should we be aiming for and is a higher tidal volume a problem?",
+   "gold": "4edd937b5877:0013",
+   "gold_live": true,
+   "hybrid_rag": 3,
+   "neo4j_graphrag": 3,
+   "neo4j_graphrag_k12": 3,
+   "ours": 3
+  },
+  {
+   "question": "For tetanus toxoid in pregnancy, does a single dose actually cut newborn tetanus deaths, or do we need to get two or three doses in before delivery?",
+   "gold": "9e0f86a82f44:0119",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For a mom who delivered here on the ward, how long do we need to keep her and baby before discharge, and when should we book her follow-up visits?",
+   "gold": "1277ed65e8ca:0072",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  },
+  {
+   "question": "We're trying to get an enhanced recovery pathway going on our gynae ward \u2014 who actually needs to be on the core team, and who do we escalate to if staff aren't following it?",
+   "gold": "dc197582a4b2:0012",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "When I'm pulling a Foley on my post-op patient, what's the right breathing cue and what do I do if it won't budge?",
+   "gold": "47eabb153abc:0865",
+   "gold_live": true,
+   "hybrid_rag": 6,
+   "neo4j_graphrag": 6,
+   "neo4j_graphrag_k12": 6,
+   "ours": 6
+  },
+  {
+   "question": "If a woman gets IV antibiotics for suspected sepsis during labour, does her baby need anything, and what's the time window that matters?",
+   "gold": "0870a91a7cc1:0042",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "We've got a septic mum at 30 weeks who may need delivering tonight \u2014 who makes the call on timing and mode of birth, and what do I need to have ready for the baby and for monitoring in labour?",
+   "gold": "0870a91a7cc1:0040",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "My patient going home after her hysterectomy is on VTE prophylaxis \u2014 what exactly do I need to cover with her and her husband before she leaves?",
+   "gold": "5f6d5754c4ad:0012",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": 4
+  },
+  {
+   "question": "For a woman being induced with misoprostol, what dose and dosing interval do we use for the oral versus the vaginal route \u2014 and is there anyone we shouldn't give it to?",
+   "gold": "1277ed65e8ca:0062",
+   "gold_live": true,
+   "hybrid_rag": null,
+   "neo4j_graphrag": null,
+   "neo4j_graphrag_k12": null,
+   "ours": null
+  },
+  {
+   "question": "For my pre-op patient who's frail and end-of-life with a high chance of deteriorating, do I need to get advance care planning started now while she's on the ward, or is that something community services sort out after discharge?",
+   "gold": "bd76076c871f:0010",
+   "gold_live": true,
+   "hybrid_rag": 1,
+   "neo4j_graphrag": 1,
+   "neo4j_graphrag_k12": 1,
+   "ours": 1
+  },
+  {
+   "question": "For our gyn-onc patients, who should actually be in on the pre-op counseling session, and does having the patient's family member there make any difference?",
+   "gold": "4a934c41413a:0004",
+   "gold_live": true,
+   "hybrid_rag": 4,
+   "neo4j_graphrag": 4,
+   "neo4j_graphrag_k12": 4,
+   "ours": 4
+  }
+ ]
+}

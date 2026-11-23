@@ -1,0 +1,437 @@
+{
+  "n_questions": 60,
+  "batch_size": 10,
+  "sampling": "stratified 60, seed 20261118",
+  "qids": [
+    "q034",
+    "q231",
+    "q188",
+    "q009",
+    "q088",
+    "q083",
+    "q137",
+    "q062",
+    "q053",
+    "q044",
+    "q289",
+    "q271",
+    "q272",
+    "q166",
+    "q014",
+    "q131",
+    "q220",
+    "q285",
+    "q184",
+    "q288",
+    "q157",
+    "q299",
+    "q063",
+    "q111",
+    "q295",
+    "q026",
+    "q081",
+    "q000",
+    "q068",
+    "q085",
+    "q284",
+    "q112",
+    "q226",
+    "q133",
+    "q237",
+    "q008",
+    "q091",
+    "q051",
+    "q107",
+    "q080",
+    "q232",
+    "q269",
+    "q125",
+    "q286",
+    "q183",
+    "q224",
+    "q092",
+    "q192",
+    "q037",
+    "q214",
+    "q174",
+    "q249",
+    "q144",
+    "q267",
+    "q173",
+    "q209",
+    "q076",
+    "q177",
+    "q282",
+    "q202"
+  ],
+  "sheets": [
+    "study_001-010.html",
+    "study_011-020.html",
+    "study_021-030.html",
+    "study_031-040.html",
+    "study_041-050.html",
+    "study_051-060.html"
+  ],
+  "questions": [
+    {
+      "qid": "q034",
+      "chunk_id": "0ccb0502d3aa:0015",
+      "n_action": 18,
+      "n_quantity": 8
+    },
+    {
+      "qid": "q231",
+      "chunk_id": "99fccebb0aaa:0035",
+      "n_action": 25,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q188",
+      "chunk_id": "4edd937b5877:0044",
+      "n_action": 27,
+      "n_quantity": 3
+    },
+    {
+      "qid": "q009",
+      "chunk_id": "7209e8fb38bd:0014",
+      "n_action": 9,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q088",
+      "chunk_id": "1277ed65e8ca:0061",
+      "n_action": 14,
+      "n_quantity": 3
+    },
+    {
+      "qid": "q083",
+      "chunk_id": "efb16f8bfcbe:0002",
+      "n_action": 13,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q137",
+      "chunk_id": "a09c53c2bd03:0061",
+      "n_action": 27,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q062",
+      "chunk_id": "afef8f41656d:0014",
+      "n_action": 34,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q053",
+      "chunk_id": "c682893b253d:0459",
+      "n_action": 43,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q044",
+      "chunk_id": "99fccebb0aaa:0058",
+      "n_action": 25,
+      "n_quantity": 3
+    },
+    {
+      "qid": "q289",
+      "chunk_id": "9e0f86a82f44:0119",
+      "n_action": 12,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q271",
+      "chunk_id": "99fccebb0aaa:0063",
+      "n_action": 25,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q272",
+      "chunk_id": "2678907578d4:0481",
+      "n_action": 16,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q166",
+      "chunk_id": "82b0c8949b89:0017",
+      "n_action": 20,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q014",
+      "chunk_id": "f45f67bdfa20:0063",
+      "n_action": 24,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q131",
+      "chunk_id": "7209e8fb38bd:0047",
+      "n_action": 23,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q220",
+      "chunk_id": "9e0f86a82f44:0121",
+      "n_action": 10,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q285",
+      "chunk_id": "e4a0406819b1:0125",
+      "n_action": 30,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q184",
+      "chunk_id": "25af75b59210:0147",
+      "n_action": 23,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q288",
+      "chunk_id": "4edd937b5877:0013",
+      "n_action": 33,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q157",
+      "chunk_id": "0870a91a7cc1:0027",
+      "n_action": 47,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q299",
+      "chunk_id": "4a934c41413a:0004",
+      "n_action": 12,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q063",
+      "chunk_id": "7250d773b47a:0030",
+      "n_action": 20,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q111",
+      "chunk_id": "25af75b59210:0113",
+      "n_action": 33,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q295",
+      "chunk_id": "2678907578d4:0043",
+      "n_action": 32,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q026",
+      "chunk_id": "144cabf03653:0024",
+      "n_action": 12,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q081",
+      "chunk_id": "82b0c8949b89:0022",
+      "n_action": 20,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q000",
+      "chunk_id": "4edd937b5877:0024",
+      "n_action": 22,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q068",
+      "chunk_id": "25af75b59210:0081",
+      "n_action": 21,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q085",
+      "chunk_id": "a09c53c2bd03:0026",
+      "n_action": 6,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q284",
+      "chunk_id": "45f9865b55b3:0383",
+      "n_action": 6,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q112",
+      "chunk_id": "c682893b253d:0529",
+      "n_action": 15,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q226",
+      "chunk_id": "137be68c201c:0114",
+      "n_action": 28,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q133",
+      "chunk_id": "f45f67bdfa20:0070",
+      "n_action": 22,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q237",
+      "chunk_id": "137be68c201c:0057",
+      "n_action": 14,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q008",
+      "chunk_id": "2552a848e495:0018",
+      "n_action": 30,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q091",
+      "chunk_id": "4a934c41413a:0015",
+      "n_action": 19,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q051",
+      "chunk_id": "f9bcd815e930:0043",
+      "n_action": 17,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q107",
+      "chunk_id": "a09c53c2bd03:0049",
+      "n_action": 31,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q080",
+      "chunk_id": "2552a848e495:0019",
+      "n_action": 27,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q232",
+      "chunk_id": "afef8f41656d:0045",
+      "n_action": 19,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q269",
+      "chunk_id": "f9bcd815e930:0047",
+      "n_action": 23,
+      "n_quantity": 4
+    },
+    {
+      "qid": "q125",
+      "chunk_id": "137be68c201c:0062",
+      "n_action": 12,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q286",
+      "chunk_id": "f9bcd815e930:0017",
+      "n_action": 13,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q183",
+      "chunk_id": "82b0c8949b89:0011",
+      "n_action": 8,
+      "n_quantity": 4
+    },
+    {
+      "qid": "q224",
+      "chunk_id": "2836fd2a5622:0164",
+      "n_action": 16,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q092",
+      "chunk_id": "f9bcd815e930:0021",
+      "n_action": 26,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q192",
+      "chunk_id": "efb16f8bfcbe:0010",
+      "n_action": 7,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q037",
+      "chunk_id": "1a12d3183519:0009",
+      "n_action": 25,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q214",
+      "chunk_id": "f45f67bdfa20:0020",
+      "n_action": 12,
+      "n_quantity": 14
+    },
+    {
+      "qid": "q174",
+      "chunk_id": "144cabf03653:0001",
+      "n_action": 24,
+      "n_quantity": 3
+    },
+    {
+      "qid": "q249",
+      "chunk_id": "e4a0406819b1:0963",
+      "n_action": 31,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q144",
+      "chunk_id": "39d63f844d2e:0051",
+      "n_action": 11,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q267",
+      "chunk_id": "1277ed65e8ca:0057",
+      "n_action": 11,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q173",
+      "chunk_id": "45f9865b55b3:0335",
+      "n_action": 33,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q209",
+      "chunk_id": "4edd937b5877:0029",
+      "n_action": 30,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q076",
+      "chunk_id": "2836fd2a5622:0269",
+      "n_action": 22,
+      "n_quantity": 4
+    },
+    {
+      "qid": "q177",
+      "chunk_id": "0870a91a7cc1:0033",
+      "n_action": 27,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q282",
+      "chunk_id": "45f9865b55b3:0071",
+      "n_action": 34,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q202",
+      "chunk_id": "5f6d5754c4ad:0033",
+      "n_action": 28,
+      "n_quantity": 3
+    }
+  ]
+}

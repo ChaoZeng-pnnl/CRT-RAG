@@ -1,0 +1,1716 @@
+{
+  "documents": {
+    "e7ad0c398aa2": {
+      "chunks": 495,
+      "candidates": 180,
+      "recommendations": 132,
+      "with_grade": 29,
+      "with_population": 32,
+      "seconds": 3.9,
+      "written": 132
+    },
+    "7c3781feaf22": {
+      "chunks": 508,
+      "candidates": 187,
+      "recommendations": 134,
+      "with_grade": 29,
+      "with_population": 33,
+      "seconds": 3.1,
+      "written": 134
+    },
+    "f3e61e207cc2": {
+      "chunks": 103,
+      "candidates": 25,
+      "recommendations": 9,
+      "with_grade": 1,
+      "with_population": 4,
+      "seconds": 0.5,
+      "written": 9
+    }
+  },
+  "started": "2026-11-20T14:13:03",
+  "refines_pair": {
+    "specific": "f3e61e207cc2:R001",
+    "general": "7c3781feaf22:R065",
+    "cos": 0.8576
+  },
+  "refines": {
+    "specific": "f3e61e207cc2",
+    "general": "7c3781feaf22",
+    "population": "prior to elective or emergency caesarean section"
+  },
+  "editions": {
+    "pairs": 29,
+    "grade_changed": [
+      {
+        "new": "7c3781feaf22:R087",
+        "old": "e7ad0c398aa2:R087",
+        "cos": 0.922,
+        "grade_from": "Strong recommendation, moderate quality of evidence",
+        "grade_to": "Conditional recommendation, moderate quality of evidence",
+        "grade_changed": true
+      }
+    ],
+    "recs_2018": 134,
+    "recs_2016": 132
+  },
+  "jev_calls": 679,
+  "recommendations": {
+    "e7ad0c398aa2": [
+      {
+        "rec_id": "e7ad0c398aa2:R000",
+        "text": "The panel suggests that\neither plain soap or an\nantimicrobial soap may be\nused for this purpose.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R001",
+        "text": "The panel recommends\nthat patients undergoing\ncardiothoracic and\northopaedic surgery with\nknown nasal carriage of",
+        "grade": null,
+        "population": "undergoing\ncardiothoracic and\northopaedic surgery with\nknown nasal carriage of"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R002",
+        "text": "The panel suggests considering to treat also patients with known nasal carriage of S. aureus\nundergoing other types of surgery with perioperative intranasal applications of mupirocin 2%\nointment with or without a combination of CHG body wash.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": "with known nasal carriage of S. aureus\nundergoing other types of surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R003",
+        "text": "Recommendations\nThe panel recommends that\nSAP should be administered\nprior to the surgical incision\nwhen indicated (depending\non the type of operation).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R004",
+        "text": "The panel recommends the administration of SAP within 120 minutes before incision, while\nconsidering the half-life of the antibiotic.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R005",
+        "text": "The panel suggests that\npreoperative oral antibiotics\ncombined with mechanical\nbowel preparation should be\nused to reduce the risk of SSI\nin adult patients undergoing\nelective colorectal surgery.",
+        "grade": null,
+        "population": "should be\nused to reduce the risk of SSI\nin adult patients"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R006",
+        "text": "The panel recommends\nthat mechanical bowel\npreparation alone (without\nadministration of oral\nantibiotics) should not be\nused for the purpose of\nreducing SSI in adult\npatients undergoing elective\ncolorectal surgery.",
+        "grade": null,
+        "population": "for the purpose of\nreducing SSI in adult\npatients undergoing elective\ncolorectal surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R007",
+        "text": "The panel recommends that\nin patients undergoing any\nsurgical procedure, hair\nshould either not be removed\nor, if absolutely necessary,\nit should be removed only\nwith a clipper.",
+        "grade": null,
+        "population": "The panel recommends that\nin patients undergoing any\nsurgical procedure"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R008",
+        "text": "The panel recommends\nalcohol-based antiseptic\nsolutions based on CHG for\nsurgical site skin preparation\nin patients undergoing\nsurgical procedures.",
+        "grade": null,
+        "population": "for\nsurgical site skin preparation\nin patients undergoing\nsurgical procedures"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R009",
+        "text": "Recommendations\nThe panel suggests that\nantimicrobial sealants\nshould not be used\nafter surgical site skin\npreparation for the\npurpose of reducing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R010",
+        "text": "The panel recommends\nthat surgical hand\npreparation should be\nperformed by scrubbing\nwith either a suitable\nantimicrobial soap and\nwater or usng a suitable\nalcohol-based handrub\nbefore donning sterile\ngloves.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R011",
+        "text": "The panel suggests\nconsidering the\nadministration of oral\nor enteral multiple\nnutrient-enhanced\nnutritional formulas for\nthe purpose of preventing\nSSI in underweight\npatients who undergo\nmajor surgical operations.",
+        "grade": null,
+        "population": "for\nthe purpose of preventing\nSSI in underweight\npatients who undergo\nmajor surgical operations"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R012",
+        "text": "The panel suggests not\nto discontinue\nimmunosuppressive\nmedication prior to\nsurgery for the purpose\nof preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R013",
+        "text": "The panel recommends\nthat adult patients\nundergoing general\nanaesthesia with\nendotracheal intubation\nfor surgical procedures\nshould receive an 80%\nfraction of inspired oxygen\nintraoperatively and,\nif feasible, in the\nimmediate postoperative\nperiod for 2-6 hours to\nreduce the risk of SSI.",
+        "grade": null,
+        "population": "that adult patients\n"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R014",
+        "text": "Recommendations\nThe panel suggests the use\nof warming devices in the\nOR and during the surgical\nprocedure for patient body\nwarming with the purpose\nof reducing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R015",
+        "text": "The panel suggests the use\nof protocols for intensive\nperioperative blood glucose\ncontrol for both diabetic\nand non-diabetic adult\npatients undergoing surgical\nprocedures to reduce\nthe risk of SSI.",
+        "grade": null,
+        "population": "for both diabetic\nand non-diabetic adult\npatients"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R016",
+        "text": "The panel suggests the use\nof goal-directed fluid\ntherapy intraoperatively to\nreduce the risk of SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R017",
+        "text": "The panel suggests that\neither sterile, disposable\nnon-woven or sterile,\nreusable woven drapes and\ngowns can be used during\nsurgical operations for the\npurpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R018",
+        "text": "The panel suggests not to use plastic adhesive incise drapes with or without antimicrobial\nproperties for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation, low to very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R019",
+        "text": "Recommendations\nThe panel suggests\nconsidering the use of\nwound protector devices in\nclean-contaminated,\ncontaminated and dirty\nabdominal surgical\nprocedures for the purpose\nof reducing the rate of SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R020",
+        "text": "The panel suggests\nconsidering the use of\nirrigation of the incisional\nwound with an aqueous\nPVP-I solution before\nclosure for the purpose\nof preventing SSI,\nparticularly in clean and\nclean-contaminated wounds.",
+        "grade": null,
+        "population": "particularly in clean and\nclean-contaminated wounds"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R021",
+        "text": "The panel suggests that\nantibiotic incisional wound\nirrigation should not be used\nfor the purpose of\npreventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R022",
+        "text": "The panel suggests the use\nof prophylactic negative\npressure wound therapy in\nadult patients on primarily\nclosed surgical incisions\nin high-risk wounds for the\npurpose of the prevention\nof SSI, while taking resources\ninto account.",
+        "grade": null,
+        "population": "The panel suggests the use\nof prophylactic negative\npressure wound therapy in\nadult patients on primarily\nclosed surgical incisions\nin high-risk wounds"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R023",
+        "text": "The panel suggests the use\nof triclosan-coated sutures\nfor the purpose of reducing\nthe risk of SSI, independent\nof the type of surgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R024",
+        "text": "The panel suggests that\nlaminar airflow ventilation\nsystems should not be used\nto reduce the risk of SSI for\npatients undergoing total\narthroplasty surgery.",
+        "grade": null,
+        "population": "for\npatients undergoing total\narthroplasty surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R025",
+        "text": "The panel recommends\nagainst the prolongation\nof SAP after completion\nof the operation for the\npurpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R026",
+        "text": "The panel suggests not using\nany type of advanced dressing\nover a standard dressing on\nprimarily closed surgical\nwounds for the purpose of\npreventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R027",
+        "text": "The panel suggests that\npreoperative antibiotic\nprophylaxis should not be\ncontinued in the presence of\na wound drain for the purpose\nof preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R028",
+        "text": "The panel suggests removing the wound drain when clinically indicated.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R029",
+        "text": "For this reason, many surveillance\nnetworks recommend the practice of post-discharge\nsurveillance.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R030",
+        "text": "In order to adjust for variations in case-mix, it is\nrecommended to present risk-adjusted SSI rates in\naddition to crude rates (32).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R031",
+        "text": "Soaking contaminated medical devices\nprior to cleaning in disinfectants of any kind is not\nsufficient or recommended (14).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R032",
+        "text": "It is recommended that these areas\nbe physically demarcated to avoid crosscontamination from dirty to clean.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R033",
+        "text": "Soaking of medical\ndevices in disinfectant prior to cleaning or during\ntransportation is not recommended as there is a\ndanger of spilling contaminated fluids (13) (Box\n3.3.2).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R034",
+        "text": "Decontamination of medical devices in clinical areas\nis not recommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R035",
+        "text": "to cleaning\nDo not soak instruments in desinfectant prior to cleaning\nSoaking instruments in 0.5% hypochlorite solution or any other disinfectant before cleaning is not\nrecommended for the following reasons.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R036",
+        "text": "Manual chemical sterilization is not\nrecommended because the process cannot be\ncontrolled and may lead to occupational health\nissues.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R037",
+        "text": "Use of chemicals, such as chlorine, orthophthalaldehyde or glutaraldehyde, is not\nrecommended for sterilization.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R038",
+        "text": "It is recommended that the storage\ncontainers should not be made of absorbent\nmaterial, such as wood.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R039",
+        "text": "The panel suggests that either a plain or antimicrobial soap may be used for this purpose.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R040",
+        "text": "Most recommend bathing with soap the day of the\noperation or the day before.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R041",
+        "text": "NICE\nBathing is recommended to reduce the microbial load, but not necessarily SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R042",
+        "text": "The Royal College of Bathing with soap is recommended on the day of or before the procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R043",
+        "text": "US Institute of\nPreoperative bathing with CHG soap is recommended for at least 3 days before\nHealthcare\nsurgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R044",
+        "text": "UK High impact\nPatient showering (or bathing/washing if unable to shower) is recommended\nintervention bundle\npreoperatively using soap.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R045",
+        "text": "The panel recommends that patients undergoing cardiothoracic and orthopaedic surgery with\nknown nasal carriage of S. aureus should receive perioperative intranasal applications of\nmupirocin 2% ointment with or without a combination of CHG body wash.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": "undergoing cardiothoracic and orthopaedic surgery with\nknown nasal carriage of S. aureus"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R046",
+        "text": "ñ As a result, the GDG agreed to recommend that cardiothoracic and orthopaedic surgical patients\nwith known nasal carriage of S. aureus should receive perioperative intranasal applications of\nmupirocin 2% ointment with or without a combination of CHG body wash.",
+        "grade": null,
+        "population": "that cardiothoracic and orthopaedic surgical patients\nwith known nasal carriage of S. aureus"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R047",
+        "text": "Consequently, monitoring of\nAMR is recommended in facilities where mupirocin is used (10-12).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R048",
+        "text": "The SSI prevention guideline published by\nSHEA/IDSA) (34) recommends screening for",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R049",
+        "text": "Some SSI prevention bundles,\nsuch as the one issued by the US-based Institute\nfor Healthcare Improvement (35) recommend\nto screen for S. aureus and decolonize prior to\nsurgery, if positive (Table 4.2.1).",
+        "grade": null,
+        "population": "prior to\nsurgery, if positive (Table 4.2.1)"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R050",
+        "text": "Recommendations\nThe panel recommends the administration of SAP prior to the surgical incision when indicated\n(depending on the type of operation).",
+        "grade": "Strong recommendation, low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R051",
+        "text": "As a result, the GDG unanimously agreed to recommend\nthe administration of SAP prior to incision and decided that the strength of this recommendation\nshould be strong, although the overall quality of evidence is low.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R052",
+        "text": "Given the significant increase of SSI with SAP administration more than 120 minutes before incision,\nthe GDG decided to recommend SAP administration within 120 minutes pre-incision.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R053",
+        "text": "For this reason, the GDG recommends to take into account the half-life of the\nadministered antibiotics in order to establish the exact time of administration within 120 minutes\npre-incision (for example, administration closer to the incision time [<60 minutes] for antibiotics with\na short half-life, such as cefazolin, cefoxitin and penicillins in general).The same attention should be\npaid to the single antibiotic half-life when considering re-dosing during prolonged surgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R054",
+        "text": "ñ The guidelines of the American Society of Health-System Pharmacists (ASHSP) (4) recommend that\nintraoperative re-dosing is needed if the duration of the procedure exceeds 2 half-lives of the drug or\nif there is excessive blood loss during the procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R055",
+        "text": "Administration of the first dose of the antimicrobial beginning within 60 minutes\nbefore surgical incision is recommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R056",
+        "text": "The panel suggests that preoperative oral antibiotics combined with mechanical bowel\npreparation (MBP) should be used to reduce the risk of SSI in adult patients undergoing elective\ncolorectal surgery.",
+        "grade": "Conditional recommendation, moderate quality evidence",
+        "population": "should be used to reduce the risk of SSI in adult patients undergoing elective\ncolorectal surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R057",
+        "text": "The panel recommends that MBP alone (without administration of oral antibiotics) should not\nbe used for the purpose of reducing SSI in adult patients undergoing elective colorectal surgery.",
+        "grade": "Strong recommendation, moderate quality evidence",
+        "population": "for the purpose of reducing SSI in adult patients"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R058",
+        "text": "Considering the moderate quality of the\nevidence and the demonstrated effect, the GDG decided to suggest that preoperative oral\nantibiotics in combination with MBP should be used to reduce the risk of SSI in addition to routine\nstandard intravenous antibiotic prophylaxis, when appropriate.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R059",
+        "text": "Therefore,\nthe GDG unanimously agreed to recommend that MBP alone, without administration of oral\nantibiotics, should not be used for the purpose of reducing SSI in elective colorectal surgery.",
+        "grade": null,
+        "population": "for the purpose of reducing SSI in elective colorectal surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R060",
+        "text": "For example,\nSHEA/IDSA recommend to use MBP for colorectal\nprocedures, but only combined with oral\nantibiotics.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R061",
+        "text": "Recommendation\nThe panel recommends that in patients undergoing any surgical procedure, hair should either not\nbe removed or, if absolutely necessary, it should be removed only with a clipper.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": "Recommendation\nThe panel recommends that in patients undergoing any surgical procedure"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R062",
+        "text": "ñ As a result, the GDG unanimously agreed to recommend that hair should either not be removed or,\nif absolutely necessary, it should be removed only with a clipper and the strength of this\nrecommendation should be strong.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R063",
+        "text": "All other guidelines recommend not using razors.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R064",
+        "text": "When required for reuse,\nthe GDG suggests that local infection prevention\nprocedures are followed for clipper/clipper head\ndecontamination, taking into account the\nfollowing basic instructions for the general process:",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R065",
+        "text": "Recommendation\nThe panel recommends alcohol-based antiseptic solutions based on CHG for surgical site skin\npreparation in patients undergoing surgical procedures.",
+        "grade": "Strong recommendation, low to moderate quality of evidence",
+        "population": "for surgical site skin\npreparation in patients undergoing surgical procedures"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R066",
+        "text": "As a result, the GDG agreed\nto recommend the use of an alcohol-based antiseptic solution preferably based on CHG for surgical\nsite preparation on intact skin.",
+        "grade": null,
+        "population": "for surgical\nsite preparation on intact skin"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R067",
+        "text": "Recommendation\nThe panel suggests that antimicrobial sealants should not be used after surgical site skin\npreparation for the purpose of reducing SSI.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R068",
+        "text": "The GDG unanimously\nagreed that there is no advantage in using antimicrobial sealants and suggested not using them.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R069",
+        "text": "Recommendation\nThe panel recommends that surgical hand preparation be performed either by scrubbing with a\nsuitable antimicrobial soap and water or using a suitable ABHR before donning sterile gloves.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R070",
+        "text": "Appropriate surgical hand preparation is recommended in the WHO guidelines on hand\nhygiene in health care (1) issued in 2009 and in all other existing national and international\nguidelines on the prevention of SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R071",
+        "text": "ñ The WHO hand hygiene guidelines recommend preferably using “a product ensuring sustained\nactivity”.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R072",
+        "text": "Once in the operating area, repeating handrubbing or scrubbing without an\nadditional prior handwash is recommended before switching to the next procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R073",
+        "text": "The WHO guidelines on hand hygiene in health care\n(1) (Table 4.9.1) recommend to keeping nails short\nand to remove all jewellery, artificial nails or nail\npolish before surgical hand preparation.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R074",
+        "text": "If hands\nare visibly soiled, the guidelines recommend\nto wash hands and remove debris from underneath\nfingernails using a nail cleaner (not brushes),\npreferably under running water (sinks should be\ndesigned to reduce the risk of splashes).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R075",
+        "text": "Hands and\nforearms should be scrubbed with antimicrobial\nsoap for the length of time recommended by the\nmanufacturer, usually 2–5 minutes.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R076",
+        "text": "The guidelines\nstipulate that if the quality of water is not assured\nin the OR, surgical hand antisepsis using ABHR is\nrecommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R077",
+        "text": "A sufficient amount of ABHR should\nbe applied to dry hands and forearms for the length\nof time recommended by the manufacturer,\ntypically 1.5 minutes, and hands and forearms\nallowed to dry before donning sterile gloves.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R078",
+        "text": "ñ If the quality of water is not assured in the OR, surgical hand antisepsis using an\nABHR is recommended before donning sterile gloves when performing surgical\nprocedures.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R079",
+        "text": "ñ When performing surgical hand antisepsis using an antimicrobial soap, scrub hands\nand forearms for the length of time recommended by the manufacturer, typically\n2–5 minutes.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R080",
+        "text": "ñ After application of the ABHR as recommended, allow hands and forearms to dry\nthoroughly before donning sterile gloves.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R081",
+        "text": "Towel reuse is not recommended in the health care\nsetting and towels should be changed between\nhealth care workers, thus resulting in resource\nimplications.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R082",
+        "text": "Recommendation\nThe panel suggests considering the administration of oral or enteral multiple nutrient-enhanced\nnutritional formulas for the purpose of preventing SSI in underweight patients who undergo\nmajor surgical operations.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": "for the purpose of preventing SSI in underweight patients who undergo\nmajor surgical operations"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R083",
+        "text": "ñ As a result of these evaluations and comparisons, the GDG agreed to suggest that underweight\npatients who are undergoing major surgical operations (particularly oncology and cardiovascular\nprocedures) may benefit from the administration of oral or enteral multiple nutrient-enhanced\nnutritional formulas for the purpose of preventing SSI.",
+        "grade": null,
+        "population": "that underweight\npatients who are undergoing major surgical operations"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R084",
+        "text": "Recommendation\nThe panel suggests not discontinuing immunosuppressive medication prior to surgery for the\npurpose of preventing SSI.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R085",
+        "text": "Taking into consideration (1) the very limited\nevidence (for anti-TNF) or lack of evidence and even potential harm (for MTX) to support a\ndiscontinuation of treatment, and (2) the risk associated with the discontinuation of treatment on the\npatient’s underlying disease/s, the GDG unanimously agreed to suggest that immunosuppressive\nmedication should not be discontinued for the purpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R086",
+        "text": "This guideline was published\nby SHEA/IDSA and recommends avoiding the use\nof immunosuppressive agents in the perioperative\nperiod if possible (16).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R087",
+        "text": "Recommendation\nThe panel recommends that adult patients undergoing general anaesthesia with endotracheal\nintubation for surgical procedures should receive an 80% fraction of inspired oxygen (FiO2)",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": "that adult patients"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R088",
+        "text": "As a result, the GDG unanimously\nagreed to recommend that patients undergoing surgical procedures under general anaesthesia\nshould receive 80% FiO2 intraoperatively and in the immediate postoperative period for 2-6 hours,\nif feasible, and that the strength of this recommendation should be strong.",
+        "grade": null,
+        "population": "undergoing surgical procedures under general anaesthesia\n"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R089",
+        "text": "SSI prevention bundles from both England’s High\nimpact intervention approach and Health Protection\nScotland, as well as guidelines from the Royal\nCollege of Physicians of Ireland and the UK-based\nNICE, recommend maintaining a haemoglobin\noxygen saturation of at least 95% (13-16).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R090",
+        "text": "The SSI\nprevention guidelines of SHEA/IDSA recommend\noptimizing tissue oxygenation by administering\nsupplemental oxygen during and immediately\nfollowing surgical procedures involving mechanical\nventilation (17).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R091",
+        "text": "Recommendation\nThe panel suggests the use of warming devices in the operating room and during the surgical\nprocedure for patient body warming with the purpose of reducing SSI.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R092",
+        "text": "Recommendation\nThe panel suggests the use of protocols for intensive perioperative blood glucose control for both\ndiabetic and non-diabetic adult patients undergoing surgical procedures to reduce the risk of SSI.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": "for both\ndiabetic and non-diabetic adult patients"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R093",
+        "text": "They\nrecommend either target levels between 140-200\nmg/dL (7.8-11.1 mmol/L) or upper limits of 180\nmg/dL (10mmol/L) or 198 mg/dL (11mmol/L).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R094",
+        "text": "A target blood glucose level of 7.8 to 11.1 mmol/L (140 to 200 mg/dL) is\nrecommended if insulin therapy is used in SICU/MICU patients.",
+        "grade": null,
+        "population": "if insulin therapy is used in SICU/MICU patients"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R095",
+        "text": "Recommendation\nThe panel suggests the use of goal-directed fluid therapy (GDFT) intraoperatively to reduce the\nrisk of SSI.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R096",
+        "text": "ñ Considering the low quality evidence, as well as the above-mentioned factors, the GDG agreed to\nsuggest the use of GDFT intraoperatively and decided that the strength of this recommendation\nshould be conditional.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R097",
+        "text": "ñ Although the optimal strategy for GDFT cannot be identified from the published data due to the\nheterogeneity of the protocols used in the included studies, the panel suggests administering haemodynamic therapy based on a goal-directed approach during the entire surgical procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R098",
+        "text": "The UK-based NICE recommends\nmaintaining adequate perfusion during surgery (26).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R099",
+        "text": "However, in a statement on oxygen therapy, it is\nindirectly recommended to maintain an appropriate\nvolume replacement (28).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R100",
+        "text": "The panel suggests that either sterile, disposable, non-woven or sterile, reusable woven drapes\nand surgical gowns can be used during surgical operations for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation, moderate to very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R101",
+        "text": "Considering the quality of the evidence, the GDG\nunanimously agreed to suggest that either sterile disposable non-woven or sterile reusable woven\ndrapes and surgical gowns can be used.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R102",
+        "text": "The recent SHEA/IDSA\nguidelines issued in 2014 recommend that plastic\nadhesive drapes with or without antimicrobial\nproperties should not be used routinely as\na strategy to prevent SSI (10).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R103",
+        "text": "A cost-effectiveness analysis\nis highly recommended, especially in low-resource\nsettings.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R104",
+        "text": "Recommendation\nThe panel suggests considering the use of wound protector (WP) devices in clean-contaminated,\ncontaminated and dirty abdominal surgical procedures for the purpose of reducing the rate of SSI.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R105",
+        "text": "ñ The GDG agreed to suggest the use of either WP device in abdominal surgery with laparotomy for\nthe purpose of reducing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R106",
+        "text": "However, SHEA/IDSA guidelines recommend the use\nof impervious plastic WPs for gastrointestinal and\nbiliary tract surgery (13).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R107",
+        "text": "Recommendations\nThe panel considers that there is insufficient evidence to recommend for or against saline\nirrigation of incisional wounds before closure for the purpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R108",
+        "text": "The panel suggests considering the use of irrigation of the incisional wound with an aqueous PVP-I\nsolution before closure for the purpose of preventing SSI, particularly in clean and cleancontaminated wounds.",
+        "grade": "Conditional recommendations/low quality of evidence",
+        "population": "particularly in clean and cleancontaminated wounds"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R109",
+        "text": "The panel suggests that antibiotic incisional wound irrigation before closure should not be used\nfor the purpose of preventing SSI.",
+        "grade": "Conditional recommendations/low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R110",
+        "text": "Finally, the GDG agreed to\nsuggest that antibiotic incisional wound irrigation should not be used for the purpose of preventing\nSSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R111",
+        "text": "The SHEA/IDSA guideline recommends performing\nintraoperative antiseptic wound lavage (grade II\nlevel of evidence) (18).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R112",
+        "text": "Therefore, the NICE\nguideline recommends that wound irrigation should\nnot be used to reduce the risk of SSI (20) .",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R113",
+        "text": "Recommendation\nThe panel suggests the use of prophylactic negative pressure wound therapy (pNPWT) in adult\npatients on primarily closed surgical incisions in high-risk wounds, for the purpose of the\nprevention of SSI, while taking resources into account.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": "(pNPWT) in adult\npatients on primarily closed surgical incisions in high-risk wounds"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R114",
+        "text": "ñ As a result of the low quality evidence and the other above-mentioned factors, the majority of\nGDG members agreed to suggest the use of pNPWT on primarily closed surgical incisions in highrisk procedures, but taking resources into account.",
+        "grade": null,
+        "population": "the majority of\nGDG members agreed to suggest the use of pNPWT on primarily closed surgical incisions in highrisk procedures"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R115",
+        "text": "The SHEA/IDSA guidelines (3) recommend that\nall members of the operative team should\ndouble-glove and change gloves when perforation\nis observed.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R116",
+        "text": "In the case of double-gloving, a routine change of the outer gloves\nduring long surgeries is often recommended by health care practitioners.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R117",
+        "text": "Recommendation\nThe panel suggests the use of triclosan-coated sutures for the purpose of reducing the risk of SSI,\nindependent of the type of surgery.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R118",
+        "text": "Recommendation\nThe panel suggests that laminar airflow ventilation systems should not be used to reduce the risk\nof SSI for patients undergoing total arthroplasty surgery.",
+        "grade": "Conditional recommendation, low to very low quality of evidence",
+        "population": "for patients undergoing total arthroplasty surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R119",
+        "text": "The use of fans in the\noperating room is not recommended and should be\nused only as a last resort if the lack of air\ncirculation affects the surgeon’s performance.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R120",
+        "text": "Recommendation\nThe panel recommends against the prolongation of SAP administration after completion of the\noperation for the purpose of preventing SSI.",
+        "grade": "Strong recommendation/moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R121",
+        "text": "Considering this limited and low to very low quality evidence in support of SAP prolongation in the\nabove-mentioned procedures, as well as the possible harm associated with the prolonged duration\nof antibiotic administration, the GDG agreed to recommend against the prolongation of antibiotic\nadministration after completion of the operation for the purpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R122",
+        "text": "ñ The guidelines of the American Society of Health-System Pharmacists (1) recommend that\nintraoperative re-dosing is needed if the duration of the procedure exceeds 2 half-lives of the drug\nor if there is excessive blood loss during the procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R123",
+        "text": "and the American Society of Health-System\nPharmacists (1), recommend discontinuing SAP\nwithin 24 hours after surgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R124",
+        "text": "The 2012 SSI\nprevention bundle from the US Institute of\nHealthcare Improvement (18) recommends\ndiscontinuing SAP within 24 hours in general\nand within 48 hours in cardiac surgery.",
+        "grade": null,
+        "population": "(18) recommends\ndiscontinuing SAP within 24 hours in general\nand within 48 hours in cardiac surgery"
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R125",
+        "text": "Other\nguidelines published by the UK-based NICE (19),\nthe Scottish Intercollegiate Guidelines Network\n(SIGN) (20), the Royal College of Physicians\nof Ireland (21) and the UK Department of Health\n(22), recommend a single dose of preoperative\nSAP and no postoperative continuation with\nor without exceptions for specific surgical\nprocedures.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R126",
+        "text": "A single dose of antibiotic with a long enough half-life to achieve activity throughout\nthe operation is recommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R127",
+        "text": "Recommendation\nThe panel suggests not using any type of advanced dressing over a standard dressing on primarily\nclosed surgical wounds for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation/low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R128",
+        "text": "The update recommends further research to confirm\nthe effectiveness of modern types of dressing (5).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R129",
+        "text": "Postoperative care bundles recommend that\nsurgical dressings be kept undisturbed for\na minimum of 48 hours after surgery unless leakage\noccurs.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R130",
+        "text": "The panel suggests that perioperative antibiotic prophylaxis should not be continued to the\npresence of a wound drain for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "e7ad0c398aa2:R131",
+        "text": "Considering the very low\nquality evidence and the finding that the body of evidence does not identify an optimal time point for\nwound drain removal with regard to the prevention of SSI, the GDG decided to suggest that the\nwound drain should be removed when clinically indicated.",
+        "grade": null,
+        "population": null
+      }
+    ],
+    "7c3781feaf22": [
+      {
+        "rec_id": "7c3781feaf22:R000",
+        "text": "The panel suggests that\neither plain soap or an\nantimicrobial soap may be\nused for this purpose.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R001",
+        "text": "The panel recommends\nthat patients undergoing\ncardiothoracic and\northopaedic surgery with\nknown nasal carriage of",
+        "grade": null,
+        "population": "undergoing\ncardiothoracic and\northopaedic surgery with\nknown nasal carriage of"
+      },
+      {
+        "rec_id": "7c3781feaf22:R002",
+        "text": "The panel suggests considering to treat also patients with known nasal carriage of S. aureus\nundergoing other types of surgery with perioperative intranasal applications of mupirocin 2%\nointment with or without a combination of CHG body wash.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": "with known nasal carriage of S. aureus\nundergoing other types of surgery"
+      },
+      {
+        "rec_id": "7c3781feaf22:R003",
+        "text": "Recommendations\nThe panel recommends that\nSAP should be administered\nprior to the surgical incision\nwhen indicated (depending\non the type of operation).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R004",
+        "text": "The panel recommends the administration of SAP within 120 minutes before incision, while\nconsidering the half-life of the antibiotic.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R005",
+        "text": "The panel suggests that\npreoperative oral antibiotics\ncombined with mechanical\nbowel preparation should be\nused to reduce the risk of SSI\nin adult patients undergoing\nelective colorectal surgery.",
+        "grade": null,
+        "population": "should be\nused to reduce the risk of SSI\nin adult patients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R006",
+        "text": "The panel recommends\nthat mechanical bowel\npreparation alone (without\nadministration of oral\nantibiotics) should not be\nused for the purpose of\nreducing SSI in adult\npatients undergoing elective\ncolorectal surgery.",
+        "grade": null,
+        "population": "for the purpose of\nreducing SSI in adult\npatients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R007",
+        "text": "The panel recommends that\nin patients undergoing any\nsurgical procedure, hair\nshould either not be removed\nor, if absolutely necessary,\nit should be removed only\nwith a clipper.",
+        "grade": null,
+        "population": "The panel recommends that\nin patients undergoing any\nsurgical procedure"
+      },
+      {
+        "rec_id": "7c3781feaf22:R008",
+        "text": "The panel recommends\nalcohol-based antiseptic\nsolutions based on CHG for\nsurgical site skin preparation\nin patients undergoing\nsurgical procedures.",
+        "grade": null,
+        "population": "for\nsurgical site skin preparation\nin patients undergoing\nsurgical procedures"
+      },
+      {
+        "rec_id": "7c3781feaf22:R009",
+        "text": "Recommendations\nThe panel suggests that\nantimicrobial sealants\nshould not be used\nafter surgical site skin\npreparation for the\npurpose of reducing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R010",
+        "text": "The panel recommends\nthat surgical hand\npreparation should be\nperformed by scrubbing\nwith either a suitable\nantimicrobial soap and\nwater or using a suitable\nalcohol-based handrub\nbefore donning sterile\ngloves.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R011",
+        "text": "The panel suggests\nconsidering the\nadministration of oral\nor enteral multiple\nnutrient-enhanced\nnutritional formulas for\nthe purpose of preventing\nSSI in underweight\npatients who undergo\nmajor surgical operations.",
+        "grade": null,
+        "population": "for\nthe purpose of preventing\nSSI in underweight\npatients who undergo\nmajor surgical operations"
+      },
+      {
+        "rec_id": "7c3781feaf22:R012",
+        "text": "The panel suggests not\nto discontinue\nimmunosuppressive\nmedication prior to\nsurgery for the purpose\nof preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R013",
+        "text": "The panel suggests that\nadult patients undergoing\ngeneral anaesthesia with\ntracheal intubation\nfor surgical procedures\nshould receive an 80%\nfraction of inspired oxygen\nintraoperatively and,\nif feasible, in the\nimmediate postoperative\nperiod for 2-6 hours to\nreduce the risk of SSI.",
+        "grade": null,
+        "population": "that\nadult patients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R014",
+        "text": "Recommendations\nThe panel suggests the use\nof warming devices in the\noperating room and during\nthe surgical procedure for\npatient body warming with\nthe purpose of reducing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R015",
+        "text": "The panel suggests the use\nof protocols for intensive\nperioperative blood glucose\ncontrol for both diabetic\nand non-diabetic adult\npatients undergoing surgical\nprocedures to reduce\nthe risk of SSI.",
+        "grade": null,
+        "population": "for both diabetic\nand non-diabetic adult\npatients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R016",
+        "text": "The panel suggests the use\nof goal-directed fluid\ntherapy intraoperatively\nto reduce the risk of SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R017",
+        "text": "The panel suggests that\neither sterile, disposable\nnon-woven or sterile,\nreusable woven drapes and\ngowns can be used during\nsurgical operations for the\npurpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R018",
+        "text": "The panel suggests not to use plastic adhesive incise drapes with or without antimicrobial\nproperties for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation, low to very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R019",
+        "text": "Recommendations\nThe panel suggests\nconsidering the use of\nwound protector devices in\nclean-contaminated,\ncontaminated and dirty\nabdominal surgical\nprocedures for the purpose\nof reducing the rate of SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R020",
+        "text": "The panel suggests\nconsidering the use of\nirrigation of the incisional\nwound with an aqueous\nPVP-I solution before\nclosure for the purpose\nof preventing SSI,\nparticularly in clean and\nclean-contaminated wounds.",
+        "grade": null,
+        "population": "particularly in clean and\nclean-contaminated wounds"
+      },
+      {
+        "rec_id": "7c3781feaf22:R021",
+        "text": "The panel suggests that\nantibiotic incisional wound\nirrigation should not be used\nfor the purpose of\npreventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R022",
+        "text": "The panel suggests the use\nof prophylactic negative\npressure wound therapy in\nadult patients on primarily\nclosed surgical incisions\nin high-risk wounds for the\npurpose of the prevention\nof SSI, while taking resources\ninto account.",
+        "grade": null,
+        "population": "The panel suggests the use\nof prophylactic negative\npressure wound therapy in\nadult patients on primarily\nclosed surgical incisions\nin high-risk wounds"
+      },
+      {
+        "rec_id": "7c3781feaf22:R023",
+        "text": "The panel suggests the use\nof triclosan-coated sutures\nfor the purpose of reducing\nthe risk of SSI, independent\nof the type of surgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R024",
+        "text": "The panel suggests that\nlaminar airflow ventilation\nsystems should not be used\nto reduce the risk of SSI for\npatients undergoing total\narthroplasty surgery.",
+        "grade": null,
+        "population": "for\npatients undergoing total\narthroplasty surgery"
+      },
+      {
+        "rec_id": "7c3781feaf22:R025",
+        "text": "The panel recommends\nagainst the prolongation\nof SAP after completion\nof the operation for the\npurpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R026",
+        "text": "The panel suggests not using\nany type of advanced dressing\nover a standard dressing on\nprimarily closed surgical\nwounds for the purpose of\npreventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R027",
+        "text": "The panel suggests that\npreoperative antibiotic\nprophylaxis should not be\ncontinued in the presence of\na wound drain for the purpose\nof preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R028",
+        "text": "The panel suggests removing the wound drain when clinically indicated.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R029",
+        "text": "For this reason, many surveillance\nnetworks recommend the practice of post-discharge\nsurveillance.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R030",
+        "text": "In order to adjust for variations in case-mix, it is\nrecommended to present risk-adjusted SSI rates in\naddition to crude rates (32).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R031",
+        "text": "Soaking contaminated medical devices\nprior to cleaning in disinfectants of any kind is not\nsufficient or recommended (14).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R032",
+        "text": "It is recommended that these areas\nbe physically demarcated to avoid crosscontamination from dirty to clean.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R033",
+        "text": "Soaking of medical\ndevices in disinfectant prior to cleaning or during\ntransportation is not recommended as there is a\ndanger of spilling contaminated fluids (13) (Box\n3.3.2).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R034",
+        "text": "Decontamination of medical devices in clinical areas\nis not recommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R035",
+        "text": "to cleaning\nDo not soak instruments in desinfectant prior to cleaning\nSoaking instruments in 0.5% hypochlorite solution or any other disinfectant before cleaning is not\nrecommended for the following reasons.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R036",
+        "text": "Manual chemical sterilization is not\nrecommended because the process cannot be\ncontrolled and may lead to occupational health\nissues.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R037",
+        "text": "Use of chemicals, such as chlorine, orthophthalaldehyde or glutaraldehyde, is not\nrecommended for sterilization.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R038",
+        "text": "It is recommended that the storage\ncontainers should not be made of absorbent\nmaterial, such as wood.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R039",
+        "text": "The panel suggests that either a plain or antimicrobial soap may be used for this purpose.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R040",
+        "text": "Most recommend bathing with soap the day of the\noperation or the day before.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R041",
+        "text": "NICE\nBathing is recommended to reduce the microbial load, but not necessarily SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R042",
+        "text": "The Royal College of Bathing with soap is recommended on the day of or before the procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R043",
+        "text": "US Institute of\nPreoperative bathing with CHG soap is recommended for at least 3 days before\nHealthcare\nsurgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R044",
+        "text": "UK High impact\nPatient showering (or bathing/washing if unable to shower) is recommended\nintervention bundle\npreoperatively using soap.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R045",
+        "text": "The panel recommends that patients undergoing cardiothoracic and orthopaedic surgery with\nknown nasal carriage of S. aureus should receive perioperative intranasal applications of\nmupirocin 2% ointment with or without a combination of CHG body wash.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": "undergoing cardiothoracic and orthopaedic surgery with\nknown nasal carriage of S. aureus"
+      },
+      {
+        "rec_id": "7c3781feaf22:R046",
+        "text": "ñ As a result, the GDG agreed to recommend that cardiothoracic and orthopaedic surgical patients\nwith known nasal carriage of S. aureus should receive perioperative intranasal applications of\nmupirocin 2% ointment with or without a combination of CHG body wash.",
+        "grade": null,
+        "population": "that cardiothoracic and orthopaedic surgical patients\nwith known nasal carriage of S. aureus"
+      },
+      {
+        "rec_id": "7c3781feaf22:R047",
+        "text": "Consequently, monitoring of\nAMR is recommended in facilities where mupirocin is used (10-12).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R048",
+        "text": "The SSI prevention guideline published by\nSHEA/IDSA) (34) recommends screening for",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R049",
+        "text": "Some SSI prevention bundles,\nsuch as the one issued by the US-based Institute\nfor Healthcare Improvement (35) recommend\nto screen for S. aureus and decolonize prior to\nsurgery, if positive (Table 4.2.1).",
+        "grade": null,
+        "population": "prior to\nsurgery, if positive (Table 4.2.1)"
+      },
+      {
+        "rec_id": "7c3781feaf22:R050",
+        "text": "Recommendations\nThe panel recommends the administration of SAP prior to the surgical incision when indicated\n(depending on the type of operation).",
+        "grade": "Strong recommendation, low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R051",
+        "text": "As a result, the GDG unanimously agreed to recommend\nthe administration of SAP prior to incision and decided that the strength of this recommendation\nshould be strong, although the overall quality of evidence is low.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R052",
+        "text": "Given the significant increase of SSI with SAP administration more than 120 minutes before incision,\nthe GDG decided to recommend SAP administration within 120 minutes pre-incision.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R053",
+        "text": "For this reason, the GDG recommends to take into account the half-life of the\nadministered antibiotics in order to establish the exact time of administration within 120 minutes\npre-incision (for example, administration closer to the incision time [<60 minutes] for antibiotics with\na short half-life, such as cefazolin, cefoxitin and penicillins in general).The same attention should be\npaid to the single antibiotic half-life when considering re-dosing during prolonged surgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R054",
+        "text": "ñ The guidelines of the American Society of Health-System Pharmacists (ASHSP) (4) recommend that\nintraoperative re-dosing is needed if the duration of the procedure exceeds 2 half-lives of the drug or\nif there is excessive blood loss during the procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R055",
+        "text": "Administration of the first dose of the antimicrobial beginning within 60 minutes\nbefore surgical incision is recommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R056",
+        "text": "The panel suggests that preoperative oral antibiotics combined with mechanical bowel\npreparation (MBP) should be used to reduce the risk of SSI in adult patients undergoing elective\ncolorectal surgery.",
+        "grade": "Conditional recommendation, moderate quality evidence",
+        "population": "should be used to reduce the risk of SSI in adult patients undergoing elective\ncolorectal surgery"
+      },
+      {
+        "rec_id": "7c3781feaf22:R057",
+        "text": "The panel recommends that MBP alone (without administration of oral antibiotics) should not\nbe used for the purpose of reducing SSI in adult patients undergoing elective colorectal surgery.",
+        "grade": "Strong recommendation, moderate quality evidence",
+        "population": "for the purpose of reducing SSI in adult patients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R058",
+        "text": "Considering the moderate quality of the\nevidence and the demonstrated effect, the GDG decided to suggest that preoperative oral\nantibiotics in combination with MBP should be used to reduce the risk of SSI in addition to routine\nstandard intravenous antibiotic prophylaxis, when appropriate.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R059",
+        "text": "Therefore,\nthe GDG unanimously agreed to recommend that MBP alone, without administration of oral\nantibiotics, should not be used for the purpose of reducing SSI in elective colorectal surgery.",
+        "grade": null,
+        "population": "for the purpose of reducing SSI in elective colorectal surgery"
+      },
+      {
+        "rec_id": "7c3781feaf22:R060",
+        "text": "For example,\nSHEA/IDSA recommend to use MBP for colorectal\nprocedures, but only combined with oral\nantibiotics.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R061",
+        "text": "Recommendation\nThe panel recommends that in patients undergoing any surgical procedure, hair should either not\nbe removed or, if absolutely necessary, it should be removed only with a clipper.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": "Recommendation\nThe panel recommends that in patients undergoing any surgical procedure"
+      },
+      {
+        "rec_id": "7c3781feaf22:R062",
+        "text": "ñ As a result, the GDG unanimously agreed to recommend that hair should either not be removed or,\nif absolutely necessary, it should be removed only with a clipper and the strength of this\nrecommendation should be strong.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R063",
+        "text": "All other guidelines recommend not using razors.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R064",
+        "text": "When required for reuse,\nthe GDG suggests that local infection prevention\nprocedures are followed for clipper/clipper head\ndecontamination, taking into account the\nfollowing basic instructions for the general process:",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R065",
+        "text": "Recommendation\nThe panel recommends alcohol-based antiseptic solutions based on CHG for surgical site skin\npreparation in patients undergoing surgical procedures.",
+        "grade": "Strong recommendation, low to moderate quality of evidence",
+        "population": "for surgical site skin\npreparation in patients undergoing surgical procedures"
+      },
+      {
+        "rec_id": "7c3781feaf22:R066",
+        "text": "As a result, the GDG agreed\nto recommend the use of an alcohol-based antiseptic solution preferably based on CHG for surgical\nsite preparation on intact skin.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R067",
+        "text": "Recommendation\nThe panel suggests that antimicrobial sealants should not be used after surgical site skin\npreparation for the purpose of reducing SSI.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R068",
+        "text": "The GDG unanimously\nagreed that there is no advantage in using antimicrobial sealants and suggested not using them.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R069",
+        "text": "Recommendation\nThe panel recommends that surgical hand preparation be performed either by scrubbing with a\nsuitable antimicrobial soap and water or using a suitable ABHR before donning sterile gloves.",
+        "grade": "Strong recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R070",
+        "text": "Appropriate surgical hand preparation is recommended in the WHO guidelines on hand\nhygiene in health care (1) issued in 2009 and in all other existing national and international\nguidelines on the prevention of SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R071",
+        "text": "ñ The WHO hand hygiene guidelines recommend preferably using “a product ensuring sustained\nactivity”.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R072",
+        "text": "Once in the operating area, repeating handrubbing or scrubbing without an\nadditional prior handwash is recommended before switching to the next procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R073",
+        "text": "The WHO guidelines on hand hygiene in health care\n(1) (Table 4.9.1) recommend to keeping nails short\nand to remove all jewellery, artificial nails or nail\npolish before surgical hand preparation.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R074",
+        "text": "If hands\nare visibly soiled, the guidelines recommend\nto wash hands and remove debris from underneath\nfingernails using a nail cleaner (not brushes),\npreferably under running water (sinks should be\ndesigned to reduce the risk of splashes).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R075",
+        "text": "Hands and\nforearms should be scrubbed with antimicrobial\nsoap for the length of time recommended by the\nmanufacturer, usually 2–5 minutes.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R076",
+        "text": "The guidelines\nstipulate that if the quality of water is not assured\nin the OR, surgical hand antisepsis using ABHR is\nrecommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R077",
+        "text": "A sufficient amount of ABHR should\nbe applied to dry hands and forearms for the length\nof time recommended by the manufacturer,\ntypically 1.5 minutes, and hands and forearms\nallowed to dry before donning sterile gloves.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R078",
+        "text": "ñ If the quality of water is not assured in the OR, surgical hand antisepsis using an\nABHR is recommended before donning sterile gloves when performing surgical\nprocedures.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R079",
+        "text": "ñ When performing surgical hand antisepsis using an antimicrobial soap, scrub hands\nand forearms for the length of time recommended by the manufacturer, typically\n2–5 minutes.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R080",
+        "text": "ñ After application of the ABHR as recommended, allow hands and forearms to dry\nthoroughly before donning sterile gloves.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R081",
+        "text": "Towel reuse is not recommended in the health care\nsetting and towels should be changed between\nhealth care workers, thus resulting in resource\nimplications.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R082",
+        "text": "Recommendation\nThe panel suggests considering the administration of oral or enteral multiple nutrient-enhanced\nnutritional formulas for the purpose of preventing SSI in underweight patients who undergo\nmajor surgical operations.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": "for the purpose of preventing SSI in underweight patients who undergo\nmajor surgical operations"
+      },
+      {
+        "rec_id": "7c3781feaf22:R083",
+        "text": "ñ As a result of these evaluations and comparisons, the GDG agreed to suggest that underweight\npatients who are undergoing major surgical operations (particularly oncology and cardiovascular\nprocedures) may benefit from the administration of oral or enteral multiple nutrient-enhanced\nnutritional formulas for the purpose of preventing SSI.",
+        "grade": null,
+        "population": "that underweight\npatients who are undergoing major surgical operations"
+      },
+      {
+        "rec_id": "7c3781feaf22:R084",
+        "text": "Recommendation\nThe panel suggests not discontinuing immunosuppressive medication prior to surgery for the\npurpose of preventing SSI.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R085",
+        "text": "Taking into consideration (1) the very limited\nevidence (for anti-TNF) or lack of evidence and even potential harm (for MTX) to support a\ndiscontinuation of treatment, and (2) the risk associated with the discontinuation of treatment on the\npatient’s underlying disease/s, the GDG unanimously agreed to suggest that immunosuppressive\nmedication should not be discontinued for the purpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R086",
+        "text": "This guideline was published\nby SHEA/IDSA and recommends avoiding the use\nof immunosuppressive agents in the perioperative\nperiod if possible (16).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R087",
+        "text": "Recommendation\nThe panel suggests that adult patients undergoing general anaesthesia with tracheal intubation\nfor surgical procedures should receive an 80% fraction of inspired oxygen (FiO2) intraoperatively and, if feasible, in the immediate postoperative period for 2-6 hours to reduce the risk of SSI.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": "that adult patients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R088",
+        "text": "As a\nresult, the GDG suggests that patients undergoing surgical procedures under general anaesthesia\nwith tracheal intubation should receive 80% FiO2 intraoperatively and in the immediate postoperative\nperiod for 2-6 hours, if feasible, and that the strength of this recommendation should be conditional.",
+        "grade": null,
+        "population": "undergoing surgical procedures under general anaesthesia\nwith tracheal intubation"
+      },
+      {
+        "rec_id": "7c3781feaf22:R089",
+        "text": "SSI prevention bundles from both NHS England’s\nHigh impact intervention approach and Health\nProtection Scotland, as well as guidelines from\nthe Royal College of Physicians of Ireland and\nthe UK-based NICE, recommend maintaining\na haemoglobin oxygen saturation of at least 95%\n(6, 8, 9, 18).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R090",
+        "text": "The SSI prevention guidelines\nof SHEA/IDSA recommend optimizing tissue\noxygenation by administering supplemental oxygen\nduring and immediately following surgical\nprocedures involving mechanical ventilation (5).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R091",
+        "text": "ñ Although monitoring oxygen saturation does not directly reflect the effect of this intervention, it is\nrecommended as good practice, primarily to detect hypoxia in all patients undergoing general\nanesthesia during surgery and in the postoperative period, regardless of the concentration of\ninspired oxygen the patient receives.",
+        "grade": null,
+        "population": "undergoing general\nanesthesia during surgery and in the postoperative period"
+      },
+      {
+        "rec_id": "7c3781feaf22:R092",
+        "text": "The administration of supplemental oxygen (80%) is recommended in the\nimmediate postoperative period following surgery performed under general\nanaesthesia.",
+        "grade": null,
+        "population": "is recommended in the\nimmediate postoperative period following surgery performed under general\nanaesthesia"
+      },
+      {
+        "rec_id": "7c3781feaf22:R093",
+        "text": "Recommendation\nThe panel suggests the use of warming devices in the operating room and during the surgical\nprocedure for patient body warming with the purpose of reducing SSI.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R094",
+        "text": "Recommendation\nThe panel suggests the use of protocols for intensive perioperative blood glucose control for both\ndiabetic and non-diabetic adult patients undergoing surgical procedures to reduce the risk of SSI.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": "for both\ndiabetic and non-diabetic adult patients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R095",
+        "text": "They\nrecommend either target levels between 140-200\nmg/dL (7.8-11.1 mmol/L) or upper limits of 180\nmg/dL (10mmol/L) or 198 mg/dL (11mmol/L).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R096",
+        "text": "A target blood glucose level of 7.8 to 11.1 mmol/L (140 to 200 mg/dL) is\nrecommended if insulin therapy is used in SICU/MICU patients.",
+        "grade": null,
+        "population": "if insulin therapy is used in SICU/MICU patients"
+      },
+      {
+        "rec_id": "7c3781feaf22:R097",
+        "text": "Recommendation\nThe panel suggests the use of goal-directed fluid therapy (GDFT) intraoperatively to reduce the\nrisk of SSI.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R098",
+        "text": "ñ Considering the low quality evidence, as well as the above-mentioned factors, the GDG agreed to\nsuggest the use of GDFT intraoperatively and decided that the strength of this recommendation\nshould be conditional.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R099",
+        "text": "ñ Although the optimal strategy for GDFT cannot be identified from the published data due to the\nheterogeneity of the protocols used in the included studies, the panel suggests administering haemodynamic therapy based on a goal-directed approach during the entire surgical procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R100",
+        "text": "The UK-based NICE recommends\nmaintaining adequate perfusion during surgery (26).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R101",
+        "text": "However, in a statement on oxygen therapy, it is\nindirectly recommended to maintain an appropriate\nvolume replacement (28).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R102",
+        "text": "The panel suggests that either sterile, disposable, non-woven or sterile, reusable woven drapes\nand surgical gowns can be used during surgical operations for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation, moderate to very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R103",
+        "text": "Considering the quality of the evidence, the GDG\nunanimously agreed to suggest that either sterile disposable non-woven or sterile reusable woven\ndrapes and surgical gowns can be used.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R104",
+        "text": "The recent SHEA/IDSA\nguidelines issued in 2014 recommend that plastic\nadhesive drapes with or without antimicrobial\nproperties should not be used routinely as\na strategy to prevent SSI (10).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R105",
+        "text": "A cost-effectiveness analysis\nis highly recommended, especially in low-resource\nsettings.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R106",
+        "text": "Recommendation\nThe panel suggests considering the use of wound protector (WP) devices in clean-contaminated,\ncontaminated and dirty abdominal surgical procedures for the purpose of reducing the rate of SSI.",
+        "grade": "Conditional recommendation, very low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R107",
+        "text": "ñ The GDG agreed to suggest the use of either WP device in abdominal surgery with laparotomy for\nthe purpose of reducing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R108",
+        "text": "However, SHEA/IDSA guidelines recommend the use\nof impervious plastic WPs for gastrointestinal and\nbiliary tract surgery (13).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R109",
+        "text": "Recommendations\nThe panel considers that there is insufficient evidence to recommend for or against saline\nirrigation of incisional wounds before closure for the purpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R110",
+        "text": "The panel suggests considering the use of irrigation of the incisional wound with an aqueous PVP-I\nsolution before closure for the purpose of preventing SSI, particularly in clean and cleancontaminated wounds.",
+        "grade": "Conditional recommendations/low quality of evidence",
+        "population": "particularly in clean and cleancontaminated wounds"
+      },
+      {
+        "rec_id": "7c3781feaf22:R111",
+        "text": "The panel suggests that antibiotic incisional wound irrigation before closure should not be used\nfor the purpose of preventing SSI.",
+        "grade": "Conditional recommendations/low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R112",
+        "text": "Finally, the GDG agreed to\nsuggest that antibiotic incisional wound irrigation should not be used for the purpose of preventing\nSSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R113",
+        "text": "The SHEA/IDSA guideline recommends performing\nintraoperative antiseptic wound lavage (grade II\nlevel of evidence) (18).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R114",
+        "text": "Therefore, the NICE\nguideline recommends that wound irrigation should\nnot be used to reduce the risk of SSI (20) .",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R115",
+        "text": "Recommendation\nThe panel suggests the use of prophylactic negative pressure wound therapy (pNPWT) in adult\npatients on primarily closed surgical incisions in high-risk wounds, for the purpose of the\nprevention of SSI, while taking resources into account.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": "(pNPWT) in adult\npatients on primarily closed surgical incisions in high-risk wounds"
+      },
+      {
+        "rec_id": "7c3781feaf22:R116",
+        "text": "ñ As a result of the low quality evidence and the other above-mentioned factors, the majority of\nGDG members agreed to suggest the use of pNPWT on primarily closed surgical incisions in highrisk procedures, but taking resources into account.",
+        "grade": null,
+        "population": "the majority of\nGDG members agreed to suggest the use of pNPWT on primarily closed surgical incisions in highrisk procedures"
+      },
+      {
+        "rec_id": "7c3781feaf22:R117",
+        "text": "The SHEA/IDSA guidelines (3) recommend that\nall members of the operative team should\ndouble-glove and change gloves when perforation\nis observed.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R118",
+        "text": "In the case of double-gloving, a routine change of the outer gloves\nduring long surgeries is often recommended by health care practitioners.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R119",
+        "text": "Recommendation\nThe panel suggests the use of triclosan-coated sutures for the purpose of reducing the risk of SSI,\nindependent of the type of surgery.",
+        "grade": "Conditional recommendation, moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R120",
+        "text": "Recommendation\nThe panel suggests that laminar airflow ventilation systems should not be used to reduce the risk\nof SSI for patients undergoing total arthroplasty surgery.",
+        "grade": "Conditional recommendation, low to very low quality of evidence",
+        "population": "for patients undergoing total arthroplasty surgery"
+      },
+      {
+        "rec_id": "7c3781feaf22:R121",
+        "text": "The use of fans in the\noperating room is not recommended and should be\nused only as a last resort if the lack of air\ncirculation affects the surgeon’s performance.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R122",
+        "text": "Recommendation\nThe panel recommends against the prolongation of SAP administration after completion of the\noperation for the purpose of preventing SSI.",
+        "grade": "Strong recommendation/moderate quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R123",
+        "text": "Considering this limited and low to very low quality evidence in support of SAP prolongation in the\nabove-mentioned procedures, as well as the possible harm associated with the prolonged duration\nof antibiotic administration, the GDG agreed to recommend against the prolongation of antibiotic\nadministration after completion of the operation for the purpose of preventing SSI.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R124",
+        "text": "ñ The guidelines of the American Society of Health-System Pharmacists (1) recommend that\nintraoperative re-dosing is needed if the duration of the procedure exceeds 2 half-lives of the drug\nor if there is excessive blood loss during the procedure.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R125",
+        "text": "and the American Society of Health-System\nPharmacists (1), recommend discontinuing SAP\nwithin 24 hours after surgery.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R126",
+        "text": "The 2012 SSI\nprevention bundle from the US Institute of\nHealthcare Improvement (18) recommends\ndiscontinuing SAP within 24 hours in general\nand within 48 hours in cardiac surgery.",
+        "grade": null,
+        "population": "(18) recommends\ndiscontinuing SAP within 24 hours in general\nand within 48 hours in cardiac surgery"
+      },
+      {
+        "rec_id": "7c3781feaf22:R127",
+        "text": "Other\nguidelines published by the UK-based NICE (19),\nthe Scottish Intercollegiate Guidelines Network\n(SIGN) (20), the Royal College of Physicians\nof Ireland (21) and the UK Department of Health\n(22), recommend a single dose of preoperative\nSAP and no postoperative continuation with\nor without exceptions for specific surgical\nprocedures.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R128",
+        "text": "A single dose of antibiotic with a long enough half-life to achieve activity throughout\nthe operation is recommended.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R129",
+        "text": "Recommendation\nThe panel suggests not using any type of advanced dressing over a standard dressing on primarily\nclosed surgical wounds for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation/low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R130",
+        "text": "The update recommends further research to confirm\nthe effectiveness of modern types of dressing (5).",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R131",
+        "text": "Postoperative care bundles recommend that\nsurgical dressings be kept undisturbed for\na minimum of 48 hours after surgery unless leakage\noccurs.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R132",
+        "text": "The panel suggests that perioperative antibiotic prophylaxis should not be continued to the\npresence of a wound drain for the purpose of preventing SSI.",
+        "grade": "Conditional recommendation, low quality of evidence",
+        "population": null
+      },
+      {
+        "rec_id": "7c3781feaf22:R133",
+        "text": "Considering the very low\nquality evidence and the finding that the body of evidence does not identify an optimal time point for\nwound drain removal with regard to the prevention of SSI, the GDG decided to suggest that the\nwound drain should be removed when clinically indicated.",
+        "grade": null,
+        "population": null
+      }
+    ],
+    "f3e61e207cc2": [
+      {
+        "rec_id": "f3e61e207cc2:R000",
+        "text": "recommended, not recommended, recommended only in specific contexts (the\nintervention is applicable only to the condition, setting or population specified in the\nrecommendations), recommended only in the context of rigorous research (implementation\nof the recommendations can still be undertaken provided it takes the form of research\nthat addresses unanswered questions).",
+        "grade": null,
+        "population": "(the\nintervention is applicable only to the condition, setting or population specified in the\nrecommendations)"
+      },
+      {
+        "rec_id": "f3e61e207cc2:R001",
+        "text": "The use of alcohol-based chlorhexidine gluconate for skin\npreparation prior to elective or emergency caesarean section is recommended.",
+        "grade": null,
+        "population": "prior to elective or emergency caesarean section"
+      },
+      {
+        "rec_id": "f3e61e207cc2:R002",
+        "text": "Recommended only in specific contexts (“context-specific recommendation”):",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "f3e61e207cc2:R003",
+        "text": "Recommended only in the context of rigorous research (“research-context\nrecommendation”):",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "f3e61e207cc2:R004",
+        "text": "Standard infection prevention and control precautions should be observed in the provision\nof maternity care to optimize the effects of interventions recommended in this guideline.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "f3e61e207cc2:R005",
+        "text": "This protocol\nshould be informed by internationally recommended guidelines and adapted to the local\nobstetric population and available skills and resources.",
+        "grade": null,
+        "population": "should be informed by internationally recommended guidelines and adapted to the local\nobstetric population and available skills and resources"
+      },
+      {
+        "rec_id": "f3e61e207cc2:R006",
+        "text": "As part of the global efforts to reduce antimicrobial resistance, antibiotics should be\nadministered only when there is a clear medical indication (as recommended in this\nguideline) and where the expected benefits outweigh the potential harms within the\nlocal context.",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "f3e61e207cc2:R007",
+        "text": "In this context, the GDG suggests the following\nindicators to be considered:",
+        "grade": null,
+        "population": null
+      },
+      {
+        "rec_id": "f3e61e207cc2:R008",
+        "text": "The panel recommended alcohol-based antiseptic solutions based on CHX for\nsurgical site skin preparation in patients undergoing surgical procedures (strong\nrecommendation, low to moderate quality of evidence).",
+        "grade": "strong\nrecommendation, low to moderate quality of evidence",
+        "population": "for\nsurgical site skin preparation in patients undergoing surgical procedures"
+      }
+    ]
+  }
+}

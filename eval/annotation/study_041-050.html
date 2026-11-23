@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch study-041-050</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch study-041-050</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q232", "question": "If I use a 3% hexachlorophene scrub regularly, how long does its antibacterial effect last and is there any absorption risk I should worry about?", "question_type": "dose", "reference": "Hexachlorophene has residual activity for several hours after use, and with repeated applications it gradually reduces bacterial counts on the hands (a cumulative effect) \u2014 though a single handwash or surgical scrub gives only modest efficacy. With repeated use of 3% preparations the drug is absorbed through the skin: personnel regularly handwashing with 3% hexachlorophene (and infants bathed with it) have blood levels of 0.1\u20130.6 ppm. Neurotoxicity (vacuolar degeneration) occurred in some infants bathed with it in the early 1970s, prompting a 1972 FDA warning against routine infant bathing, and current guidelines still recommend against routine hexachlorophene bathing of neonates because of potential neurotoxicity. Its spectrum is mainly against S. aureus, with relatively weak activity against gram-negative bacteria, fungi, and mycobacteria.", "chunk_id": "afef8f41656d:0045", "source": "Guideline for Hand Hygiene in Health-Care Settings (2002, tier 1, p.10)", "fields": {"action": [{"i": 0, "text": "aureus and relatively weak activity against gram-negative", "start": 0, "end": 57}, {"i": 1, "text": "bacteria, fungi, and mycobacteria (7).", "start": 58, "end": 96}, {"i": 2, "text": "Studies of hexachlorophene as a hygienic handwash and", "start": 97, "end": 150}, {"i": 3, "text": "surgical scrub demonstrated only modest efficacy after a single", "start": 151, "end": 214}, {"i": 4, "text": "Hexachlorophene has residual activity for several hours after use and gradually reduces bacterial", "start": 238, "end": 335}, {"i": 5, "text": "counts on hands after multiple uses (i.e., it has a cumulative", "start": 336, "end": 398}, {"i": 6, "text": "With repeated use of 3% hexachlorophene preparations, the drug is absorbed through the skin.", "start": 424, "end": 516}, {"i": 7, "text": "Infants bathed with hexachlorophene and personnel regularly", "start": 517, "end": 576}, {"i": 8, "text": "using a 3% hexachlorophene preparation for handwashing have", "start": 577, "end": 636}, {"i": 9, "text": "blood levels of 0.1\u20130.6 ppm hexachlorophene (190).", "start": 637, "end": 687}, {"i": 10, "text": "early 1970s, certain infants bathed with hexachlorophene developed neurotoxicity (vacuolar degeneration) (191).", "start": 695, "end": 806}, {"i": 11, "text": "result, in 1972, the FDA warned that hexachlorophene should", "start": 812, "end": 871}, {"i": 12, "text": "no longer be used routinely for bathing infants.", "start": 872, "end": 920}, {"i": 13, "text": "after routine use of hexachlorophene for bathing infants in", "start": 930, "end": 989}, {"i": 14, "text": "nurseries was discontinued, investigators noted that the incidence of health-care\u2013associated S. aureus infections in hospital nurseries increased substantially (192,193).", "start": 990, "end": 1160}, {"i": 15, "text": "instances, the frequency of infections decreased when hexachlorophene bathing of infants was reinstituted.", "start": 1172, "end": 1278}, {"i": 16, "text": "guidelines still recommend against the routine bathing of neonates with hexachlorophene because of its potential neurotoxic effects (194).", "start": 1296, "end": 1434}, {"i": 17, "text": "The agent is classified by FDA TFM as not", "start": 1435, "end": 1476}, {"i": 18, "text": "Recommendations and Reports", "start": 1494, "end": 1521}], "quantity": []}}, {"qid": "q269", "question": "My patient is on therapeutic LMWH for a DVT and is booked for a caesarean tomorrow \u2014 how long before the section do I need to stop her LMWH, and how long must anaesthetics wait before siting a spinal or epidural?", "question_type": "timing", "reference": "Stop the therapeutic LMWH 24 hours before the planned delivery (the same applies for induction of labour). Regional anaesthesia or analgesia should not be undertaken until at least 24 hours after the last therapeutic dose of LMWH. Afterwards, LMWH should not be given for 4 hours after a spinal or after the epidural catheter has been removed, and the epidural catheter should not be removed within 12 hours of the most recent injection. If she were on subcutaneous unfractionated heparin instead, this should be stopped 12 hours before, and intravenous unfractionated heparin stopped 6 hours before induction or regional anaesthesia.", "chunk_id": "f9bcd815e930:0047", "source": "GTG37b - Thrombosis and Embolism during Pregnancy Acute Management (2018, tier 1, p.19)", "fields": {"action": [{"i": 0, "text": "9.1\t Should anticoagulant therapy be altered during labour and delivery?", "start": 0, "end": 72}, {"i": 1, "text": "When VTE occurs at term, consideration should be given to the use of intravenous unfractionated", "start": 74, "end": 169}, {"i": 2, "text": "heparin which is more easily manipulated.", "start": 170, "end": 211}, {"i": 3, "text": "The woman on LMWH for maintenance therapy should be advised that once she is in established", "start": 213, "end": 304}, {"i": 4, "text": "labour or thinks that she is in labour, she should not inject any further heparin.", "start": 305, "end": 387}, {"i": 5, "text": "Where delivery is planned, either by elective caesarean section or induction of labour, LMWH", "start": 389, "end": 481}, {"i": 6, "text": "maintenance therapy should be discontinued 24 hours prior to planned delivery.", "start": 482, "end": 560}, {"i": 7, "text": "Regional anaesthetic or analgesic techniques should not be undertaken until at least 24 hours", "start": 562, "end": 655}, {"i": 8, "text": "after the last dose of therapeutic LMWH.", "start": 656, "end": 696}, {"i": 9, "text": "LMWH should not be given for 4 hours after the use of spinal anaesthesia or after the epidural", "start": 698, "end": 792}, {"i": 10, "text": "catheter has been removed, and the epidural catheter should not be removed within 12 hours of", "start": 793, "end": 886}, {"i": 11, "text": "the most recent injection.", "start": 887, "end": 913}, {"i": 12, "text": "Where possible, anticoagulant therapy should be altered to avoid an unwanted anticoagulant effect", "start": 915, "end": 1012}, {"i": 13, "text": "Women should be advised not to inject any further heparin if they are in established", "start": 1031, "end": 1115}, {"i": 14, "text": "labour or think they are in labour.", "start": 1116, "end": 1151}, {"i": 15, "text": "For elective delivery, LMWH should be stopped 24 hours before induction of labour or caesarean", "start": 1153, "end": 1247}, {"i": 16, "text": "Subcutaneous unfractionated heparin should be discontinued 12 hours before and", "start": 1258, "end": 1336}, {"i": 17, "text": "intravenous unfractionated heparin stopped 6 hours before induction of labour or regional", "start": 1337, "end": 1426}, {"i": 18, "text": "anaesthesia.167 Women who present in labour shortly after injecting LMWH can be reassured that", "start": 1427, "end": 1521}, {"i": 19, "text": "bleeding complications are very uncommon with LMWH (see section 6.1).", "start": 1522, "end": 1591}, {"i": 20, "text": "occurs in women receiving therapeutic doses of subcutaneous unfractionated heparin, careful", "start": 1615, "end": 1706}, {"i": 21, "text": "monitoring of the APTT is required (see above for use of APTT in pregnancy).", "start": 1707, "end": 1783}, {"i": 22, "text": "prolonged near delivery, protamine sulfate may be required to reduce the risk of bleeding.", "start": 1803, "end": 1893}], "quantity": [{"i": 0, "text": "24 hours", "start": 525, "end": 533}, {"i": 1, "text": "4 hours", "start": 727, "end": 734}, {"i": 2, "text": "12 hours", "start": 875, "end": 883}, {"i": 3, "text": "6 hours", "start": 1380, "end": 1387}]}}, {"qid": "q125", "question": "My post-op hysterectomy patient just got diagnosed with sepsis and her husband and daughter are in the waiting room asking what's going on \u2014 who on the team should be talking to them and what do I need to cover?", "question_type": "general", "reference": "One care team member should be nominated to be the point of contact for the family/carers, especially in emergency settings like the emergency department. That person should explain that the patient has sepsis and what that means, explain the investigations being done and the management plan, and give regular, timely updates on treatment, care and progress. Give all of this without medical jargon, and check regularly that they actually understand what they've been told. Give the patient and her family opportunities to ask questions about diagnosis, treatment options, prognosis and complications, and be willing to repeat information as often as needed. Also give them information about national charities and support groups that provide information about sepsis and its causes.", "chunk_id": "137be68c201c:0062", "source": "Suspected Sepsis in People Aged 16 or Over: Recognition, Assessment and Early Management (2025, tier 1, p.46)", "fields": {"action": [{"i": 0, "text": "Ensure a care team member is nominated to give information to families and", "start": 14, "end": 88}, {"i": 1, "text": "carers, particularly in emergency situations such as in the emergency", "start": 89, "end": 158}, {"i": 2, "text": "\u2022 an explanation that the person has sepsis, and what this means", "start": 192, "end": 256}, {"i": 3, "text": "\u2022 an explanation of any investigations and the management plan", "start": 257, "end": 319}, {"i": 4, "text": "\u2022 regular and timely updates on treatment, care and progress. [2016]", "start": 320, "end": 388}, {"i": 5, "text": "Ensure information is given without using medical jargon.", "start": 396, "end": 453}, {"i": 6, "text": "people understand the information and explanations they are given. [2016]", "start": 475, "end": 548}, {"i": 7, "text": "Give people with sepsis and their family members and carers opportunities to ask", "start": 556, "end": 636}, {"i": 8, "text": "questions about diagnosis, treatment options, prognosis and complications.", "start": 637, "end": 711}, {"i": 9, "text": "willing to repeat any information as needed. [2016]", "start": 715, "end": 766}, {"i": 10, "text": "Give people with sepsis and their families and carers information about national", "start": 774, "end": 854}, {"i": 11, "text": "charities and support groups that provide information about sepsis and the", "start": 855, "end": 929}], "quantity": []}}, {"qid": "q286", "question": "If one of my post-op patients who's pregnant has a swollen calf and pleuritic chest pain, do I wait for the ultrasound and CTPA results before we start anticoagulation?", "question_type": "escalation", "reference": "No \u2014 don't wait. Any pregnant woman with symptoms or signs suggestive of VTE should have objective testing arranged expeditiously, and treatment with low-molecular-weight heparin (LMWH) should be given in the meantime until the diagnosis is excluded by that objective testing, unless treatment is strongly contraindicated. This urgency is because untreated DVT progresses to PE in 15\u201324% of patients, PE in pregnancy may be fatal in almost 15% of cases, and in 66% of those deaths occur within 30 minutes of the embolic event. Follow your hospital's agreed protocol for diagnosing suspected VTE in pregnancy, which may involve obstetricians, radiologists, physicians and haematologists.", "chunk_id": "f9bcd815e930:0017", "source": "GTG37b - Thrombosis and Embolism during Pregnancy Acute Management (2018, tier 1, p.7)", "fields": {"action": [{"i": 0, "text": "How is acute VTE diagnosed in pregnancy?", "start": 0, "end": 40}, {"i": 1, "text": "Any woman with symptoms and/or signs suggestive of VTE should have objective testing performed", "start": 41, "end": 135}, {"i": 2, "text": "expeditiously and treatment with low-molecular-weight heparin (LMWH) given (see section 6)", "start": 136, "end": 226}, {"i": 3, "text": "until the diagnosis is excluded by objective testing, unless treatment is strongly contraindicated.", "start": 227, "end": 326}, {"i": 4, "text": "Individual hospitals should have an agreed protocol for the objective diagnosis of suspected VTE", "start": 327, "end": 423}, {"i": 5, "text": "This may recommend the involvement of obstetricians, radiologists, physicians", "start": 442, "end": 519}, {"i": 6, "text": "Women presenting with symptoms and/or signs suggestive of VTE should have objective", "start": 540, "end": 623}, {"i": 7, "text": "testing performed expeditiously.", "start": 624, "end": 656}, {"i": 8, "text": "If DVT remains untreated, 15\u201324% of these patients will", "start": 657, "end": 712}, {"i": 9, "text": "PE during pregnancy may be fatal in almost 15% of patients, and in 66% of these,", "start": 725, "end": 805}, {"i": 10, "text": "death will occur within 30 minutes of the embolic event.14,15", "start": 806, "end": 867}, {"i": 11, "text": "All hospitals should have a protocol for the diagnosis of suspected VTE in pregnancy which may require", "start": 868, "end": 970}, {"i": 12, "text": "multidisciplinary team involvement.", "start": 971, "end": 1006}], "quantity": [{"i": 0, "text": "30 minutes", "start": 830, "end": 840}]}}, {"qid": "q183", "question": "For the oral nutritional supplements we're giving post-op, what volume and protein content should I be looking for on the label?", "question_type": "dose", "reference": "The supplements used to bridge the postoperative period back to a normal diet are typically 200-250 ml in volume, containing around 150 kJ/100 ml of carbohydrate and 3-6 g/100 ml of protein, with added vitamins. The aim is to ensure some protein and calorie intake early in the recovery process.", "chunk_id": "82b0c8949b89:0011", "source": "Guidelines for postoperative care in gynecologic/oncology surgery: Enhanced Recovery After Surgery (ERAS) Society recommendations - Part II (2016, tier 1, p.3)", "fields": {"action": [{"i": 0, "text": "risk features (elevated BMI, previous VTE, coagulopathy, decreased", "start": 0, "end": 66}, {"i": 1, "text": "should be given to patients after laparotomy for abdominal or pelvic", "start": 84, "end": 152}, {"i": 2, "text": "bridge the postoperative period of building back up to a normal diet to", "start": 234, "end": 305}, {"i": 3, "text": "ensure some protein and calorie intake early in the recovery process.", "start": 306, "end": 375}, {"i": 4, "text": "They are usually 200\u2013250 ml in volume with around 150 kJ/100 ml of", "start": 377, "end": 443}, {"i": 5, "text": "carbohydrate and 3\u20136 g/100 mL of protein with the addition of vitamins,", "start": 444, "end": 515}, {"i": 6, "text": "vasopressor therapy such as a noradrenaline infusion during surgery", "start": 517, "end": 584}, {"i": 7, "text": "and postoperatively until resolution.", "start": 585, "end": 622}], "quantity": [{"i": 0, "text": "200\u2013250 ml", "start": 394, "end": 404}, {"i": 1, "text": "100 ml", "start": 434, "end": 440}, {"i": 2, "text": "3\u20136 g", "start": 461, "end": 466}, {"i": 3, "text": "100 mL", "start": 467, "end": 473}]}}, {"qid": "q224", "question": "My pre-op patient keeps saying she doesn't want to keep taking her blood pressure pills after surgery \u2014 what should I be drawing out of her to figure out if she'll actually stay on them?", "question_type": "general", "reference": "Explore her beliefs about the medication \u2014 specifically how strongly she believes it is necessary versus what concerns she has about taking it. Patients are active decision-makers, and adherence is more likely when belief in the medication's necessity outweighs concerns about taking it. Also assess her knowledge and beliefs about her hypertension, her motivation to manage it, her confidence (self-efficacy) that she can carry out the management behaviours, and her expectations about treatment outcomes and the consequences of not adhering \u2014 these all interact to influence adherence. Ask her to voice her wishes and expectations explicitly: patients whose expectations go unmet are less satisfied with care, less likely to follow treatment and healthcare advice, and report poorer health-related outcomes and greater healthcare utilization than those whose expectations are met.", "chunk_id": "2836fd2a5622:0164", "source": "Nursing Management of Hypertension (2011, tier 2, p.64)", "fields": {"action": [{"i": 0, "text": "Clients\u2019 knowledge and beliefs about their illness, motivation to manage it, confidence (self-efficacy) in", "start": 23, "end": 129}, {"i": 1, "text": "their ability to engage in illness-management behaviours, expectations regarding the outcome of", "start": 130, "end": 225}, {"i": 2, "text": "treatment and the consequences of poor adherence, all interact in ways not yet fully understood to", "start": 226, "end": 324}, {"i": 3, "text": "influence adherence behaviour (WHO, 2003).", "start": 325, "end": 367}, {"i": 4, "text": "Expectations are defined as verbal or explicit communication of clients\u2019 wishes and desires to their health", "start": 368, "end": 475}, {"i": 5, "text": "Clients whose expectations are unmet are less likely to be satisfied with their care, and are less", "start": 486, "end": 584}, {"i": 6, "text": "likely to adhere to recommended treatment and healthcare advice.", "start": 585, "end": 649}, {"i": 7, "text": "They report poorer health-related", "start": 650, "end": 683}, {"i": 8, "text": "outcomes and increased healthcare utilization than those whose expectations are met (Ogedegbe, Mancuso &", "start": 684, "end": 788}, {"i": 9, "text": "Client\u2019s beliefs about treatment influence treatment preference, adherence, and outcomes", "start": 808, "end": 896}, {"i": 10, "text": "Horne and Weinman\u2019s (1999) cross-sectional study examined clients\u2019 personal", "start": 922, "end": 997}, {"i": 11, "text": "beliefs about the necessity of their prescribed medication and their concerns about taking it in order to", "start": 998, "end": 1103}, {"i": 12, "text": "assess relations between beliefs and adherence.", "start": 1104, "end": 1151}, {"i": 13, "text": "His findings support the view that clients should be", "start": 1152, "end": 1204}, {"i": 14, "text": "regarded as active decision-makers who will be more motivated to use their medication as instructed if", "start": 1205, "end": 1307}, {"i": 15, "text": "their belief in its necessity outweighs their concerns about taking it (Horne, 1999).", "start": 1308, "end": 1393}], "quantity": []}}, {"qid": "q092", "question": "If my post-op patient is short of breath and we suspect a PE, do we need a chest X-ray before booking her for a V/Q scan or CTPA, and what's the radiation risk to the baby?", "question_type": "technique", "reference": "Yes \u2014 a CXR should be done before deciding on further imaging. The fetal radiation dose from a CXR at any stage of pregnancy is negligible (less than 0.01 mSv). A normal CXR before V/Q scanning improves the chance of getting a definitive V/Q result. If the CXR is abnormal and PE is still clinically suspected, escalate to CTPA rather than V/Q. Remember the CXR is normal in over half of pregnant women with proven PE; abnormal PE-related findings can include atelectasis, effusion, focal opacities, regional oligaemia or pulmonary oedema, and it may also pick up other causes such as pneumonia, pneumothorax or lobar collapse.", "chunk_id": "f9bcd815e930:0021", "source": "GTG37b - Thrombosis and Embolism during Pregnancy Acute Management (2018, tier 1, p.7)", "fields": {"action": [{"i": 0, "text": "In the same cohort of women, ABG analysis", "start": 0, "end": 41}, {"i": 1, "text": "showed that only 10% had arterial P\u2009O2 levels less than 60 mmHg and 2.9% had oxygen", "start": 42, "end": 125}, {"i": 2, "text": "saturation levels less than 90%.21 These findings indicate a diagnostic role for ECG in women", "start": 126, "end": 219}, {"i": 3, "text": "with suspected acute PE, and that ABG analysis is of limited diagnostic value.", "start": 220, "end": 298}, {"i": 4, "text": "Chest X-ray (CXR) may identify other pulmonary disease such as pneumonia, pneumothorax", "start": 300, "end": 386}, {"i": 5, "text": "or lobar collapse.22 While the CXR is normal in over half of pregnant patients with objectively", "start": 387, "end": 482}, {"i": 6, "text": "proven PE,21 abnormal features caused by PE include atelectasis, effusion, focal opacities,", "start": 483, "end": 574}, {"i": 7, "text": "regional oligaemia or pulmonary oedema.23 The radiation dose to the fetus from a CXR", "start": 575, "end": 659}, {"i": 8, "text": "performed at any stage of pregnancy is negligible (less than 0.01 mSv).24,25 A CXR should be", "start": 660, "end": 752}, {"i": 9, "text": "performed before deciding upon further diagnostic tests; a normal CXR prior to V/Q scanning", "start": 753, "end": 844}, {"i": 10, "text": "improves the likelihood of a definitive V/Q result.26 If the CXR is abnormal with a clinical", "start": 845, "end": 937}, {"i": 11, "text": "suspicion of PE, CTPA should be performed.", "start": 938, "end": 980}, {"i": 12, "text": "Pregnant women with suspected PE who have symptoms and signs of DVT should have", "start": 982, "end": 1061}, {"i": 13, "text": "bilateral compression duplex ultrasound leg studies performed.", "start": 1062, "end": 1124}, {"i": 14, "text": "indirectly confirm a diagnosis of PE and since anticoagulant therapy is the same for both", "start": 1149, "end": 1238}, {"i": 15, "text": "conditions, further investigation may not be necessary.", "start": 1239, "end": 1294}, {"i": 16, "text": "This would limit the radiation doses", "start": 1296, "end": 1332}, {"i": 17, "text": "given to the mother and her fetus.27 While several studies have investigated the use of lower", "start": 1333, "end": 1426}, {"i": 18, "text": "limb ultrasonography in the investigation of nonpregnant patients with suspected PE,28\u201331 the", "start": 1427, "end": 1520}, {"i": 19, "text": "role of ultrasound leg studies in pregnant women with suspected PE and without symptoms", "start": 1521, "end": 1608}, {"i": 20, "text": "and signs of DVT is unclear.", "start": 1609, "end": 1637}, {"i": 21, "text": "In one case series, Chan et al. found no cases of DVT in 67", "start": 1639, "end": 1698}, {"i": 22, "text": "women presenting with suspected PE.4 Given the higher incidence of isolated iliac vein DVT", "start": 1699, "end": 1789}, {"i": 23, "text": "in pregnancy,32 it would be anticipated that there would be an increased likelihood of falsenegative results with this strategy.", "start": 1790, "end": 1918}, {"i": 24, "text": "Therefore, while a positive result is of value, a negative", "start": 1920, "end": 1978}, {"i": 25, "text": "investigation does not help to exclude a PE.", "start": 1979, "end": 2023}], "quantity": [{"i": 0, "text": "60 mmHg", "start": 98, "end": 105}]}}, {"qid": "q192", "question": "My post-op hysterectomy patient is starting scheduled oxycodone \u2014 when do I need to start a bowel regimen and what do I begin with?", "question_type": "timing", "reference": "Start the bowel management program with the very first opioid dose and continue it until the opioid is stopped. Begin with a stool softener such as docusate. If that isn't enough to maintain a normal bowel pattern, add a stimulant laxative such as sennoside (Senna), bisacodyl, or Milk of Magnesia \u2014 but stimulants shouldn't be used long-term because they can be habit-forming. Also encourage increased fluid and fiber intake and ambulation as appropriate, since opioids slow peristalsis and increase fluid reabsorption in the large intestine, producing hard, slow-moving stools.", "chunk_id": "efb16f8bfcbe:0010", "source": "OpenRN Nursing Fundamentals - Comfort and Pain Chapter (2023, tier 2, p.None)", "fields": {"action": [{"i": 0, "text": "Opioids slow peristalsis and cause increased reabsorption of fluid into the large intestine, resulting in slow-moving, hard stools.", "start": 13, "end": 144}, {"i": 1, "text": "Nurses play an important role in preventing constipation for all clients taking opioids.", "start": 145, "end": 233}, {"i": 2, "text": "A bowel management program should be initiated with the first dose and continued until the opioid is discontinued.", "start": 234, "end": 348}, {"i": 3, "text": "A stool softener (such as docusate) is typically prescribed initially as part of the bowel management program.", "start": 349, "end": 459}, {"i": 4, "text": "If needed, a stimulant laxative, such as sennoside (Senna), bisacodyl, or Milk of Magnesia may be added to maintain a normal bowel pattern.", "start": 460, "end": 599}, {"i": 5, "text": "However, stimulants should not be taken long-term because they can be addictive.", "start": 600, "end": 680}, {"i": 6, "text": "Clients taking opioids should be encouraged to increase fluid and fiber intake and ambulate, as appropriate. [12]", "start": 681, "end": 794}], "quantity": []}}, {"qid": "q037", "question": "My patient had a hysterectomy and came out with a JP drain in place \u2014 do I need to keep giving her the prophylactic cefazolin doses until the drain comes out?", "question_type": "timing", "reference": "No. For clean and clean-contaminated procedures such as this, no additional prophylactic antimicrobial doses should be given once the surgical incision is closed in the operating room, even if a drain is left in place. This is a Category IA strong recommendation based on high-quality evidence. Prophylaxis should be given preoperatively, timed so a bactericidal serum and tissue concentration is present at the time of incision, but it is not continued postoperatively because of the drain.", "chunk_id": "1a12d3183519:0009", "source": "CDC Guideline for the Prevention of Surgical Site Infection 2017 (2017, tier 1, p.3)", "fields": {"action": [{"i": 0, "text": "Parenteral Antimicrobial Prophylaxis", "start": 0, "end": 36}, {"i": 1, "text": "Administer preoperative antimicrobial agents only when indicatedbasedonpublishedclinicalpracticeguidelinesandtimedsuch", "start": 43, "end": 161}, {"i": 2, "text": "that a bactericidal concentration of the agents is established in the", "start": 162, "end": 231}, {"i": 3, "text": "serum and tissues when the incision is made.", "start": 232, "end": 276}, {"i": 4, "text": "recommendation; accepted practice.)", "start": 297, "end": 332}, {"i": 5, "text": "No further refinement of timing can be made for preoperative", "start": 339, "end": 399}, {"i": 6, "text": "antimicrobialagentsbasedonclinicaloutcomes.(Norecommendation/", "start": 400, "end": 461}, {"i": 7, "text": "Administer the appropriate parenteral prophylactic antimicrobial agents before skin incision in all cesarean section procedures.", "start": 485, "end": 613}, {"i": 8, "text": "(Category IA\u2013strong recommendation; high-quality evidence.)", "start": 614, "end": 673}, {"i": 9, "text": "1C.Theliteraturesearchdidnotidentifyrandomizedcontrolledtrials", "start": 674, "end": 736}, {"i": 10, "text": "that evaluated the benefits and harms of weight-adjusted parenteral antimicrobial prophylaxis dosing and its effect on the risk of", "start": 737, "end": 867}, {"i": 11, "text": "Other organizations have made recommendations based on", "start": 873, "end": 927}, {"i": 12, "text": "observational and pharmacokinetic data, and a summary of these", "start": 928, "end": 990}, {"i": 13, "text": "recommendations can be found in the Other Guidelines section of", "start": 991, "end": 1054}, {"i": 14, "text": "thenarrativesummaryforthisquestion(eAppendix1oftheSupplement).", "start": 1055, "end": 1117}, {"i": 15, "text": "(No recommendation/unresolved issue.)", "start": 1118, "end": 1155}, {"i": 16, "text": "1D.Thesearchdidnotidentifysufficientrandomizedcontrolledtrial", "start": 1156, "end": 1217}, {"i": 17, "text": "evidence to evaluate the benefits and harms of intraoperative redosing of parenteral prophylactic antimicrobial agents for the prevention of SSI.", "start": 1218, "end": 1363}, {"i": 18, "text": "Other organizations have made recommendations", "start": 1364, "end": 1409}, {"i": 19, "text": "based on observational and pharmacokinetic data, and a summary", "start": 1410, "end": 1472}, {"i": 20, "text": "oftheserecommendationscanbefoundintheOtherGuidelinessection of the narrative summary for this question (eAppendix 1 of the", "start": 1473, "end": 1595}, {"i": 21, "text": "In clean and clean-contaminated procedures, do not administer", "start": 1651, "end": 1712}, {"i": 22, "text": "additional prophylactic antimicrobial agent doses after the surgical", "start": 1713, "end": 1781}, {"i": 23, "text": "incision is closed in the operating room, even in the presence of", "start": 1782, "end": 1847}, {"i": 24, "text": "(Category IA\u2013strong recommendation; high-quality", "start": 1857, "end": 1905}], "quantity": []}}, {"qid": "q214", "question": "Which of our uterotonics can I keep at room temperature on the ward, and which ones have to stay in the fridge?", "question_type": "general", "reference": "Misoprostol tablets have no special storage requirements \u2014 just keep them in tightly closed containers protected from humidity \u2014 and a heat-stable formulation of carbetocin is available. Oxytocin, ergometrine and injectable prostaglandins all need refrigeration at 2\u20138 \u00b0C to prolong shelf life; oxytocin, ergometrine and injectable prostaglandins also need protection from light (carbetocin in its standard form likewise requires 2\u20138 \u00b0C storage). Combination products (oxytocin plus ergometrine, misoprostol plus oxytocin) follow the requirements of their individual components.", "chunk_id": "f45f67bdfa20:0020", "source": "WHO Recommendations for Uterotonics for Prevention of PPH (2018, tier 1, p.12)", "fields": {"action": [{"i": 0, "text": "about 6\u00a0minutes and", "start": 21, "end": 40}, {"i": 1, "text": "for about 11\u00a0minutes", "start": 131, "end": 151}, {"i": 2, "text": "40 minutes", "start": 205, "end": 215}, {"i": 3, "text": "15\u201360 minutes", "start": 478, "end": 491}, {"i": 4, "text": "8 minutes", "start": 532, "end": 541}, {"i": 5, "text": "within 2\u20133 minutes,", "start": 562, "end": 581}, {"i": 6, "text": "within 1 minute,", "start": 627, "end": 643}, {"i": 7, "text": "lasting 45\u00a0minutes", "start": 644, "end": 662}, {"i": 8, "text": "is about 2.5\u00a0minutes;", "start": 823, "end": 844}, {"i": 9, "text": "1\u20136 minutes", "start": 903, "end": 914}, {"i": 10, "text": "30\u2013120 minutes", "start": 930, "end": 944}, {"i": 11, "text": "UTEROTONICS FOR THE PREVENTION OF POSTPARTUM HAEMORRHAGE", "start": 1025, "end": 1081}], "quantity": [{"i": 0, "text": "6\u00a0minutes", "start": 27, "end": 36}, {"i": 1, "text": "11\u00a0minutes", "start": 141, "end": 151}, {"i": 2, "text": "120\nminutes", "start": 182, "end": 193}, {"i": 3, "text": "40 minutes", "start": 205, "end": 215}, {"i": 4, "text": "9\u201315\nminutes", "start": 225, "end": 237}, {"i": 5, "text": "20\u201340\nminutes", "start": 460, "end": 473}, {"i": 6, "text": "15\u201360 minutes", "start": 478, "end": 491}, {"i": 7, "text": "8 minutes", "start": 532, "end": 541}, {"i": 8, "text": "2\u20133 minutes", "start": 569, "end": 580}, {"i": 9, "text": "1 minute", "start": 634, "end": 642}, {"i": 10, "text": "45\u00a0minutes", "start": 652, "end": 662}, {"i": 11, "text": "30\u2013120\nminutes", "start": 736, "end": 750}, {"i": 12, "text": "2.5\u00a0minutes", "start": 832, "end": 843}, {"i": 13, "text": "1\u20136 minutes", "start": 903, "end": 914}]}}];
+const BATCH = "study-041-050";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

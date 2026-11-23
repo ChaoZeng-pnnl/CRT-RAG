@@ -1,0 +1,102 @@
+{
+  "triples": 5161,
+  "unique_entities": 3959,
+  "by_relation": {
+    "PREVENTS": 1482,
+    "INCREASES_RISK_OF": 1182,
+    "TREATS": 715,
+    "OCCURS_IN_PHASE": 412,
+    "DETECTS": 382,
+    "APPLIES_TO": 331,
+    "MONITORS_FOR": 295,
+    "CONTRAINDICATED_WITH": 178,
+    "TIMING_DEPENDS_ON": 120,
+    "TEMPORARILY_CONTRAINDICATED": 64
+  },
+  "by_entity_type": {
+    "Intervention": 1522,
+    "Complication": 1017,
+    "RiskFactor": 567,
+    "Drug": 409,
+    "Procedure": 236,
+    "Device": 200,
+    "Phase": 8
+  },
+  "by_tier": {
+    "1": 3107,
+    "2": 2054
+  },
+  "by_source": {
+    "OpenRN": 1685,
+    "WHO": 1040,
+    "RCOG": 996,
+    "NICE": 404,
+    "CDC": 343,
+    "ERAS_Society": 324,
+    "AUGS": 187,
+    "RNAO": 182
+  },
+  "most_connected": [
+    [
+      "venous thromboembolism",
+      327
+    ],
+    [
+      "postpartum haemorrhage",
+      230
+    ],
+    [
+      "surgical site infection",
+      205
+    ],
+    [
+      "low molecular weight heparin",
+      171
+    ],
+    [
+      "preoperative",
+      151
+    ],
+    [
+      "infection",
+      124
+    ],
+    [
+      "sepsis",
+      80
+    ],
+    [
+      "constipation",
+      68
+    ],
+    [
+      "fall",
+      67
+    ],
+    [
+      "caesarean section",
+      62
+    ],
+    [
+      "postpartum",
+      59
+    ],
+    [
+      "intraoperative",
+      55
+    ],
+    [
+      "antenatal",
+      55
+    ],
+    [
+      "hypertension",
+      52
+    ],
+    [
+      "oxytocin",
+      50
+    ]
+  ],
+  "mean_confidence": 0.7845514435186915
+}

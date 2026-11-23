@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch 001-010</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch 001-010</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q000", "question": "For a vaginal hysterectomy, what should I use for the vaginal prep and how does that differ from the abdominal skin prep?", "question_type": "technique", "reference": "For vaginal surgery, perform vaginal cleansing with either 4% aqueous chlorhexidine gluconate or povidone-iodine (strong recommendation, high-quality evidence). For abdominal surgical site skin preparation, use an alcohol-based agent unless contraindicated \u2014 chlorhexidine-alcohol is an appropriate choice (strong recommendation, high-quality evidence).", "chunk_id": "4edd937b5877:0024", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.7)", "fields": {"action": [{"i": 0, "text": "Multimodal medication regimens are a staple of ERAS protocols.", "start": 23, "end": 85}, {"i": 1, "text": "Multimodal analgesia works strategically to combat", "start": 86, "end": 136}, {"i": 2, "text": "pain from different physiological pathways with the goal", "start": 137, "end": 193}, {"i": 3, "text": "of optimizing pain control and minimizing unwanted side", "start": 194, "end": 249}, {"i": 4, "text": "effects from narcotic pain medications.", "start": 250, "end": 289}, {"i": 5, "text": "throughout the continuum of perioperative care, beginning", "start": 307, "end": 364}, {"i": 6, "text": "in the preoperative area prior to surgery, continuing intraoperatively through coordination with anesthesia, and carried", "start": 365, "end": 485}, {"i": 7, "text": "on in the postoperative period.", "start": 486, "end": 517}, {"i": 8, "text": "While the body of literature", "start": 518, "end": 546}, {"i": 9, "text": "specific to multimodal protocols in urogynecology is growing, most of the information has originated from other specialties or general gynecology [52\u201355].", "start": 547, "end": 701}, {"i": 10, "text": "Table\u202f1\u2002 \u2009Recommendations for surgical site infection prophylaxis with strength and quality of evidence", "start": 702, "end": 805}, {"i": 11, "text": "Perform preoperative abdominal surgical site skin preparation with an alcohol-based agent unless contraindicated", "start": 847, "end": 959}, {"i": 12, "text": "Chlorhexidine-alcohol is an appropriate choice", "start": 960, "end": 1006}, {"i": 13, "text": "Vaginal cleansing with either 4% aqueous chlorhexidine gluconate or povidone-iodine should be performed for", "start": 1019, "end": 1126}, {"i": 14, "text": "Use first-generation cephalosporin (for example, cefazolin) or amoxicillin-clavulanic acid within 60 min of skin", "start": 1155, "end": 1267}, {"i": 15, "text": "Shower or bathe the night before surgery with chlorhexidine gluconate or soap", "start": 1304, "end": 1381}, {"i": 16, "text": "Avoid hair removal (if not essential for surgical site access or draping) and, if hair removal is indicated, use hair", "start": 1398, "end": 1515}, {"i": 17, "text": "clippers instead of a razor to remove hair", "start": 1516, "end": 1558}, {"i": 18, "text": "Maintenance of normothermia should be incorporated into perioperative care to avoid risk of infection", "start": 1568, "end": 1669}, {"i": 19, "text": "Systematic use of drains and nasogastric tubes should be avoided after abdominal surgery", "start": 1682, "end": 1770}, {"i": 20, "text": "Perioperative glucose levels should be maintained under 200 mg/dL in diabetics and non-diabetics.", "start": 1783, "end": 1880}, {"i": 21, "text": "optimize perioperative glycemic control should be included in surgical site infection reduction bundles", "start": 1893, "end": 1996}], "quantity": [{"i": 0, "text": "60 min", "start": 1253, "end": 1259}, {"i": 1, "text": "200 mg", "start": 1839, "end": 1845}]}}, {"qid": "q001", "question": "My pre-op patient's BP is still high on her antihypertensives and she tells me she drinks heavily on weekends \u2014 could the alcohol be why her meds aren't working, and how much BP drop could she get by cutting back?", "question_type": "threshold", "reference": "Yes \u2014 excessive alcohol use is recognized to increase resistance to the effects of antihypertensive medications. This may be due to poor adherence to the medication regimen and/or altered pharmacokinetics of the antihypertensive agent, which is metabolized by the liver under the influence of acute or chronic alcohol ingestion. Adhering to low alcohol consumption guidelines will enhance drug efficacy. Limiting alcohol may delay or prevent the onset of hypertension and can decrease systolic blood pressure by about 2\u20134 mmHg. Also relevant to her weekend pattern: binge drinking raises systolic and diastolic pressure during the drinking episode, with a drop below baseline in the immediate post-drinking period (usually early morning hours), and binge drinking on weekends/holidays has been identified as a stroke risk factor in young people. Note that low alcohol consumption shows little BP difference compared with abstainers and has some cardioprotective effect, so you should not discourage drinking within recommended guidelines \u2014 but neither should you encourage someone to start drinking as a risk-reduction strategy.", "chunk_id": "2836fd2a5622:0127", "source": "Nursing Management of Hypertension (2011, tier 2, p.51)", "fields": {"action": [{"i": 0, "text": "Nursing Best Practice Guideline", "start": 0, "end": 31}, {"i": 1, "text": "Binge drinking raised systolic and diastolic pressure during the drinking episode, and there was a drop in", "start": 32, "end": 138}, {"i": 2, "text": "both pressures to below baseline levels in the immediate post-drinking period, usually in the early morning", "start": 139, "end": 246}, {"i": 3, "text": "Furthermore, binge drinking was found to be a risk factor for stroke in young persons who", "start": 255, "end": 344}, {"i": 4, "text": "consumed alcohol on weekends and holidays, prime drinking times.", "start": 345, "end": 409}, {"i": 5, "text": "As well, moderate to heavy alcohol", "start": 411, "end": 445}, {"i": 6, "text": "use was related to intracerebral hemorrhage.", "start": 446, "end": 490}, {"i": 7, "text": "Although there is no direct evidence, this study would suggest", "start": 492, "end": 554}, {"i": 8, "text": "a link between alcohol, hypertension and stroke (Seppa & Sillanaukee, 1999).", "start": 555, "end": 631}, {"i": 9, "text": "Multiple population cohort and cross-sectional trials have shown little difference in blood pressure in", "start": 633, "end": 736}, {"i": 10, "text": "clients with low alcohol consumption and abstainers.", "start": 737, "end": 789}, {"i": 11, "text": "There is also evidence to support the limited", "start": 791, "end": 836}, {"i": 12, "text": "consumption of alcohol for its cardio protective effects.", "start": 837, "end": 894}, {"i": 13, "text": "Nurses need to be aware of this evidence and", "start": 896, "end": 940}, {"i": 14, "text": "should not discourage consumption within the recommended guidelines nor should they encourage the", "start": 941, "end": 1038}, {"i": 15, "text": "initiation of drinking as a method of risk factor reduction related to the associated potential health risks of", "start": 1039, "end": 1150}, {"i": 16, "text": "overuse (Williams et al., 2004).", "start": 1151, "end": 1183}, {"i": 17, "text": "Adoption of healthy lifestyle behaviours is an important factor in prevention of high blood pressure and", "start": 1185, "end": 1289}, {"i": 18, "text": "lowering blood pressure in those known to be hypertensive.", "start": 1290, "end": 1348}, {"i": 19, "text": "By limiting the use of alcohol individuals may", "start": 1350, "end": 1396}, {"i": 20, "text": "delay/prevent the incidence of hypertension and decrease systolic blood pressure by 2-4 mmHg (Institute of", "start": 1397, "end": 1503}, {"i": 21, "text": "Clinical Systems Improvement, 2004;", "start": 1504, "end": 1539}, {"i": 22, "text": "Adherence to low alcohol consumption guidelines will enhance", "start": 1553, "end": 1613}, {"i": 23, "text": "It has been recognized that excessive use can increase resistance to the effects of", "start": 1630, "end": 1713}, {"i": 24, "text": "antihypertensive medications (NIH, 2003).", "start": 1714, "end": 1755}, {"i": 25, "text": "This resistance may be a result of poor adherence to the", "start": 1757, "end": 1813}, {"i": 26, "text": "medication regime and/or a change in pharmakinetics of the antihypertensive agent metabolized by the", "start": 1814, "end": 1914}, {"i": 27, "text": "liver that is under the influence of acute or chronic alcohol ingestion (Lip & Beevers, 1995).", "start": 1915, "end": 2009}], "quantity": [{"i": 0, "text": "2-4 mmHg", "start": 1481, "end": 1489}]}}, {"qid": "q002", "question": "For a myeloma patient on lenalidomide and steroids, what can I give for clot prevention and what aspirin dose, and how long do we keep it going?", "question_type": "dose", "reference": "For people with myeloma receiving chemotherapy with thalidomide, pomalidomide or lenalidomide plus steroids, consider pharmacological VTE prophylaxis with either aspirin 75 mg or 150 mg, or LMWH. Continue the prophylaxis for as long as the patient is receiving chemotherapy. Note that aspirin used in this indication was off label as of March 2018, as was LMWH in people under 18.", "chunk_id": "5f6d5754c4ad:0025", "source": "VTE Prevention in Adults (NG89) (2019, tier 1, p.16)", "fields": {"action": [{"i": 0, "text": "1.6 Interventions for people with cancer", "start": 0, "end": 40}, {"i": 1, "text": "\u2022 the use of LMWH in young people under\u00a018 in recommendations 1.6.2 and 1.6.3", "start": 56, "end": 133}, {"i": 2, "text": "\u2022 the use of aspirin in recommendation 1.6.2 was off label.", "start": 148, "end": 207}, {"i": 3, "text": "See NICE's information on prescribing medicines.", "start": 208, "end": 256}, {"i": 4, "text": "Do not offer VTE prophylaxis to people with cancer who are receiving cancermodifying treatments such as radiotherapy, chemotherapy or immunotherapy and", "start": 263, "end": 414}, {"i": 5, "text": "who are mobile, except as outlined in recommendations 1.6.2 and\u00a01.6.3, unless", "start": 415, "end": 492}, {"i": 6, "text": "they are also at increased risk of VTE because of something other than the", "start": 493, "end": 567}, {"i": 7, "text": "Consider pharmacological VTE prophylaxis for people with myeloma who are", "start": 589, "end": 661}, {"i": 8, "text": "receiving chemotherapy with thalidomide, pomalidomide or lenalidomide with", "start": 662, "end": 736}, {"i": 9, "text": "\u2022 aspirin (75 mg\u00a0or 150\u00a0mg) or", "start": 762, "end": 792}, {"i": 10, "text": "Consider pharmacological VTE prophylaxis with LMWH for people with pancreatic", "start": 814, "end": 891}, {"i": 11, "text": "cancer who are receiving chemotherapy. [2018]", "start": 892, "end": 937}, {"i": 12, "text": "If giving VTE prophylaxis to people with cancer (see recommendations 1.6.2", "start": 944, "end": 1018}, {"i": 13, "text": "and\u00a01.6.3), continue for as long as they are receiving chemotherapy. [2018]", "start": 1019, "end": 1094}], "quantity": [{"i": 0, "text": "75 mg", "start": 773, "end": 778}, {"i": 1, "text": "150\u00a0mg", "start": 782, "end": 788}]}}, {"qid": "q003", "question": "At what point do we need to start talking about ECMO referral for a pregnant patient with flu or COVID pneumonia?", "question_type": "escalation", "reference": "ECMO should be considered in fulminant cases of primary influenza pneumonia or SARS-CoV-2 \u2014 i.e. when respiratory compromise is severe and rapidly progressive rather than waiting for further deterioration. The most recent MBRRACE report specifically flagged the need for updated guidance on referral pathways for ECMO therapy, so escalate early and involve the team who can arrange transfer. Be alert that severe respiratory compromise with high mortality can also arise from secondary necrotising haemorrhagic pneumonia caused by group A streptococcal exotoxins or PVL-producing S. aureus following influenza or other viral respiratory infection, and that pulmonary haemorrhage from primary influenza has been reported. For suspected SARS-CoV-2, assess according to the RCOG guidance Coronavirus (COVID-19) Infection in Pregnancy.", "chunk_id": "0870a91a7cc1:0026", "source": "GTG64 - Identification and Management of Maternal Sepsis (2024, tier 1, p.7)", "fields": {"action": [{"i": 0, "text": "Women suspected of SARS-CoV-2 should be assesses", "start": 0, "end": 48}, {"i": 1, "text": "according to the RCOG guidance Coronavirus (COVID-19) infection in pregnancy [2]. [Evidence level 4]", "start": 49, "end": 149}, {"i": 2, "text": "During 2009\u201312, an upsurge in influenza combined with a", "start": 150, "end": 205}, {"i": 3, "text": "low vaccination rate, diagnostic delay and lack of treatment accounted for 43% of all infection-related deaths in pregnancy (36", "start": 206, "end": 333}, {"i": 4, "text": "women); [5] in stark contrast to only one death during the three", "start": 334, "end": 398}, {"i": 5, "text": "years of the subsequent report when vaccination increased, [63]", "start": 399, "end": 462}, {"i": 6, "text": "and two in the 2023 MBRRACE report [4].", "start": 463, "end": 502}, {"i": 7, "text": "Influenza related morbidity and mortality is associated with a", "start": 504, "end": 566}, {"i": 8, "text": "body mass index (BMI) of over 30\u2009kg/m2.", "start": 567, "end": 606}, {"i": 9, "text": "Early birth may be indicated during the third trimester of pregnancy.", "start": 608, "end": 677}, {"i": 10, "text": "Pulmonary haemorrhage due to primary influenza has been reported [64, 65].", "start": 679, "end": 753}, {"i": 11, "text": "Secondary bacterial infection with pneumococci, betahaemolytic streptococci and S. aureus occur typically after influenza and other viral respiratory infections.", "start": 755, "end": 916}, {"i": 12, "text": "[66, 67] and S. aureus associated PVL [68, 69] produce a secondary necrotising haemorrhagic pneumonia with severe respiratory compromise and a high mortality rate [43]. [Evidence level 3]", "start": 932, "end": 1119}, {"i": 13, "text": "Initiating extra-corporeal membrane oxygenation (ECMO)", "start": 1120, "end": 1174}, {"i": 14, "text": "should be considered in fulminant cases of primary influenza", "start": 1175, "end": 1235}, {"i": 15, "text": "pneumonia or SARS-CoV-2 [4].", "start": 1236, "end": 1264}, {"i": 16, "text": "The need for updated guidance", "start": 1266, "end": 1295}, {"i": 17, "text": "on referral for ECMO therapy was highlighted in the recent", "start": 1296, "end": 1354}, {"i": 18, "text": "For more information on SARS-CoV-2", "start": 1376, "end": 1410}, {"i": 19, "text": "see the RCOG guidance Coronavirus (COVID-19) Infection in", "start": 1411, "end": 1468}], "quantity": [{"i": 0, "text": "30\u2009kg", "start": 597, "end": 602}]}}, {"qid": "q004", "question": "My patient is ASA 3 because of known COPD and she's booked for an elective hysterectomy \u2014 do I need to get lung function and blood gases done, or should I be calling someone?", "question_type": "escalation", "reference": "For a patient who is ASA grade 3 (or 4) because of known or suspected respiratory disease, don't just order lung function/arterial blood gas routinely \u2014 instead consider seeking advice from a senior anaesthetist as soon as possible after the preoperative assessment, who can advise on whether these tests are needed. Note that for this patient (ASA 3), kidney function testing and an ECG should both be offered.", "chunk_id": "dc64864bfb3f:0017", "source": "Routine Preoperative Tests for Elective Surgery (2016, tier 1, p.9)", "fields": {"action": [{"i": 0, "text": "Consider seeking advice from a senior", "start": 323, "end": 360}, {"i": 1, "text": "anaesthetist as soon as possible after", "start": 361, "end": 399}, {"i": 2, "text": "assessment for people who are ASA grade\u00a03", "start": 400, "end": 441}, {"i": 3, "text": "or 4 due to known or suspected respiratory", "start": 442, "end": 484}, {"i": 4, "text": "[Not routinely] Do not routinely offer the test", "start": 562, "end": 609}, {"i": 5, "text": "[Consider] Consider the test (the value of carrying out the test may depend on specific", "start": 610, "end": 697}, {"i": 6, "text": "Routine preoperative tests for elective surgery (NG45)", "start": 723, "end": 777}, {"i": 7, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 812, "end": 903}], "quantity": []}}, {"qid": "q005", "question": "When we're rewriting our unit's PPH protocol, are we allowed to change any of the WHO recommendations to fit what we actually have available here?", "question_type": "general", "reference": "Yes, but with limits. The recommendations are meant to be adapted into locally appropriate protocols that meet the specific needs of your country and health service \u2014 which may mean developing or revising existing national guidelines or protocols. However, any modifications should be restricted to the weak recommendations only, and the justification for each change must be documented explicitly and transparently. The adaptation should be a well-planned, participatory, consensus-driven process, ideally involving local professional societies. Alongside the protocol change, you also need to create an enabling environment for its use \u2014 for example, widening the availability of uterotonics and supporting changes in practitioner behaviour so evidence-based practice can actually happen.", "chunk_id": "7209e8fb38bd:0053", "source": "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage (2012, tier 1, p.31)", "fields": {"action": [{"i": 0, "text": "The successful introduction of evidence-based policies related to the prevention and", "start": 25, "end": 109}, {"i": 1, "text": "management of PPH into national programmes and health care services depends on", "start": 110, "end": 188}, {"i": 2, "text": "well-planned and participatory consensus-driven processes of adaptation and imple", "start": 189, "end": 270}, {"i": 3, "text": "These processes may include the development or revision of existing", "start": 285, "end": 352}, {"i": 4, "text": "national guidelines or protocols based on this document.", "start": 353, "end": 409}, {"i": 5, "text": "The recommendations contained in the present guideline should be adapted into", "start": 410, "end": 487}, {"i": 6, "text": "locally-appropriate documents that are able to meet the specific needs of each", "start": 488, "end": 566}, {"i": 7, "text": "country and health service.", "start": 567, "end": 594}, {"i": 8, "text": "Modifications to the recommendations, where necessary,", "start": 595, "end": 649}, {"i": 9, "text": "should be limited to weak recommendations and justifications for any changes made", "start": 650, "end": 731}, {"i": 10, "text": "in an explicit and transparent manner.", "start": 732, "end": 770}, {"i": 11, "text": "An enabling environment should be created for the use of these recommendations", "start": 771, "end": 849}, {"i": 12, "text": "(for example, by widening the availability of uterotonics), including changes in the", "start": 850, "end": 934}, {"i": 13, "text": "behaviour of health care practitioners to enable the use of evidence-based practic", "start": 935, "end": 1017}, {"i": 14, "text": "Local professional societies may play important roles in this process and an allinclusive and participatory process should be encouraged.", "start": 1022, "end": 1159}, {"i": 15, "text": "Reproductive Health and Research has published specific guidance on the introduc", "start": 1184, "end": 1264}, {"i": 16, "text": "tion of the WHO\u2019s reproductive health guidelines and tools in national programmes.", "start": 1265, "end": 1347}], "quantity": []}}, {"qid": "q006", "question": "Which practices did WHO actually build the Safe Surgery Checklist from \u2014 everything in their review, or just a subset?", "question_type": "general", "reference": "Only a subset. WHO's review graded practices at different levels, including 'suggested' practices (ones that should be considered for any operation). Because the review didn't make clear how its findings should be put into practice, WHO focused specifically on the 'highly recommended' practices at the end of the review for each objective, and used those to build two things: the WHO Safe Surgery Checklist and a set of recommended 'surgical vital statistics' for measurement. These were then finally reviewed and tested at pilot sites around the world.", "chunk_id": "45f9865b55b3:0029", "source": "Safe Surgery Saves Lives: The Second Global Patient Safety Challenge (2009, tier 1, p.13)", "fields": {"action": [{"i": 0, "text": "\u2018suggested\u2019: a practice that should be considered for any", "start": 2, "end": 59}, {"i": 1, "text": "While the review was relatively comprehensive, it did not make clear", "start": 70, "end": 138}, {"i": 2, "text": "how the findings were to be operationalized.", "start": 139, "end": 183}, {"i": 3, "text": "the review for each objective and in order to provide simple means for", "start": 209, "end": 279}, {"i": 4, "text": "practitioners to ensure and improve standards of safety, we focused on", "start": 280, "end": 350}, {"i": 5, "text": "the \u2018highly recommended\u2019 practices and used them to construct two", "start": 351, "end": 416}, {"i": 6, "text": "products: the WHO Safe Surgery Checklist and a set of recommended", "start": 417, "end": 482}, {"i": 7, "text": "\u2018surgical vital statistics\u2019 for measurement.", "start": 483, "end": 527}, {"i": 8, "text": "These guidelines have undergone final review and testing at pilot sites", "start": 528, "end": 599}, {"i": 9, "text": "around the world (see Appendix A).", "start": 600, "end": 634}, {"i": 10, "text": "There is wide recognition that every", "start": 635, "end": 671}, {"i": 11, "text": "country can improve the safety of its surgical care and that this is a", "start": 672, "end": 742}, {"i": 12, "text": "critical matter of public health, affecting hundreds of millions of people", "start": 743, "end": 817}, {"i": 13, "text": "By creating a culture of safety, WHO Patient", "start": 839, "end": 883}, {"i": 14, "text": "Safety is seeking to promote practice standards that reduce injuries", "start": 884, "end": 952}, {"i": 15, "text": "WHO Patient Safety | WHO Guidelines for Safe Surgery 2009", "start": 969, "end": 1026}], "quantity": []}}, {"qid": "q007", "question": "Se seguiamo le pazienti solo fino alla dimissione, quante infezioni del sito chirurgico ci stiamo perdendo? Vale la pena fare la sorveglianza a 30 giorni dopo la dimissione?", "question_type": "timing", "reference": "S\u00ec: nei dati italiani del Sistema Nazionale di Sorveglianza delle Infezioni del Sito Chirurgico (355 reparti chirurgici, 2009-2011), il 60% delle SSI \u00e8 stato diagnosticato proprio attraverso la sorveglianza post-dimissione a 30 giorni. Senza il follow-up dopo la dimissione si perderebbe quindi la maggior parte dei casi. Il tasso complessivo rilevato era del 2,6% (1.628 SSI su 60.460 interventi), con i valori pi\u00f9 alti nella chirurgia del colon (9,0%) e del retto (7,0%), seguiti da laparotomia (3,1%) e appendicectomia (2,1%). Da notare inoltre che una SSI comporta una degenza aggiuntiva media di circa 7-13 giorni.", "chunk_id": "2678907578d4:0051", "source": "WHO Global Guidelines for Prevention of Surgical Site Infection (2016, tier 1, p.30)", "fields": {"action": [{"i": 0, "text": "Incidenza cumulativa delle SSI (%)", "start": 0, "end": 34}, {"i": 1, "text": "In Italia, il tasso SSI riportato dal Sistema Nazionale", "start": 36, "end": 91}, {"i": 2, "text": "di Sorveglianza delle Infezioni del Sito Chirurgico per", "start": 92, "end": 147}, {"i": 3, "text": "355 reparti chirurgici italiani tra il 2009 e il 2011 era", "start": 148, "end": 205}, {"i": 4, "text": "del 2,6% (1.628 casi su 60.460 interventi).", "start": 206, "end": 249}, {"i": 5, "text": "delle SSI erano diagnosticate attraverso una", "start": 257, "end": 301}, {"i": 6, "text": "sorveglianza post-dimissioni di 30 giorni.", "start": 302, "end": 344}, {"i": 7, "text": "percentuali pi\u00f9 elevate riguardavano gli interventi di", "start": 348, "end": 402}, {"i": 8, "text": "chirurgia del colon (9.0%) e del retto (7.0%),", "start": 403, "end": 449}, {"i": 9, "text": "laparotomia (3.1%) e appendicectomia (2,1%) (26).", "start": 450, "end": 499}, {"i": 10, "text": "In Inghilterra, il pi\u00f9 recente riepilogo dei dati raccolti", "start": 500, "end": 558}, {"i": 11, "text": "dagli ospedali del Servizio Sanitario Nazionale riporta", "start": 559, "end": 614}, {"i": 12, "text": "i tassi cumulativi di SSI a partire da gennaio 2008 a", "start": 615, "end": 668}, {"i": 13, "text": "Il tasso pi\u00f9 alto \u00e8 stato segnalato per i", "start": 681, "end": 722}, {"i": 14, "text": "grandi interventi di chirurgia intestinale (8.3%, 95%", "start": 723, "end": 776}, {"i": 15, "text": "7.9-8.7 per 1.000 giorni di ricovero), seguito dai", "start": 781, "end": 831}, {"i": 16, "text": "piccoli interventi di chirurgia intestinale (4.9%, 95%", "start": 832, "end": 886}, {"i": 17, "text": "4.3-5.7), del dotto biliare, del fegato e pancreas", "start": 891, "end": 941}, {"i": 18, "text": "4,1-5,9) e colecistectomia (4,6%, 95%", "start": 957, "end": 994}, {"i": 19, "text": "Il tasso pi\u00f9 basso \u00e8 stato segnalato per la", "start": 1009, "end": 1052}, {"i": 20, "text": "protesi del ginocchio (0,4%, 95% CI:", "start": 1053, "end": 1089}, {"i": 21, "text": "Dati raccolti tra aprile 2010 e marzo 2012 stimavano", "start": 1104, "end": 1156}, {"i": 22, "text": "che la durata media della permanenza", "start": 1157, "end": 1193}, {"i": 23, "text": "supplementare in ospedale attribuibile a SSI fosse di", "start": 1194, "end": 1247}, {"i": 24, "text": "giorni (7-13 giorni), per un totale di 4.694 giorniletto persi nei 2 anni (27).", "start": 1249, "end": 1328}], "quantity": []}}, {"qid": "q008", "question": "We're 3 hours into an open debulking case with about 1800 mL blood loss \u2014 do I need to redose the cefazolin, and does her BMI of 38 change the dose?", "question_type": "dose", "reference": "Yes. Prophylactic antibiotics should be redosed in prolonged operations after 1\u20132 times the half-life of the drug chosen \u2014 for cefazolin that is at about 3 hours \u2014 and also when blood loss exceeds 1500 mL, so this patient meets both triggers for a repeat dose. In addition, the dose should be increased in obese patients (BMI >35 or >100 kg), so her BMI of 38 warrants a higher dose. (The initial dose should have been given IV within 60 min before skin incision.)", "chunk_id": "2552a848e495:0018", "source": "Guidelines for pre- and intra-operative care in gynecologic/oncology surgery: Enhanced Recovery After Surgery (ERAS) Society recommendations - Part I (2016, tier 1, p.1)", "fields": {"action": [{"i": 0, "text": "The dose should be increased in obese patients (BMI N 35 or", "start": 0, "end": 59}, {"i": 1, "text": "N100 kg) [56], and repeated after 1\u20132 times the half-life of the chosen", "start": 60, "end": 131}, {"i": 2, "text": "medication in prolonged operations (eg.", "start": 132, "end": 171}, {"i": 3, "text": "3 h for cefazolin, half-life:", "start": 172, "end": 201}, {"i": 4, "text": "h) and in case of blood loss N1500 ml [57].", "start": 203, "end": 246}, {"i": 5, "text": "penicillin/cephalosporin, a combination of clindamycin and gentamycin", "start": 272, "end": 341}, {"i": 6, "text": "IV or a quinolone (eg. cipro\ufb02oxacin) can be used.", "start": 342, "end": 391}, {"i": 7, "text": "Laparoscopic operations not contaminated by the genitourinary or digestive tracts do not", "start": 392, "end": 480}, {"i": 8, "text": "require antimicrobial prophylaxis [58].", "start": 481, "end": 520}, {"i": 9, "text": "Skin preparation before surgery traditionally includes a shower, hair", "start": 521, "end": 590}, {"i": 10, "text": "removal and the use of skin antiseptic solution.", "start": 591, "end": 639}, {"i": 11, "text": "addressed the topic of showering or bathing with different antiseptic solutions before surgery [59].", "start": 660, "end": 760}, {"i": 12, "text": "Showering using plain soap is as effective as", "start": 761, "end": 806}, {"i": 13, "text": "chlorhexidine in reducing surgical site infection.", "start": 807, "end": 857}, {"i": 14, "text": "hair clipping in the operating room immediately prior to surgery is associated with lower rates of SSI [60].", "start": 879, "end": 987}, {"i": 15, "text": "However, there is no clear evidence", "start": 988, "end": 1023}, {"i": 16, "text": "that hair removal reduces SSI, irrespective of the method chosen", "start": 1024, "end": 1088}, {"i": 17, "text": "(shaving, hair clipping or depilatory cream).", "start": 1089, "end": 1134}, {"i": 18, "text": "should be avoided and if deemed necessary hair clipping is preferred.", "start": 1159, "end": 1228}, {"i": 19, "text": "Skin antiseptic is highly recommended.", "start": 1229, "end": 1267}, {"i": 20, "text": "A RCT showed a 40% reduction in SSI when using chlorhexidine gluconate and isopropyl alcohol 70% compared to an aqueous solution of 10% povidone-iodine", "start": 1268, "end": 1419}, {"i": 21, "text": "for skin cleansing in different clean-contaminated interventions", "start": 1420, "end": 1484}, {"i": 22, "text": "Chlorhexidine\u2013alcohol therefore is preferred over aqueous", "start": 1491, "end": 1548}, {"i": 23, "text": "povidone-iodine solution although care must be taken to avoid ignition when electrocautery is used [62].", "start": 1549, "end": 1653}, {"i": 24, "text": "Summary and recommendation:", "start": 1654, "end": 1681}, {"i": 25, "text": "IV antibiotics should be administered routinely within 60 min before", "start": 1682, "end": 1750}, {"i": 26, "text": "The dose should be repeated in case of prolonged operations or severe blood loss and increased in obese patients.", "start": 1766, "end": 1879}, {"i": 27, "text": "Hair clipping is preferred if hair removal is mandatory.", "start": 1880, "end": 1936}, {"i": 28, "text": "Chlorhexidine\u2013alcohol is preferred to aqueous povidone-iodine", "start": 1937, "end": 1998}, {"i": 29, "text": "solution for skin cleansing.", "start": 1999, "end": 2027}], "quantity": [{"i": 0, "text": "3 h", "start": 172, "end": 175}, {"i": 1, "text": "60 min", "start": 1737, "end": 1743}]}}, {"qid": "q009", "question": "Do we actually need a written protocol for transferring a PPH patient to a higher level of care, or is it enough to have our hemorrhage treatment protocol on the unit?", "question_type": "escalation", "reference": "Both are recommended. Health facilities should have formal protocols for the prevention and treatment of PPH (weak recommendation, moderate-quality evidence), and separately should have formal protocols for referral of women to a higher level of care (weak recommendation, very-low-quality evidence). So a hemorrhage treatment protocol alone is not sufficient \u2014 a distinct referral/escalation protocol is also recommended. Additionally, PPH treatment simulations are recommended for both pre-service and in-service training, and monitoring the use of uterotonics after birth for PPH prevention is recommended as a process indicator for programmatic evaluation.", "chunk_id": "7209e8fb38bd:0014", "source": "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage (2012, tier 1, p.10)", "fields": {"action": [{"i": 0, "text": "(Weak recommendation, very-low-quality evi", "start": 0, "end": 42}, {"i": 1, "text": "The use of formal protocols by health facilities for the prevention and treatment of PPH is", "start": 80, "end": 171}, {"i": 2, "text": "(Weak recommendation, moderate-quality evidence)", "start": 185, "end": 233}, {"i": 3, "text": "The use of formal protocols for referral of women to a higher level of care is recommended", "start": 235, "end": 325}, {"i": 4, "text": "(Weak recommendation, very-low-quality evidence)", "start": 349, "end": 397}, {"i": 5, "text": "The use of simulations of PPH treatment is recommended for pre-service and in-service train", "start": 399, "end": 490}, {"i": 6, "text": "(Weak recommendation, very-low-quality evidence)", "start": 507, "end": 555}, {"i": 7, "text": "Monitoring the use of uterotonics after birth for the prevention of PPH is recommended as", "start": 557, "end": 646}, {"i": 8, "text": "a process indicator for programmatic evaluation.", "start": 647, "end": 695}, {"i": 9, "text": "(Weak recommendation, very-low-quality", "start": 696, "end": 734}], "quantity": []}}];
+const BATCH = "001-010";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

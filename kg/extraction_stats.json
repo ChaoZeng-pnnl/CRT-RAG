@@ -1,0 +1,10 @@
+{
+  "proposed": 5784,
+  "dropped_schema": 281,
+  "dropped_evidence": 341,
+  "dropped_degenerate": 1,
+  "errors": 0,
+  "chunks": 2490,
+  "kept": 5161,
+  "keep_rate": 0.8922890733056709
+}

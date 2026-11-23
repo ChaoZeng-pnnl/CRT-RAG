@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch 011-020</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch 011-020</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q010", "question": "My post-op patient on chronic diuretics has a magnesium of 1.2 mg/dL and is complaining of leg cramps and tremors \u2014 what am I watching for and how do we correct it?", "question_type": "threshold", "reference": "A magnesium of 1.2 mg/dL is below the normal range of 1.5-2.4 mg/dL, so this is hypomagnesemia \u2014 commonly caused by diuretics, undernutrition, and long-term alcohol use disorder. Beyond the leg cramps and tremors, watch for nausea, vomiting, lethargy, weakness, tetany, and arrhythmias. Treatment is to increase magnesium in the diet and give magnesium either PO or IV.", "chunk_id": "e4a0406819b1:0873", "source": "OpenRN Nursing Fundamentals 2e - Full Textbook (PDF) (2023, tier 2, p.1078)", "fields": {"action": [{"i": 0, "text": "excessive magnesium intake", "start": 115, "end": 141}, {"i": 1, "text": "(i.e., laxatives and antacids)", "start": 143, "end": 173}, {"i": 2, "text": "asystole, tremors, and slow", "start": 217, "end": 244}, {"i": 3, "text": "increased fluid intake, and", "start": 279, "end": 306}, {"i": 4, "text": "Diuretics, undernutrition, and", "start": 370, "end": 400}, {"i": 5, "text": "long-term alcohol use disorder", "start": 402, "end": 432}, {"i": 6, "text": "lethargy, weakness, tetany, leg", "start": 463, "end": 494}, {"i": 7, "text": "cramps, tremors, and arrhythmias", "start": 496, "end": 528}], "quantity": []}}, {"qid": "q011", "question": "My post-op patient's heels are looking red and marked under her TED stockings \u2014 do I take them off, and what do I use instead?", "question_type": "escalation", "reference": "Yes \u2014 stop using the anti-embolism stockings if you see marking, blistering or discolouration of the skin (especially over the heels and bony prominences), or if she reports pain or discomfort. If she's suitable for it, offer intermittent pneumatic compression as an alternative, but not if she has a known allergy to the material it's made from. Advise her to wear the device for as much time as possible. Also remember stockings should come off daily for hygiene and skin inspection, and skin should be checked 2 or 3 times a day in people with significantly reduced mobility, poor skin integrity or any sensory loss.", "chunk_id": "5f6d5754c4ad:0015", "source": "VTE Prevention in Adults (NG89) (2019, tier 1, p.11)", "fields": {"action": [{"i": 0, "text": "Remove anti-embolism stockings daily for hygiene purposes and to inspect skin", "start": 0, "end": 77}, {"i": 1, "text": "In people with a significant reduction in mobility, poor skin integrity or", "start": 89, "end": 163}, {"i": 2, "text": "any sensory loss, inspect the skin 2\u00a0or 3\u00a0times a day, particularly over the heels", "start": 164, "end": 246}, {"i": 3, "text": "and bony prominences. [2010]", "start": 247, "end": 275}, {"i": 4, "text": "Monitor the use of anti-embolism stockings and offer assistance if they are not", "start": 277, "end": 356}, {"i": 5, "text": "being worn correctly. [2010]", "start": 357, "end": 385}, {"i": 6, "text": "Stop the use of anti-embolism stockings if there is marking, blistering or", "start": 387, "end": 461}, {"i": 7, "text": "discolouration of the skin, particularly over the heels and bony prominences, or if", "start": 462, "end": 545}, {"i": 8, "text": "the person experiences pain or discomfort.", "start": 546, "end": 588}, {"i": 9, "text": "If suitable, offer intermittent", "start": 589, "end": 620}, {"i": 10, "text": "pneumatic compression as an alternative. [2010, amended 2018]", "start": 621, "end": 682}, {"i": 11, "text": "Do not offer intermittent pneumatic compression to people with a known allergy", "start": 684, "end": 762}, {"i": 12, "text": "to the material of manufacture. [2010, amended 2018]", "start": 763, "end": 815}, {"i": 13, "text": "Advise the person to wear their device for as much time as possible. [2010,", "start": 817, "end": 892}], "quantity": []}}, {"qid": "q012", "question": "If we're doing a manual removal of a retained placenta, do I need to give antibiotics, and which one?", "question_type": "dose", "reference": "Yes \u2014 give a single dose of antibiotics when manual removal of the placenta is performed. Recommended options are ampicillin or a first-generation cephalosporin (weak recommendation, very-low-quality evidence).", "chunk_id": "7209e8fb38bd:0013", "source": "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage (2012, tier 1, p.10)", "fields": {"action": [{"i": 0, "text": "recommendation, very-low-quality evidence)", "start": 6, "end": 48}, {"i": 1, "text": "If bleeding does not stop in spite of treatment using uterotonics and other available conserva", "start": 50, "end": 144}, {"i": 2, "text": "tive interventions (e.g. uterine massage, balloon tamponade), the use of surgical interven", "start": 145, "end": 235}, {"i": 3, "text": "(Strong recommendation, very-low-quality evidence)", "start": 258, "end": 308}, {"i": 4, "text": "The use of bimanual uterine compression is recommended as a temporizing measure until ap", "start": 310, "end": 398}, {"i": 5, "text": "propriate care is available for the treatment of PPH due to uterine atony after vaginal deliv", "start": 399, "end": 492}, {"i": 6, "text": "(Weak recommendation, very-low-quality evidence)", "start": 498, "end": 546}, {"i": 7, "text": "The use of external aortic compression for the treatment of PPH due to uterine atony after", "start": 548, "end": 638}, {"i": 8, "text": "vaginal birth is recommended as a temporizing measure until appropriate care is available.", "start": 639, "end": 729}, {"i": 9, "text": "(Weak recommendation, very-low-quality evidence)", "start": 730, "end": 778}, {"i": 10, "text": "The use of non-pneumatic anti-shock garments is recommended as a temporizing measure", "start": 780, "end": 864}, {"i": 11, "text": "until appropriate care is available.", "start": 865, "end": 901}, {"i": 12, "text": "(Weak recommendation, low-quality evidence)", "start": 902, "end": 945}, {"i": 13, "text": "The use of uterine packing is not recommended for the treatment of PPH due to uterine atony", "start": 947, "end": 1038}, {"i": 14, "text": "(Weak recommendation, very-low-quality evidence)", "start": 1060, "end": 1108}, {"i": 15, "text": "If the placenta is not expelled spontaneously, the use of IV/IM oxytocin (10 IU) in combina", "start": 1110, "end": 1201}, {"i": 16, "text": "tion with controlled cord traction is recommended.", "start": 1202, "end": 1252}, {"i": 17, "text": "(Weak recommendation, very-low-quality", "start": 1253, "end": 1291}, {"i": 18, "text": "The use of ergometrine for the management of retained placenta is not recommended as this", "start": 1303, "end": 1392}, {"i": 19, "text": "may cause tetanic uterine contractions which may delay the expulsion of the placenta.", "start": 1393, "end": 1478}, {"i": 20, "text": "recommendation, very-low-quality evidence)", "start": 1485, "end": 1527}, {"i": 21, "text": "The use of prostaglandin E2 alpha (dinoprostone or sulprostone) for the management of re", "start": 1529, "end": 1617}, {"i": 22, "text": "tained placenta is not recommended.", "start": 1618, "end": 1653}, {"i": 23, "text": "(Weak recommendation, very-low-quality evidence)", "start": 1654, "end": 1702}, {"i": 24, "text": "A single dose of antibiotics (ampicillin or first-generation cephalosporin) is recommended if", "start": 1704, "end": 1797}, {"i": 25, "text": "manual removal of the placenta is practised.", "start": 1798, "end": 1842}, {"i": 26, "text": "(Weak recommendation, very-low-quality evi", "start": 1843, "end": 1885}], "quantity": [{"i": 0, "text": "10 IU", "start": 1184, "end": 1189}]}}, {"qid": "q013", "question": "For a post-caesarean woman we think is septic, do I need to get both sets of blood cultures before the first dose of antibiotics, and how far apart should they be?", "question_type": "timing", "reference": "Yes \u2014 take two sets of blood cultures (each set with an aerobic and an anaerobic bottle) before any antibiotics are given, drawn sequentially within minutes of each other. Sampling a larger volume of blood improves the yield of pathogens. However, do not delay treatment: start empirical antibiotics straight away without waiting for microbiology results. In women at high risk of sepsis, the investigations and care should begin immediately.", "chunk_id": "0870a91a7cc1:0022", "source": "GTG64 - Identification and Management of Maternal Sepsis (2024, tier 1, p.7)", "fields": {"action": [{"i": 0, "text": "In women at high risk of sepsis these investigations and the initiation of care should commence immediately.", "start": 0, "end": 108}, {"i": 1, "text": "(high platelet count) with a rising CRP and a swinging pyrexia", "start": 125, "end": 187}, {"i": 2, "text": "often indicates a collection of pus or an infected haematoma.", "start": 188, "end": 249}, {"i": 3, "text": "5.4.1\u202f\u202f\u202f|\u202f\u202f\u202fBacteriology Samples", "start": 269, "end": 301}, {"i": 4, "text": "A though history can help identify the cause of sepsis (Table\u00a07).", "start": 302, "end": 367}, {"i": 5, "text": "Two sets of blood cultures (each set including an aerobic and anerobic bottle) should be taken sequentially, within in minutes of", "start": 369, "end": 498}, {"i": 6, "text": "Increasing the volume of blood sampled maximises", "start": 512, "end": 560}, {"i": 7, "text": "the aspiration of circulating bacteria and thus the yield of pathogens.", "start": 561, "end": 632}, {"i": 8, "text": "Blood cultures should be obtained prior to antibiotic administration and empirical treatment started without waiting for", "start": 634, "end": 754}, {"i": 9, "text": "any microbiology results.", "start": 755, "end": 780}, {"i": 10, "text": "Consider if a blood sample is indicated", "start": 782, "end": 821}, {"i": 11, "text": "Other microbiology sampling should be guided", "start": 836, "end": 880}, {"i": 12, "text": "by clinical suspicion of the focus of infection.", "start": 881, "end": 929}, {"i": 13, "text": "available, a nasal in viral transport media may be sent for rapid", "start": 948, "end": 1013}, {"i": 14, "text": "MRSA molecular diagnostic screening.", "start": 1014, "end": 1050}, {"i": 15, "text": "The alternative is a premoistened nasal swab cultured overnight on selective media.", "start": 1052, "end": 1135}, {"i": 16, "text": "a woman has a normal CRP or symptoms are more suggestive", "start": 1140, "end": 1196}, {"i": 17, "text": "of a viral respiratory infection (e.g.", "start": 1197, "end": 1235}, {"i": 18, "text": "SARS-CoV2, influenza) then", "start": 1237, "end": 1263}, {"i": 19, "text": "a viral nasal swab should be taken for PCR.", "start": 1264, "end": 1307}, {"i": 20, "text": "throat, vagina, caesarean or other wounds should be sent for bacterial culture as appropriate. [Evidence level 4]", "start": 1326, "end": 1439}, {"i": 21, "text": "Symptoms of tonsillitis/pharyngitis should prompt a throat", "start": 1440, "end": 1498}, {"i": 22, "text": "swab for bacterial culture.", "start": 1499, "end": 1526}, {"i": 23, "text": "Diarrhoea warrants routine stool", "start": 1528, "end": 1560}, {"i": 24, "text": "Salmonella, Campylobacter) as well as testing for", "start": 1576, "end": 1625}, {"i": 25, "text": "Clostridium difficile toxin, [60] the latter especially if diarrhoea", "start": 1626, "end": 1694}, {"i": 26, "text": "follows antimicrobial therapy.", "start": 1695, "end": 1725}, {"i": 27, "text": "An infection specialist should be", "start": 1727, "end": 1760}, {"i": 28, "text": "consulted because of the wide range of highly contagious infections necessitating high-level infection control precautions", "start": 1761, "end": 1883}, {"i": 29, "text": "to protect staff and other patients.", "start": 1884, "end": 1920}, {"i": 30, "text": "TABLE 6\u202f\u202f\u202f\u202f|\u202f\u202f\u202f\u202fSurviving Sepsis Campaign Hour-1 Bundle of Care", "start": 1947, "end": 2010}], "quantity": []}}, {"qid": "q014", "question": "Our ergometrine vials have been sitting in the theatre drug cupboard at room temperature \u2014 is that okay to give for PPH prevention, or do we need to switch to something else?", "question_type": "technique", "reference": "No \u2014 ergometrine/methylergometrine requires refrigerated transport and storage at 2\u20138 \u00b0C. If that cold chain cannot be guaranteed, its quality and effectiveness may be adversely affected, and in that situation another effective uterotonic should be considered instead.", "chunk_id": "f45f67bdfa20:0063", "source": "WHO Recommendations for Uterotonics for Prevention of PPH (2018, tier 1, p.26)", "fields": {"action": [{"i": 0, "text": "RECOMMENDATIONS AND SUPPORTING EVIDENCE", "start": 0, "end": 39}, {"i": 1, "text": "UTEROTONICS FOR THE PREVENTION OF POSTPARTUM HAEMORRHAGE", "start": 61, "end": 117}, {"i": 2, "text": "\" The GDG placed its emphasis on the danger of the increased risk of hypertension", "start": 123, "end": 204}, {"i": 3, "text": "(50 per 1000 births) associated with ergometrine/methylergometrine use and", "start": 205, "end": 279}, {"i": 4, "text": "therefore made a context-specific recommendation.", "start": 280, "end": 329}, {"i": 5, "text": "The group noted that women", "start": 330, "end": 356}, {"i": 6, "text": "with underlying cardiovascular disorders may be prone to further exacerbation by", "start": 357, "end": 437}, {"i": 7, "text": "\" The narrative evidence supporting this recommendation and the corresponding SoF", "start": 457, "end": 538}, {"i": 8, "text": "table can be found in Web Annex 4.", "start": 539, "end": 573}, {"i": 9, "text": "\" In the context of this recommendation, hypertensive disorders of pregnancy include", "start": 584, "end": 668}, {"i": 10, "text": "chronic hypertension, gestational hypertension, pre-eclampsia and eclampsia.", "start": 669, "end": 745}, {"i": 11, "text": "\" This recommendation applies to women undergoing a vaginal birth or caesarean", "start": 748, "end": 826}, {"i": 12, "text": "Skilled health personnel who are trained to administer injectable", "start": 836, "end": 901}, {"i": 13, "text": "uterotonics are required.", "start": 902, "end": 927}, {"i": 14, "text": "\" Women need to be informed of the possible side-effects (including hypertension,", "start": 930, "end": 1011}, {"i": 15, "text": "nausea, headache, vomiting and abdominal pain) prior to use.", "start": 1012, "end": 1072}, {"i": 16, "text": "are available, women may be offered the choice of an alternative uterotonic with a", "start": 1093, "end": 1175}, {"i": 17, "text": "better side-effect profile.", "start": 1176, "end": 1203}, {"i": 18, "text": "\" Ergometrine/methylergometrine is relatively inexpensive and widely available;", "start": 1206, "end": 1285}, {"i": 19, "text": "however, it requires refrigerated transport and storage (2\u20138\u00a0\u00b0C).", "start": 1286, "end": 1351}, {"i": 20, "text": "where this cannot be guaranteed, the quality and effectiveness of ergometrine/", "start": 1364, "end": 1442}, {"i": 21, "text": "methylergometrine may be adversely affected.", "start": 1443, "end": 1487}, {"i": 22, "text": "In these situations, another effective", "start": 1488, "end": 1526}, {"i": 23, "text": "uterotonic can be considered.", "start": 1527, "end": 1556}], "quantity": [{"i": 0, "text": "2\u20138\u00a0\u00b0C", "start": 1343, "end": 1349}]}}, {"qid": "q015", "question": "For a pregnant patient on calcium supplements, does the dose matter for preterm birth risk \u2014 I've heard low-dose might actually be worse?", "question_type": "dose", "reference": "Yes, the dose subgroups point in opposite directions. In the high-dose subgroup, calcium reduced preterm birth: 744/7744 (9.6%) vs 817/7735 (10.6%) with placebo/no treatment, RR 0.81 (95% CI 0.66\u20130.99), about 1 to 36 fewer per 1000 \u2014 moderate certainty. In the low-dose subgroup, preterm birth was more frequent with calcium: 45/330 (13.6%) vs 29/330 (8.8%), RR 1.55 (95% CI 1.00\u20132.41), up to 124 more per 1000 \u2014 but this estimate is very low certainty (very serious risk of bias and imprecision), so it should not be treated as established harm. The main pooled analysis showed no clear difference: 789/8074 (9.8%) vs 846/8065 (10.5%), RR 0.86 (0.70\u20131.05), low certainty. Note the passage does not state the actual mg cut-off defining low versus high dose.", "chunk_id": "9e0f86a82f44:0038", "source": "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience (2016, tier 1, p.28)", "fields": {"action": [{"i": 0, "text": "Preterm birth \u2013 main analysis", "start": 851, "end": 880}, {"i": 1, "text": "(from 31 fewer to 5 more)", "start": 1069, "end": 1094}, {"i": 2, "text": "Preterm birth \u2013 low dose subgroup", "start": 1099, "end": 1132}, {"i": 3, "text": "(from 0 more to 124 more)", "start": 1293, "end": 1318}, {"i": 4, "text": "Preterm birth \u2013 high dose subgroup", "start": 1328, "end": 1362}, {"i": 5, "text": "(from 1 fewer to 36 fewer)", "start": 1566, "end": 1592}, {"i": 6, "text": "Low birth weight (< 2500 g)", "start": 1602, "end": 1629}, {"i": 7, "text": "(from 22 fewer to 8 more)", "start": 1835, "end": 1860}, {"i": 8, "text": "Stillbirth or fetal death", "start": 1870, "end": 1895}], "quantity": [{"i": 0, "text": "2500 g", "start": 1622, "end": 1628}]}}, {"qid": "q016", "question": "What proportion of ED attendances could actually be handled by a GP instead \u2014 is there a figure we can quote when we're pushing for a primary care service alongside our emergency department?", "question_type": "threshold", "reference": "Royal College of Emergency Medicine survey data suggest around 20% of people attending emergency departments could be treated by GPs. A joint report from the Royal College of Emergency Medicine, Royal College of Paediatrics and Child Health, Royal College of Physicians and Royal College of Surgeons has proposed that every emergency department should include a primary care out-of-hours facility. However, note that although extended GP access in surgeries is a current health policy requirement, the impact of such provision on reducing emergency department attendances for acute illness is unknown, and the specific effect of GPs on secondary care and the wider urgent and emergency care system still needs systematic research evaluation.", "chunk_id": "bd76076c871f:0025", "source": "NICE NG94 - Emergency and Acute Medical Care in Adults (2018, tier 1, p.16)", "fields": {"action": [{"i": 0, "text": "Royal College of Emergency Medicine survey data suggest that around 20% of people who", "start": 22, "end": 107}, {"i": 1, "text": "attend emergency departments could be treated by GPs.", "start": 108, "end": 161}, {"i": 2, "text": "Extended access to GPs in their", "start": 162, "end": 193}, {"i": 3, "text": "surgeries is a requirement of current health policy, but the impact of such provision on", "start": 194, "end": 282}, {"i": 4, "text": "reducing emergency department attendances of people with acute illnesses is unknown.", "start": 283, "end": 367}, {"i": 5, "text": "An alternative approach, proposed in a joint report from the Royal College of Emergency", "start": 368, "end": 455}, {"i": 6, "text": "Medicine, Royal College of Paediatrics and Child Health, Royal College of Physicians, and", "start": 456, "end": 545}, {"i": 7, "text": "Royal College of Surgeons, is that every emergency department should include a primary", "start": 546, "end": 632}, {"i": 8, "text": "care out-of-hours facility.", "start": 633, "end": 660}, {"i": 9, "text": "This approach deserves systematic research evaluation focused", "start": 661, "end": 722}, {"i": 10, "text": "on the specific impact of GPs on secondary care and the wider urgent and emergency", "start": 723, "end": 805}, {"i": 11, "text": "Full details of the evidence and the committee's discussion are in evidence review 17:", "start": 819, "end": 905}, {"i": 12, "text": "GPs within or on the same site as emergency departments.", "start": 906, "end": 962}], "quantity": []}}, {"qid": "q017", "question": "We've given three doses of carboprost 250 micrograms IM for atonic bleeding and she's still oozing \u2014 how many more doses can we give before we need to think about theatre?", "question_type": "escalation", "reference": "Carboprost 250 micrograms IM can be repeated every 15 minutes up to a maximum total of 2 mg (eight doses). However, if significant atonic haemorrhage continues after the third dose without significant improvement \u2014 i.e. 30 minutes or more after the first dose \u2014 the team should consider transferring her to the operating theatre for examination under anaesthesia, while being aware of the impending need for laparotomy and/or hysterectomy.", "chunk_id": "0ccb0502d3aa:0082", "source": "GTG52 - Prevention and Management of Postpartum Haemorrhage (2016, tier 1, p.25)", "fields": {"action": [{"i": 0, "text": "The recommended dose is 250 micrograms", "start": 0, "end": 38}, {"i": 1, "text": "This may be repeated every 15 minutes to a total dose of 2 mg (eight doses).", "start": 57, "end": 133}, {"i": 2, "text": "signi\ufb01cant atonic haemorrhage continues after a third dose of carboprost, without signi\ufb01cant improvement", "start": 147, "end": 251}, {"i": 3, "text": "30 minutes or more after the \ufb01rst dose was given), the team should consider transfer to the", "start": 258, "end": 349}, {"i": 4, "text": "operating theatre for examination under anaesthesia, with an awareness of the impending need for", "start": 350, "end": 446}, {"i": 5, "text": "laparotomy and/or hysterectomy.", "start": 447, "end": 478}, {"i": 6, "text": "e130 of e149 \u00aa 2016 Royal College of Obstetricians and Gynaecologists", "start": 497, "end": 566}, {"i": 7, "text": "Two systematic reviews,2,139 which includes the 2014 Cochrane review, focused on misoprostol to treat", "start": 567, "end": 668}, {"i": 8, "text": "PPH and examined the optimal route and dosage, and its ef\ufb01cacy.", "start": 669, "end": 732}, {"i": 9, "text": "Compared with 40 iu oxytocin infusion,", "start": 734, "end": 772}, {"i": 10, "text": "800 micrograms sublingual misoprostol was associated with a signi\ufb01cant increase in the number of women", "start": 773, "end": 875}, {"i": 11, "text": "who had blood loss of at least 1000 ml (RR 2.65, 95% CI 1.04\u20136.75) and who required blood transfusion", "start": 876, "end": 977}, {"i": 12, "text": "(RR 1.47, 95% CI 1.02\u20132.14).", "start": 978, "end": 1006}, {"i": 13, "text": "The review authors concluded that oxytocin", "start": 1008, "end": 1050}, {"i": 14, "text": "recommended as \ufb01rst-line treatment for primary PPH.", "start": 1070, "end": 1121}, {"i": 15, "text": "When used following prophylactic uterotonics,", "start": 1123, "end": 1168}, {"i": 16, "text": "misoprostol and oxytocin infusion work similarly.", "start": 1169, "end": 1218}, {"i": 17, "text": "A study140 of women in early pregnancy demonstrated that regardless of the route of administration", "start": 1238, "end": 1336}, {"i": 18, "text": "(vaginal, sublingual or rectal), misoprostol took 1.0\u20132.5 hours to increase uterine tone.", "start": 1337, "end": 1426}, {"i": 19, "text": "aware of this delay in the clinical effect of misoprostol.", "start": 1449, "end": 1507}, {"i": 20, "text": "Guidelines from WHO141 and the International", "start": 1509, "end": 1553}, {"i": 21, "text": "Federation of Gynecology and Obstetrics142 recommend that in the management of PPH, misoprostol is", "start": 1554, "end": 1652}, {"i": 22, "text": "administered sublingually.", "start": 1653, "end": 1679}], "quantity": [{"i": 0, "text": "15 minutes", "start": 84, "end": 94}, {"i": 1, "text": "2 mg", "start": 114, "end": 118}, {"i": 2, "text": "30 minutes", "start": 258, "end": 268}, {"i": 3, "text": "40 iu", "start": 748, "end": 753}, {"i": 4, "text": "1000 ml", "start": 907, "end": 914}, {"i": 5, "text": "1.0\u20132.5 hours", "start": 1387, "end": 1400}]}}, {"qid": "q018", "question": "How much blood loss after delivery counts as postpartum haemorrhage, and what's the window I should be watching for it?", "question_type": "threshold", "reference": "PPH is commonly defined as blood loss of 500 ml or more within 24 hours after birth. The first 24 hours after birth is the critical monitoring window, since most PPH deaths occur during that period \u2014 and the majority could be avoided by giving prophylactic uterotonics during the third stage of labour plus timely, appropriate management.", "chunk_id": "7209e8fb38bd:0006", "source": "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage (2012, tier 1, p.9)", "fields": {"action": [{"i": 0, "text": "Postpartum Haemorrhage (PPH) is commonly defined as a blood loss of 500 ml or", "start": 13, "end": 90}, {"i": 1, "text": "more within 24 hours after birth.", "start": 91, "end": 124}, {"i": 2, "text": "PPH is the leading cause of maternal mortality in", "start": 125, "end": 174}, {"i": 3, "text": "low-income countries and the primary cause of nearly one quarter of all maternal", "start": 175, "end": 255}, {"i": 4, "text": "Most deaths resulting from PPH occur during the first 24 hours after", "start": 273, "end": 341}, {"i": 5, "text": "birth: the majority of these could be avoided through the use of prophylactic utero", "start": 342, "end": 425}, {"i": 6, "text": "tonics during the third stage of labour and by timely and appropriate management.", "start": 426, "end": 507}, {"i": 7, "text": "Improving health care for women during childbirth in order to prevent and treat PPH", "start": 508, "end": 591}, {"i": 8, "text": "is an essential step towards the achievement of the Millennium Development Goals.", "start": 592, "end": 673}, {"i": 9, "text": "The primary objective of this guideline therefore is to provide a foundation for the", "start": 674, "end": 758}, {"i": 10, "text": "strategic policy and programme development needed to ensure the sustainable", "start": 759, "end": 834}, {"i": 11, "text": "implementation of effective interventions for reducing the global burden of PPH.", "start": 835, "end": 915}], "quantity": [{"i": 0, "text": "500 ml", "start": 81, "end": 87}, {"i": 1, "text": "24 hours", "start": 103, "end": 111}, {"i": 2, "text": "24 hours", "start": 327, "end": 335}]}}, {"qid": "q019", "question": "My post-op patient is being switched to immediate-release tramadol \u2014 can I schedule it PRN for breakthrough pain, and how long should she stay on it?", "question_type": "technique", "reference": "No \u2014 immediate-release tramadol isn't meant to be used as an 'as needed' medication. It's prescribed for moderate to moderately severe pain when other analgesics can't be tolerated or aren't effective, and it's intended for pain episodes lasting less than a week. If the patient has chronic, ongoing pain, the extended-release form is the appropriate option instead.", "chunk_id": "efb16f8bfcbe:0004", "source": "OpenRN Nursing Fundamentals - Comfort and Pain Chapter (2023, tier 2, p.None)", "fields": {"action": [{"i": 0, "text": "mg (may be increased) 4 \u2013 10 mg (may be increased)", "start": 0, "end": 50}, {"i": 1, "text": "4 \u2013 10 mg (may be increased)", "start": 52, "end": 80}, {"i": 2, "text": "Tramadol is available in immediate release and extended-release forms.", "start": 82, "end": 152}, {"i": 3, "text": "Immediate release is prescribed for moderate to moderately severe pain when other pain medications cannot be tolerated or are not effective.", "start": 153, "end": 293}, {"i": 4, "text": "Immediate-release tramadol is not intended for use as an \u201cas needed\u201d medication but rather for pain episodes lasting less than a week.", "start": 294, "end": 428}, {"i": 5, "text": "The extended-release forms are used to treat chronic ongoing pain. [3]", "start": 429, "end": 499}, {"i": 6, "text": "Morphine is administered via various routes of administration, including orally, rectally, subcutaneously, intramuscularly, intravenously, and transdermally.", "start": 501, "end": 658}, {"i": 7, "text": "See Figure 11.8 [4] for an image of a vial of morphine for injection or intravenous use.", "start": 659, "end": 747}, {"i": 8, "text": "Some types of opioids can be administered through the skin, such as the fentanyl transdermal patch.", "start": 749, "end": 848}, {"i": 9, "text": "See Figure 11.9 [5] for an image of a fentanyl transdermal patch.", "start": 849, "end": 914}, {"i": 10, "text": "Read more information about opioid medications in the \u201c Analgesic and Musculoskeletal \u201d chapter in the Open RN Nursing Pharmacology, 2e textbook.", "start": 916, "end": 1061}], "quantity": [{"i": 0, "text": "4 \u2013 10 mg", "start": 22, "end": 31}, {"i": 1, "text": "4 \u2013 10 mg", "start": 52, "end": 61}]}}];
+const BATCH = "011-020";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

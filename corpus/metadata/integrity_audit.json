@@ -1,0 +1,27 @@
+{
+  "_note": "Content-integrity failures found 2026-09-04 and recovered 2026-09-05. These files were logged as SUCCESSFUL downloads with valid SHA-256 hashes but contained HTML error pages, not documents. Recorded here because corpus/metadata/validation_report.json now reports an empty set (the corpus is clean) and the download log predates content-validation logging. Reproduce by running the pre-fix acquisition against the legacy URLs listed.",
+  "audited_at": "2026-09-04",
+  "recovered_at": "2026-09-05",
+  "files_audited": 232,
+  "failures_found": 14,
+  "failures": [
+    {"file": "WHO_Surgical_Safety_Checklist_Implementation.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell (<ds-app></ds-app>)", "cause": "legacy apps.who.int/iris bitstream path returns SPA shell after DSpace 7 migration", "recovery": "IRIS REST API handle resolution (fetchers/who_iris.py)"},
+    {"file": "WHO_Global_SSI_Prevention_Guidelines.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_Uterotonics_PPH_Prevention.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_Patient_Safety_Curriculum_Guide.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_Safe_Surgery_Saves_Lives.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_PPH_Prevention_Treatment_Recommendations_2012.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_ANC_Recommendations_2016.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_Intrapartum_Care_Recommendations_2018.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "WHO_Maternal_Health_Recommendations_2018.pdf", "source": "WHO", "tier": 1, "bytes": 755, "actual_content": "DSpace 7 Angular shell", "cause": "same", "recovery": "IRIS REST API"},
+    {"file": "CDC_CAUTI_Prevention_Guidelines_2009.pdf", "source": "CDC", "tier": 1, "bytes": 1816, "actual_content": "'Preparing to download...' interstitial", "cause": "cdc.gov returns HTTP 403 to non-browser clients", "recovery": "headless-browser download (Phase 7)"},
+    {"file": "ACOG_ERAS_Committee_Opinion_2018.html", "source": "ACOG", "tier": 1, "bytes": 143034, "actual_content": "ACOG 'Page Not Found' page", "cause": "branded 404 served with HTTP 200 to non-browser clients", "recovery": "rendered article HTML via headless browser"},
+    {"file": "AHRQ_TeamSTEPPS_Pocket_Guide.pdf", "source": "AHRQ", "tier": 3, "bytes": 72021, "actual_content": "AHRQ HTML landing page", "cause": "site restructured for TeamSTEPPS 3.0; PDF link only in client-rendered DOM", "recovery": "headless browser, inline PDF captured by content-type"},
+    {"file": "AHRQ_TeamSTEPPS_SBAR_Module.pdf", "source": "AHRQ", "tier": 3, "bytes": 72021, "actual_content": "AHRQ HTML landing page", "cause": "same", "recovery": "rendered curriculum page (standalone PDF no longer published)"},
+    {"file": "RNAO_BPG_Care_Transitions.pdf", "source": "RNAO", "tier": 2, "bytes": 87663, "actual_content": "RNAO HTML page", "cause": "download endpoint behind Cloudflare interstitial", "recovery": "full Chromium + in-page click"}
+  ],
+  "by_source": {"WHO": 9, "CDC": 1, "ACOG": 1, "AHRQ": 2, "RNAO": 1},
+  "by_tier": {"1": 11, "2": 1, "3": 2},
+  "impact_if_undetected": "Tier 1 would have contained 14 usable documents rather than 25, with WHO, ACOG and ERAS contributing zero. A 755-byte JavaScript shell carries a valid SHA-256 and is indistinguishable from provenance in any manifest recording only HTTP status and hash.",
+  "detection_rule": "magic-byte check (%PDF-) for PDFs, >=3000 extracted characters for HTML/XML, and error-page markers including the DSpace <ds-app> shell"
+}

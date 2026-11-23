@@ -1,0 +1,52 @@
+{
+  "judge_model": "claude-fable-5-1-project",
+  "judged": 150,
+  "verdicts": {
+    "incorrect": 61,
+    "correct": 88,
+    "unsure": 1
+  },
+  "precision_overall": 0.5906040268456376,
+  "precision_by_relation": {
+    "APPLIES_TO": {
+      "precision": 0.5454545454545454,
+      "n": 22
+    },
+    "CONTRAINDICATED_WITH": {
+      "precision": 0.4090909090909091,
+      "n": 22
+    },
+    "INCREASES_RISK_OF": {
+      "precision": 0.8636363636363636,
+      "n": 22
+    },
+    "MONITORS_FOR": {
+      "precision": 0.47619047619047616,
+      "n": 21
+    },
+    "OCCURS_IN_PHASE": {
+      "precision": 0.3333333333333333,
+      "n": 21
+    },
+    "PREVENTS": {
+      "precision": 0.6666666666666666,
+      "n": 21
+    },
+    "TREATS": {
+      "precision": 0.85,
+      "n": 20
+    }
+  },
+  "precision_by_tier": {
+    "1": {
+      "precision": 0.5906040268456376,
+      "n": 149
+    }
+  },
+  "failure_modes": {
+    "in_context": 46,
+    "asserted": 38,
+    "typing": 1
+  },
+  "judged_file": "/qfs/people/zeng331/PROJECTS/NURSE/kg/judged_triples.jsonl"
+}

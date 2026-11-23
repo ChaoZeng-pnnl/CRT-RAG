@@ -1,0 +1,7 @@
+{
+ "date": "2026-11-23",
+ "question_set": "the 15 questions whose source passage hybrid RAG retrieved in its top 6 and CVT-RAG did not (runs/retrieval_eval.json)",
+ "method": "re-ran CVT-RAG retrieval on these questions (live release 3, read-only) with the 3-passages-per-document cap removed (max_per_doc=99), and separately with population demotion disabled (population_threshold=-1)",
+ "result": {"recovered_by_removing_cap_only": 14, "other": 1},
+ "note": "in all 14, the source document already filled 3 of CVT-RAG's 6 slots and the source passage would have been its 4th"
+}

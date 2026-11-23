@@ -1,0 +1,313 @@
+{
+  "n_questions": 50,
+  "batch_size": 10,
+  "sheets": [
+    "gold_spans_001-010.html",
+    "gold_spans_011-020.html",
+    "gold_spans_021-030.html",
+    "gold_spans_031-040.html",
+    "gold_spans_041-050.html"
+  ],
+  "questions": [
+    {
+      "qid": "q000",
+      "chunk_id": "4edd937b5877:0024",
+      "n_action": 22,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q001",
+      "chunk_id": "2836fd2a5622:0127",
+      "n_action": 28,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q002",
+      "chunk_id": "5f6d5754c4ad:0025",
+      "n_action": 14,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q003",
+      "chunk_id": "0870a91a7cc1:0026",
+      "n_action": 20,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q004",
+      "chunk_id": "dc64864bfb3f:0017",
+      "n_action": 8,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q005",
+      "chunk_id": "7209e8fb38bd:0053",
+      "n_action": 17,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q006",
+      "chunk_id": "45f9865b55b3:0029",
+      "n_action": 16,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q007",
+      "chunk_id": "2678907578d4:0051",
+      "n_action": 25,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q008",
+      "chunk_id": "2552a848e495:0018",
+      "n_action": 30,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q009",
+      "chunk_id": "7209e8fb38bd:0014",
+      "n_action": 10,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q010",
+      "chunk_id": "e4a0406819b1:0873",
+      "n_action": 8,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q011",
+      "chunk_id": "5f6d5754c4ad:0015",
+      "n_action": 14,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q012",
+      "chunk_id": "7209e8fb38bd:0013",
+      "n_action": 27,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q013",
+      "chunk_id": "0870a91a7cc1:0022",
+      "n_action": 31,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q014",
+      "chunk_id": "f45f67bdfa20:0063",
+      "n_action": 24,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q015",
+      "chunk_id": "9e0f86a82f44:0038",
+      "n_action": 9,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q016",
+      "chunk_id": "bd76076c871f:0025",
+      "n_action": 13,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q017",
+      "chunk_id": "0ccb0502d3aa:0082",
+      "n_action": 23,
+      "n_quantity": 6
+    },
+    {
+      "qid": "q018",
+      "chunk_id": "7209e8fb38bd:0006",
+      "n_action": 12,
+      "n_quantity": 3
+    },
+    {
+      "qid": "q019",
+      "chunk_id": "efb16f8bfcbe:0004",
+      "n_action": 11,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q020",
+      "chunk_id": "e4a0406819b1:0911",
+      "n_action": 37,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q021",
+      "chunk_id": "2836fd2a5622:0126",
+      "n_action": 19,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q022",
+      "chunk_id": "82b0c8949b89:0016",
+      "n_action": 17,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q023",
+      "chunk_id": "0ccb0502d3aa:0011",
+      "n_action": 13,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q024",
+      "chunk_id": "f45f67bdfa20:0012",
+      "n_action": 27,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q025",
+      "chunk_id": "1277ed65e8ca:0091",
+      "n_action": 6,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q026",
+      "chunk_id": "144cabf03653:0024",
+      "n_action": 12,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q027",
+      "chunk_id": "0ccb0502d3aa:0096",
+      "n_action": 7,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q028",
+      "chunk_id": "47eabb153abc:0895",
+      "n_action": 21,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q029",
+      "chunk_id": "4edd937b5877:0041",
+      "n_action": 18,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q030",
+      "chunk_id": "b8cbcf492507:0033",
+      "n_action": 44,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q031",
+      "chunk_id": "2678907578d4:0098",
+      "n_action": 34,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q032",
+      "chunk_id": "b8cbcf492507:0024",
+      "n_action": 14,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q033",
+      "chunk_id": "137be68c201c:0115",
+      "n_action": 23,
+      "n_quantity": 2
+    },
+    {
+      "qid": "q034",
+      "chunk_id": "0ccb0502d3aa:0015",
+      "n_action": 18,
+      "n_quantity": 10
+    },
+    {
+      "qid": "q035",
+      "chunk_id": "f45f67bdfa20:0055",
+      "n_action": 32,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q036",
+      "chunk_id": "1277ed65e8ca:0095",
+      "n_action": 31,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q037",
+      "chunk_id": "1a12d3183519:0009",
+      "n_action": 26,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q038",
+      "chunk_id": "2836fd2a5622:0283",
+      "n_action": 24,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q039",
+      "chunk_id": "1277ed65e8ca:0076",
+      "n_action": 21,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q040",
+      "chunk_id": "1277ed65e8ca:0060",
+      "n_action": 14,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q041",
+      "chunk_id": "45f9865b55b3:0065",
+      "n_action": 35,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q042",
+      "chunk_id": "45f9865b55b3:0384",
+      "n_action": 24,
+      "n_quantity": 5
+    },
+    {
+      "qid": "q043",
+      "chunk_id": "4edd937b5877:0008",
+      "n_action": 23,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q044",
+      "chunk_id": "99fccebb0aaa:0058",
+      "n_action": 25,
+      "n_quantity": 3
+    },
+    {
+      "qid": "q045",
+      "chunk_id": "137be68c201c:0009",
+      "n_action": 23,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q046",
+      "chunk_id": "dc197582a4b2:0005",
+      "n_action": 27,
+      "n_quantity": 1
+    },
+    {
+      "qid": "q047",
+      "chunk_id": "4a934c41413a:0031",
+      "n_action": 25,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q048",
+      "chunk_id": "f9bcd815e930:0007",
+      "n_action": 8,
+      "n_quantity": 0
+    },
+    {
+      "qid": "q049",
+      "chunk_id": "137be68c201c:0032",
+      "n_action": 26,
+      "n_quantity": 2
+    }
+  ]
+}

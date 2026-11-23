@@ -1,0 +1,110 @@
+{
+  "seed": 20260907,
+  "min_size": 3,
+  "scales": [
+    {
+      "communities": 180,
+      "entity_coverage": 0.853,
+      "median_docs": 1.0,
+      "mean_docs": 3.38,
+      "max_docs": 19,
+      "communities_ge5_docs": 38,
+      "median_chunks": 2.0,
+      "max_chunks": 144,
+      "median_entities": 4.0,
+      "max_entities": 239,
+      "resolution": 2.0
+    },
+    {
+      "communities": 160,
+      "entity_coverage": 0.853,
+      "median_docs": 1.0,
+      "mean_docs": 3.19,
+      "max_docs": 21,
+      "communities_ge5_docs": 25,
+      "median_chunks": 2.0,
+      "max_chunks": 169,
+      "median_entities": 4.0,
+      "max_entities": 309,
+      "resolution": 1.0
+    },
+    {
+      "communities": 142,
+      "entity_coverage": 0.853,
+      "median_docs": 1.0,
+      "mean_docs": 2.72,
+      "max_docs": 26,
+      "communities_ge5_docs": 13,
+      "median_chunks": 1.5,
+      "max_chunks": 283,
+      "median_entities": 3.0,
+      "max_entities": 518,
+      "resolution": 0.5
+    },
+    {
+      "communities": 135,
+      "entity_coverage": 0.853,
+      "median_docs": 1,
+      "mean_docs": 2.38,
+      "max_docs": 27,
+      "communities_ge5_docs": 8,
+      "median_chunks": 1,
+      "max_chunks": 375,
+      "median_entities": 3,
+      "max_entities": 719,
+      "resolution": 0.25
+    },
+    {
+      "communities": 130,
+      "entity_coverage": 0.853,
+      "median_docs": 1.0,
+      "mean_docs": 1.87,
+      "max_docs": 32,
+      "communities_ge5_docs": 3,
+      "median_chunks": 1.0,
+      "max_chunks": 613,
+      "median_entities": 3.0,
+      "max_entities": 1274,
+      "resolution": 0.1
+    },
+    {
+      "communities": 128,
+      "entity_coverage": 0.853,
+      "median_docs": 1.0,
+      "mean_docs": 1.5,
+      "max_docs": 36,
+      "communities_ge5_docs": 1,
+      "median_chunks": 1.0,
+      "max_chunks": 1097,
+      "median_entities": 3.0,
+      "max_entities": 2753,
+      "resolution": 0.05
+    },
+    {
+      "communities": 127,
+      "entity_coverage": 0.853,
+      "median_docs": 1,
+      "mean_docs": 1.5,
+      "max_docs": 36,
+      "communities_ge5_docs": 1,
+      "median_chunks": 1,
+      "max_chunks": 1100,
+      "median_entities": 3,
+      "max_entities": 2762,
+      "resolution": 0.02
+    },
+    {
+      "communities": 127,
+      "entity_coverage": 0.853,
+      "median_docs": 1,
+      "mean_docs": 1.5,
+      "max_docs": 36,
+      "communities_ge5_docs": 1,
+      "median_chunks": 1,
+      "max_chunks": 1100,
+      "median_entities": 3,
+      "max_entities": 2762,
+      "resolution": 0.01
+    }
+  ]
+}

@@ -1,0 +1,2298 @@
+{
+  "run_at": "2026-11-20T14:19:24",
+  "seconds": 80.2,
+  "chat_model": "gpt-4o-project",
+  "jev_versions": {
+    "jev-1.14.0": 160
+  },
+  "questions": [
+    {
+      "qid": "q034",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 1.607,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 2.792,
+        "verify_s": 0.145,
+        "repair_s": 0.0,
+        "total_s": 4.556
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1; 2016; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.93)"
+      }
+    },
+    {
+      "qid": "q231",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.056,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.267,
+        "verify_s": 0.087,
+        "repair_s": 0.0,
+        "total_s": 1.422
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.82,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1/4; 2009, 2023; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.82)"
+      }
+    },
+    {
+      "qid": "q188",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.041,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.311,
+        "verify_s": 0.106,
+        "repair_s": 0.0,
+        "total_s": 1.471
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 2/4; 2014, 2022; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.91)"
+      }
+    },
+    {
+      "qid": "q009",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.85,
+        "verify_s": 0.079,
+        "repair_s": 0.0,
+        "total_s": 0.982
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.83,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.7,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2012; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.70)"
+      }
+    },
+    {
+      "qid": "q088",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.045,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.024,
+        "verify_s": 0.085,
+        "repair_s": 0.0,
+        "total_s": 1.168
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.82,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.86,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.86,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1; 2018; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.82)"
+      }
+    },
+    {
+      "qid": "q083",
+      "question_type": "dose",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 0.646,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.689
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q137",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.208,
+        "verify_s": 0.095,
+        "repair_s": 0.0,
+        "total_s": 1.358
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 1; 2009; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.91)"
+      }
+    },
+    {
+      "qid": "q062",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.039,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.927,
+        "verify_s": 0.091,
+        "repair_s": 0.0,
+        "total_s": 1.067
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1/2; 2011, 2024; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.96)"
+      }
+    },
+    {
+      "qid": "q053",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.042,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.143,
+        "verify_s": 0.096,
+        "repair_s": 0.0,
+        "total_s": 1.295
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 1; 1999, 2018; current at release 3; replaces WHO Global Guidelines for Prevention of Surgical Site Infection (2016)",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.94)"
+      }
+    },
+    {
+      "qid": "q044",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.041,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.066,
+        "verify_s": 0.098,
+        "repair_s": 0.0,
+        "total_s": 1.22
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.89,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1; 1999; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.89)"
+      }
+    },
+    {
+      "qid": "q289",
+      "question_type": "dose",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.39,
+        "verify_s": 0.095,
+        "repair_s": 0.0,
+        "total_s": 1.539
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.65,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.62,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.77,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 1; 2016, 2018; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.62)"
+      }
+    },
+    {
+      "qid": "q271",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.003,
+        "population_s": 0.072,
+        "synthesize_s": 1.116,
+        "verify_s": 0.092,
+        "repair_s": 0.0,
+        "total_s": 1.334
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.87,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.86,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1; 2009; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.86)"
+      }
+    },
+    {
+      "qid": "q166",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 0.998,
+        "verify_s": 0.11,
+        "repair_s": 0.0,
+        "total_s": 1.162
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.75,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.85,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1/2/4; 2016, 2022, 2026; current at release 3",
+        "consensus": "3 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.75)"
+      }
+    },
+    {
+      "qid": "q014",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.352,
+        "verify_s": 0.101,
+        "repair_s": 0.0,
+        "total_s": 1.51
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.82,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.86,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.85,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 1; 2012, 2018; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.82)"
+      }
+    },
+    {
+      "qid": "q131",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.038,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.743,
+        "verify_s": 0.101,
+        "repair_s": 0.0,
+        "total_s": 0.889
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 1; 2012; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.91)"
+      }
+    },
+    {
+      "qid": "q220",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.039,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.302,
+        "verify_s": 0.087,
+        "repair_s": 1.07,
+        "total_s": 2.513
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.53,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "verbatim",
+          "support": 0.97,
+          "failed_checks": [
+            "support"
+          ],
+          "repair_reason": "not fully supported by the cited passage"
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.74,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized, 1 verbatim)",
+        "evidence": "Tier 1; 2016, 2018; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.53)"
+      }
+    },
+    {
+      "qid": "q285",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 1.291,
+        "verify_s": 0.094,
+        "repair_s": 0.0,
+        "total_s": 1.441
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 2; 2023; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.93)"
+      }
+    },
+    {
+      "qid": "q184",
+      "question_type": "timing",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.045,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.723,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.77
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q288",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.047,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.87,
+        "verify_s": 0.084,
+        "repair_s": 0.0,
+        "total_s": 1.011
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2019; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.91)"
+      }
+    },
+    {
+      "qid": "q157",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.042,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 1.346,
+        "verify_s": 0.101,
+        "repair_s": 0.0,
+        "total_s": 1.506
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.89,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 4; 2023, 2024, 2026; current at release 3",
+        "consensus": "3 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.88)"
+      }
+    },
+    {
+      "qid": "q299",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 1.039,
+        "verify_s": 0.079,
+        "repair_s": 0.0,
+        "total_s": 1.175
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.89,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1/4; 2019; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.88)"
+      }
+    },
+    {
+      "qid": "q063",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.534,
+        "verify_s": 0.124,
+        "repair_s": 0.0,
+        "total_s": 1.72
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.79,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.84,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.72,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 1; 2024, 2025; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.72)"
+      }
+    },
+    {
+      "qid": "q111",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.618,
+        "verify_s": 0.106,
+        "repair_s": 0.0,
+        "total_s": 1.78
+      },
+      "n_sources": 5,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 2; 2023; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q026",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.042,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.88,
+        "verify_s": 0.096,
+        "repair_s": 0.0,
+        "total_s": 1.028
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.82,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2015; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.82)"
+      }
+    },
+    {
+      "qid": "q081",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.99,
+        "verify_s": 0.085,
+        "repair_s": 0.0,
+        "total_s": 1.132
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.8,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.89,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1; 2019; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.80)"
+      }
+    },
+    {
+      "qid": "q000",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.003,
+        "population_s": 0.071,
+        "synthesize_s": 1.602,
+        "verify_s": 0.093,
+        "repair_s": 0.0,
+        "total_s": 1.828
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.7,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 1/2; 2009, 2016, 2022; current at release 3",
+        "consensus": "3 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.70)"
+      }
+    },
+    {
+      "qid": "q068",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.046,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 1.819,
+        "verify_s": 0.092,
+        "repair_s": 0.0,
+        "total_s": 1.969
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 3; 2024; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.96)"
+      }
+    },
+    {
+      "qid": "q085",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.004,
+        "population_s": 0.074,
+        "synthesize_s": 0.791,
+        "verify_s": 0.075,
+        "repair_s": 0.0,
+        "total_s": 0.994
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 1; 2019; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.93)"
+      }
+    },
+    {
+      "qid": "q284",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.047,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.751,
+        "verify_s": 0.077,
+        "repair_s": 0.0,
+        "total_s": 0.884
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.86,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.98,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2009; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.86)"
+      }
+    },
+    {
+      "qid": "q112",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.045,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.706,
+        "verify_s": 0.074,
+        "repair_s": 0.0,
+        "total_s": 0.832
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 1; 2011; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q226",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.045,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.965,
+        "verify_s": 0.1,
+        "repair_s": 0.0,
+        "total_s": 2.128
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 1; 2025; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q133",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.659,
+        "verify_s": 0.102,
+        "repair_s": 0.0,
+        "total_s": 1.82
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.69,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.82,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.57,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.7,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.83,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 1; 2012, 2018; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.57)"
+      }
+    },
+    {
+      "qid": "q237",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.008,
+        "verify_s": 0.096,
+        "repair_s": 0.0,
+        "total_s": 1.159
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.85,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2025; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.85)"
+      }
+    },
+    {
+      "qid": "q008",
+      "question_type": "dose",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.309,
+        "verify_s": 0.097,
+        "repair_s": 0.0,
+        "total_s": 1.463
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.84,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1/4; 2016, 2023, 2024; current at release 3",
+        "consensus": "3 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.84)"
+      }
+    },
+    {
+      "qid": "q091",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 1.501,
+        "verify_s": 0.14,
+        "repair_s": 0.681,
+        "total_s": 2.376
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.71,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "repaired",
+          "support": 0.88,
+          "failed_checks": [
+            "support"
+          ],
+          "repair_reason": "not fully supported by the cited passage"
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized, 1 repaired)",
+        "evidence": "Tier 1; 2009, 2016; current at release 3",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.71)"
+      }
+    },
+    {
+      "qid": "q051",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.042,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.145,
+        "verify_s": 0.085,
+        "repair_s": 0.0,
+        "total_s": 1.283
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.97,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2015; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.96)"
+      }
+    },
+    {
+      "qid": "q107",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.039,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.804,
+        "verify_s": 0.097,
+        "repair_s": 0.0,
+        "total_s": 0.948
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 1; 2019; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.92)"
+      }
+    },
+    {
+      "qid": "q080",
+      "question_type": "dose",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.573,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.619
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q232",
+      "question_type": "dose",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.072,
+        "synthesize_s": 1.842,
+        "verify_s": 0.114,
+        "repair_s": 0.737,
+        "total_s": 2.824
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "repaired",
+          "support": 0.95,
+          "failed_checks": [
+            "support"
+          ],
+          "repair_reason": "not fully supported by the cited passage"
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized, 1 repaired)",
+        "evidence": "Tier 1; 2002; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q269",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.003,
+        "population_s": 0.087,
+        "synthesize_s": 0.965,
+        "verify_s": 0.091,
+        "repair_s": 0.0,
+        "total_s": 1.196
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2018; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.92)"
+      }
+    },
+    {
+      "qid": "q125",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.184,
+        "verify_s": 0.103,
+        "repair_s": 0.0,
+        "total_s": 1.349
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.87,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.84,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 1; 2025; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.84)"
+      }
+    },
+    {
+      "qid": "q286",
+      "question_type": "escalation",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.053,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.929,
+        "verify_s": 0.081,
+        "repair_s": 0.0,
+        "total_s": 1.071
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 1; 2018; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.93)"
+      }
+    },
+    {
+      "qid": "q183",
+      "question_type": "dose",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.77,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.813
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q224",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.305,
+        "verify_s": 0.093,
+        "repair_s": 0.0,
+        "total_s": 1.46
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.95,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (5 synthesized)",
+        "evidence": "Tier 2; 2011; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.91)"
+      }
+    },
+    {
+      "qid": "q092",
+      "question_type": "technique",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.403,
+        "verify_s": 0.11,
+        "repair_s": 0.792,
+        "total_s": 2.366
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "repaired",
+          "support": 0.58,
+          "failed_checks": [
+            "support"
+          ],
+          "repair_reason": "not fully supported by the cited passage"
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized, 1 repaired)",
+        "evidence": "Tier 1; 2018; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.58)"
+      }
+    },
+    {
+      "qid": "q192",
+      "question_type": "timing",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.042,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 0.545,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.59
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q037",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 1.202,
+        "verify_s": 0.101,
+        "repair_s": 0.075,
+        "total_s": 1.434
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "verbatim",
+          "support": 1.0,
+          "failed_checks": [
+            "details"
+          ],
+          "repair_reason": "claim contains a negation the cited passage lacks"
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.74,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.8,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized, 1 verbatim)",
+        "evidence": "Tier 1; 2017, 2018; current at release 3; replaces WHO Global Guidelines for Prevention of Surgical Site Infection (2016)",
+        "consensus": "2 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.74)"
+      }
+    },
+    {
+      "qid": "q214",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.042,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.206,
+        "verify_s": 0.087,
+        "repair_s": 0.0,
+        "total_s": 1.347
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (3 synthesized)",
+        "evidence": "Tier 1; 2018; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q174",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.039,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.795,
+        "verify_s": 0.086,
+        "repair_s": 0.0,
+        "total_s": 0.928
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.93,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 1; 2015; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.93)"
+      }
+    },
+    {
+      "qid": "q249",
+      "question_type": "timing",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.735,
+        "verify_s": 0.08,
+        "repair_s": 0.0,
+        "total_s": 0.866
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (1 synthesized)",
+        "evidence": "Tier 4; 2026; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q144",
+      "question_type": "dose",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.271,
+        "verify_s": 0.091,
+        "repair_s": 0.0,
+        "total_s": 1.42
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.94,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 1; 2020; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.90)"
+      }
+    },
+    {
+      "qid": "q267",
+      "question_type": "general",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.044,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.865,
+        "verify_s": 0.081,
+        "repair_s": 0.0,
+        "total_s": 1.0
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.91,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.92,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2018; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.91)"
+      }
+    },
+    {
+      "qid": "q173",
+      "question_type": "threshold",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.56,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.606
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q209",
+      "question_type": "dose",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.003,
+        "population_s": 0.0,
+        "synthesize_s": 0.856,
+        "verify_s": 0.088,
+        "repair_s": 0.0,
+        "total_s": 0.995
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.86,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.89,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 2; 2022; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.86)"
+      }
+    },
+    {
+      "qid": "q076",
+      "question_type": "general",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.041,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.678,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.72
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q177",
+      "question_type": "dose",
+      "status": "not_stated",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.04,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 0.594,
+        "verify_s": 0.0,
+        "repair_s": 0.0,
+        "total_s": 0.636
+      },
+      "n_sources": 6,
+      "claims": [],
+      "signals": {
+        "integrity": "none ()",
+        "evidence": "no source cited",
+        "consensus": "no sources; agreement between sources not yet assessed",
+        "relevance": "no claims to score"
+      }
+    },
+    {
+      "qid": "q282",
+      "question_type": "threshold",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.043,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.369,
+        "verify_s": 0.087,
+        "repair_s": 0.0,
+        "total_s": 1.514
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.88,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.9,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.96,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.83,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (4 synthesized)",
+        "evidence": "Tier 1; 2009; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.83)"
+      }
+    },
+    {
+      "qid": "q202",
+      "question_type": "dose",
+      "status": "answered",
+      "snapshot": 3,
+      "timings": {
+        "search_s": 0.041,
+        "graph_s": 0.002,
+        "population_s": 0.0,
+        "synthesize_s": 1.1,
+        "verify_s": 0.086,
+        "repair_s": 0.0,
+        "total_s": 1.236
+      },
+      "n_sources": 6,
+      "claims": [
+        {
+          "origin": "synthesized",
+          "support": 0.87,
+          "failed_checks": [],
+          "repair_reason": ""
+        },
+        {
+          "origin": "synthesized",
+          "support": 0.81,
+          "failed_checks": [],
+          "repair_reason": ""
+        }
+      ],
+      "signals": {
+        "integrity": "verified (2 synthesized)",
+        "evidence": "Tier 1; 2019; current at release 3",
+        "consensus": "1 source documents cited; agreement between sources not yet assessed",
+        "relevance": "not yet calibrated (weakest claim raw P=0.81)"
+      }
+    }
+  ]
+}

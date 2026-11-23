@@ -1,0 +1,47 @@
+[
+  {
+    "source": "ERAS_Society",
+    "tier": 1,
+    "year": 2019,
+    "topic": "ERAS Guidelines for Perioperative Care in Gynecologic/Oncology Surgery (2019 Update)",
+    "title": "Guidelines for perioperative care in gynecologic/oncology: Enhanced Recovery After Surgery (ERAS) Society recommendations — 2019 update",
+    "document_type": "clinical guideline",
+    "subtopic": "ERAS protocol, perioperative optimization, multimodal analgesia, early feeding",
+    "url": "https://doi.org/10.1136/ijgc-2019-000356",
+    "filename": "ERAS_GynOnc_2019_Update.pdf",
+    "dest_subdir": "tier1/ERAS",
+    "retrieval_priority": "critical",
+    "added_by": "manual upload (institutional access; BMJ blocks automated clients)",
+    "citation": "Nelson G, et al. Int J Gynecol Cancer. 2019;29(4):651-668."
+  },
+  {
+    "source": "RCOG",
+    "tier": 1,
+    "year": 2013,
+    "topic": "Enhanced Recovery in Gynaecology (RCOG Scientific Impact Paper 36)",
+    "title": "Enhanced recovery in gynaecology",
+    "document_type": "clinical guideline",
+    "subtopic": "Enhanced recovery, preoperative counselling, fluid management, early mobilisation",
+    "url": "https://doi.org/10.1111/tog.12055",
+    "filename": "RCOG_SIP36_Enhanced_REcovery_Gynaecology.pdf",
+    "dest_subdir": "tier1/RCOG",
+    "retrieval_priority": "critical",
+    "added_by": "manual upload (rcog.org.uk 403s automated clients)",
+    "citation": "The Obstetrician & Gynaecologist. 2013;15:263-268."
+  },
+  {
+    "source": "AUGS",
+    "tier": 2,
+    "year": 2022,
+    "topic": "AUGS-IUGA Joint Clinical Consensus Statement on Enhanced Recovery After Urogynecologic Surgery",
+    "title": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA)",
+    "document_type": "clinical practice guideline",
+    "subtopic": "ERAS in urogynecology, postoperative voiding, catheter management, analgesia",
+    "url": "https://doi.org/10.1007/s00192-022-05223-4",
+    "filename": "AUGS_IUGA_ERAS_Urogynecologic_Surgery_2022.pdf",
+    "dest_subdir": "tier2/AUGS",
+    "retrieval_priority": "high",
+    "added_by": "manual upload (paywalled: is_oa false in Urogynecology/IUJ)",
+    "citation": "Int Urogynecol J. 2022. Co-published in Urogynecology; DOI 10.1097/SPV.0000000000001252."
+  }
+]

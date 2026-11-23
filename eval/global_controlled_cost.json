@@ -1,0 +1,46 @@
+{
+  "communities": 486,
+  "allowed_documents": 36,
+  "questions": 20,
+  "coverage_controlled": true,
+  "map_model": "gemini-3.7-flash-project",
+  "prefilter": 40,
+  "cost": {
+    "graphrag_mapall": {
+      "llm_calls": 9740,
+      "seconds": 5698.3,
+      "calls_per_question": 487.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 487.0
+    },
+    "graphrag_prefiltered": {
+      "llm_calls": 820,
+      "seconds": 1030.9,
+      "calls_per_question": 41.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 41.0
+    },
+    "vector_large_k": {
+      "llm_calls": 20,
+      "seconds": 541.0,
+      "calls_per_question": 1.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 1.0
+    },
+    "long_context": {
+      "llm_calls": 20,
+      "seconds": 541.8,
+      "calls_per_question": 1.0,
+      "invalid_answers": 0,
+      "empty_answers": 0,
+      "usable": 20,
+      "cost_ratio_vs_vector": 1.0
+    }
+  }
+}

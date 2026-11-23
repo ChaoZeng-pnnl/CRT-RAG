@@ -1,0 +1,29 @@
+{
+  "rel_hybrid_only": {
+    "both_recall": 0.43333333333333335,
+    "any_recall": 0.8666666666666667,
+    "gold_chunk_recall": 0.65,
+    "mean_depth": 15.0,
+    "n": 30
+  },
+  "rel_next_expand": {
+    "both_recall": 0.4666666666666667,
+    "any_recall": 0.9,
+    "gold_chunk_recall": 0.6833333333333333,
+    "mean_depth": 21.2,
+    "n": 30
+  },
+  "rel_kg_traversal": {
+    "both_recall": 0.43333333333333335,
+    "any_recall": 0.9333333333333333,
+    "gold_chunk_recall": 0.6833333333333333,
+    "mean_depth": 20.933333333333334,
+    "n": 30
+  },
+  "_coverage": {
+    "gold_chunks_in_kg": 60,
+    "gold_chunks": 2,
+    "both_covered_questions": 30,
+    "questions": 30
+  }
+}

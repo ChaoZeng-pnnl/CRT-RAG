@@ -1,0 +1,2062 @@
+CLINICAL REVIEW — to be completed by a registered nurse. Rate 1-5 unless stated. Leave blank if you cannot judge. Your ratings are the only clinician assessment in this study.
+id,clinical_correctness_1to5,citation_adequacy_1to5,actionability_1to5,safety_1to5,completeness_1to5,acceptable_for_use_y_n,concern_free_text,question,answer,source_guideline_passage,source,page
+1,4,4,4,4,3,Y,,"What IV rate should I keep my post-op urogyn patient on until she's drinking, and when can I stop the fluids?","Based on the provided context:
+
+* **Postoperative IV rate:** An IV administration rate of **40 mL/h** has been shown to be adequate for urogynecology patients without increasing complications, including in elderly patients [2].
+* **When to stop fluids:** IV fluids should be discontinued once the patient is tolerating oral fluids/hydration [2, 3].","Perioperative management of intravenous fluids
+Administration of IV fluids should consider age, anesthetics, analgesics, and length of procedure.
+
+In addition,
+because of liberalized fasting guidelines allowing for
+intake of clear liquids up to 2 h before surgery, there is no
+need to administer IV fluids to account for fasting losses.
+
+The goal of intraoperative fluid administration should be
+to maintain euvolemia.
+
+This is especially important in the
+geriatric population, as fluid overload may contribute to
+congestive heart failure, electrolyte disturbances, edema,
+and ileus.
+
+One urogynecology-specific ERAS pathway with
+the goal of euvolemia used rates of 2 mL/kg/h for intraoperative fluid administration in laparoscopic and vaginal
+surgery with boluses of crystalloid for mean arterial pressure < 60 mmHg or < 20% of baseline [4].
+
+Another used
+a goal-directed fluid algorithm using the Masimo “Pleth
+Variabilty Index,” which resulted in a decrease in fluids
+administered of > 1L compared to non-ERAS patients
+without any complications related to hypovolemia, including acute renal failure [29].
+
+These studies provide a framework for fluid management.
+
+Fluid administration should be
+tailored to the specific clinical circumstances.
+
+In general,
+balanced salt solutions (Plasma-Lyte®, lactated Ringer’s)
+should be utilized rather than normal saline to decrease the
+risk of complications such as hyperchloremic acidosis [14].
+
+If fluid resuscitation is needed, either crystalloid or colloid
+may be used with no difference in outcome [30].
+
+Postoperatively, IV fluids should be run until the patient is
+tolerating oral fluids.
+
+Rate of administration of 40 mL/h has
+been shown to be adequate in urogynecology patients without an
+increase in complications, including in elderly patients [29, 31].
+
+Recommendation
+The goal of intraoperative fluid administration should be
+euvolemia.
+
+In general, balanced salt solutions should be
+utilized over normal saline.
+
+IV fluids should be discontinue",AUGS,5
+2,4,4,4,4,4,Y,,"My post-op patient can't keep anything down and needs stronger pain relief — do I push for a PCA or an epidural, and does it matter what surgery she had?","Based on the provided context, here is how you should approach the choice between a PCA and an epidural:
+
+### 1. PCA vs. Continuous Epidural
+For patients who cannot take oral opioids, guidelines recommend offering a **choice between a PCA (patient-controlled analgesia) or a continuous epidural**, as there is no evidence favoring one mode over the other for most surgical patients [1, 3]. 
+* Factors such as **patient preference** and the **ability to use a PCA pump effectively** should be taken into account [1].
+* If an IV PCA is used, it should be discontinued once normal gut function resumes [4].
+
+---
+
+### 2. Does the type of surgery matter?
+**Yes, it does matter:**
+* **Major or complex open-torso surgery:** These patients may specifically benefit from the early pain relief provided by a **continuous epidural** [1, 3].
+* In addition, the benefits of a continuous epidural should also be considered if the patient:
+  * Is expected to have **severe pain** [3], or
+  * Has **cognitive impairment** (which could affect their ability to manage a PCA pump) [1, 3].","Opioids
+There was no evidence showing a significant difference in effectiveness between oral and
+intravenous opioids. Intravenous opioids are more expensive so the committee did not
+recommend them for people who can take oral medicines.
+For people who cannot take an oral opioid, the committee agreed that a choice of PCA
+(patient-controlled analgesia) or epidural should be offered because there was no
+evidence favouring either mode of administration for most people having surgery. An
+exception is the group having major or complex open-torso surgery, who may benefit from
+the early pain relief provided by a continuous epidural. The committee pointed out that
+factors such as patient preference and ability to use a PCA pump effectively should be
+taken into account when choosing between PCA and continuous epidural. The committee
+looked at the possible benefits of spinal administration and agreed that there was
+insufficient evidence to support a recommendation.",NICE,28
+3,5,5,4,5,4,Y,,It's Saturday and my post-op emergency admission needs mobilising — can I get physio and OT in over the weekend or do I have to wait until Monday?,"You do not have to wait until Monday. You should be able to get them over the weekend, as guidelines state to provide access to physiotherapy and occupational therapy **7 days a week** for people admitted to the hospital with a medical emergency [1].","Providing services within the hospital
+1.2.6
+Provide coordinated multidisciplinary care for people admitted to hospital with a
+medical emergency.
+1.2.7
+Include ward-based pharmacists in the multidisciplinary care of people admitted
+to hospital with a medical emergency.
+NICE's guideline on medicines optimisation includes recommendations on
+medicines-related communication systems when patients move from one care
+setting to another, medicines reconciliation, clinical decision support, and
+medicines-related models of organisational and cross-sector working.
+1.2.8
+Provide access to physiotherapy and occupational therapy 7 days a week for
+people admitted to hospital with a medical emergency.
+1.2.9
+Consider providing access to critical care outreach teams (CCOTs) for people in
+hospital who have, or are at risk of, acute deterioration, accompanied by local
+evaluation of the CCOT service.
+Emergency and acute medical care in over 16s: service delivery and organisation (NG94)
+© NICE 2024. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).
+Page 9 of
+24
+Full details of the evidence and the committee's discussion are in:
+• evidence review 27 critical care outreach teams
+• evidence review 29: multidisciplinary team meetings
+• evidence review 30: pharmacist support
+• evidence review 31: enhanced inpatient access to physiotherapy and
+occupational therapy.",NICE,9
+4,3,3,4,3,3,N,,"If our surgical scrub sink only has a PCMX product, is that as good as chlorhexidine for scrubbing in?","Based on the provided context, the evidence is mixed, but overall PCMX is generally considered less consistent and often inferior to chlorhexidine gluconate:
+
+* **Surgical Scrub Efficacy:** Studies have yielded contradictory results [1, 3]. One report showed that 3% PCMX had immediate and residual activity comparable to 4% chlorhexidine gluconate [1]. However, two other studies showed that the immediate and residual activity of PCMX was inferior to both chlorhexidine gluconate and povidone-iodine [1]. 
+* **Speed and Residual Activity:** PCMX is not as rapidly active as chlorhexidine gluconate, and its residual activity is less pronounced than that of chlorhexidine gluconate [1]. In spectrum ratings, chlorhexidine is rated as having ""excellent"" residual activity, while PCMX is rated as ""good"" [5].
+* **Cumulative Activity:** In tests of 30-second handwashes, 0.6% PCMX had an immediate effect similar to 2% chlorhexidine gluconate; however, when used 18 times per day for 5 consecutive days, PCMX demonstrated less cumulative activity than chlorhexidine gluconate [1].
+* **Antimicrobial Spectrum:** Chlorhexidine has ""excellent"" activity against gram-positive bacteria and ""good"" activity against gram-negative bacteria and viruses, whereas PCMX has ""good"" activity against gram-positive bacteria and only ""fair"" activity against gram-negative bacteria, mycobacteria, fungi, and viruses [5].
+* **Regulatory/Evidence Status:** Because studies of PCMX as a surgical scrub have shown contradictory results, further studies are needed to determine how its efficacy compares to other agents [3]. In 1994, the FDA tentatively classified PCMX as Category IIISE (insufficient data available to classify as safe and effective) [1].","For example, in
+studies in which antiseptics were applied to abdominal skin,
+PCMX had the weakest immediate and residual activity of
+any of the agents studied (183).
+
+However, when 30-second
+handwashes were performed using 0.6% PCMX, 2%
+chlorhexidine gluconate, or 0.3% triclosan, the immediate
+effect of PCMX was similar to that of the other agents.
+
+When
+used 18 times per day for 5 consecutive days, PCMX had less
+cumulative activity than did chlorhexidine gluconate (184).
+
+When PCMX was used as a surgical scrub, one report indicated that 3% PCMX had immediate and residual activity
+comparable to 4% chlorhexidine gluconate (185), whereas two
+other studies demonstrated that the immediate and residual
+activity of PCMX was inferior to both chlorhexidine gluconate and povidone-iodine (176,186).
+
+The disparity between
+published studies may be associated with the various concentrations of PCMX included in the preparations evaluated and
+with other aspects of the formulations tested, including the
+presence or absence of EDTA (7,182).
+
+PCMX is not as rapidly active as chlorhexidine gluconate or iodophors, and its
+residual activity is less pronounced than that observed with
+chlorhexidine gluconate (7,182).
+
+In 1994, FDA TFM tentatively classified PCMX as a Category IIISE active agent (i.e.,
+insufficient data are available to classify this agent as safe and
+effective) (19).
+
+Further evaluation of this agent by the FDA is
+ongoing.
+
+The antimicrobial activity of PCMX is minimally affected
+by the presence of organic matter, but it is neutralized by nonionic surfactants.
+
+PCMX, which is absorbed through the skin
+(7,182), is usually well-tolerated, and allergic reactions associated with its use are uncommon.
+
+PCMX is available in concentrations of 0.3%–3.75%.
+
+In-use contamination of a
+PCMX-containing preparation has been reported (187).
+
+Hexachlorophene
+Hexachlorophene is a bisphenol composed of two phenolic
+groups and three chlorine moieties.",CDC,10
+5,3,3,3,4,3,N,,"When exactly should we be giving the prophylactic antibiotic for an elective hysterectomy, and does it cover infections that start after surgery?","Based on the provided context:
+
+* **Timing of Administration:** Prophylactic antibiotics should be administered **within 1 hour of incision** to achieve the highest drug serum levels at incision [1]. Redosing should be monitored and performed as indicated based on operative/case duration and blood loss [1]. First-generation cephalosporins (such as cefazolin, recommended at a dose of 2 gm IV) are the first choice and should be weight-based [1, 5].
+* **Coverage for Infections Starting After Surgery:** Prophylactic antibiotics reduce the risk of postoperative infections after a hysterectomy from approximately 34% down to 7–14% [5]. Beyond reporting this reduction in postoperative infection risk, the context does not state whether prophylactic antibiotics provide ongoing coverage for infections that start after surgery.","Management of infected or colonized surgical
+personnel
+Surgical personnel who have active infections or are
+colonized with certain microorganisms have been linked to
+outbreaks or clusters of SSIs.33,34,76,218-237 Thus, it is important that healthcare organizations implement policies to
+prevent transmission of microorganisms from personnel to
+patients. These policies should address management of jobrelated illnesses, provision of postexposure prophylaxis
+after job-related exposures and, when necessary, exclusion
+of ill personnel from work or patient contact. While work
+exclusion policies should be enforceable and include a
+statement of authority to exclude ill personnel, they should
+also be designed to encourage personnel to report their illnesses and exposures and not penalize personnel with loss
+of wages, benefits, or job status.238
+
+Antimicrobial prophylaxis
+Surgical antimicrobial prophylaxis (AMP) refers to a
+very brief course of an antimicrobial agent initiated just
+before an operation begins.239-265 AMP is not an attempt to
+sterilize tissues, but a critically timed adjunct used to
+reduce the microbial burden of intraoperative contamination to a level that cannot overwhelm host defenses. AMP
+does not pertain to prevention of SSI caused by postoperative contamination.265 Intravenous infusion is the mode of
+AMP delivery used most often in modern surgical practice.20,26,242,266-281 Essentially all confirmed AMP indications
+pertain to elective operations in which skin incisions are
+closed in the operating room.",CDC,11
+6,4,4,4,4,3,Y,,My patient is going for a CT with IV contrast before her surgery — what do I need to check and how long should she be NPO?,"Based on the provided context, here is what you need to check:
+
+### **What to Check Before the CT Scan**
+* **Volume Status & Dehydration:** Check for dehydration or occult hypovolemia, especially if the patient recently completed mechanical bowel preparation (which can reduce effective circulating blood volume by 5%–10%). Reassess volume status prior to contrast administration and give intravenous fluid correction if necessary [5].
+* **Patient Risk Factors:** Identify if the patient is at high risk for post-contrast acute kidney injury (PC-AKI), such as those with chronic kidney disease (CKD), diabetes, or dehydration [2].
+* **Contrast Agent Selection:** Confirm the use of nonionic low-osmolar (LOCM) or iso-osmolar contrast media (IOCM), with IOCM preferred for patients with moderate-to-severe renal impairment [3].
+* **Contrast Dose & Renal Function Parameters:** Proactively verify that the contrast dose is optimized based on the patient's renal function and body weight [2]:
+  * Ensure the dose adheres to the ""lowest effective dose"" principle (doses $>100\text{ mL}$ or exceeding the patient's eGFR ratio are independent risk factors for PC-AKI) [3].
+  * Check against the maximum allowable contrast dose formula:  
+    $$\text{Maximum dose} = \frac{5\text{ mL} \times \text{body weight (kg)}}{\text{serum creatinine (mg/dL)}}$$ [3].
+  * Keep the **contrast volume / creatinine clearance ratio below 3.0** (for contrast media with an iodine concentration of 350 mgI/mL) [2, 3].
+* **Administration & Injection Parameters:** Ensure injection rates are individualized based on vascular condition, examination site, and contrast viscosity [2].
+
+---
+
+### **NPO Duration**
+* **Not in context:** The provided passages **do not state** how long the patient should be NPO prior to the CT scan.","A computer creates separate 
+images, called slices, that can be viewed on a monitor or printed on film.
+
+U.S. National Library of Medicine. (2023). Barium enema. MedlinePlus. 
+https://medlineplus.gov/ency/article/003817.htm 
+1178 | 16.9 Applying the Nursing Process
+
+Three-dimensional models of the area can be made by stacking the slices 
+together.
+
+See Figure 16.13
+
+for an image of a CT scan. 
+Figure 16.13 CT Scan 
+A special dye, called contrast, is administered to clients before some tests so 
+that certain areas show up better on the X-rays. If contrast is used, the client 
+may be required to be NPO for four to six hours before the test. Contrast can 
+be administered orally, rectally, or intravenously. 
+Oral contrast has a chalky taste and will pass out of your body through the 
+stools. Clients receiving IV contrast may feel a slight burning sensation, 
+metallic taste in the mouth, or warm flushing of the body that resolves in a 
+few seconds. 
+Before sending the client for a procedure using contrast, check for previous 
+allergies to iodine or other contrast dyes. Some clients may be prescribed 
+diphenhydramine or corticosteroids before receiving the contrast if they have 
+had a previous allergic reaction. Verify their kidney functioning status by 
+checking BUN, creatinine, and EGFR values because IV contrast can worsen
+
+U.S. National Library of Medicine. (2022). Abdominal CT scan. MedlinePlus. 
+https://medlineplus.gov/ency/article/003789.htm
+
+“UW_Medical_Center_PET-CT-Scan.jpg” by Clare McLean for UW Medicine is 
+licensed under CC BY 3.0
+
+Applying the Nursing Process | 1179
+
+kidney function. If kidney function labs are abnormal, the nurse should notify 
+the provider prior to the administration of IV contrast. If the client is currently 
+taking the antidiabetic medication metformin, there may be restrictions 
+placed on the administration of metformin before or after the procedure. 
+Jewelry should be removed before the procedure.",OpenRN,1183
+7,4,4,4,4,4,Y,,"Our OR runs off an oxygen concentrator instead of pipeline oxygen — what FiO2 should I actually expect it to deliver, and do I still need a cylinder in the room?","Based on the provided context:
+
+* **Expected $\text{FiO}_2$:** When using an oxygen concentrator, you should expect the delivered fraction of inspired oxygen ($\text{FiO}_2$) to vary between **0.93 and 0.99** [1].
+* **Need for a cylinder:** **Yes**, regardless of which oxygen supply system is used, there should always be a back-up source of oxygen available, such as a reserve cylinder [1]. You must also have a method to confirm that oxygen supplies are adequate before starting anesthesia [1].","In both systems, a vaporizer is needed to deliver an accurate
+concentration of the volatile agent.
+
+In hospitals with unreliable compressed gas supplies, continuousflow anaesthesia machines cannot function safely; in this situation,
+drawover equipment or machines based on oxygen concentrators have
+considerable advantages.
+
+When anaesthesia machines are purchased,
+the local environment must be taken into account to ensure that the
+machine will function correctly and can be maintained or repaired.
+
+Gas Supplies in anaesthesia: Oxygen is essential for almost
+all anaesthesia and must be readily available during induction,
+maintenance and recovery.
+
+Many patients require additional oxygen
+postoperatively as well.
+
+Oxygen may be supplied to operating rooms
+in cylinders or via pipelines from a central oxygen distribution point.
+
+Hospital oxygen systems may be based on liquid oxygen plants,
+large cylinders in central banks or oxygen concentrators.
+
+Whichever
+system is used, there must be a method for confirming that the oxygen
+supplies are adequate before starting anaesthesia.
+
+There should
+always be a back-up source of oxygen, such as a reserve cylinder.
+
+Medical gas pipeline systems, connectors, pressure regulators and
+terminal units should meet national standards for identification,
+construction and installation.
+
+All safety regulations for the preparation,
+storage, identification and use of medical gases, anaesthetic drugs and
+related materials must be met.
+
+Wherever anaesthetic gases are used,
+scavenging systems within the airway circuit should be in place to
+reduce the risk for long-term exposure.
+
+When oxygen concentrators are installed, users must be aware that
+the fraction of inspired oxygen (FiO2) delivered can vary between 0.93
+and 0.99.
+
+Concentrators differ in size: some are capable of supplying
+an entire hospital, while others are designed to be used as the oxygen
+source for a single machine.
+
+Air is commonly used during anaesthesia.",WHO,25
+8,4,4,4,4,4,Y,,My pre-op patient just refused her ordered medication — what do I need to document and who do I have to notify?,"Based on the provided context, when a patient refuses medication:
+
+* **What to document:** The nurse must document the patient's refusal as well as any education or explanation provided regarding the attempt to administer the medication [2].
+* **Who to notify:** The prescribing provider must be notified [2].","See Figure 15.9
+
+for an image of the nurse performing patient 
+identification prior to administering the medication. The sixth right, 
+correct documentation, should be done immediately after the medication 
+is administered to the patient to avoid an error from another nurse 
+inadvertently administering the dose a second time. These six rights 
+completed three times have greatly reduced medication errors. 
+As discussed earlier, other rights to consider during this process are as 
+follows: 
+• Is the patient receiving this medication for the right reason? 
+• Have the right assessments been performed prior to giving the 
+medication? 
+• Has the patient also received the right education regarding the 
+medications? 
+• Is the patient exhibiting the right response to the medication? 
+• Is the patient refusing to take the medication? Patients have the right 
+to refuse medication. The patient’s refusal and any education or 
+explanation provided related to the attempt to administer the 
+medication should be documented by the nurse and the prescribing 
+provider should be notified.
+
+“Book-pictures-2015-430-150x150.jpg” by British Columbia Institute of Technology is licensed under CC BY 
+4.0.. Access for free at https://opentextbc.ca/clinicalskills/chapter/6-1-safe-medication-adminstration/",OpenRN,854
+9,4,4,4,4,4,Y,,"For a major PPH, how do I dose carboprost — how much, how often, and what's the max number of doses?","Based on the provided context, the dosing for carboprost is as follows:
+
+* **Dose:** **0.25 mg** (or **250 micrograms**) administered by intramuscular injection [1, 2, 4]. *(Note: Intramyometrial injection may also be used if bleeding occurs during a caesarean section [4]).*
+* **Frequency:** Repeated at intervals of **not less than 15 minutes** (every 15 minutes) [1, 2].
+* **Maximum number of doses:** A maximum of **8 doses** (for a maximum total dose of 2 mg) [1, 2].
+
+*(Additional considerations: Use with caution in women with asthma [1]. If significant bleeding continues without improvement after a 3rd dose / 30 minutes or more after the first dose, the team should consider transferring the patient to the operating theatre [2]).*","Appendix III: A ﬂow chart of the different steps for the management of major PPH
+Resuscitation, monitoring, investigation and treatment should occur simultaneously
+Major obstetric haemorrhage
+Blood loss greater than 1000 ml
+Continuing major obstetric haemorrhage or clinical shock
+Call for help
+Senior midwife/obstetrician and anaesthetist
+Alert haematologist
+Alert blood transfusion laboratory
+Alert consultant obstetrician on call
+Resuscitation
+Airway
+Breathing
+Circulation
+Oxygen mask (15 l)
+Fluid balance (e.g. 2 l isotonic crystalloid, 1.5 l colloid)
+Blood transfusion (O RhD-negative or group-specific blood)
+Blood products (FFP, PLT, cryoprecipitate, factor VIIa)
+Keep patient warm
+Theatre
+Is the uterus contracted?
+Examination under anaesthesia
+Has any clotting abnormality been corrected?
+Intrauterine balloon tamponade
+Brace suture
+Consider interventional radiology
+Monitoring and investigations
+14-gauge cannula x 2
+FBC, coagulation, U&Es, LFTs
+Cross-match (4 units, FFP, PLT,
+cryoprecipitate)
+ECG, oximeter
+Foley catheter
+Hb bedside testing
+Blood products
+Consider central and arterial lines
+Commence record chart
+Weigh all swabs and estimate blood loss
+Medical treatment
+Rub up the uterine fundus
+Empty bladder
+Oxytocin 5 iu, slow IV (repeat if necessary)
+Ergometrine 0.5 mg, slow IV or IM
+Oxytocin infusion (40 iu in 500 ml)
+Carboprost 0.25 mg IM every 15 minutes up
+to 8 times
+Carboprost (intramyometrial) 0.5 mg
+Misoprostol 800 micrograms sublingually
+Consider tranexamic acid 1 g IV
+Surgery
+Stepwise uterine devascularisation
+Bilateral internal iliac ligation
+Hysterectomy (second experienced clinician)
+Uterine artery embolisation
+High-dependency unit
+or intensive care unit
+Abbreviations: ECG electrocardiogram; FBC full blood count; FFP fresh frozen plasma; Hb haemoglobin; IV intravenous; IM
+intramuscular; LFTs liver function tests; PLT platelets; PPH postpartum haemorrhage; RhD rhesus D; U&Es urea and
+electrolytes.
+e146 of e149 ª 2016 Royal College of Obstetricians and Gynae",RCOG,41
+10,3,3,2,3,2,N,,"We've got a nursing student on the gynae theatre list this week — the surgeons here don't really do multidisciplinary rounds, so where should I place her to get team experience, and what should I have her do afterwards?","Based on the provided context, there is no information regarding where to place a nursing student on a gynecologic theatre list to gain team experience or what specific tasks she should be assigned afterward.","If different health-care
+students are working together in the simulation,
+the different roles, perspectives and challenges
+of each profession can be discussed during
+the debriefing as well.
+
+The major constraint associated with simulation
+exercises is that they can be resource intensive,
+especially if a computerized mannequin is used
+and/or attempts are made to make a teaching
+setting look like a clinical environment.
+
+Participating in health-care teams
+Students, particularly in the later parts of their
+training programmes, should be encouraged
+to participate in different types of health-care
+teams at every opportunity.
+
+If clinicians from
+a particular department or clinic maintain the
+traditional silo (not multidisciplinary) approach
+to health care, this should not prevent students
+from working with other health professionals
+as part of a team.
+
+The faculty should identify teams to which
+students will be welcomed and ideally given some
+form of participatory role.
+
+These teams may include
+well-established multidisciplinary care planning
+teams, such as those found in mental health or
+oncology, or more fluid teams, such as those found
+in emergency departments.
+
+They may also include
+primary health-care teams in the community.
+
+It is important for students to reflect on their
+team-based experiences in health care and share
+these experiences with their peers and faculty.
+
+This will allow discussion of both the positive
+and negative aspects of their experiences.
+
+Students should be asked to identify model teams
+and explain why they believe these teams can be
+identified as such.",WHO,138
+11,4,4,4,4,4,Y,,"How often should I be emptying my patient's urostomy pouch, and at what point does it need emptying?","Based on the provided context, a urostomy pouch should be emptied:
+
+* **Frequency:** Regularly, every **two to four hours** [1].
+* **Threshold:** When the pouch becomes **one-third full** [1]. 
+
+*(Note: The pouch can also be attached to a drainage bag for overnight drainage [1]).*","Video used with permission. https://youtu.be/h8CtsPAaa5Y
+
+Managing Ostomies | 1221
+
+such as bladder cancer, removal of the bladder, trauma, spinal cord 
+injuries, or congenital abnormalities. 
+A urostomy patient has no voluntary control of urine, so the pouching 
+system must be emptied regularly. Many patients empty their urostomy 
+bag every two to four hours or when the pouch becomes one-third full. 
+The pouch may also be attached to a drainage bag for overnight drainage. 
+Patients with a urostomy are at risk for urinary tract infections (UTIs), so it 
+is important to educate them regarding the signs and symptoms of an 
+infection. 
+Some mucous in the urine is normal with a urostomy, but blood is not a 
+normal or expected finding and should be reported to the health care provider. 
+1222 | 21.7 Managing Ostomies",OpenRN,1232
+12,4,4,4,4,4,Y,,"When I'm handing off a task in the OR, what's the right way to make sure the person I'm delegating to actually got it?","Based on the provided context, the way to ensure that the person you are delegating to has correctly received and understood the information is by using **closed-loop communication**, specifically a **check-back** [3, 4]:
+
+* **Check-Back Strategy:** The sender conveys the task/information, the receiver repeats or confirms the message back, and the sender confirms that the understanding is ""Correct"" [3].
+* **Closed-Loop Communication & Feedback:** Employ verbal feedback techniques—such as call-outs, check-backs, and teach-backs—along with verification techniques and standardized protocols to guarantee mutual understanding and accurate information transfer [2, 4].","Some people do not bother to learn the names
+of the team members who are less present, such
+as allied health-care workers, believing that they
+are not as important.
+
+However, team members
+will have better relationships with other team
+members if they use people’s names rather than
+referring to them by their profession, such as
+“nurse” or “assistant.” When delegating tasks
+to people, look at them and check that they have
+the information to enable them to do the task.
+
+Talking into the air is an unsafe practice because
+it may not be clear who you are addressing.
+
+Use
+objective language, not subjective language.
+
+Read back instructions and close the
+communication loop in relation to patient-care
+information.
+
+State the obvious to avoid confusion.
+
+Nurse:
+Mr Brown is going to have an X-ray.
+
+Student: So, we are taking Mr Brown to have an X-ray
+now.
+
+Ask for clarification if something does not make
+sense.
+
+Ask questions and continually clarify.
+
+Clarify
+your role in different situations.
+
+Nurse:
+Mr Brown is going to have an X-ray.
+
+Student: So, we are taking Mr Brown to have an X-ray
+now.
+
+Nurse:
+Yes.
+
+Student: Who is taking Mr Brown for his X-ray?
+
+Be assertive when necessary.
+
+This is universally
+difficult, yet if a patient is at risk of serious injury,
+then health professionals, including students,
+must speak up.
+
+Senior clinicians will be grateful
+in the longer term if one of their patients avoids
+a serious adverse event.
+
+When conflict occurs,
+concentrate on “what” is right for the patient,
+not on establishing “who” is right or wrong.
+
+Brief the team before undertaking a team
+activity and perform a debriefing afterwards.
+
+This encourages every member of the team
+to contribute to discussions about how things
+went and what can be done differently or
+better next time.
+
+Case studies
+Faulty communication by the team
+This case study highlights how poor teamwork can
+contribute to patient harm.
+
+A doctor was coming to the end of his first week
+in the emergency department.",WHO,138
+13,4,4,4,4,4,Y,,"If one of my post-op patients who's pregnant has a swollen calf and pleuritic chest pain, do I wait for the ultrasound and CTPA results before we start anticoagulation?","**No, you should not wait for the test results.** 
+
+According to the guidelines:
+
+* In cases of clinically suspected DVT or PE (VTE), treatment with **low-molecular-weight heparin (LMWH)** should be **commenced immediately** and continued until the diagnosis is excluded by objective testing, unless treatment is strongly contraindicated [1], [3].
+* For a pregnant woman with suspected PE who also has signs and symptoms of a DVT (such as a swollen calf), a **compression duplex ultrasound** should be performed first [1], [2], [5]. 
+* If compression ultrasonography confirms the presence of a DVT, no further investigations (such as a CTPA) are necessary, and VTE treatment should simply continue [1], [2], [5].","How is acute VTE diagnosed in pregnancy?
+Any woman with symptoms and/or signs suggestive of VTE should have objective testing performed
+expeditiously and treatment with low-molecular-weight heparin (LMWH) given (see section 6)
+until the diagnosis is excluded by objective testing, unless treatment is strongly contraindicated.
+Individual hospitals should have an agreed protocol for the objective diagnosis of suspected VTE
+during pregnancy. This may recommend the involvement of obstetricians, radiologists, physicians
+and haematologists.
+Women presenting with symptoms and/or signs suggestive of VTE should have objective
+testing performed expeditiously. If DVT remains untreated, 15–24% of these patients will
+develop PE. PE during pregnancy may be fatal in almost 15% of patients, and in 66% of these,
+death will occur within 30 minutes of the embolic event.14,15
+All hospitals should have a protocol for the diagnosis of suspected VTE in pregnancy which may require
+multidisciplinary team involvement.",RCOG,7
+14,4,4,4,4,4,Y,,"For a patient scheduled for a hysterectomy tomorrow morning, when do I tell her to do her pre-op wash, and does it have to be a chlorhexidine product?","Based on the provided context, here are the recommendations for timing and product selection:
+
+### **When to do the pre-op wash**
+* **General timing recommendations:** Advise the patient to shower or bathe (full body) either the day before, on the day of surgery, or on at least the night before the operative day [2], [3], [4], prior to admission [5]. 
+* **Specific studied regimens:** A standardized regimen evaluated for elective surgery involves **two showers**—one at night and one the morning before surgery (using 118 mL of 4% chlorhexidine gluconate with a 1-minute pause before rinsing off) [5]. 
+* *Note:* CDC guidelines indicate that optimal timing and the total number of applications remain an unresolved issue/have uncertain trade-offs [3], [5].
+
+---
+
+### **Does it have to be a chlorhexidine product?**
+* **No, it is not strictly mandatory across all guidelines:**
+  * General CDC and clinical guidelines note that a shower or bath can be done using **soap (antimicrobial or nonantimicrobial) or an antiseptic agent** [2], [3], [4].
+  * CDC guidelines do not make definitive recommendations regarding specific agents and note uncertain trade-offs regarding chlorhexidine gluconate washcloths [3], [5].
+* **However, chlorhexidine is specifically recommended in hysterectomy and surgical site infection (SSI) reduction bundles:**
+  * Strong recommendations for hysterectomy state patients should shower before surgery with a **chlorhexidine-based antimicrobial soap** [1].
+  * Studies in gynecologic cancer bundles showed significant SSI reduction using **4% chlorhexidine gluconate** or an equally effective alternative of **2% chlorhexidine gluconate-coated polyester cloths** [5].
+* **Contraindications:** If the patient has a history of a **hypersensitivity reaction to chlorhexidine gluconate**, no preoperative skin preparation is recommended (and an alternative antiseptic such as povidone-iodine must be used in the operating room) [5].","for the Prevention of Surgical Site Infection, 2017
+Sandra I.
+
+Berríos-Torres, MD; Craig A.
+
+Umscheid, MD, MSCE; Dale W.
+
+Bratzler, DO, MPH; Brian Leas, MA, MS;
+Erin C.
+
+Stone, MA; Rachel R.
+
+Kelz, MD, MSCE; Caroline E.
+
+Reinke, MD, MSHP; Sherry Morgan, RN, MLS, PhD;
+Joseph S.
+
+Solomkin, MD; John E.
+
+Mazuski, MD, PhD; E.
+
+Patchen Dellinger, MD; Kamal M.
+
+F.
+
+Itani, MD;
+Elie F.
+
+Berbari, MD; John Segreti, MD; Javad Parvizi, MD; Joan Blanchard, MSS, BSN, RN, CNOR, CIC;
+George Allen, PhD, CIC, CNOR; Jan A.
+
+J.
+
+W.
+
+Kluytmans, MD; Rodney Donlan, PhD; William P.
+
+Schecter, MD;
+for the Healthcare Infection Control Practices Advisory Committee
+IMPORTANCE The human and financial costs of treating surgical site infections (SSIs) are
+increasing.
+
+The number of surgical procedures performed in the United States continues to
+rise, and surgical patients are initially seen with increasingly complex comorbidities.
+
+It is
+estimated that approximately half of SSIs are deemed preventable using evidence-based
+strategies.
+
+OBJECTIVE To provide new and updated evidence-based recommendations for the
+prevention of SSI.
+
+EVIDENCE REVIEW A targeted systematic review of the literature was conducted in MEDLINE,
+EMBASE, CINAHL, and the Cochrane Library from 1998 through April 2014.
+
+A modified
+Grading of Recommendations, Assessment, Development, and Evaluation (GRADE) approach
+was used to assess the quality of evidence and the strength of the resulting recommendation
+and to provide explicit links between them.
+
+Of 5759 titles and abstracts screened, 896
+underwent full-text review by 2 independent reviewers.
+
+After exclusions, 170 studies were
+extracted into evidence tables, appraised, and synthesized.
+
+FINDINGS Before surgery, patients should shower or bathe (full body) with soap
+(antimicrobial or nonantimicrobial) or an antiseptic agent on at least the night before the
+operative day.",CDC,1
+15,4,4,4,4,4,Y,,"My pre-op patient was just started on an antihypertensive plus lifestyle changes — how often should she be getting her BP rechecked, and when can we stretch that out?","Based on the provided context, the monitoring recommendations are as follows:
+
+* **Initial monitoring frequency:** Blood pressure should be checked **monthly** (at one-month intervals) until the target blood pressure is met [1], [3]. *(Note: Shorter intervals/more frequent visits may be required if the patient has severe hypertension, drug therapy intolerance, symptoms, complicating co-morbid conditions, or target organ damage [1], [2], [3]).*
+* **When to stretch the interval out:** You can extend monitoring to **every 3 to 6 months** once blood pressure is stable with **2 consecutive BP readings below target** [1], [2]. 
+
+Additionally, stable normotensive clients should perform self/home BP monitoring for one week every 3 months [1].","Table 5: Blood pressure monitoring frequency recommendations (CHEP, 2004)
+INTERVENTION
+BP MONITORING FREQUENCY
+COMMENTS
+Lifestyle changes
+Every 3-6 months
+Monitoring every 1-2 months may be needed
+with a “high-normal” BP (130-139/85-89)
+Drug therapy and
+Monthly, until target BP is met.
+Shorter intervals may be required for severe
+lifestyle changes
+HTN, intolerance of drug therapy, presence
+Once blood pressure is stable
+of target organ damage.
+with 2 consecutive BP readings
+below target, monitoring interval
+Stable, normotensive clients should
+is every 3-6 months.
+undertake self/home monitoring for one
+week every 3 months. See Figure 3, pg. 36
+“Important points about self/home blood
+pressure monitoring”.",RNAO,70
+16,3,3,3,3,3,N,,"If my postpartum patient isn't responding to her first-line antibiotics, when should I be pushing for IV aciclovir to be added?","Based on the provided context, you should advocate for IV aciclovir to be added under the following conditions:
+
+* **Timing:** It should ideally be started **at the same time as the first change in antibacterial regimen** when a change is being considered due to patient deterioration or failure of first-line antibacterial medication [1, 2].
+* **Dose:** It is administered as part of the second-line regimen at **500 mg IV every 8 hours (8 hourly)** [1].
+* **Clinical Indications & Thresholds:** Because disseminated herpetic infection often cannot be clinically differentiated from bacterial infections, HSV must be considered upon first-line failure [2]. The diagnosis should especially be considered if the patient presents with any of the following [2]:
+  * Acute febrile hepatitis, marked by an alanine aminotransferase (ALT) level that is **greater than 10 times raised** with a normal bilirubin [2].
+  * Encephalitis [2].
+  * Disseminated, often vesicular skin lesions (or a combination of these features) [2].","As there are often no clinical signs of disseminated herpetic infection which can differentiate it from bacterial causes
+of infection, HSV should be considered as a causative agent in
+women where there is a failure of first-line antibacterial medication.
+
+Early intravenous aciclovir therapy is vital, and should ideally be started at the same time as the first change in antibacterial
+regime.
+
+The diagnosis should be considered if a pregnant woman
+presents with acute febrile hepatitis, as evidenced by markedly
+(greater than 10 times) raised ALT with normal bilirubin, encephalitis or disseminated, often vesicular skin lesions, or a combination of these [50, 51]. [Evidence level 4]
+Women of Black, Asian and minority ethnic background are at
+higher risk of developing sepsis.
+
+This highlights the clear need
+to develop culturally relevant maternity services, to meet the
+growing needs of pregnant women from Black, Asian and minority ethnic backgrounds in the UK, and reduce the persistent
+health inequalities to improve maternal and infant outcomes
+[52, 53].
+
+Healthcare providers must be aware of this increased
+risk in ethnic minority groups and recognise that important
+signs of sepsis, such as skin rashes, may present differently [48].
+[Evidence level 2–]
+Non-response of symptoms to treatment for other causes of serious illness, e.g. treatment of haemorrhage, or deterioration
+should prompt a re-consideration of sepsis as a concurrent or
+alternative diagnosis.",RCOG,4
+17,4,4,4,4,4,Y,,"For our open abdominal gyn-onc cases, what tidal volume and PEEP settings should anesthesia be using to cut down on postoperative lung complications?","Based on the provided context, the recommended lung-protective ventilation settings to reduce postoperative pulmonary complications in open abdominal surgery are:
+
+* **Tidal volume:** **5–7 mL/kg** [3, 5] (or **6–8 mL/kg** in newer/alternative recommendations [1, 4])
+* **Positive End-Expiratory Pressure (PEEP):** **4–6 cm H₂O** [3, 5] (or **6–8 cm H₂O** in newer/alternative recommendations [1, 4])","Chlorhexidine–alcohol: Strong.
+
+Standard anesthetic protocol
+To allow rapid awakening, anesthesia should be maintained with
+short-acting agents such as sevoﬂurane or desﬂurane, or continuous target controlled infusions of propofol. When combined with short-acting
+opioid analgesics such as remifentanil, this may allow a consistently
+rapid recovery. Propofol-based total intravenous anesthesia has fewer
+postoperative side effects and the advantage of producing less postoperative nausea and vomiting [63]. Nitrous oxide is associated with postoperative nausea and vomiting (PONV) when the baseline risk of vomiting
+is high [64]. Both laparoscopic procedures and gynecological surgery are
+independent predictors of PONV [65], so it is reasonable to omit N2O
+during laparoscopic gynecologic surgery to prevent PONV and prophylaxis with a combination of at least 2 antiemetics should be standard.
+Use of bispectral index (BIS) to guide anesthetic depth may allow
+317
+reduction of anesthetic dose and hence facilitate rapid awakening [66].
+Regional anesthetic techniques are opioid sparing, reducing PONV and
+allowing more rapid awakening [67]. Recent studies have shown a
+reduction in pulmonary complications in patients undergoing open abdominal surgery when a lung protective ventilation strategy is utilized
+(TV5-7 ml/kg with PEEP 4–6 cm H2O) [68].
+Summary and recommendation:
+Short acting anesthetic agents should be used to allow rapid awakening. The addition of regional anesthesia to general anesthesia is opioid
+sparing, helps reduce PONV, and allows more rapid awakening.
+A ventilation strategy using tidal volumes of 5–7 ml/kg with a PEEP
+of 4–6 cm H2O reduces postoperative pulmonary complications.
+Evidence level:
+Short acting general anesthesia: Low (lack of data).
+Lung protective ventilation (5–7 ml/kg): Moderate.
+Recommendation:
+Short acting general anesthesia: Strong.
+Lung protective ventilation: Strong.",ERAS_Society,1
+18,4,4,4,4,4,Y,,"For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be using for pain control instead?",The provided context consists only of bibliographic reference lists and does not contain information regarding what proportion of open abdominal hysterectomy patients should require a PCA pump or specific recommendations on what should be used for pain control instead.,"While intravenous medications 
+may be required for breakthrough pain, patient-controlled analgesia 
+should be required in <5% of patients undergoing laparotomy.
+
+Incisional infiltration with either bupivacaine or liposomal bupivacaine 
+has no systemic side effects when used appropriately, and should 
+be incorporated into all ERAS protocols as a component of multimodal analgesia.37 180
+The use of thoracic epidural analgesia and transversus abdominis plane blocks, both alternatives to local analgesia, has been 
+frequently debated in patients undergoing major abdominal 
+surgery.
+
+Thoracic epidural analgesia has been shown to effectively reduce post-operative pain and stress,181 182 but with some 
+untoward effects such as a 30% risk of failure,183 hypotension 
+requiring vasopressors,184 and hindrance of early mobilization.185 
+Transversus abdominis plane blocks are performed by injecting 
+local anesthetic between the muscle layers of the trunk using 
+ultrasound guidance, and has also been shown to reduce pain and 
+opiate requirements after surgery.186 However, direct comparisons 
+of thoracic epidural analgesia, transversus abdominis plane blocks, 
+and incisional injection have not been performed and current literature has failed to show improvements over local injection.
+
+One 
+trial showed lower pain scores and less opioid use in patients 
+randomized to local injection of liposomal bupivacaine compared 
+with transversus abdominis plane blocks following total abdominal hysterectomy.187 Other investigations in laparoscopic surgery 
+have also failed to show improvements with transversus abdominis plane blocks.188–191 A randomized trial of conventional epidural 
+versus transversus abdominis plane block demonstrated a 0.5 day 
+decreased length of stay with transversus abdominis plane blocks, 
+likely due to a slower transition to oral analgesics with thoracic 
+epidural analgesia.192 The weight of current data supports the use 
+of incisional injection over transversus abdomini",ERAS_Society,9
+19,3,3,3,3,3,N,,"If I use a 3% hexachlorophene scrub regularly, how long does its antibacterial effect last and is there any absorption risk I should worry about?","Based on the provided context:
+
+**Duration of Antibacterial Effect**
+* **Residual activity:** Hexachlorophene retains residual antimicrobial activity for **several hours** after use [1]. 
+* **Cumulative effect:** It gradually reduces bacterial counts on the hands with multiple uses [1]. 
+* **Persistence ranking:** Among detergent-based surgical scrubs, its persistent antimicrobial activity is second to 2% or 4% chlorhexidine gluconate, and greater than triclosan and iodophors [4].
+
+**Absorption Risks**
+* **Systemic absorption:** With repeated use of 3% hexachlorophene preparations, the drug is absorbed through the skin into the bloodstream [1, 4]. Because of this absorption after repeated use, it is seldom used as a surgical scrub [4].
+* **Blood levels:** Healthcare personnel who regularly use a 3% hexachlorophene preparation for handwashing develop blood levels of **0.1–0.6 ppm** (the same range observed in bathed infants) [1].
+* **Potential toxicity:** Systemic absorption has been linked to neurotoxicity (vacuolar degeneration), which was observed in infants bathed with hexachlorophene [1]. 
+* **Precautions:** Because of absorption risks, hexachlorophene is contraindicated for routine bathing of neonates and should not be used to bathe patients with burns or extensive areas of sensitive, susceptible skin [1, 5].","aureus and relatively weak activity against gram-negative
+bacteria, fungi, and mycobacteria (7).
+Studies of hexachlorophene as a hygienic handwash and
+surgical scrub demonstrated only modest efficacy after a single
+handwash (53,143,188). Hexachlorophene has residual activity for several hours after use and gradually reduces bacterial
+counts on hands after multiple uses (i.e., it has a cumulative
+effect) (1,101,188,189). With repeated use of 3% hexachlorophene preparations, the drug is absorbed through the skin.
+Infants bathed with hexachlorophene and personnel regularly
+using a 3% hexachlorophene preparation for handwashing have
+blood levels of 0.1–0.6 ppm hexachlorophene (190). In the
+early 1970s, certain infants bathed with hexachlorophene developed neurotoxicity (vacuolar degeneration) (191). As a
+result, in 1972, the FDA warned that hexachlorophene should
+no longer be used routinely for bathing infants. However,
+after routine use of hexachlorophene for bathing infants in
+nurseries was discontinued, investigators noted that the incidence of health-care–associated S. aureus infections in hospital nurseries increased substantially (192,193). In several
+instances, the frequency of infections decreased when hexachlorophene bathing of infants was reinstituted. However, current
+guidelines still recommend against the routine bathing of neonates with hexachlorophene because of its potential neurotoxic effects (194). The agent is classified by FDA TFM as not
+
+Vol. 51 / RR-16
+Recommendations and Reports",CDC,10
+20,4,4,4,4,4,Y,,"For a myeloma patient on lenalidomide and steroids, what can I give for clot prevention and what aspirin dose, and how long do we keep it going?","Based on the provided context, the recommendations for clot (VTE) prevention in a myeloma patient receiving lenalidomide with steroids include:
+
+### 1. Options for Clot Prevention
+* **Aspirin** [1, 2, 3, 5]
+* **Low-Molecular-Weight Heparin (LMWH)** (e.g., enoxaparin 40 mg subcutaneous once daily) [1, 2, 3, 5]
+* **Warfarin** (dose-adjusted / full-dose, target INR 2–3) [2, 3, 5]
+
+*Note on risk stratification:*
+* **Aspirin** is indicated for patients with one or no individual or myeloma-related risk factors [2, 3, 5].
+* **LMWH or Warfarin** is recommended if lenalidomide is combined with high-dose dexamethasone (≥ 480 mg/month), doxorubicin, or multiagent chemotherapy, or if the patient has 2 or more individual/myeloma risk factors [2, 3, 5].
+
+---
+
+### 2. Aspirin Dosing
+* **75 mg or 150 mg** [1], or
+* **81 mg to 325 mg once daily** [2, 3, 5].
+
+---
+
+### 3. Duration of Prophylaxis
+* Continue prophylaxis **for as long as they are receiving chemotherapy** [1].","1.6 Interventions for people with cancer
+In March 2018:
+• the use of LMWH in young people under 18 in recommendations 1.6.2 and 1.6.3
+was off label
+• the use of aspirin in recommendation 1.6.2 was off label.
+See NICE's information on prescribing medicines.
+1.6.1
+Do not offer VTE prophylaxis to people with cancer who are receiving cancermodifying treatments such as radiotherapy, chemotherapy or immunotherapy and
+who are mobile, except as outlined in recommendations 1.6.2 and 1.6.3, unless
+they are also at increased risk of VTE because of something other than the
+cancer. [2018]
+1.6.2
+Consider pharmacological VTE prophylaxis for people with myeloma who are
+receiving chemotherapy with thalidomide, pomalidomide or lenalidomide with
+steroids. Choose either:
+• aspirin (75 mg or 150 mg) or
+• LMWH. [2018]
+1.6.3
+Consider pharmacological VTE prophylaxis with LMWH for people with pancreatic
+cancer who are receiving chemotherapy. [2018]
+1.6.4
+If giving VTE prophylaxis to people with cancer (see recommendations 1.6.2
+and 1.6.3), continue for as long as they are receiving chemotherapy. [2018]",NICE,16
+21,3,3,3,4,3,N,,"For a post-op patient on our ward who I think might be septic, should I be using NEWS2 to score her, or is that only for certain patients?","Based on the provided context, the National Early Warning Score (NEWS2) is intended **only for certain patients**. 
+
+Specifically, you should use NEWS2 to assess patients with suspected sepsis who meet the following criteria:
+* Are **aged 16 or over** [2]
+* **Are not and have not recently been pregnant** [2]
+* Are in an **acute hospital setting**, acute mental health setting, or ambulance [2]
+
+Additional considerations when deciding to use or interpret NEWS2:
+* **Clinical judgement:** NEWS2 should be used to support clinical decision-making, not replace clinical judgement, and must be interpreted alongside the patient's history and physical examination [1].
+* **Accuracy limitations:** NEWS2 can be less accurate in patients with altered baseline physiology due to conditions such as spinal injury, heart disease, or lung disease [1].","Full details of the evidence and the committee's discussion are in evidence review I:
+sepsis risk factors.
+
+During a remote assessment, when deciding whether to offer a face-to-face
+assessment and, if so, on the urgency of it, identify:
+• factors that increase risk of sepsis (see people who are most vulnerable to
+sepsis) and
+• indications of clinical concern such as new-onset abnormalities of behaviour,
+circulation or respiration. [2016]
+Suspected sepsis in people aged 16 or over: recognition, assessment and early
+management (NG253)
+© NICE 2026. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).
+Page 7 of
+76
+
+Use a structured set of observations to assess people in a face-to-face setting to
+stratify risk if sepsis is suspected. (See the recommendations on face-to-face
+assessment and the recommendations on evaluating risk). [2016]
+
+Use the national early warning score (NEWS2) to assess people with suspected
+sepsis who are aged 16 or over, are not and have not recently been pregnant, and
+are in an acute hospital setting, acute mental health setting or ambulance. [2024]
+For a short explanation of why the committee made the 2024 recommendation on
+using NEWS2 and how it might affect practice, see the rationale and impact section
+on evaluating risk level in people with suspected sepsis in acute hospital settings,
+acute mental health settings and ambulances.
+Full details of the evidence and the committee's discussion are in evidence review A:
+stratifying risk of severe illness or death from sepsis.
+
+Consider using an early warning score to assess people with suspected sepsis
+who are 16 or over, in a community or custodial setting. [2016, amended 2024]",NICE,6
+22,4,4,4,4,4,Y,,"We've got a suspected environmental outbreak on our surgical unit — do we need to step up cleaning in the OR area, and what agent should we be using?","Based on the provided context:
+
+* **Need for ""stepped-up"" cleaning:** The text does not recommend stepping up or performing special cleaning procedures for an outbreak. It specifically notes:
+  * There are **no data to support special cleaning procedures or closing of an operating room** after contaminated or dirty operations [1, 5].
+  * There are **no data to support routine disinfecting** of environmental surfaces or equipment between operations in the absence of contamination or visible soiling [3].
+  * Environmental surfaces are rarely implicated as sources of SSI pathogens [3]. However, environmental microbiologic sampling is indicated as part of an epidemiologic investigation [1].
+
+* **Disinfectant agent to use:** 
+  * An **EPA-approved hospital disinfectant** must be used:
+    * To decontaminate/clean affected areas before the next operation whenever visible soiling or contamination with blood or other body fluids occurs [1, 5].
+    * To wet-vacuum the operating room floor after the last operation of the day or night [1, 5].","Surgical site infections are second in frequency,
+accounting for about 20% of all HCAIs.
+
+Bloodstream infections associated with the use
+of an intravascular device and pneumonia
+associated with ventilators each account for
+an additional 11% of HCAIs.
+
+Evidence shows that infection rates can be
+reduced if health-care workers comply with
+infection prevention and control guidelines
+and patients leave hospital as soon as possible.
+
+Many HCAI patients (about 25%) are in ICUs
+and more than 70% of the infections in these
+patients are due to microorganisms resistant
+to one or more antibiotics [13].
+
+Preventing health care-associated infection–five
+priority training areas for students
+Over the course of their training, students will
+work in many environments in which there is
+a risk of transmission of infection.
+
+Students should
+approach every situation as having the potential
+to lead to the infection of a patient or health-care
+workers, including themselves.
+
+This means that
+students will need to routinely undertake activities
+to prevent infection, such as using correct hand
+hygiene techniques, using PPE (e.g. gloves and
+gowns) appropriately, ensuring that instruments
+and devices have undergone recommended
+sterilization procedures, and adhering to policies
+and recommendations to prevent infections in
+specific situations, including the use of proper
+aseptic technique and practising safe waste
+management, especially concerning the disposal
+of sharps.
+
+Priority areas in which all health-care workers,
+including students, need to take action are
+described below.
+
+Environmental cleanliness
+Environmental cleanliness in the hospital is
+essential for minimizing infections.
+
+Health-care
+facilities should be visibly clean.
+
+Increased cleaning
+is essential when there are outbreaks in which
+environmental sources play a role.
+
+The choice
+of cleaning and disinfecting agent will depend
+on many factors and each facility should have
+existing policies and procedures on these issues.",WHO,211
+23,3,3,3,3,3,N,,Ho una paziente in lista per isterectomia che prende metotrexato per artrite reumatoide: dobbiamo sospenderlo prima dell'intervento per ridurre il rischio di infezione della ferita?,"In base alle evidenze e alle raccomandazioni fornite:
+
+* **Non è raccomandato sospendere il metotrexato (MTX):** Il gruppo di esperti (GDG) suggerisce che i farmaci immunosoppressivi non devono essere interrotti al solo scopo di prevenire le infezioni del sito chirurgico (SSI) [2]. 
+* **Motivazione:** Evidenze di qualità molto bassa dimostrano che la sospensione perioperatoria del metotrexato potrebbe non avere alcun effetto o addirittura risultare dannosa rispetto alla sua continuazione [2]. Inoltre, l'interruzione della terapia comporta un elevato rischio potenziale di recrudescenza dell'artrite reumatoide (malattia di base) [2, 3].
+* **Approccio personalizzato:** La decisione di sospendere o meno il farmaco può comunque essere valutata e concordata su base individuale, coinvolgendo attivamente il medico curante, il chirurgo e la paziente [3].
+
+*(Nota sui dati analizzati negli studi: i regimi di sospensione del MTX valutati negli studi su pazienti con artrite reumatoide includevano finestre temporali eterogenee, come 7 giorni prima dell'intervento; 1 settimana prima e la settimana stessa dell'intervento; 2 settimane prima e 2 dopo; 4 settimane prima; oppure più di una settimana nel periodo perioperatorio [5]).*","Razionale della raccomandazione
+
+Evidenze di qualità molto bassa mostrano che la sospensione perioperatoria del metotrexato (MTX)
+potrebbe essere dannosa o non avere alcun effetto sul rischio di SSI rispetto al suo mantenimento.
+Altre evidenze di qualità molto bassa provenienti da due studi osservazionali hanno dimostrato che la
+sospensione perioperatoria degli inibitori del fattore di necrosi tumorale (TNF) potrebbe apportare
+beneficio per la riduzione delle SSI rispetto alla sua prosecuzione. Tenuto conto (1) della limitatezza
+delle evidenze (a favore dell'anti-TNF) o della mancanza di evidenze e persino del potenziale danno
+(per il MTX) per sostenere la sospensione del trattamento, e (2) il rischio associato alla sospensione
+del trattamento sulla/e malattia/e di base del paziente, il GDG ha unanimemente accettato di
+suggerire che i farmaci immunosoppressivi non devono essere interrotti per prevenire le SSI.",WHO,108
+24,4,4,4,4,4,Y,,"My post-C-section patient has suspected sepsis with high risk criteria and a lactate of 4.8 — how fast do I need to get fluids in, and do I need to call critical care?","Based on the provided context, here are the requirements for fluid timing and critical care involvement for your post-C-section patient:
+
+### 1. Fluid Administration Timing and Dosing
+* **Timing:** You must give an intravenous fluid bolus **without delay (within 1 hour** of identifying that they meet high-risk criteria) [1]. 
+* **Fluid Dosing:**
+  * Early crystalloid fluid resuscitation should be administered, starting with a fluid bolus of **500 ml** for an elevated lactate of more than 4 mmol/L [5].
+  * Guidelines also note to begin rapid administration of **30 ml/kg crystalloid** for a lactate level $\ge$ 4 mmol/L [3].
+
+---
+
+### 2. Calling Critical Care
+* **Yes, you must refer to / escalate to critical care:**
+  * For a recently pregnant patient with suspected sepsis, high-risk criteria, and lactate over 4 mmol/L, you must **refer to a critical care specialist or team** (via formal referral or discussion with a specialist in intensive care / intensive care outreach team) to review management, assess the need for central venous access, and initiate inotropes or vasopressors [1].
+  * A serum lactate of $\ge$ 4 mmol/L indicates tissue hypoperfusion or cellular metabolic dysfunction and warrants **immediate escalation of care**, including consideration of/discussion with the critical care team [2, 4].
+  * You must also ensure intensive care input if more than 2 litres of fluid volume is required without improvement in hypotension [5].","Intravenous fluids
+1.7.4
+For people with suspected sepsis who are or have recently been pregnant, meet
+any high risk criteria and have either lactate over 4 mmol/litre or systolic blood
+pressure of 90 mmHg or less:
+• give intravenous fluid bolus without delay (within 1 hour of identifying that
+they meet any high risk criteria), in line with recommendations on intravenous
+fluids for people with suspected sepsis and
+• refer to a critical care specialist or team for them to review the management
+of the person's condition, including their need for central venous access and
+initiation of inotropes or vasopressors.
+Suspected sepsis in pregnant or recently pregnant people: recognition, diagnosis and early
+management (NG255)
+© NICE 2026. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).
+Page 20 of
+45
+Referral may be a formal referral process or discussion with a specialist in
+intensive care or intensive care outreach team. [2016]
+1.7.5
+For people with suspected sepsis who are or have recently been pregnant, meet
+any high risk criteria and have lactate between 2 and 4 mmol/litre, give
+intravenous fluid bolus without delay (within 1 hour of identifying that they meet
+any high risk criteria), in line with recommendations on intravenous fluids for
+people with suspected sepsis. [2016]
+1.7.6
+For people with suspected sepsis who are or have recently been pregnant, meet
+any high risk criteria and have lactate below 2 mmol/litre, consider giving an
+intravenous fluid bolus (in line with recommendations on intravenous fluids for
+people with suspected sepsis). [2016, amended 2024]",NICE,20
+25,4,4,4,4,4,Y,,"For our laparoscopic urogyn cases, when should we be injecting local into the port sites — at insertion or at closure?","Based on the provided context, there is no information specifying whether local anesthetic should be injected into laparoscopic port sites at insertion or at closure.","If nondepolarizing
+neuromuscular block is used, it should be fully reversed at
+the end of the operation [27].
+
+If spinal anesthetics are used, they should be tailored to
+length of the procedure and to allow for rapid recovery of
+motor function to allow ambulation and expedient discharge.
+
+Intraoperative analgesia should be multimodal (see further discussion below) and could include acetaminophen,
+ketorolac, lidocaine infusions, and/or dexmedetomidine.
+
+Opioids should be minimized.
+
+Regional techniques should
+be employed where appropriate.
+
+These include nerve blocks,
+transverse abdominal plane blocks, and infiltration of the
+surgical field with local anesthetics.
+
+Injection of port sites
+with local analgesic, at the time of either port insertion and/
+or closure, is known to reduce the need for postoperative
+analgesia [28].
+
+Recommendation
+The use of short-acting anesthetics and monitoring of neuromuscular block depth along with complete reversal is
+recommended.
+
+Ventilation should use a protective strategy,
+2924",AUGS,4
+26,4,4,4,4,4,Y,,"If a hysterectomy is running long, when do I need to give a second dose of the prophylactic antibiotic?","Based on the provided context, the timing for administering a second dose of prophylactic antibiotics depends on the duration of the surgery, blood loss, and the specific antibiotic used:
+
+* **General threshold:** Redosing should be considered if the surgical procedure lasts **more than 4 hours** or if there is excessive intraoperative bleeding [1, 4].
+* **For Cefazolin (first-generation cephalosporin):** Because first-generation cephalosporins are the first-line choice for hysterectomy [1], an additional dose should be infused when the duration of the operation exceeds **3 to 4 hours** to maintain therapeutic levels [2].
+* **For Vancomycin:** If vancomycin is used, redosing is **not needed** for operations lasting less than **10 hours** [4].
+* **General calculation:** The timing of a second dose for any antimicrobial agent is generally determined by the tissue levels achieved by a standard dose, the drug's approximate serum half-life, and the approximate $\text{MIC}_{90}$ values for anticipated surgical site infection pathogens [2].","Antibiotic prophylaxis
+1.2.12
+Give antibiotic prophylaxis to patients before:
+• clean surgery involving the placement of a prosthesis or implant
+• clean-contaminated surgery
+• contaminated surgery. [2008]
+For advice on antibiotic prophylaxis before caesarean birth, see the section
+on timing of antibiotic administration in NICE's guideline on caesarean birth.
+For information on antimicrobial stewardship programmes see the NICE
+guideline on antimicrobial stewardship: systems and processes for effective
+antimicrobial medicine use.
+1.2.13
+Do not use antibiotic prophylaxis routinely for clean non-prosthetic
+uncomplicated surgery. [2008]
+1.2.14
+Use the local antibiotic formulary and always take into account the potential
+adverse effects when choosing specific antibiotics for prophylaxis. [2008]
+1.2.15
+Consider giving a single dose of antibiotic prophylaxis intravenously on starting
+anaesthesia. However, give prophylaxis earlier for operations in which a
+tourniquet is used. [2008]
+1.2.16
+Before giving antibiotic prophylaxis, take into account the timing and
+pharmacokinetics (for example, the serum half-life) and necessary infusion time
+of the antibiotic. Give a repeat dose of antibiotic prophylaxis when the operation
+is longer than the half-life of the antibiotic given. [2008]
+Surgical site infections: prevention and treatment (NG125)
+© NICE 2025. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).
+Page 8 of
+30
+1.2.17
+Give antibiotic treatment (in addition to prophylaxis) to patients having surgery on
+a dirty or infected wound. [2008]
+1.2.18
+Inform patients before the operation, whenever possible, if they will need
+antibiotic prophylaxis, and afterwards if they have been given antibiotics during
+their operation. [2008]",NICE,8
+27,4,4,4,4,4,Y,,My post-op hysterectomy patient is starting scheduled oxycodone — when do I need to start a bowel regimen and what do I begin with?,"Based on the provided context, there is **no specific protocol or exact timing specified** for when to initiate a bowel regimen or which exact regimen to start with specifically for a post-operative hysterectomy patient starting scheduled oxycodone. 
+
+However, the context provides the following evidence regarding post-operative bowel management and opioid exposure:
+
+* **Laxatives:** The continued use of laxatives is noted as reasonable due to their low cost and side-effect profile [2]. In post-operative pelvic reconstructive surgery studies, one randomized controlled trial found that **docusate with senna** decreased the time to the first bowel movement, whereas another trial found that combining docusate sodium with polyethylene glycol 3350 did not [4].
+* **Supportive / ERAS Interventions:** Early feeding (within the first 24 hours), early ambulation, euvolemia, and coffee consumption are recommended to enhance bowel recovery time and decrease the risk of post-operative ileus [1, 4, 5].
+* **Opioid-Targeted Prophylaxis (Specific to Bowel Resection):** If a patient undergoes a planned bowel resection, the oral selective $\mu$-antagonist **alvimopan** is FDA-approved to block opioid effects on gut motility; its first dose is administered **pre-operatively, prior to opioid exposure** [1, 5].","Constipation
+Opioids slow peristalsis and cause increased reabsorption of fluid into the large intestine, resulting in slow-moving, hard stools. Nurses play an important role in preventing constipation for all clients taking opioids. A bowel management program should be initiated with the first dose and continued until the opioid is discontinued. A stool softener (such as docusate) is typically prescribed initially as part of the bowel management program. If needed, a stimulant laxative, such as sennoside (Senna), bisacodyl, or Milk of Magnesia may be added to maintain a normal bowel pattern. However, stimulants should not be taken long-term because they can be addictive. Clients taking opioids should be encouraged to increase fluid and fiber intake and ambulate, as appropriate. [12]",OpenRN,
+28,3,3,3,3,3,N,,My ovarian cancer patient is really anxious in pre-op and asking for something to calm her down — can I give a sedative before she goes back?,"Based on the provided guidelines:
+
+* **Routine sedatives should be avoided:** Routine administration of sedatives to reduce preoperative anxiety is strongly recommended to be avoided in order to hasten postoperative recovery [1, 5]. 
+* **Avoid long-acting sedatives:** Routine use of long-acting sedatives within 12 hours of surgery should be avoided due to negative effects on immediate postoperative recovery [1].
+* **Case-by-case use of short-acting anxiolytics:** The use of **short-acting anxiolytics** may be appropriate on a **case-by-case basis** specifically to address severe preoperative anxiety [1].
+* **Risks to consider:** Short-acting oral anxiolytics can cause impairment in psychomotor function for up to 4 hours postoperatively, which may negatively affect the patient's ability to ambulate, eat, and drink [1]. 
+* **Non-pharmacologic support:** Dedicated preoperative counseling and verbal/written explanations are recommended to help diminish fear and anxiety [2, 5].","Carbohydrate loading: Strong.
+
+Preanesthetic medication
+Preoperative medications are widely used in major gynecological
+surgery to decrease anxiety. However, routine administration of longacting sedatives within 12 h of surgery should be avoided due to its
+effects on immediate postoperative recovery [37]. In 2009, a Cochrane
+review of short-acting oral anxiolytics for outpatient surgery concluded
+that patients were successfully discharged. However, an impairment in
+psychomotor function was observed in some studies up to 4 h postoperatively, which may negatively inﬂuence the patient's ability to ambulate, eat and drink [37]. The use of short acting anxiolytics to address
+severe preoperative anxiety may be appropriate on a case by case basis.
+Summary and recommendation:
+Routine administration of sedatives to reduce anxiety preoperatively
+should be avoided in order to hasten postoperative recovery.
+Evidence level:
+Low.
+Recommendation grade:
+Strong.
+
+Thromboembolism prophylaxis
+Venous thromboembolism (VTE) is a major risk in gynecologic oncology patients with rates as high as 8% in endometrial cancer [38]
+and 38% in ovarian cancer [39]. An analysis from the Million Women
+study showed an increased risk of VTE 12 weeks postoperatively, with
+a risk of 1/85 for oncologic surgery and 1/365 for gynecologic surgery
+[40]. Patients undergoing oncologic surgery were at over 90 times the
+risk of VTE in the ﬁrst 6 weeks. All gynecologic oncology patients with
+major surgery N30 min should receive VTE prophylaxis with either
+low molecular weight heparin (LMWH) or heparin [41]. Prophylaxis
+should be commenced preoperatively, combined with mechanical
+methods, and continued post-operatively [42].",ERAS_Society,1
+29,4,4,4,4,4,Y,,"My patient is still on her combined oral contraceptive pill and is going for surgery tomorrow — does she need VTE prophylaxis, and when should it start?","Based on the provided context:
+
+### **1. Does she need VTE prophylaxis?**
+* **Yes.** Combined oral hormonal contraception is an established risk factor for postoperative thromboembolism [2]. 
+* If a patient continues combined oral hormonal contraception up to the time of surgery (rather than stopping it 4 weeks beforehand [1]), continued use is an indication for thromboprophylaxis, and thromboprophylaxis should be prescribed (Recommendation grade: Strong; Evidence level: High) [2].
+* Prophylaxis should consist of dual modality prophylaxis: chemoprophylaxis with either low molecular weight heparin (LMWH) or unfractionated heparin combined with mechanical methods (pneumatic compression devices, stockings) [2, 3, 4].
+
+---
+
+### **2. When should it start?**
+* **Preoperatively (before surgery):** Prophylaxis should be initiated preoperatively [2, 4], specifically **before the induction of anesthesia** [3].
+* It should then be continued postoperatively [2, 3, 4].","Changing from an oral to a transdermal estrogen preparation may reduce thromboembolic risk; of note, most patients taking HRT will
+meet criteria to receive thromboprophylaxis.
+
+Combined oral hormonal contraception. Combined oral hormonal
+contraception is a risk factor for postoperative thromboembolism. The
+risk of thromboembolism varies according to progesterone type, with
+levonorgestrel, norethisterone, and norgestimate associated with the
+lowest risk. Women should be encouraged to use an alternative form
+of contraception preoperatively. Continued use of combined oral hormonal contraception is an indication for thromboprophylaxis [50,51].
+Summary and recommendation:
+Patients at risk of VTE should receive prophylaxis with either LMWH
+or heparin, commenced preoperatively, combined with mechanical
+methods, and continued post-operatively.
+HRT is a relative risk factor for postoperative thromboembolism and
+patients should be advised to consider stopping or switching to alternative preparations before surgery, taking into account the risks and beneﬁts. If HRT is continued, thromboprophylaxis should be considered.
+Combined oral hormonal contraception is a risk factor for thromboembolism. Patients should change to another form of contraception
+prior to surgery. If continued to the time of surgery, thromboprophylaxis
+should be prescribed.
+Evidence level:
+Stockings, pneumatic compression, LMWH: High.
+Preoperative administration: Moderate.
+HRT: Low.
+Combined oral hormonal contraception: High.
+Recommendation grade:
+Pre-operative DVT prophylaxis: Strong.
+HRT: Weak.
+Combined oral hormonal contraception: Strong.",ERAS_Society,1
+30,3,3,3,3,3,N,,We've got a 35-weeker with severe pre-eclampsia — do we need to deliver her now or can we hold off?,"The provided context does not contain information regarding delivery timing or management specifically for severe pre-eclampsia at 35 weeks. The passages only provide guidelines for maternal sepsis, critical illness, and massive pulmonary embolism.","Source
+
+WHO RECOMMENDATIONS ON MATERNAL HEALTH
+■
+■In women with severe pre-eclampsia, a viable fetus and between 34 and 36 (plus 6 days)
+weeks of gestation, a policy of expectant management may be recommended, provided that
+uncontrolled maternal hypertension, increasing maternal organ dysfunction or fetal distress
+are absent and can be monitored. (Weak recommendation, very low quality evidence). Source
+■
+■In women with severe pre-eclampsia at term, early delivery is recommended. (Strong
+recommendation, low quality evidence). Source
+■
+■In women with mild pre-eclampsia or mild gestational hypertension at term, induction of
+labour is recommended. (Weak recommendation, moderate quality evidence). Source
+■
+■In women treated with antihypertensive drugs antenatally, continued antihypertensive
+treatment postpartum is recommended. (Strong recommendation, very low quality evidence)
+Source
+■
+■Treatment with antihypertensive drugs is recommended for severe postpartum hypertension.
+(Strong recommendation, very low quality evidence). Source
+■
+■The use of corticosteroids for the specific purpose of treating women with HELLP syndrome
+is not recommended. (Weak recommendation, very low quality evidence). Source",WHO,29
+31,3,3,2,3,3,N,,"If we bring a peer support worker in to help a patient transition home, what training and supervision should they have in place before they start?","Based on the provided context, the qualifications, training, and supervision for peer support workers include:
+
+* **Qualifications and Core Background:**
+  * Peer workers should have their own lived experience (e.g., with mental illness and recovery) [2, 3].
+  * They must meet specific qualifications and possess appropriate skills and abilities, including appropriate representation to address intersectionality [1]. 
+
+* **Training Topics:**
+  * In the evidence reviewed, training for peer workers focused specifically on:
+    * Listening skills [3]
+    * Cultural awareness [3]
+    * Self-disclosure [3]
+    * Confidentiality [3]
+  * They are trained to provide a consistent presence along with emotional and practical support [2].
+
+* **Supervision and Support:**
+  * **Frequency/Timing:** Supervision by clinicians **once every two weeks** [3].
+  * **Peer Mentorship:** Ongoing support from an experienced peer worker [3].
+  * Organizations must allocate dedicated time and resources for this training and supervision [4].","Support modality
+ Peer support was provided in person in two studies (95,101).
+ In one study, a mix of face-to-face contact and telephone contact was
+provided (102).
+
+BEST PRACTICE GUIDELINES • www.RNAO.ca
+RECOMMENDATIONS
+COMPONENTS
+OF THE STUDIES
+DETAILS FROM THE EVIDENCE
+Type of support
+provided
+ The following types of support were provided by peer workers:
+ Assessing needs prior to a transition (101).
+ Linking persons with community-based supports and resources (101,102).
+ Offering supportive listening and sharing coping strategies and skills (95).
+ Helping persons complete a personal recovery workbook. This included
+setting personal recovery goals, making plans to re-establish a support
+network, identifying early warning signs, formulating an action plan to
+avoid relapse and identifying strategies to promote well-being (95).
+ Providing persons with a basket of needed/desired items (e.g., staple
+supplies, coupons, comfort items and calendars) (101).
+ Providing practical and emotional support (102).
+Qualifications
+ All peer workers had their own lived experience with mental illness and
+recovery (95,101,102).
+ In one study, peer workers received training focused on listening skills,
+cultural awareness, self-disclosure and confidentiality (95). They also received
+supervision by clinicians once every two weeks, and support from an
+experienced peer worker.
+Supporting Resources
+RESOURCE
+DESCRIPTION
+RESOURCES FOR PERSONS AND THEIR SUPPORT NETWORK
+Buddy up. In: Centre for Suicide Prevention.
+[Internet]. [place unknown]: Centre for
+Suicide Prevention; [date known]. Available
+from: https://www.buddyup.ca/
+ A suicide prevention communications campaign
+for men by men.
+ Includes tools and resources to provide authentic
+conversations among men and their peers.
+Connect with a community of support.
+In: Wellness Together Canada [Internet].
+[place unknown]: Wellness Together
+Canada; 2022. Available from: https://www.
+wellnesstogether.ca/en-CA/service/connect
+ Access ",RNAO,76
+32,4,4,4,4,4,Y,,"We've got a septic mum at 30 weeks who may need delivering tonight — who makes the call on timing and mode of birth, and what do I need to have ready for the baby and for monitoring in labour?","Based on the provided context, here are the details regarding decision-making, preparation for the baby, and intrapartum monitoring:
+
+### 1. Who Makes the Call on Timing and Mode of Birth
+* **Timing and Mode:** The decision must be made/led by a **senior/consultant obstetrician** following discussion and consultation with the woman (and/or her family if her condition permits) [1, 2, 3, 4]. This decision considers maternal illness severity, patient preference, duration of labour, gestational age, fetal wellbeing/viability, and response to treatment [2].
+* **Anaesthesia & Invasive Monitoring:** An individual risk assessment regarding the type of anaesthesia and the need for invasive monitoring must be made by a **senior anaesthetist** [1, 2, 3].
+
+---
+
+### 2. What to Have Ready / Consider for the Baby (at 30 Weeks)
+* **Antenatal Corticosteroids:** Consideration should be given to administering antenatal corticosteroids for fetal lung maturity in women with sepsis [1, 2].
+* **Magnesium Sulfate:** 
+  * Should be **considered** for fetal neuroprotection since the gestational age is 30 weeks (specifically recommended to be offered between 24+0 and 29+6 weeks, and *considered up to 33+6 weeks*) if preterm birth is planned within 24 hours or if she is in preterm labour [1, 2].
+  * *Precaution:* It is not contraindicated in sepsis, but additional maternal monitoring is advised as it may exacerbate hypotension [2].
+* **Post-birth Neonatal Assessment:** The baby will require assessment for risk factors and clinical indicators of neonatal infection if the mother is treated for sepsis during labour or in the 24 hours before or after birth [3].
+
+---
+
+### 3. Monitoring in Labour
+* **Fetal Monitoring:**
+  * **Continuous electronic fetal monitoring (EFM)** is recommended during the intrapartum period (including for maternal pyrexia: temperature >38.0°C once, or 37.5°C on two occasions 1 hour apart, as well as sepsis without pyrexia) [1, 2, 3, 4].
+  * **Caution with fetal blood sampling:** Use caution if considering fetal blood sampling, as results can be falsely reassuring in maternal sepsis [1, 2, 3].
+* **Maternal Monitoring & Escalation Thresholds:**
+  * Monitor continuously or at a minimum of **once every 30 minutes** using an early warning / physiological track and trigger system modified for obstetrics [4, 5].
+  * Monitor mental state using a scale such as **AVPU** or the **Glasgow Coma Scale (GCS)** [5].
+  * Measure **serum lactate urgently**; a level of **≥ 4 mmol/l** prompts immediate escalation of care and consideration of critical care discussion [4].
+  * **Alert a consultant to attend in person** if there is no response within **1 hour** of any intervention [5].","and Timing and Mode of Birth be Decided?
+Recommendation
+Evidence
+quality
+Strength
+Rationale for the
+recommendation
+In a critically ill
+pregnant woman,
+birth of the baby can
+be expedited if it would
+be beneficial to the
+woman or the baby or
+to both. A decision on
+the timing and mode of
+birth should be made
+by a senior obstetrician
+following discussion
+with the woman and/
+or her family if her
+condition permits.
+
+GPP
+Decisions around
+birth must be
+individualised and
+should be led by a
+senior obstetrician
+in consultation
+with the woman.
+If preterm birth is
+anticipated, magnesium
+sulfate should be
+considered if indicated
+and consideration
+should be given to
+the use of antenatal
+corticosteroids for
+fetal lung maturity in
+women with sepsis.
+
+GPP
+This follows the
+recommendation
+in NICE guideline
+NG25 [100].
+During the
+intrapartum period,
+continuous electronic
+fetal monitoring
+is recommended.
+Caution is required if
+considering fetal blood
+sampling.
+
+GPP
+These
+recommendations
+are aligned with
+NG121 [101] and
+NG229 [85].
+An individual risk
+assessment should
+be made by a senior
+anaesthetist with
+regards to type of
+anaesthesia, as well as
+the need for invasive
+monitoring",RCOG,14
+33,4,4,4,4,4,Y,,"My hypertensive pre-op patient says she has a glass of wine most nights — what daily and weekly alcohol limit should I be telling her, and how much wine counts as one drink?","Based on the provided context, you should advise your patient of the following limits and definitions:
+
+* **Daily and Weekly Limits:** For women, alcohol use should be limited to a maximum of **one standard drink per day** or **9 drinks per week** [1], [4].
+* **Wine Serving Size:** One standard drink of wine is equivalent to **5 oz. (142 mL)** of wine at **12% alcohol** [1].","Recommendation 2.10
+Nurses will routinely discuss alcohol consumption with the client and recommend limiting alcohol
+use, as appropriate, to a maximum of:
+■Two standard drinks per day or 14 drinks per week for men;
+■One standard drink per day or 9 drinks per week for women and lighter weight men.
+Level of Evidence = III
+One standard drink is equivalent to:
+■5oz./142 ml. of wine (12% alcohol)
+■1.5oz./43 ml. of spirits (40% alcohol)
+■12oz./341 ml. regular strength beer (5% alcohol)
+Centre for Addiction and Mental Health, 2004.",RNAO,50
+34,4,4,4,4,4,Y,,A family member keeps using her phone at the bedside in pre-op and then touching the patient — how often should phones be disinfected and what should I tell her?,"Based on the provided context, here is what is recommended regarding mobile devices:
+
+* **How often to disinfect:** Phones and mobile devices should be wiped/disinfected **frequently** with disinfectant [3], [5]. The context does not specify a precise numerical frequency or schedule beyond ""frequently"" [3], [5].
+* **What you should tell her:** 
+  * Encourage her to **disinfect her phone frequently** [3], [5].
+  * Instruct her to **avoid touching her face** after touching the mobile device [3], [5].
+  * You may explain that research shows cell phones carry many pathogens—making them dirtier than a toilet seat or the bottom of a shoe—and routinely bringing them into healthcare facilities can spread disease [3], [5].","Cellular Phones and Mobile Devices
+Research has shown that cell phones and mobile devices carry many pathogens and are dirtier than a toilet seat or the bottom of a shoe. Clients, staff, and visitors routinely bring these mobile devices into health care facilities, which can cause the spread of disease. Nurses should frequently wipe mobile devices with disinfectant. They should encourage clients and visitors to disinfect phones frequently and avoid touching the face after having touched a mobile device. [29]",OpenRN,
+35,3,3,3,3,3,N,,I'm precepting a nursing student in the OR this week — what am I actually responsible for versus what the school covers?,"Based on the provided context, the division of responsibilities between the preceptor and the school/educators includes the following:
+
+### **Your Responsibilities as a Preceptor**
+* **Clinical Teaching & Supervision:** Providing clinical teaching and supervision in the clinical placement [3, 4].
+* **Practical Skills Instruction:** Teaching practical skills that complement the student's theoretical learning [4].
+* **Student Evaluation:** Performing formal student evaluations [3, 4].
+* **Evidence-Based Integration:** Supporting students to integrate guideline content into their learning objectives and clinical activities to promote evidence-based knowledge and practice [3].
+
+---
+
+### **What the School / Faculty / Educators Cover**
+* **Simulation & Standardized Practice:** Faculty trained in pedagogy use simulation within standardized clinical environments to teach safe, effective person- and family-centred care and incorporate guideline content into simulated practice sessions [4].
+* **Pre- and Post-Clinical Conferences:** Leading conference discussions focused on guidelines to support critical thinking regarding care plans, intervention evaluations, rationale for clinical decisions, and reviewing practice setting policies against best evidence [4].
+* **Assignments and Testing:** Designing and administering tests, exam questions, reflective journals, and learning plans that require students to critique and apply guidelines [4].
+* **Resource Access:** Promoting and facilitating access to Best Practice Guideline (BPG)-related resources and links [4].","Faculty
+trained in pedagogy can use simulation to teach students content related to safe and effective person and
+family-centred care within a standardized clinical environment.
+
+Educators can also support students to
+incorporate guideline content into simulated practice sessions when teaching evidence-based practice
+(151).
+ Pre- and post-clinical conference discussions: Focusing on a guideline at pre- and post-clinical
+conference discussions can support the critical thinking of students when they develop care plans,
+consider modifications based on guideline recommendations, articulate rationale for clinical decisions
+and evaluate the outcome of interventions.
+
+Students have the opportunity to evaluate if policies and
+procedures within the practice setting align with best evidence, and they can identify potential areas for
+practice change and consider how to initiate change (151).
+ Access to BPG-related resources: Educators can promote and facilitate access to BPG-related links and
+resources (151).
+ Assignments and tests: Students may be asked to incorporate guidelines into their learning plans or to
+write a reflective journal related to a guideline that is important to their area of practice.
+
+Tests or exam
+questions that demonstrate critical thinking related to guidelines can also be used.
+
+Overall, guidelinerelated assignments and tests can assist students to reflect upon guidelines, understand their application
+and critique them (151).
+ Preceptorship or mentorship in clinical placements: Preceptors within clinical settings play an integral
+role in teaching practical skills that complement the theoretical learning of students.
+
+Preceptors are
+responsible for providing clinical teaching and supervision, and they perform formal student evaluation
+(153).",RNAO,115
+36,4,4,4,4,4,Y,,"If our patient's postpartum bleeding isn't settling with IV oxytocin, what's the next drug and dose we should be pulling up?","If postpartum bleeding does not respond to IV oxytocin, the guidelines note there is a paucity of data to recommend a specific preference among second-line uterotonics, so the choice should be guided by provider experience, drug availability, and contraindications [1]. 
+
+The recommended second-line drug options and their specific doses provided in the text are:
+
+* **Ergometrine:** **0.5 mg** by slow intravenous or intramuscular injection (contraindicated in women with hypertension) [1, 3, 5].
+* **Oxytocin-ergometrine fixed dose** (specific dose not stated) [1, 3].
+* **Prostaglandins:**
+  * **Misoprostol:** **800 µg (micrograms)** administered sublingually [1, 3, 4].
+  * **Carboprost (15-methyl prostaglandin $\text{F}_{2\alpha}$):** **250 micrograms** intramuscularly (or via intramyometrial injection) [4].
+
+*(Note: If oxytocin and other uterotonics fail to stop the bleeding or trauma is suspected, the use of **tranexamic acid** is recommended [3]).*","TREATMENT OF POSTPARTUM HAEMORRHAGE3
+■
+■Intravenous oxytocin alone is the recommended uterotonic drug for the treatment of PPH.
+(Strong recommendation, moderate quality evidence). Source
+■
+■If intravenous oxytocin is unavailable, or if the bleeding does not respond to oxytocin, the
+use of intravenous ergometrine, oxytocin-ergometrine fixed dose, or a prostaglandin drug
+(including sublingual misoprostol, 800 µg) is recommended. (Strong recommendation, low
+quality evidence). Source
+■
+■The use of isotonic crystalloids is recommended in preference to the use of colloids for the
+initial intravenous fluid resuscitation of women with PPH. (Strong recommendation, low
+quality evidence). Source
+■
+■The use of tranexamic acid is recommended for the treatment of PPH if oxytocin and other
+uterotonics fail to stop bleeding or if it is thought that the bleeding may be partly due to
+trauma. (Weak recommendation, moderate quality evidence). Source
+■
+■Uterine massage is recommended for the treatment of PPH. (Strong recommendation, very
+low quality evidence). Source
+■
+■If women do not respond to treatment using uterotonics, or if uterotonics are unavailable,
+the use of intrauterine balloon tamponade is recommended for the treatment of PPH due to
+uterine atony. (Weak recommendation, very low quality evidence). Source
+■
+■If other measures have failed and if the necessary resources are available, the use of uterine
+artery embolization is recommended as a treatment for PPH due to uterine atony. (Weak
+recommendation, very low quality evidence). Source
+■
+■If bleeding does not stop in spite of treatment using uterotonics and other available
+conservative interventions (e.g. uterine massage, balloon tamponade), the use of surgical
+interventions is recommended. (Strong recommendation, very low quality evidence). Source
+■
+■The use of bimanual uterine compression is recommended as a temporizing measure until
+appropriate care is available for the treatment of PPH due to uterine atony after vaginal
+",WHO,28
+37,4,4,4,4,4,Y,,"If the anaesthetist grades our patient's airway as a Mallampati 3 before induction, what do we need to have in place before they start?","Based on the provided context, a Mallampati score of 3 indicates a high risk for a difficult airway [2, 3]. Before induction of anaesthesia can begin, the following must be in place:
+
+* **Confirmation of Readiness at Bedside:** Induction should begin only when the anaesthetist confirms they have adequate equipment and assistance present at the bedside [2, 3].
+* **Physical Presence of an Assistant:** A capable assistant—such as a nursing team member, a second anaesthetist, or the surgeon—must be physically present to assist with the induction of anaesthesia [2, 3], with assistance immediately available [4].
+* **Emergency Equipment:** Emergency equipment must be accessible [2, 3].
+* **Adjusted Anaesthesia Approach:** The approach to anaesthesia must be adjusted at a minimum (for example, using a regional anaesthetic, if possible) [2, 3].
+* **Backup Plan:** A backup plan for airway management should be clearly identified [4].","Does the patient have a known allergy ?
+The Checklist coordinator should direct this and the next
+two questions to the anaesthetist. First, the coordinator
+should ask whether the patient has a known allergy and,
+if so, what it is. If the coordinator knows of an allergy that
+the anaesthetist is not aware of, this information should be
+communicated.
+The Checklist coordinator should verbally confirm that the
+anaesthesia team has objectively assessed whether the
+patient has a difficult airway. There are a number of ways to
+grade the airway (such as the Mallampati score, thyromental
+distance, or Bellhouse-Doré score). An objective evaluation
+of the airway using a valid method is more important
+than the choice of method itself. Death from airway loss
+during anaesthesia is still a common disaster globally but
+is preventable with appropriate planning. If the airway
+evaluation indicates a high risk for a difficult airway (such
+as a Mallampati score of 3 or 4), the anaesthesia team
+must prepare against an airway disaster. This will include,
+at a minimum, adjusting the approach to anaesthesia
+(for example, using a regional anaesthetic, if possible)
+and having emergency equipment accessible. A capable
+assistant—whether a second anaesthetist, the surgeon, or a
+nursing team member—should be physically present to help
+with induction of anaesthesia.
+The risk of aspiration should also be evaluated as part of the
+airway assessment. If the patient has symptomatic active
+reflux or a full stomach, the anaesthetist must prepare for
+the possibility of aspiration. The risk can be reduced by
+modifying the anaesthesia plan, for example using rapid
+induction techniques and enlisting the help of an assistant
+to provide cricoid pressure during induction. For a patient
+recognized as having a difficult airway or being at risk for
+aspiration, induction of anaesthesia should begin only when
+the anaesthetist confirms that he or she has adequate
+equipment and assistance present at the bedside.",WHO,10
+38,3,3,3,3,3,N,,"For a pregnant patient with nausea and vomiting, is ginger actually any better than vitamin B6 by about day 3 of treatment, or can I tell her either one is fine?","Based on the provided evidence, **ginger is not shown to be any better than vitamin B6 by day 3**, and you can tell her that **either one is fine** based on her preferences and options [1, 2]. 
+
+The direct comparisons at day 3 show no meaningful difference between ginger and vitamin B6 (all rated as low-certainty evidence) [2]:
+* **Overall nausea/vomiting score (day 3):** SMD 0 higher (95% CI: 0.25 lower to 0.25 higher) across 2 trials [2].
+* **Rhodes Index nausea/vomiting score (day 3):** SMD 0.09 lower (95% CI: 0.44 lower to 0.27 higher) [2].
+* **10 cm VAS nausea/vomiting score (day 3):** SMD 0.08 higher (95% CI: 0.27 lower to 0.43 higher) [2].
+* **Post-treatment number of vomiting episodes (day 3):** MD 0 higher (95% CI: 0.6 lower to 0.6 higher) [2].
+* **No improvement in symptoms:** RR 0.84 (95% CI: 0.47 to 1.52), representing 46.4% (84/181) for ginger versus 48.6% (87/179) for vitamin B6 [2].
+
+Both ginger and vitamin B6 are recommended for relief of nausea in early pregnancy according to the patient's individual preferences and available options [1].","Certainty
+No. of
+studies
+Design
+Risk of bias
+Inconsistency
+Indirectness
+Imprecision
+Other
+considerations
+Ginger
+Vitamin B6
+Relative
+(95% CI)
+Absolute
+Nausea vomiting score day 3 (better indicated by lower values)
+2
+randomized
+trials
+no serious risk
+of bias
+no serious
+inconsistency
+no serious
+indirectness
+very serious1,2
+none
+125
+126
+SMD 0 higher
+(0.25 lower to 0.25 higher)
+-
+LOW
+Nausea vomiting score day 3 – Rhodes Index (better indicated by lower values)
+1
+randomized
+trials
+no serious risk
+of bias
+no serious
+inconsistency
+no serious
+indirectness
+very serious1,2
+none
+61
+62
+SMD 0.09 lower
+(0.44 lower to 0.27 higher)
+-
+LOW
+Nausea vomiting score day 3 – 10 cm VAS (better indicated by lower values)
+1
+randomized
+trials
+no serious risk
+of bias
+no serious
+inconsistency
+no serious
+indirectness
+very serious1,2
+none
+64
+64
+SMD 0.08 higher
+(0.27 lower to 0.43 higher)
+-
+LOW
+Post-treatment number of vomiting episodes: day 3 (better indicated by lower values)
+1
+randomized
+trials
+no serious risk
+of bias
+no serious
+inconsistency
+no serious
+indirectness
+very serious1,2
+none
+64
+64
+MD 0 higher
+(0.6 lower to 0.6 higher)
+-
+LOW
+No improvement in symptoms
+2
+randomized
+trials
+serious3
+no serious
+inconsistency
+no serious
+indirectness
+serious1
+none
+84/181
+(46.4%)
+87/179
+(48.6%)
+RR 0.84
+(0.47 to 1.52)
+78 fewer per 1000
+(from 258 fewer to
+253 more)
+LOW
+SMD: standardized mean difference; VAS: visual analogue scale
+1.
+Wide CI crossing the line of no effect.
+2. Small sample size and/or few events.
+3.
+Most of the pooled effect provided by studies “B” or “C” without a substantial proportion (i.e. < 40%) from studies “C”.
+86",WHO,93
+39,3,3,4,4,4,Y,,My post-op patient is getting confused and agitated in PACU — what should I be doing at the bedside before I reach for anything sedating?,"Based on the provided context, there is no information regarding what bedside interventions or assessments should be performed for a postoperative patient experiencing confusion and agitation in the PACU.","Chapter 6 (Cognitive Impairments) | 1389
+
+Interventions include the following: 
+• Control the environment. Make sure that the room is quiet and well-lit, 
+have clocks or calendars in view, and encourage family members to visit. 
+• Administer prescribed medications, including those that control 
+aggression or agitation and pain relievers if there is pain. 
+• Ensure the client has their glasses, hearing aids, or other assistive devices 
+for communication in place. Lack of assistive sensory devices can worsen 
+delirium. 
+• Avoid sedatives. Sedatives can worsen delirium. 
+• Assign the same staff for client care when possible. 
+Scenario B
+
+Symptoms of moderate Alzheimer’s disease include the following: 
+• Require assistance with reminders to eat, wash, and use the restroom. 
+• Lack of recognition of family and friends. 
+• Behavioral symptoms such as wandering, getting lost, hallucinations, 
+delusions, and repetitive behavior may occur. 
+• Clients living at home may engage in risky behavior, such as leaving the 
+house in clothing inappropriate for weather conditions or leaving the 
+stove burners on.
+
+Additional assessments would include assessing for signs of physical 
+discomfort, changes in the environment that may be contributing to the 
+increased anxiety or confusion, and communication pattern.",OpenRN,1408
+40,3,3,3,3,3,N,,"Our catheter policy lists some items as Category I and others as Category II — do I have to follow the Category II ones exactly, or is there room to individualize for my patient?","Based on the provided context, you do not have to follow Category II recommendations rigidly, and there **is room to individualize care** for your patient [1]. 
+
+The guideline outlines the following regarding Category II recommendations:
+* **For clinicians:** Different choices are appropriate for different patients. Clinicians are expected to help each patient arrive at a management decision that aligns with the patient's specific values and preferences [1].
+* **Discretionary nature:** Category II recommendations are classified as weak recommendations representing trade-offs between clinical benefits and harms; they are discretionary for the individual institution, recommend that providers consider the intervention when deemed appropriate, and are **not intended to be enforced** [1, 2]. 
+* **Wording/Certainty:** Category II items are written with lesser certainty using suggestive language (such as ""consider,"" ""is suggested,"" ""is preferable,"" or ""is not recommended"") rather than mandatory directives [1].
+
+In contrast, Category I recommendations are strong recommendations conveying certainty (using active phrasing like ""do"" or ""do not""), where most patients should receive the recommended course of action [1].","Reviewing and Finalizing the Guideline
+Page 32 of 61
+
+For patients: Most people in the patient’s situation would want the recommended course 
+of action and only a small proportion would not; request discussion if the intervention is 
+not offered.
+
+For clinicians: Most patients should receive the recommended course of action.
+
+For policymakers: The recommendation may be adopted as a policy. 
+ 
+Category II recommendations are defined as weak recommendations with the following 
+implications:
+
+For patients: Most people in the patient’s situation would want the recommended course 
+of action, but many would not.
+
+For clinicians: Different choices will be appropriate for different patients, and clinicians 
+must help each patient to arrive at a management decision consistent with her or his 
+values and preferences.
+
+For policymakers: Policy making will require substantial debate and involvement of many 
+stakeholders. 
+ 
+It should be noted that Category II recommendations are discretionary for the individual 
+institution and are not intended to be enforced. 
+ 
+The wording of each recommendation was carefully selected to reflect the recommendation's 
+strength. In most cases, we used the active voice when writing Category I recommendations - 
+the strong recommendations. Phrases like ""do"" or ""do not"" and verbs without auxiliaries or 
+conditionals were used to convey certainty. We used a more passive voice when writing 
+Category II recommendations - the weak recommendations. Words like ""consider” and phrases 
+like ""is preferable,” “is suggested,” “is not suggested,” or “is not recommended” were chosen to 
+reflect the lesser certainty of the Category II recommendations. Rather than a simple statement 
+of fact, each recommendation is actionable, describing precisely a proposed action to take. 
+ 
+The category ""No recommendation/unresolved issue"" was most commonly applied to situations 
+where either",CDC,32
+41,2,2,2,3,2,N,,Our unit does D&Cs in a small procedure room down the hall — should that room be counted as an operating room when we report our OR numbers?,"Based on the provided context, the procedure room should **not** be counted as an operating room unless it meets the specific definition of an operating room [2]. 
+
+* **Operating room definition:** An enclosed room specifically dedicated to surgical procedures and equipped to deliver monitored anaesthesia (whether or not located in a hospital facility) [2].
+* **Procedure rooms:** Certain procedures—such as dilation and curettage (D&C), endoscopy, and incision and drainage of wounds—may be performed in procedure rooms that are not suitable for other types of invasive operations. Minor procedure rooms should not be included unless they meet the definition of an operating room [2]. 
+* Additionally, invasive procedures performed in a procedure room not suitable for larger invasive operations should not be counted in the total number of surgical procedures; however, if they are performed in a room meeting operating room criteria, they are counted [1].","•
+the number of in-hospital deaths after surgery.
+These basic measures are the structural, process and outcome
+components of surgical delivery systems. The structural metrics
+indicate the capacity of a country for delivering care. The number of
+operating rooms and the number of trained surgeons and anaesthetists
+are measures of the resources available for delivery of surgical care.
+The number of operations performed in operating rooms is a measure
+of the services actually delivered within a country. The day of surgery
+death and overall in-hospital death numbers, when converted into
+ratios, provide basic indicators of surgical outcomes, much as maternal
+and neonatal mortality rates do for obstetric outcomes.
+The number of operating rooms in each country: Delivery of
+surgical services is an important component of health systems.
+Knowing the operating room density will help evaluate the availability,
+access and distribution of surgical services and coverage. An operating
+room is defined as an enclosed room specifically dedicated to surgical
+procedures and equipped to deliver monitored anaesthesia, whether
+or not it is located in a hospital facility. Potential sources of data for
+this measure include administrative records based on reported data by
+inpatient and outpatient facilities and censuses of health facilities with
+possible adjustment for underreporting (e.g. missing private facilities).
+Certain procedures, such as incision and drainage of wounds,
+endoscopy and dilation and curettage, may be performed in procedure
+rooms that are not suit-able for other types of invasive operations.
+Minor procedure rooms should not be included unless they meet the
+definition of an operating room.
+The number of surgical procedures performed in operating rooms
+in each country: The number of surgical procedures performed in an
+operating room is an indication of access to and use of health care,
+particularly surgical services. A surgical procedure is defined as the
+Section I. | Introd",WHO,92
+42,4,4,4,4,4,Y,,"For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be giving instead?","Based on the provided context passages, there is no information regarding the proportion of open abdominal hysterectomy patients who should need a PCA pump, nor what specific regimen should be given instead (the context contains only bibliographic reference citations).","Opioid Sparing Multimodal Post-operative Analgesia
+Post-operative pain after gynecologic surgery plays a major role 
+in patient quality of life and it may also be associated with higher 
+rates of complications, longer hospital stays, increased readmission rates, and higher cost.172 173 When patients rely on opioid alone 
+for post-operative analgesia, this may cause nausea, sedation, 
+and fatigue while increasing the risk of addiction, thus leading to 
+associated financial and social costs.174–176 Avoiding opioid use 
+within a multimodal post-operative analgesia pathway, with greater 
+emphasis on non-opioid medications, preserves or improves patient 
+experience and functional recovery after surgery.37 177 Non-opioid 
+alternatives include non-steroidal anti-inflammatory drugs, acetaminophen, gabapentin, and dexamethasone.
+
+Pre-operative education should stress the use of non-opioid alternatives as first-line 
+therapy, and set expectations for post-operative pain control.
+
+When used together, analgesics with different mechanisms of 
+action may be synergistic, a concept which lays the foundation 
+for post-operative pain management within ERAS protocols.178 
+We recommend routine pre-operative administration of oral acetaminophen, celecoxib, and gabapentin to reduce pain and opioid 
+requirements.179 Intravenous acetaminophen should not be used 
+routinely, recognizing its equivalent efficacy to the oral preparation at much higher expense.
+
+In general, oral administration of all 
+post-operative medications in patients who can tolerate a diet is 
+preferable to the intravenous route.
+
+While intravenous medications 
+may be required for breakthrough pain, patient-controlled analgesia 
+should be required in <5% of patients undergoing laparotomy.",ERAS_Society,9
+43,3,3,3,3,3,N,,"When I catch a prescribing error before it gets to my patient, is that actually making much difference — what proportion of prescribing errors reach patients anyway?","Yes, catching prescribing errors makes a significant difference. **Only 15%** of prescribing errors that are made actually reach patients; the remaining 85% are caught in time by pharmacists and other health-care workers [1]. This demonstrates that teamwork and intervention by healthcare providers prevent many adverse events [1].","The IOM estimates
+that in the USA there is one medication error
+per hospitalized patient per day [3], 1.5 million
+preventable adverse drug events per year [3],
+and 7000 deaths per year from medication errors
+in hospitals in that country [4].
+
+Researchers in other countries around the world
+in which the incidence of medication error
+and adverse drug events have been investigated
+have reported similarly worrying statistics [5].
+
+Only 15% of the prescribing errors that are
+made reach patients; the others are caught
+in time by pharmacists and other health-care
+workers.
+
+This fact underscores the importance
+of teamwork.
+
+By working together,
+health-care providers can prevent many adverse
+events.
+243
+Part B Topic 11.
+
+Improving medication safety
+6",WHO,242
+44,3,3,3,3,3,N,,"When I'm handing off a complex post-op patient going from our unit to a long-term care home, is a written discharge summary enough or do I need to actually speak with someone there — and who should that be?","Based on the provided context, relying on written documentation alone is not sufficient, especially for persons with complex needs. 
+
+* **Need for direct communication:** It is beneficial for providers in both settings (the hospital and the receiving facility) to directly communicate by **phone or videoconference** to discuss the plan of care and ensure the patient's care needs are understood [4].
+* **Who should be involved:** When a person is transitioning between a hospital and a long-term care (LTC) home, direct communication should occur between the **most responsible provider in the hospital (i.e., a physician or nurse practitioner)** and the **physician or nurse practitioner in the LTC home** [4].","However, the certainty in the evidence is very low; therefore, the expert
+panel determined the strength of the recommendation to be conditional.
+
+Implementation Tips
+Implementation Tips from the Expert Panel
+ Although the evidence focused on a formal interprofessional cross-sectoral approach to support transitions from
+hospital to home or hospital to rehabilitation, the expert panel emphasized that this recommendation should be
+inclusive to all settings where persons and their support network encounter a transition in care.
+ Health and social service organizations are to ensure that providers are aware of who is part of the
+interprofessional team and their respective roles and responsibilities.
+
+This will help to ensure a clear path of
+communication among all members involved.
+ It is beneficial to have one designated health or social service provider lead the team and coordinate care.
+
+Such
+collaboration has the potential to promote effective communication and information transfer, reduce duplication
+of services, and ultimately ensure a smooth transition for persons and their support network.
+
+It is useful for this
+designated provider to operate within the organization where the person will have the longest involvement (e.g.,
+home care or LTC).
+ It is beneficial for providers in both settings (i.e., the setting from which the person is transitioning and the new
+setting) to directly communicate by phone or videoconference to discuss the plan of care and ensure the person’s
+care needs are understood.
+
+This is especially important for persons with complex needs.
+
+For example, when
+persons are transitioning between the hospital and a LTC home, it is beneficial for the most responsible provider in
+the hospital (i.e., a physician or nurse practitioner) to directly communicate with the physician or nurse
+practitioner in the LTC home.",RNAO,54
+45,4,4,4,4,4,Y,,My patient on prophylactic LMWH is booked for an elective section tomorrow morning — when does she get her last dose and how long do we have to wait before anaesthetics can do her spinal?,"Based on the provided context:
+
+* **Timing of the last dose:** The patient should receive her thromboprophylactic dose of LMWH on the day prior to delivery (for example, routinely prescribed at 6 p.m.) [1, 2, 3]. On the day of delivery, any morning dose must be omitted [2, 3].
+* **Wait time before spinal anaesthesia:** Regional techniques should be avoided until **at least 12 hours** after the previous prophylactic dose of LMWH [1, 2, 3].","When should thromboprophylaxis be interrupted for delivery?
+
+Women receiving antenatal LMWH should be advised that if they have any vaginal bleeding or once
+labour begins they should not inject any further LMWH.
+
+They should be reassessed on admission
+to hospital and further doses should be prescribed by medical staff.
+
+Regional techniques should be avoided if possible until at least 12 hours after the previous
+prophylactic dose of LMWH.
+
+LMWH should not be given for 4 hours after use of spinal anaesthesia or after the epidural catheter
+has been removed and the catheter should not be removed within 12 hours of the most recent
+injection.
+
+When a woman presents while on a therapeutic regimen of LMWH, regional techniques should be
+avoided if possible for at least 24 hours after the last dose of LMWH.
+
+Women receiving antenatal LMWH having an elective caesarean section should receive a
+thromboprophylactic dose of LMWH on the day prior to delivery and, on the day of delivery, any
+morning dose should be omitted and the operation performed that morning.
+
+The first thromboprophylactic dose of LMWH should be given as soon as possible after delivery
+provided there is no postpartum haemorrhage and regional analgesia has not been used.
+
+Women at high risk of haemorrhage with risk factors including major antepartum haemorrhage,
+coagulopathy, progressive wound haematoma, suspected intra-abdominal bleeding and postpartum
+haemorrhage may be managed with anti-embolism stockings (AES), foot impulse devices or
+intermittent pneumatic compression devices.
+
+Unfractionated heparin (UFT) may also be considered.
+
+If a woman develops a haemorrhagic problem while on LMWH the treatment should be stopped and
+expert haematological advice sought.
+
+Thromboprophylaxis should be started or reinstituted as soon as the immediate risk of haemorrhage
+is reduced.
+
+The pregnancy-associated prothrombotic changes in the coagulation system are maximal
+immediately following delivery.",RCOG,20
+46,4,4,4,4,4,Y,,"One of my emergency medical admissions came in overnight — how quickly does she need to be seen by a consultant, and will she still be reviewed over the bank holiday weekend?","Based on the provided context, for someone admitted with a medical emergency:
+
+* **Initial assessment:** She should receive a consultant assessment within **14 hours of admission** to determine her care pathway [1].
+* **Bank holiday weekend review:** Yes, she should receive a **daily consultant review**, which specifically includes **weekends and bank holidays** (with more frequent reviews, such as twice daily, provided if based on clinical need) [1].","Timing and frequency of consultant reviews
+1.2.5
+For people admitted to hospital with a medical emergency, consider providing the
+Emergency and acute medical care in over 16s: service delivery and organisation (NG94)
+© NICE 2024. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).
+Page 8 of
+24
+following, accompanied by local evaluation that takes into account current
+staffing models, case mix and severity of illness:
+• consultant assessment within 14 hours of admission to determine the
+person's care pathway
+• daily consultant review, including weekends and bank holidays
+• more frequent (for example, twice daily) consultant review based on clinical
+need.
+Full details of the evidence and the committee's discussion are in:
+• evidence review 19: early versus late consultant review
+• evidence review 26: frequency of consultant review.",NICE,8
+47,4,4,4,4,4,Y,,"My post-op day 1 C-section patient has suspected sepsis but only meets one moderate to high risk criterion — how quickly does she need to be seen, and when do I need to escalate to someone senior?","Based on the provided context, for a patient with suspected sepsis who has recently been pregnant and meets only 1 moderate to high risk criterion:
+
+* **Initial Review:** Arrange for a clinician review (a medically qualified practitioner or equivalent with antibiotic prescribing responsibilities) within **1 hour** of meeting the criterion, and perform blood tests if indicated [1].
+* **Escalation to a Senior Decision Maker:** If the patient has a lactate level of **less than 2 mmol/litre**, has **no evidence of acute kidney injury**, and a definitive condition **cannot be identified**:
+  * Repeat a structured assessment at least **hourly** [1].
+  * Ensure a senior clinical decision maker reviews the patient's condition and need for antibiotics within **3 hours** of meeting the moderate to high risk criterion [1].","1 moderate to high risk criterion
+1.7.13
+For people with suspected sepsis who are or have recently been pregnant and
+meet only 1 moderate to high risk criterion:
+• arrange for clinician review within 1 hour of meeting a moderate to high risk
+criterion
+• perform blood tests if indicated.
+A 'clinician' should be a medically qualified practitioner or equivalent who has
+antibiotic prescribing responsibilities. [2016]
+1.7.14
+For people with suspected sepsis who are or have recently been pregnant, meet
+only 1 moderate to high risk criterion, have lactate of less than 2 mmol/litre, have
+no evidence of acute kidney injury, and in whom a definitive condition cannot be
+identified:
+• repeat structured assessment at least hourly
+• ensure a senior clinical decision maker reviews the person's condition and
+need for antibiotics within 3 hours of meeting moderate to high risk criterion.
+[2016]",NICE,23
+48,4,4,4,4,4,Y,,"For a pregnant patient starting treatment-dose enoxaparin for a VTE, which weight do I use to calculate the dose, and is it once or twice daily?","Based on the provided context:
+
+### **Weight to Use**
+* The therapeutic dose of enoxaparin (LMWH) in pregnancy should be titrated against the woman’s **booking or early pregnancy weight** [1], [3], [4].
+
+---
+
+### **Frequency (Once vs. Twice Daily)**
+* **Either regimen may be used:** There is insufficient evidence to recommend whether LMWH should be administered once daily or in two divided doses (twice daily), and acute VTE in pregnancy can be treated with either schedule based on clear local guidelines [1], [2], [4].
+
+---
+
+### **Initial Enoxaparin Dosing by Weight Brackets**
+Initial dosing options based on booking or early pregnancy weight are as follows [2], [3]:
+* **< 50 kg:** 60 mg once daily (or twice-daily regimen) [3]
+* **50–69 kg:** 90 mg once daily (or twice-daily regimen) [3]
+* **70–89 kg:** 120 mg once daily (or twice-daily regimen) [3]
+* **90–109 kg:** 100 mg twice daily **or** 150 mg once daily [3]
+* **110–125 kg:** 120 mg twice daily **or** 180 mg once daily [3]
+* **> 125 kg:** Discuss with a haematologist [3]
+
+*(Note: Lower doses should be used if creatinine clearance is less than 30 ml/minute [3].)*","6.2	 What is the therapeutic dose of LMWH in pregnancy?
+LMWH should be given in doses titrated against the woman’s booking or early pregnancy weight.
+There is insufficient evidence to recommend whether the dose of LMWH should be given once daily
+or in two divided doses.
+There should be clear local guidelines for the dosage of LMWH to be used.
+In nonpregnant patients, the recommended therapeutic doses of LMWH vary according to
+the manufacturer (enoxaparin 1.5 mg/kg once daily; dalteparin 10 000–18 000 units once
+daily depending on body weight; tinzaparin 175 units/kg once daily). During pregnancy,
+changes in volume of distribution and renal glomerular filtration rate result in alterations
+in the pharmacokinetics of LMWHs.95–99 Previous editions of this guideline (2001 and 2007)
+recommended a twice-daily dosage regimen for enoxaparin and dalteparin in the treatment of
+VTE in pregnancy (enoxaparin 1 mg/kg twice daily; dalteparin 100 units/kg twice daily). This
+recommendation was based on anti-Xa activity and a paucity of reports on safety and efficacy
+of once-daily dosing.100 Since then, a prospective multicentre observational study has found
+Evidence
+level 2++
+Evidence
+level 1+
+Evidence
+level 4",RCOG,12
+49,2,2,3,3,2,N,,"Per una paziente non diabetica in post-operatorio con glicemia alta, quale valore target dovrei tenere e fin dove posso scendere senza rischi?","In base ai documenti forniti:
+
+* **Livello target da mantenere:** 
+  * Il gruppo di lavoro (GDG) ha stabilito che i protocolli di controllo della glicemia si applicano sia ai pazienti diabetici che ai non diabetici, ma ha ritenuto che **le evidenze disponibili non consentano di definire un livello target ottimale univoco** [2].
+  * Tuttavia, le linee guida di **SHEA/IDSA e dell'American College of Physicians** (applicabili a tutti i pazienti chirurgici) raccomandano [1]:
+    * Valori target compresi tra **140 e 200 mg/dL** (7,8–11,1 mmol/L), oppure
+    * Limiti massimi di **180 mg/dL** (10 mmol/L) o **198 mg/dL** (11 mmol/L) [1].
+
+* **Fin dove scendere e rischi:**
+  * **Non si deve mirare a valori inferiori** a quelli raccomandati a causa dell'alto rischio di **ipoglicemia** [1].
+  * L'uso di protocolli intensivi aumenta significativamente il rischio di ipoglicemia (OR: 5,55; 95% CI: 2,58–11,96) [5], la quale può comportare gravi complicanze anche mortali, come eventi cardiaci [3]. 
+  * Negli studi clinici intensivi sono stati valutati target massimi di glicemia di **≤110 mg/dL** (6,1 mmol/L) e tra **110–150 mg/dL** (6,1–8,3 mmol/L) senza riscontrare differenze significative nell'effetto sulle infezioni del sito chirurgico (SSI) o sul rischio di ipoglicemia tra queste due fasce [2, 4, 5], ma non esiste un valore minimo sicuro al di sotto dei range raccomandati per cui il rischio di ipoglicemia sia azzerato.","Background
+I livelli di glucosio nel sangue aumentano durante e
+dopo un intervento, a causa dello stress chirurgico.
+La chirurgia provoca una risposta allo stress che si
+traduce in un rilascio di ormoni catabolici e inibizione
+dell'insulina. Inoltre, lo stress chirurgico influenza la
+funzione delle cellule beta pancreatiche, che si
+121
+traduce in livelli più bassi di insulina plasmatica. Presi
+insieme, questa ipoinsulinemia relativa, la resistenza
+all' insulina e l'eccessivo catabolismo derivante dall'
+azione anti-metabolica degli ormoni rendono i
+pazienti chirurgici ad alto rischio di iperglicemia,
+anche se non sono diabetici (16).
+Diversi studi osservazionali (17-20) hanno mostrato
+che l'iperglicemia è associata ad un aumento del
+rischio di SSI e quindi ad un maggior rischio di
+morbilità, mortalità, costi sanitari più elevati sia per i
+pazienti diabetici che per i non diabetici sottoposti a
+trattamenti chirurgici diversi. Risultati contrastanti
+sono stati riportati in merito alle diverse opzioni di
+trattamento per controllare l'iperglicemia in pazienti
+diabetici e non, sui livelli target ottimali di glucosio
+nel sangue e sul timing ideale per il controllo della
+glicemia (intra- e/o postoperatorio). Inoltre, alcuni
+studi che miravano a un livello perioperatorio
+relativamente basso del glucosio hanno evidenziato
+il rischio di effetti avversi associati ai protocolli
+intensivi in quanto possibili causa di ipoglicemia (2124).
+Diverse
+organizzazioni
+hanno
+emanato
+raccomandazioni per quanto riguarda il controllo
+perioperatorio della glicemia (Tabella 4.14.1).
+Mentre la maggior parte delle raccomandazioni si
+concentrano solo sul paziente diabetico, quelle
+pubblicate da SHEA/IDSA (25) e dall'American
+College of Physicians (26) si applicano a tutti i
+pazienti chirurgici. Raccomandano livelli target
+compresi tra 140-200 mg/dL (7,8-11,1 mmol/L) o
+limiti massimi di 180 mg/dL (10mmol/L) o 198 mg/dL
+(11mmol/L). A causa del rischio di ipoglicemia, si
+deve evitare di mirare a live",WHO,121
+50,4,4,4,4,4,Y,,"For our gyn-onc patients with a thoracic epidural, how long can we expect it to actually control pain and cut opioid use, and what do we do if her blood pressure drops?","Based on the provided text:
+
+* **Duration of pain control and reduced opioid use:** While thoracic epidural analgesia effectively reduces postoperative pain and stress [1], evidence indicates that it appeared to reduce opioid consumption on **post-operative day 1 only** [4].
+* **Management if blood pressure drops:** Hypotension associated with thoracic epidural analgesia requires **vasopressor support / vasopressors** [1, 4]. (The text also notes that intravenous patient-controlled analgesia [PCA] is a suitable alternative [4]).","9.2.2. Evidence level
+Low.
+
+9.2.3. Recommendation grade
+Weak.
+
+nous PCA [59]. TEA is effective in attenuating the surgical stress re-
+sponse and reducing pain and opioid consumption for up to 72 h [59,
+
+stay of 1–2 days, in which case TEA may hinder achievement of other
+ERAS goals such as mobilization [65] and removal of urinary catheter,
+
+and TEA has been shown to increase hospital stay and complication
+rates in gynaecologic cancer surgery [66].
+
+tion, and should be combined with an opioid such as fentanyl. Post-
+operative hypotension may require treatment with vasopressors.
+
+epidurals are likely to cause less hypotension [67] and motor block [68]
+than those in the lumbar segments.
+
+[75]. Spinal anesthesia without long-acting opioids does not improve
+post-operative pain when compared to general anesthesia [76].
+
+duced to avoid intra-operative hypotension and intraoperative
+narcotics should be minimized to reduce side effects.
+
+anesthetic. This technique has been shown to be efﬁcacious for
+327
+
+morphine requirement, however may not reduce morphine-related
+side effects [82].
+Wound inﬁltration with local anesthetic is safe and easy to perform,
+
+modest and short-lived [83]. Prolongation of this analgesic effect may
+be achieved through insertion of sub-cutaneous wound catheters [84].",ERAS_Society,5

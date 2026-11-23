@@ -1,0 +1,23 @@
+{
+  "rel_hybrid_only": {
+    "both_recall": 0.0,
+    "any_recall": 0.4,
+    "gold_chunk_recall": 0.2,
+    "mean_depth": 15.0,
+    "n": 30
+  },
+  "rel_next_expand": {
+    "both_recall": 0.0,
+    "any_recall": 0.4,
+    "gold_chunk_recall": 0.2,
+    "mean_depth": 21.766666666666666,
+    "n": 30
+  },
+  "rel_kg_traversal": {
+    "both_recall": 0.0,
+    "any_recall": 0.4,
+    "gold_chunk_recall": 0.2,
+    "mean_depth": 17.633333333333333,
+    "n": 30
+  }
+}

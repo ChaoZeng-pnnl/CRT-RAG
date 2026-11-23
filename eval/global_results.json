@@ -1,0 +1,89 @@
+{
+  "judge": "claude-fable-5-1-project",
+  "questions": 20,
+  "judgements": 60,
+  "position_flipped": "44/60",
+  "median_answer_chars": {
+    "graphrag_global": 8382,
+    "vector_large_k": 7556,
+    "long_context": 4307
+  },
+  "pairs": {
+    "graphrag_global_vs_vector_large_k": {
+      "a": "graphrag_global",
+      "b": "vector_large_k",
+      "a_wins": 5,
+      "b_wins": 5,
+      "ties": 10,
+      "a_win_rate_of_decided": 0.5,
+      "sub_metrics": {
+        "comprehensiveness": {
+          "tie": 10,
+          "graphrag_global": 5,
+          "vector_large_k": 5
+        },
+        "diversity": {
+          "tie": 11,
+          "graphrag_global": 5,
+          "vector_large_k": 4
+        },
+        "empowerment": {
+          "tie": 10,
+          "graphrag_global": 5,
+          "vector_large_k": 5
+        }
+      }
+    },
+    "graphrag_global_vs_long_context": {
+      "a": "graphrag_global",
+      "b": "long_context",
+      "a_wins": 10,
+      "b_wins": 6,
+      "ties": 4,
+      "a_win_rate_of_decided": 0.625,
+      "sub_metrics": {
+        "comprehensiveness": {
+          "graphrag_global": 10,
+          "long_context": 5,
+          "tie": 5
+        },
+        "diversity": {
+          "graphrag_global": 10,
+          "long_context": 6,
+          "tie": 4
+        },
+        "empowerment": {
+          "graphrag_global": 10,
+          "long_context": 4,
+          "tie": 6
+        }
+      }
+    },
+    "vector_large_k_vs_long_context": {
+      "a": "vector_large_k",
+      "b": "long_context",
+      "a_wins": 12,
+      "b_wins": 5,
+      "ties": 3,
+      "a_win_rate_of_decided": 0.7058823529411765,
+      "sub_metrics": {
+        "comprehensiveness": {
+          "vector_large_k": 12,
+          "tie": 3,
+          "long_context": 5
+        },
+        "diversity": {
+          "vector_large_k": 10,
+          "tie": 5,
+          "long_context": 5
+        },
+        "empowerment": {
+          "vector_large_k": 12,
+          "tie": 3,
+          "long_context": 5
+        }
+      }
+    }
+  },
+  "metric_collapse": "54/60"
+}

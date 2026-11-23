@@ -1,0 +1,132 @@
+{
+  "event": "WHO SSI 2018 second edition arrives (508 passages; 2016 edition in corpus)",
+  "run_at": "2026-11-20T15:33:16",
+  "steps": {
+    "extract_chunk": {
+      "seconds": 3.2205679879989475,
+      "kind": "measured",
+      "passages": 508
+    },
+    "embed_all": {
+      "seconds": 39.61997349804733,
+      "kind": "measured",
+      "passages": 508
+    },
+    "embed_changed": {
+      "seconds": 8.623682016972452,
+      "kind": "measured",
+      "passages": 125
+    },
+    "duplicates": {
+      "seconds": 7.837209089950193,
+      "kind": "measured",
+      "passages": 14074
+    },
+    "load_neo4j": {
+      "seconds": 4.015417151967995,
+      "kind": "measured",
+      "passages": 508
+    },
+    "ours_extract_recommendations": {
+      "seconds": 3.2457197629846632,
+      "kind": "measured",
+      "candidates": 189,
+      "recommendations": 136,
+      "jev_calls": 331
+    },
+    "ours_link_editions": {
+      "seconds": 0.6683170140022412,
+      "kind": "measured",
+      "pairs": 29
+    },
+    "ours_publish": {
+      "seconds": 0.1442651730030775,
+      "kind": "measured (rolled back)"
+    },
+    "kg_extract_triples": {
+      "seconds": 564.3841713309037,
+      "kind": "extrapolated",
+      "sample": 24,
+      "sample_seconds": 26.663819117995445,
+      "mean_call_s": 7.528592409209523,
+      "concurrency": 8,
+      "calls": 508,
+      "triples_per_passage": 0.5416666666666666,
+      "model": "gemini-3.7-flash-project"
+    },
+    "graphrag_detect_communities": {
+      "seconds": 0.04203583701746538,
+      "kind": "measured",
+      "edges": 5066,
+      "communities": 487
+    },
+    "graphrag_summaries": {
+      "seconds": 1637.7706354231777,
+      "kind": "extrapolated",
+      "sample": 8,
+      "sample_seconds": 26.903829740011133,
+      "mean_call_s": 14.61760042887181,
+      "concurrency": 6,
+      "calls": 487,
+      "model": "gemini-3.7-flash-project"
+    }
+  },
+  "systems": {
+    "hybrid_rag": {
+      "steps": [
+        "extract_chunk",
+        "embed_all",
+        "duplicates",
+        "load_neo4j"
+      ],
+      "seconds": 54.7,
+      "llm_calls": 0,
+      "jev_calls": 0
+    },
+    "neo4j_graphrag": {
+      "steps": [
+        "extract_chunk",
+        "embed_all",
+        "duplicates",
+        "load_neo4j",
+        "kg_extract_triples"
+      ],
+      "seconds": 619.1,
+      "llm_calls": 508,
+      "jev_calls": 0
+    },
+    "graphrag": {
+      "steps": [
+        "extract_chunk",
+        "embed_all",
+        "duplicates",
+        "load_neo4j",
+        "kg_extract_triples",
+        "graphrag_detect_communities",
+        "graphrag_summaries"
+      ],
+      "seconds": 2256.9,
+      "llm_calls": 995,
+      "jev_calls": 0
+    },
+    "ours": {
+      "steps": [
+        "extract_chunk",
+        "embed_changed",
+        "duplicates",
+        "load_neo4j",
+        "ours_extract_recommendations",
+        "ours_link_editions",
+        "ours_publish"
+      ],
+      "seconds": 27.8,
+      "llm_calls": 0,
+      "jev_calls": 331
+    }
+  },
+  "notes": [
+    "Embedding times bypass the cache.",
+    "Extrapolated steps scale the sample's wall time at the stated concurrency.",
+    "Hybrid RAG and the graph systems have no versioning: after ingestion the 2016 edition stays searchable beside 2018."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "rater": "registered nurse (first author)",
+  "answers": {
+    "clinical_correctness_1to5": {
+      "mean": 3.62,
+      "n": 50,
+      "low_1_2": 2
+    },
+    "citation_adequacy_1to5": {
+      "mean": 3.62,
+      "n": 50,
+      "low_1_2": 2
+    },
+    "actionability_1to5": {
+      "mean": 3.62,
+      "n": 50,
+      "low_1_2": 3
+    },
+    "safety_1to5": {
+      "mean": 3.72,
+      "n": 50,
+      "low_1_2": 0
+    },
+    "completeness_1to5": {
+      "mean": 3.56,
+      "n": 50,
+      "low_1_2": 3
+    },
+    "acceptable_rate": {
+      "rate": 0.66,
+      "n": 50
+    }
+  },
+  "proxy_vs_clinician": {
+    "clinician_acceptable_rate": 0.66,
+    "proxy_acceptable_rates": {
+      "claude-fable-5-1-project": 0.8125,
+      "gpt-5.6-sol-project": 0.24
+    },
+    "note": "Which proxy, if either, tracked the clinician? This is the calibration the clinician-proxy result could not provide."
+  },
+  "questions": {
+    "realistic": {
+      "rate": 0.95,
+      "n": 60
+    },
+    "answerable_at_bedside": {
+      "rate": 0.8666666666666667,
+      "n": 60
+    }
+  }
+}

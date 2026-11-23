@@ -1,0 +1,73 @@
+{
+  "documents": {
+    "99fccebb0aaa": {
+      "chunks": 116,
+      "candidates": 89,
+      "recommendations": 70,
+      "graded": 57
+    },
+    "1a12d3183519": {
+      "chunks": 40,
+      "candidates": 25,
+      "recommendations": 14,
+      "graded": 14
+    }
+  },
+  "pairs": [
+    {
+      "new": "1a12d3183519:R008",
+      "old": "99fccebb0aaa:R021",
+      "old_chunk": "99fccebb0aaa:0061",
+      "new_chunk": "1a12d3183519:0014",
+      "cos": 0.9159,
+      "p_same": 0.87,
+      "grade_from": "Category IB",
+      "grade_to": "Category IB–strong recommendation; accepted practice",
+      "grade_changed": false,
+      "quantities_changed": false
+    },
+    {
+      "new": "1a12d3183519:R001",
+      "old": "99fccebb0aaa:R036",
+      "old_chunk": "99fccebb0aaa:0063",
+      "new_chunk": "1a12d3183519:0009",
+      "cos": 0.8536,
+      "p_same": 0.85,
+      "grade_from": "Category IA",
+      "grade_to": "Category IA–strong recommendation; high-quality evidence",
+      "grade_changed": false,
+      "quantities_changed": false
+    },
+    {
+      "new": "1a12d3183519:R006",
+      "old": "99fccebb0aaa:R018",
+      "old_chunk": "99fccebb0aaa:0060",
+      "new_chunk": "1a12d3183519:0011",
+      "cos": 0.8271,
+      "p_same": 0.83,
+      "grade_from": "Category IB",
+      "grade_to": "Category IA–strong recommendation; high to moderate–quality evidence",
+      "grade_changed": true,
+      "quantities_changed": true
+    },
+    {
+      "new": "1a12d3183519:R009",
+      "old": "99fccebb0aaa:R023",
+      "old_chunk": "99fccebb0aaa:0061",
+      "new_chunk": "1a12d3183519:0014",
+      "cos": 0.8174,
+      "p_same": 0.67,
+      "grade_from": "Category IB",
+      "grade_to": "Category IA–strong recommendation; high-quality evidence",
+      "grade_changed": true,
+      "quantities_changed": true
+    }
+  ],
+  "retire_chunks": [],
+  "mixed_chunks_kept": [
+    "99fccebb0aaa:0060",
+    "99fccebb0aaa:0061",
+    "99fccebb0aaa:0063"
+  ],
+  "jev_calls": 14
+}

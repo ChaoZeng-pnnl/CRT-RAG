@@ -1,0 +1,35 @@
+{
+  "chunks": 13462,
+  "duplicates_marked": 730,
+  "canonical_remaining": 12732,
+  "chunks_in_cross_tier_clusters": 28,
+  "duplicates_by_source": {
+    "OpenAlex": 433,
+    "CDC": 100,
+    "PubMed_PMC": 91,
+    "NICE": 34,
+    "Elsevier": 30,
+    "WHO": 26,
+    "OpenRN": 8,
+    "RCOG": 7,
+    "RNAO": 1
+  },
+  "duplicates_by_tier": {
+    "1": 167,
+    "2": 9,
+    "4": 554
+  },
+  "cluster_size_histogram": {
+    "2": 658,
+    "3": 240,
+    "4": 220,
+    "5": 45,
+    "7": 7,
+    "8": 8,
+    "10": 30
+  },
+  "cross_tier_cluster_tiers": {
+    "[1, 4]": 28
+  },
+  "jaccard_threshold": 0.8
+}

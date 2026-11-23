@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch study-001-010</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch study-001-010</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q034", "question": "At what blood loss volumes do we call a PPH minor versus major, and when does it count as severe?", "question_type": "threshold", "reference": "Primary PPH is traditionally defined as blood loss of 500 ml or more from the genital tract within 24 hours of birth. It is classed as minor at 500\u20131000 ml and major at more than 1000 ml. Major is further subdivided into moderate (1001\u20132000 ml) and severe (more than 2000 ml). Bear in mind that in women with a lower body mass (e.g. less than 60 kg), a lower blood loss volume may already be clinically significant. Bleeding that is abnormal or excessive from the birth canal between 24 hours and 12 weeks postnatally is classed as secondary PPH.", "chunk_id": "0ccb0502d3aa:0015", "source": "GTG52 - Prevention and Management of Postpartum Haemorrhage (2016, tier 1, p.8)", "fields": {"action": [{"i": 0, "text": "Primary postpartum haemorrhage (PPH) is the most common form of major obstetric haemorrhage.", "start": 18, "end": 110}, {"i": 1, "text": "de\ufb01nition of primary PPH is the loss of 500 ml or more of blood from the genital tract within 24 hours of the birth", "start": 128, "end": 243}, {"i": 2, "text": "of a baby.2 PPH can be minor (500\u20131000 ml) or major (more than 1000 ml).", "start": 244, "end": 316}, {"i": 3, "text": "Major can be further subdivided into", "start": 318, "end": 354}, {"i": 4, "text": "moderate (1001\u20132000 ml) and severe (more than 2000 ml).", "start": 355, "end": 410}, {"i": 5, "text": "In women with lower body mass (e.g. less than 60 kg), a", "start": 412, "end": 467}, {"i": 6, "text": "lower level of blood loss may be clinically signi\ufb01cant.3 The recommendations in this guideline apply to women", "start": 468, "end": 577}, {"i": 7, "text": "experiencing a primary PPH of 500 ml or more.", "start": 578, "end": 623}, {"i": 8, "text": "Secondary PPH is de\ufb01ned as abnormal or excessive bleeding from the birth canal between 24 hours and 12 weeks", "start": 625, "end": 733}, {"i": 9, "text": "postnatally.4 This guideline also includes recommendations speci\ufb01c to the management of secondary PPH.", "start": 734, "end": 836}, {"i": 10, "text": "Women with pre-existing bleeding disorders and women taking therapeutic anticoagulants are at increased risk of PPH;", "start": 838, "end": 954}, {"i": 11, "text": "this guideline does not include speci\ufb01c recommendations for the management of such situations or for managing", "start": 955, "end": 1064}, {"i": 12, "text": "haemorrhage in women who refuse blood transfusion.", "start": 1065, "end": 1115}, {"i": 13, "text": "Guidance on these topics is available from other sources.5\u20138", "start": 1117, "end": 1177}, {"i": 14, "text": "This guideline has been developed primarily for clinicians working in consultant-led obstetric units in the UK;", "start": 1178, "end": 1289}, {"i": 15, "text": "recommendations may be less appropriate for other settings where facilities, resources and routine practices differ.", "start": 1290, "end": 1406}, {"i": 16, "text": "There is increasing emphasis on the availability of births at home or in midwife-led units.9 Obstetricians and", "start": 1408, "end": 1518}, {"i": 17, "text": "midwives should develop guidelines for the management of obstetric emergencies that may occur in the community,", "start": 1519, "end": 1630}], "quantity": [{"i": 0, "text": "500 ml", "start": 168, "end": 174}, {"i": 1, "text": "24 hours", "start": 222, "end": 230}, {"i": 2, "text": "500\u20131000 ml", "start": 274, "end": 285}, {"i": 3, "text": "1000 ml", "start": 307, "end": 314}, {"i": 4, "text": "1001\u20132000 ml", "start": 365, "end": 377}, {"i": 5, "text": "2000 ml", "start": 401, "end": 408}, {"i": 6, "text": "60 kg", "start": 458, "end": 463}, {"i": 7, "text": "12 weeks", "start": 725, "end": 733}]}}, {"qid": "q231", "question": "When is it actually appropriate to use vancomycin for our surgical prophylaxis instead of a cephalosporin, and who needs to sign off on that?", "question_type": "escalation", "reference": "Vancomycin is not recommended for routine surgical prophylaxis for any type of operation. It may be the prophylactic agent of choice only in specific circumstances \u2014 for example, when a cluster of MRSA mediastinitis or incisional SSI caused by methicillin-resistant coagulase-negative staphylococci has been identified. There is no scientifically defined threshold that justifies its use; the decision must take into account local rates of MRSA isolates, SSI rates for the particular operation, and a review of infection prevention practices for compliance, and it should be made through consultation between the surgeons and infectious disease experts. An effective SSI surveillance program must also be in place, with careful, timely culturing of SSI isolates to identify species and determine susceptibility to prophylactic agents.", "chunk_id": "99fccebb0aaa:0035", "source": "CDC Guideline for the Prevention of Surgical Site Infection 1999 (1999, tier 1, p.13)", "fields": {"action": [{"i": 0, "text": "Open, fresh, accidental wounds.", "start": 24, "end": 55}, {"i": 1, "text": "In addition, operations with major breaks in sterile technique (e.g., open cardiac", "start": 57, "end": 139}, {"i": 2, "text": "massage) or gross spillage from the gastrointestinal tract, and incisions in which acute, nonpurulent inflammation is encountered are included", "start": 140, "end": 282}, {"i": 3, "text": "Old traumatic wounds with retained devitalized tissue and those that involve existing clinical infection or perforated", "start": 327, "end": 445}, {"i": 4, "text": "This definition suggests that the organisms causing postoperative infection were present in the operative field before the operation.", "start": 456, "end": 589}, {"i": 5, "text": "Garner JS1 and Simmons BP.2", "start": 591, "end": 618}, {"i": 6, "text": "However, an agent such as clindamycin", "start": 653, "end": 690}, {"i": 7, "text": "or metronidazole should also be included to ensure anaerobic coverage.", "start": 691, "end": 761}, {"i": 8, "text": "The aminoglycosides are seldom recommended as", "start": 763, "end": 808}, {"i": 9, "text": "first choices for AMP, either as single drugs or as components of combination regimens.242,264 References cited in", "start": 809, "end": 923}, {"i": 10, "text": "Table 4 provide many details regarding AMP choices and", "start": 924, "end": 978}, {"i": 11, "text": "dosages, antimicrobial spectra and properties, and other", "start": 979, "end": 1035}, {"i": 12, "text": "practical clinical information.", "start": 1036, "end": 1067}, {"i": 13, "text": "The routine use of vancomycin in AMP is not recommended for any kind of operation.242,266,283,292 However, vancomycin may be the AMP agent of choice in certain clinical", "start": 1069, "end": 1237}, {"i": 14, "text": "circumstances, such as when a cluster of MRSA mediastinitis or incisional SSI due to methicillin-resistant coagulase-negative staphylococci has been detected.", "start": 1238, "end": 1396}, {"i": 15, "text": "has not been scientifically defined that can support the", "start": 1410, "end": 1466}, {"i": 16, "text": "decision to use vancomycin in AMP.", "start": 1467, "end": 1501}, {"i": 17, "text": "involve consideration of local frequencies of MRSA isolates,", "start": 1523, "end": 1583}, {"i": 18, "text": "SSI rates for particular operations, review of infection prevention practices for compliance, and consultation between", "start": 1584, "end": 1702}, {"i": 19, "text": "surgeons and infectious disease experts.", "start": 1703, "end": 1743}, {"i": 20, "text": "surveillance program must be operational, with careful and", "start": 1762, "end": 1820}, {"i": 21, "text": "timely culturing of SSI isolates to determine species and", "start": 1821, "end": 1878}, {"i": 22, "text": "AMP agent susceptibilities.80", "start": 1879, "end": 1908}, {"i": 23, "text": "Agents most commonly used for AMP (i.e.,", "start": 1909, "end": 1949}, {"i": 24, "text": "cephalosporins) exhibit time-dependent bactericidal action.", "start": 1950, "end": 2009}], "quantity": []}}, {"qid": "q188", "question": "For an inpatient having a laparoscopic sling repair who's low VTE risk, do I need to give heparin or is early ambulation and SCDs enough?", "question_type": "escalation", "reference": "For inpatients with a low-risk VTE profile undergoing vaginal or laparoscopic urogynecologic procedures, early ambulation plus intermittent pneumatic compression (IPC) until the patient can ambulate is recommended \u2014 pharmacologic prophylaxis is not automatic and should be decided based on your institution's VTE risk scoring. Individual and surgical VTE risk factors should have been thoroughly evaluated during the preoperative assessment. (For outpatient procedures in a low-risk patient, no thromboprophylaxis other than early ambulation is recommended.) This is a strong recommendation supported by high-quality evidence.", "chunk_id": "4edd937b5877:0044", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.13)", "fields": {"action": [{"i": 0, "text": "to 8 h fasting for solids and 2 h for clear fluids including oral carbohydrate drinks (in patients without", "start": 0, "end": 106}, {"i": 1, "text": "delayed gastric emptying).", "start": 107, "end": 133}, {"i": 2, "text": "gastric emptying should fast overnight or 8 h before", "start": 156, "end": 208}, {"i": 3, "text": "Administration of preoperative carbohydrates in diabetic and obese patients", "start": 229, "end": 304}, {"i": 4, "text": "No routine bowel preparation", "start": 337, "end": 365}, {"i": 5, "text": "Standard anesthetic protocol", "start": 397, "end": 425}, {"i": 6, "text": "Use of short-acting anesthetic agents", "start": 426, "end": 463}, {"i": 7, "text": "Complete reversal of neuromuscular blockade", "start": 475, "end": 518}, {"i": 8, "text": "Lung-protective ventilatory management", "start": 531, "end": 569}, {"i": 9, "text": "Introperative multimodal analgesia", "start": 581, "end": 615}, {"i": 10, "text": "Perioperative fluid management", "start": 628, "end": 658}, {"i": 11, "text": "Goal of intraoperative fluid administration should be", "start": 659, "end": 712}, {"i": 12, "text": "2 ml/kg/h is an approximate volume for", "start": 724, "end": 762}, {"i": 13, "text": "intraoperative fluid replacement with boluses of", "start": 763, "end": 811}, {"i": 14, "text": "crystalloid or colloid when needed as determined", "start": 812, "end": 860}, {"i": 15, "text": "by surgical outcome and intraoperative monitoring.", "start": 861, "end": 911}, {"i": 16, "text": "Balanced salt solutions should be used over normal", "start": 912, "end": 962}, {"i": 17, "text": "Discontinue IV fluids once the patient is tolerating oral hydration", "start": 971, "end": 1038}, {"i": 18, "text": "Antithrombotic prophylaxis", "start": 1055, "end": 1081}, {"i": 19, "text": "Individual and surgical risk factors for VTE should", "start": 1082, "end": 1133}, {"i": 20, "text": "be thoroughly evaluated in preoperative assessment.", "start": 1134, "end": 1185}, {"i": 21, "text": "For outpatient procedures in a low-risk patient, no", "start": 1186, "end": 1237}, {"i": 22, "text": "thromboprophylaxis is recommended other than", "start": 1238, "end": 1282}, {"i": 23, "text": "For inpatients with low risk profile", "start": 1301, "end": 1337}, {"i": 24, "text": "undergoing vaginal or laparoscopic urogynecological procedure we recommend early ambulation and", "start": 1338, "end": 1433}, {"i": 25, "text": "IPC until ambulation is possible.", "start": 1434, "end": 1467}, {"i": 26, "text": "prophylaxis should be based on institutional VTE risk", "start": 1484, "end": 1537}], "quantity": [{"i": 0, "text": "8 h", "start": 3, "end": 6}, {"i": 1, "text": "2 h", "start": 30, "end": 33}, {"i": 2, "text": "2 ml", "start": 724, "end": 728}]}}, {"qid": "q009", "question": "Do we actually need a written protocol for transferring a PPH patient to a higher level of care, or is it enough to have our hemorrhage treatment protocol on the unit?", "question_type": "escalation", "reference": "Both are recommended. Health facilities should have formal protocols for the prevention and treatment of PPH (weak recommendation, moderate-quality evidence), and separately should have formal protocols for referral of women to a higher level of care (weak recommendation, very-low-quality evidence). So a hemorrhage treatment protocol alone is not sufficient \u2014 a distinct referral/escalation protocol is also recommended. Additionally, PPH treatment simulations are recommended for both pre-service and in-service training, and monitoring the use of uterotonics after birth for PPH prevention is recommended as a process indicator for programmatic evaluation.", "chunk_id": "7209e8fb38bd:0014", "source": "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage (2012, tier 1, p.10)", "fields": {"action": [{"i": 0, "text": "(Weak recommendation, very-low-quality evi", "start": 0, "end": 42}, {"i": 1, "text": "The use of formal protocols by health facilities for the prevention and treatment of PPH is", "start": 80, "end": 171}, {"i": 2, "text": "(Weak recommendation, moderate-quality evidence)", "start": 185, "end": 233}, {"i": 3, "text": "The use of formal protocols for referral of women to a higher level of care is recommended", "start": 235, "end": 325}, {"i": 4, "text": "(Weak recommendation, very-low-quality evidence)", "start": 349, "end": 397}, {"i": 5, "text": "The use of simulations of PPH treatment is recommended for pre-service and in-service train", "start": 399, "end": 490}, {"i": 6, "text": "Monitoring the use of uterotonics after birth for the prevention of PPH is recommended as", "start": 557, "end": 646}, {"i": 7, "text": "a process indicator for programmatic evaluation.", "start": 647, "end": 695}, {"i": 8, "text": "(Weak recommendation, very-low-quality", "start": 696, "end": 734}], "quantity": []}}, {"qid": "q088", "question": "We've got a patient at 39 weeks with gestational diabetes as her only issue and a big baby on ultrasound \u2014 is that enough to book her for an induction now, or do we wait?", "question_type": "threshold", "reference": "Wait. If gestational diabetes is the only abnormality, induction before 41 weeks is not recommended (weak recommendation, very low quality evidence), and induction at term is also not recommended for suspected fetal macrosomia (weak recommendation, low quality evidence). Induction is likewise not recommended in an uncomplicated pregnancy at less than 41 weeks. Induction is recommended once she is known with certainty to have reached 41 weeks (>40 weeks + 7 days). The exception that would warrant induction at term is prelabour rupture of membranes, for which induction is strongly recommended (high quality evidence).", "chunk_id": "1277ed65e8ca:0061", "source": "WHO Recommendations on Maternal Health (2018, tier 1, p.19)", "fields": {"action": [{"i": 0, "text": "When induction of labour may be appropriate", "start": 0, "end": 43}, {"i": 1, "text": "\u25a0Induction of labour is recommended for women who are known with certainty to have", "start": 46, "end": 128}, {"i": 2, "text": "reached 41 weeks (>40 weeks + 7 days) of gestation.", "start": 129, "end": 180}, {"i": 3, "text": "(Weak recommendation, low quality of", "start": 181, "end": 217}, {"i": 4, "text": "\u25a0Induction of labour is not recommended in women with an uncomplicated pregnancy at", "start": 238, "end": 321}, {"i": 5, "text": "gestational age less than 41 weeks.", "start": 322, "end": 357}, {"i": 6, "text": "(Weak recommendation, low quality of evidence).", "start": 358, "end": 405}, {"i": 7, "text": "\u25a0If gestational diabetes is the only abnormality, induction of labour before 41 weeks of", "start": 415, "end": 503}, {"i": 8, "text": "gestation is not recommended.", "start": 504, "end": 533}, {"i": 9, "text": "(Weak recommendation, very low quality evidence).", "start": 534, "end": 583}, {"i": 10, "text": "\u25a0Induction of labour at term is not recommended for suspected fetal macrosomia.", "start": 593, "end": 672}, {"i": 11, "text": "recommendation, low quality evidence).", "start": 679, "end": 717}, {"i": 12, "text": "\u25a0Induction of labour is recommended for women with prelabour rupture of membranes at", "start": 727, "end": 811}, {"i": 13, "text": "(Strong recommendation, high quality evidence).", "start": 818, "end": 865}], "quantity": [{"i": 0, "text": "41 weeks", "start": 137, "end": 145}, {"i": 1, "text": "40 weeks", "start": 148, "end": 156}, {"i": 2, "text": "7 days", "start": 159, "end": 165}]}}, {"qid": "q083", "question": "How many days can I keep my post-op patient on IV ketorolac for breakthrough pain, and do I need to adjust anything if she's 72?", "question_type": "dose", "reference": "Ketorolac is indicated only for short-term management of moderate to severe acute pain requiring opioid-level analgesia \u2014 up to five days in adults. It's commonly used for 'breakthrough' pain during treatment of severe acute pain already being managed with opioids. For clients 65 and older, the dose should be reduced and renal function monitored closely, since renal failure can occur with NSAIDs. Older adults are also at elevated risk of GI bleeding, especially if taking warfarin or corticosteroids concurrently.", "chunk_id": "efb16f8bfcbe:0002", "source": "OpenRN Nursing Fundamentals - Comfort and Pain Chapter (2023, tier 2, p.None)", "fields": {"action": [{"i": 0, "text": "Nonsteroidal anti-inflammatory drugs (NSAIDs) provide mild to moderate pain relief and also reduce fever and inflammation by inhibiting the production of prostaglandins.", "start": 7, "end": 176}, {"i": 1, "text": "They can also be used as an adjuvant with opioids for severe pain.", "start": 177, "end": 243}, {"i": 2, "text": "Examples of NSAIDs include ibuprofen, naproxen, and ketorolac.", "start": 244, "end": 306}, {"i": 3, "text": "All NSAIDs, except aspirin, increase the risk of heart attack, heart failure, and stroke, with the risk being higher if the client takes more than is directed or takes it for longer than directed.", "start": 307, "end": 503}, {"i": 4, "text": "Common side effects include dyspepsia, nausea, and vomiting, so it is helpful to administer this medication with food.", "start": 504, "end": 622}, {"i": 5, "text": "Older adults and those taking NSAIDs concurrently with other drugs, such as warfarin or corticosteroids, are at elevated risk for gastrointestinal bleeding.", "start": 623, "end": 779}, {"i": 6, "text": "Renal failure can also occur with NSAIDs.", "start": 780, "end": 821}, {"i": 7, "text": "Ibuprofen is an over-the-counter medication that is safe for infants six months or older.", "start": 823, "end": 912}, {"i": 8, "text": "It is typically prescribed every six to eight hours.", "start": 913, "end": 965}, {"i": 9, "text": "Naproxen is an over-the-counter medication that is longer acting than ibuprofen and is typically prescribed every 8 to 12 hours with a full glass of water.", "start": 967, "end": 1122}, {"i": 10, "text": "Ketorolac is a prescribed medication commonly used to treat \u201cbreakthrough\u201d pain that occurs during the treatment of severe acute pain already being treated with opioids.", "start": 1124, "end": 1293}, {"i": 11, "text": "It is indicated for the short-term management (up to five days in adults) of moderate to severe acute pain that requires analgesia at the opioid level.", "start": 1294, "end": 1445}, {"i": 12, "text": "Ketorolac is safe for adults, but the dosage should be reduced for clients ages 65 and over and renal function must be closely monitored.", "start": 1446, "end": 1583}], "quantity": [{"i": 0, "text": "12 hours", "start": 1086, "end": 1094}]}}, {"qid": "q137", "question": "When a patient has wound discharge a few days after her hysterectomy, where do the bugs causing most surgical site infections actually come from \u2014 the ward environment or the patient herself?", "question_type": "general", "reference": "Most surgical site infections are caused by contamination of the incision with microorganisms from the patient's own body during the operation itself. Infection from an outside source after surgery is less common. Wound discharge can appear anywhere from a spontaneously limited discharge within about 5 to 10 days of the operation through to a life-threatening postoperative complication. Importantly, most surgical site infections are preventable, and measures can be taken in the pre-, intra- and postoperative phases of care to reduce the risk. Note also that increasing numbers of these infections are now being seen in primary care, because patients go home earlier after day case and fast-track surgery.", "chunk_id": "a09c53c2bd03:0061", "source": "Surgical Site Infections Prevention and Treatment (NG125) (2019, tier 1, p.27)", "fields": {"action": [{"i": 0, "text": "A surgical site infection may range from a spontaneously limited wound discharge within", "start": 0, "end": 87}, {"i": 1, "text": "to 10\u00a0days of an operation to a life-threatening postoperative complication, such as a", "start": 89, "end": 175}, {"i": 2, "text": "sternal infection after open heart surgery.", "start": 176, "end": 219}, {"i": 3, "text": "Most surgical site infections are caused by", "start": 220, "end": 263}, {"i": 4, "text": "contamination of an incision with microorganisms from the patient's own body during", "start": 264, "end": 347}, {"i": 5, "text": "Infection caused by microorganisms from an outside source following surgery is", "start": 357, "end": 435}, {"i": 6, "text": "Most surgical site infections are preventable.", "start": 449, "end": 495}, {"i": 7, "text": "Measures can be taken in the", "start": 496, "end": 524}, {"i": 8, "text": "pre-, intra- and postoperative phases of care to reduce the risk of infection.", "start": 525, "end": 603}, {"i": 9, "text": "Surgical site infections can have a significant effect on quality of life for the patient.", "start": 604, "end": 694}, {"i": 10, "text": "are associated with considerable morbidity and extended hospital stay.", "start": 700, "end": 770}, {"i": 11, "text": "surgical site infections result in a considerable financial burden to healthcare providers.", "start": 784, "end": 875}, {"i": 12, "text": "Advances in surgery and anaesthesia have resulted in patients who are at greater risk of", "start": 876, "end": 964}, {"i": 13, "text": "surgical site infections being considered for surgery.", "start": 965, "end": 1019}, {"i": 14, "text": "In addition, increased numbers of", "start": 1020, "end": 1053}, {"i": 15, "text": "infections are now being seen in primary care because patients are allowed home earlier", "start": 1054, "end": 1141}, {"i": 16, "text": "following day case and fast-track surgery.", "start": 1142, "end": 1184}, {"i": 17, "text": "The guideline makes recommendations for prevention and management of surgical site", "start": 1185, "end": 1267}, {"i": 18, "text": "infections based on rigorous evaluation of the best available published evidence.", "start": 1268, "end": 1349}, {"i": 19, "text": "The guideline will assume that prescribers will use a drug's summary of product", "start": 1350, "end": 1429}, {"i": 20, "text": "characteristics to inform their decisions for individual patients.", "start": 1430, "end": 1496}, {"i": 21, "text": "identified characteristics of appropriate interactive dressings and antimicrobial products", "start": 1520, "end": 1610}, {"i": 22, "text": "should be considered before use, and local formularies and guidelines based on local", "start": 1611, "end": 1695}, {"i": 23, "text": "microbial resistance patterns should be used to inform choice of antibiotics.", "start": 1696, "end": 1773}, {"i": 24, "text": "In 2017, the NICE surveillance team reviewed the guideline and identified new evidence on", "start": 1774, "end": 1863}, {"i": 25, "text": "Surgical site infections: prevention and treatment (NG125)", "start": 1864, "end": 1922}, {"i": 26, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 1957, "end": 2048}], "quantity": [{"i": 0, "text": "10\u00a0days", "start": 92, "end": 99}]}}, {"qid": "q062", "question": "When I use an alcohol hand rub instead of scrubbing at the sink, how long do I keep rubbing before I gown and glove?", "question_type": "technique", "reference": "With a waterless antiseptic agent \u2014 one that needs no outside water source \u2014 you keep rubbing your hands together until the agent has completely dried. That's the endpoint; don't wipe it off or move on while hands are still wet. Note that surgical hand antisepsis (whether done as an antiseptic handwash or an antiseptic hand rub before the case) is meant to eliminate transient flora and reduce resident flora, and antiseptic detergent preparations often have persistent (residual) antimicrobial activity \u2014 meaning continued inhibition of bacterial growth for minutes to hours after application. Also remember that if hands are visibly soiled \u2014 visible dirt, or contamination with proteinaceous material, blood, or other body fluids such as fecal material or urine \u2014 that's a different situation than routine antisepsis.", "chunk_id": "afef8f41656d:0014", "source": "Guideline for Hand Hygiene in Health-Care Settings (2002, tier 1, p.6)", "fields": {"action": [{"i": 0, "text": "Persistent activity is defined as the prolonged or extended antimicrobial activity that prevents or", "start": 39, "end": 138}, {"i": 1, "text": "inhibits the proliferation or survival of microorganisms after", "start": 139, "end": 201}, {"i": 2, "text": "application of the product.", "start": 202, "end": 229}, {"i": 3, "text": "This activity may be demonstrated", "start": 231, "end": 264}, {"i": 4, "text": "by sampling a site several minutes or hours after application", "start": 265, "end": 326}, {"i": 5, "text": "and demonstrating bacterial antimicrobial effectiveness when", "start": 327, "end": 387}, {"i": 6, "text": "compared with a baseline level.", "start": 388, "end": 419}, {"i": 7, "text": "This property also has been", "start": 421, "end": 448}, {"i": 8, "text": "referred to as \u201cresidual activity.\u201d Both substantive and", "start": 449, "end": 505}, {"i": 9, "text": "nonsubstantive active ingredients can show a persistent effect", "start": 506, "end": 568}, {"i": 10, "text": "if they substantially lower the number of bacteria during the", "start": 569, "end": 630}, {"i": 11, "text": "Plain soap refers to detergents that do not contain antimicrobial agents or contain low concentrations of", "start": 658, "end": 763}, {"i": 12, "text": "antimicrobial agents that are effective solely as preservatives.", "start": 764, "end": 828}, {"i": 13, "text": "Substantivity is an attribute of certain active", "start": 846, "end": 893}, {"i": 14, "text": "ingredients that adhere to the stratum corneum (i.e., remain", "start": 894, "end": 954}, {"i": 15, "text": "on the skin after rinsing or drying) to provide an inhibitory", "start": 955, "end": 1016}, {"i": 16, "text": "effect on the growth of bacteria remaining on the skin.", "start": 1017, "end": 1072}, {"i": 17, "text": "Surgical hand antisepsis.", "start": 1074, "end": 1099}, {"i": 18, "text": "Antiseptic handwash or antiseptic", "start": 1101, "end": 1134}, {"i": 19, "text": "hand rub performed preoperatively by surgical personnel to", "start": 1135, "end": 1193}, {"i": 20, "text": "eliminate transient and reduce resident hand flora.", "start": 1194, "end": 1245}, {"i": 21, "text": "detergent preparations often have persistent antimicrobial", "start": 1258, "end": 1316}, {"i": 22, "text": "Hands showing visible dirt or visibly", "start": 1351, "end": 1388}, {"i": 23, "text": "contaminated with proteinaceous material, blood, or other", "start": 1389, "end": 1446}, {"i": 24, "text": "body fluids (e.g., fecal material or urine).", "start": 1447, "end": 1491}, {"i": 25, "text": "Waterless antiseptic agent.", "start": 1493, "end": 1520}, {"i": 26, "text": "An antiseptic agent that does not", "start": 1522, "end": 1555}, {"i": 27, "text": "require use of exogenous water.", "start": 1556, "end": 1587}, {"i": 28, "text": "After applying such an agent,", "start": 1589, "end": 1618}, {"i": 29, "text": "the hands are rubbed together until the agent has dried.", "start": 1619, "end": 1675}, {"i": 30, "text": "Food and Drug Administration (FDA) product categories.", "start": 1677, "end": 1731}, {"i": 31, "text": "1994 FDA Tentative Final Monograph for Health-Care Antiseptic Drug Products divided products into three categories", "start": 1737, "end": 1851}, {"i": 32, "text": "and defined them as follows (19):", "start": 1852, "end": 1885}, {"i": 33, "text": "\u2022 Patient preoperative skin preparation.", "start": 1886, "end": 1926}], "quantity": []}}, {"qid": "q053", "question": "We've got a suspected environmental outbreak on our surgical unit \u2014 do we need to step up cleaning in the OR area, and what agent should we be using?", "question_type": "escalation", "reference": "Yes \u2014 increased cleaning is essential whenever there is an outbreak in which environmental sources play a role. Health-care facilities should be visibly clean at all times as a baseline for minimizing infection. As for which cleaning and disinfecting agent to use, that depends on many factors, so follow your own facility's existing policies and procedures on cleaning and disinfection rather than choosing an agent ad hoc.", "chunk_id": "c682893b253d:0459", "source": "Patient Safety Curriculum Guide: Multi-professional Edition (2011, tier 1, p.211)", "fields": {"action": [{"i": 0, "text": "Surgical site infections are second in frequency,", "start": 0, "end": 49}, {"i": 1, "text": "accounting for about 20% of all HCAIs.", "start": 50, "end": 88}, {"i": 2, "text": "Bloodstream infections associated with the use", "start": 90, "end": 136}, {"i": 3, "text": "of an intravascular device and pneumonia", "start": 137, "end": 177}, {"i": 4, "text": "associated with ventilators each account for", "start": 178, "end": 222}, {"i": 5, "text": "an additional 11% of HCAIs.", "start": 223, "end": 250}, {"i": 6, "text": "Evidence shows that infection rates can be", "start": 252, "end": 294}, {"i": 7, "text": "reduced if health-care workers comply with", "start": 295, "end": 337}, {"i": 8, "text": "infection prevention and control guidelines", "start": 338, "end": 381}, {"i": 9, "text": "and patients leave hospital as soon as possible.", "start": 382, "end": 430}, {"i": 10, "text": "Many HCAI patients (about 25%) are in ICUs", "start": 432, "end": 474}, {"i": 11, "text": "and more than 70% of the infections in these", "start": 475, "end": 519}, {"i": 12, "text": "patients are due to microorganisms resistant", "start": 520, "end": 564}, {"i": 13, "text": "to one or more antibiotics [13].", "start": 565, "end": 597}, {"i": 14, "text": "Preventing health care-associated infection\u2013five", "start": 599, "end": 647}, {"i": 15, "text": "priority training areas for students", "start": 648, "end": 684}, {"i": 16, "text": "Over the course of their training, students will", "start": 685, "end": 733}, {"i": 17, "text": "work in many environments in which there is", "start": 734, "end": 777}, {"i": 18, "text": "a risk of transmission of infection.", "start": 778, "end": 814}, {"i": 19, "text": "approach every situation as having the potential", "start": 832, "end": 880}, {"i": 20, "text": "to lead to the infection of a patient or health-care", "start": 881, "end": 933}, {"i": 21, "text": "workers, including themselves.", "start": 934, "end": 964}, {"i": 22, "text": "students will need to routinely undertake activities", "start": 982, "end": 1034}, {"i": 23, "text": "to prevent infection, such as using correct hand", "start": 1035, "end": 1083}, {"i": 24, "text": "hygiene techniques, using PPE (e.g. gloves and", "start": 1084, "end": 1130}, {"i": 25, "text": "gowns) appropriately, ensuring that instruments", "start": 1131, "end": 1178}, {"i": 26, "text": "and devices have undergone recommended", "start": 1179, "end": 1217}, {"i": 27, "text": "sterilization procedures, and adhering to policies", "start": 1218, "end": 1268}, {"i": 28, "text": "and recommendations to prevent infections in", "start": 1269, "end": 1313}, {"i": 29, "text": "specific situations, including the use of proper", "start": 1314, "end": 1362}, {"i": 30, "text": "aseptic technique and practising safe waste", "start": 1363, "end": 1406}, {"i": 31, "text": "management, especially concerning the disposal", "start": 1407, "end": 1453}, {"i": 32, "text": "Priority areas in which all health-care workers,", "start": 1466, "end": 1514}, {"i": 33, "text": "including students, need to take action are", "start": 1515, "end": 1558}, {"i": 34, "text": "Environmental cleanliness", "start": 1577, "end": 1602}, {"i": 35, "text": "Environmental cleanliness in the hospital is", "start": 1603, "end": 1647}, {"i": 36, "text": "essential for minimizing infections.", "start": 1648, "end": 1684}, {"i": 37, "text": "facilities should be visibly clean.", "start": 1698, "end": 1733}, {"i": 38, "text": "is essential when there are outbreaks in which", "start": 1754, "end": 1800}, {"i": 39, "text": "environmental sources play a role.", "start": 1801, "end": 1835}, {"i": 40, "text": "of cleaning and disinfecting agent will depend", "start": 1848, "end": 1894}, {"i": 41, "text": "on many factors and each facility should have", "start": 1895, "end": 1940}, {"i": 42, "text": "existing policies and procedures on these issues.", "start": 1941, "end": 1990}], "quantity": []}}, {"qid": "q044", "question": "For our same-day gyn surgery patients, what's the best way to catch surgical site infections after they go home \u2014 mailing surveys to the surgeons or calling the patients?", "question_type": "technique", "reference": "No single detection method can be recommended; the choice depends on your available resources and data needs, and which operations you decide to monitor. That said, response rates differ a lot by method: questionnaires mailed to surgeons yield high response rates (72% to over 90%), telephone questionnaires to patients are more variable (38%, 81%, and 85% in different studies), and questionnaires mailed to patients yield quite low rates (15% and 33%). Direct methods such as home visits by nurses combined with a surgeon-completed survey at the 2-week postoperative clinic visit achieved essentially 100% ascertainment but are impractical for widespread use. Whatever method you use, apply the CDC NNIS definitions of SSI without modification in the outpatient setting.", "chunk_id": "99fccebb0aaa:0058", "source": "CDC Guideline for the Prevention of Surgical Site Infection 1999 (1999, tier 1, p.19)", "fields": {"action": [{"i": 0, "text": "Methods chosen will necessarily reflect the hospital\u2019s unique", "start": 0, "end": 61}, {"i": 1, "text": "mix of operations, personnel resources, and data needs.", "start": 62, "end": 117}, {"i": 2, "text": "Outpatient SSI surveillance", "start": 119, "end": 146}, {"i": 3, "text": "Both direct and indirect methods have been used to", "start": 147, "end": 197}, {"i": 4, "text": "detect SSIs that complicate outpatient operations.", "start": 198, "end": 248}, {"i": 5, "text": "One 8year study of operations for hernia and varicose veins used", "start": 249, "end": 313}, {"i": 6, "text": "home visits by district health nurses combined with a survey completed by the surgeon at the patient\u2019s 2-week postoperative clinic visit to identify SSIs.459 While ascertainment was essentially 100%, this method is impractical for", "start": 314, "end": 544}, {"i": 7, "text": "widespread implementation.", "start": 545, "end": 571}, {"i": 8, "text": "been obtained from questionnaires mailed to surgeons", "start": 597, "end": 649}, {"i": 9, "text": "(72%->90%).443,444,446,455,459-461 Response rates from telephone", "start": 650, "end": 714}, {"i": 10, "text": "questionnaires administered to patients were more variable", "start": 715, "end": 773}, {"i": 11, "text": "(38%,444 81%,457 and 85%455), and response rates from questionnaires mailed to patients were quite low (15%455 and", "start": 774, "end": 888}, {"i": 12, "text": "33%446).", "start": 889, "end": 897}, {"i": 13, "text": "At this time, no single detection method can be recommended.", "start": 898, "end": 958}, {"i": 14, "text": "Available resources and data needs determine", "start": 959, "end": 1003}, {"i": 15, "text": "which method(s) should be used and which operations", "start": 1004, "end": 1055}, {"i": 16, "text": "Regardless of which detection", "start": 1077, "end": 1106}, {"i": 17, "text": "method is used, it is recommended that the CDC NNIS definitions of SSI (Tables 1 and 2) be used without modification in the outpatient setting.", "start": 1107, "end": 1250}, {"i": 18, "text": "GUIDELINE EVALUATION PROCESS", "start": 1252, "end": 1280}, {"i": 19, "text": "The value of the HICPAC guidelines is determined", "start": 1281, "end": 1329}, {"i": 20, "text": "To help assess that value, HICPAC", "start": 1353, "end": 1386}, {"i": 21, "text": "is developing an evaluation tool to learn how guidelines", "start": 1387, "end": 1443}, {"i": 22, "text": "meet user expectations, and how and when these guidelines are disseminated and implemented.", "start": 1444, "end": 1535}, {"i": 23, "text": "RECOMMENDATIONS FOR PREVENTION", "start": 1540, "end": 1570}, {"i": 24, "text": "OF SURGICAL SITE INFECTION", "start": 1571, "end": 1597}], "quantity": [{"i": 0, "text": "85%", "start": 795, "end": 798}, {"i": 1, "text": "15%", "start": 878, "end": 881}, {"i": 2, "text": "33%", "start": 889, "end": 892}]}}];
+const BATCH = "study-001-010";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

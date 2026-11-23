@@ -1,0 +1,15 @@
+  communities: 486 from 36 documents
+  questions:   20
+  COVERAGE CONTROL: every condition restricted to those 36 documents
+  restriction check: 40 chunks retrieved, 0 outside the allowed set (must be 0)
+    graphrag_mapall: 1/20    graphrag_mapall: 2/20    graphrag_mapall: 3/20    graphrag_mapall: 4/20    graphrag_mapall: 5/20    graphrag_mapall: 6/20    graphrag_mapall: 7/20    graphrag_mapall: 8/20    graphrag_mapall: 9/20    graphrag_mapall: 10/20    graphrag_mapall: 11/20    graphrag_mapall: 12/20    graphrag_mapall: 13/20    graphrag_mapall: 14/20    graphrag_mapall: 15/20    graphrag_mapall: 16/20    graphrag_mapall: 17/20    graphrag_mapall: 18/20    graphrag_mapall: 19/20    graphrag_mapall: 20/20
+    graphrag_mapall: 9740 calls, 5698.3s, 0 invalid, 0 empty
+    graphrag_prefiltered: 1/20    graphrag_prefiltered: 2/20    graphrag_prefiltered: 3/20    graphrag_prefiltered: 4/20    graphrag_prefiltered: 5/20    graphrag_prefiltered: 6/20    graphrag_prefiltered: 7/20    graphrag_prefiltered: 8/20    graphrag_prefiltered: 9/20    graphrag_prefiltered: 10/20    graphrag_prefiltered: 11/20    graphrag_prefiltered: 12/20    graphrag_prefiltered: 13/20    graphrag_prefiltered: 14/20    graphrag_prefiltered: 15/20    graphrag_prefiltered: 16/20    graphrag_prefiltered: 17/20    graphrag_prefiltered: 18/20    graphrag_prefiltered: 19/20    graphrag_prefiltered: 20/20
+    graphrag_prefiltered: 820 calls, 1030.9s, 0 invalid, 0 empty
+    vector_large_k: 1/20    vector_large_k: 2/20    vector_large_k: 3/20    vector_large_k: 4/20    vector_large_k: 5/20    vector_large_k: 6/20    vector_large_k: 7/20    vector_large_k: 8/20    vector_large_k: 9/20    vector_large_k: 10/20    vector_large_k: 11/20    vector_large_k: 12/20    vector_large_k: 13/20    vector_large_k: 14/20    vector_large_k: 15/20    vector_large_k: 16/20    vector_large_k: 17/20    vector_large_k: 18/20    vector_large_k: 19/20    vector_large_k: 20/20
+    vector_large_k: 20 calls, 541.0s, 0 invalid, 0 empty
+    long_context: 1/20    long_context: 2/20    long_context: 3/20    long_context: 4/20    long_context: 5/20    long_context: 6/20    long_context: 7/20    long_context: 8/20    long_context: 9/20    long_context: 10/20    long_context: 11/20    long_context: 12/20    long_context: 13/20    long_context: 14/20    long_context: 15/20    long_context: 16/20    long_context: 17/20    long_context: 18/20    long_context: 19/20    long_context: 20/20
+    long_context: 20 calls, 541.8s, 0 invalid, 0 empty
+
+  Wrote /qfs/people/zeng331/PROJECTS/NURSE/eval/global_answers_controlled.jsonl
+  cost ratio vs vector_large_k: graphrag_mapall=487.0x, graphrag_prefiltered=41.0x, vector_large_k=1.0x, long_context=1.0x

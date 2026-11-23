@@ -1,0 +1,11 @@
+{
+ "hybrid_rag:quantity": 7,
+ "hybrid_rag:strength": 11,
+ "hybrid_rag:negation": 7,
+ "neo4j_graphrag:quantity": 8,
+ "neo4j_graphrag:strength": 13,
+ "neo4j_graphrag:negation": 7,
+ "ours:quantity": 0,
+ "ours:strength": 0,
+ "ours:negation": 0
+}

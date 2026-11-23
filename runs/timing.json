@@ -1,0 +1,76 @@
+{
+  "ingestion_event": "WHO SSI 2018 second edition arrives (508 passages; 2016 edition in corpus)",
+  "systems": {
+    "hybrid_rag": {
+      "ingest_seconds": 54.7,
+      "ingest_extrapolated": false,
+      "ingest_llm_calls": 0,
+      "ingest_jev_calls": 0,
+      "ingest_steps": {
+        "extract_chunk": 3.2,
+        "embed_all": 39.6,
+        "duplicates": 7.8,
+        "load_neo4j": 4.0
+      },
+      "question_median_s": 7.99,
+      "question_p90_s": 10.81,
+      "question_llm_calls_mean": 1.0,
+      "questions_timed": 73
+    },
+    "neo4j_graphrag": {
+      "ingest_seconds": 619.1,
+      "ingest_extrapolated": true,
+      "ingest_llm_calls": 508,
+      "ingest_jev_calls": 0,
+      "ingest_steps": {
+        "extract_chunk": 3.2,
+        "embed_all": 39.6,
+        "duplicates": 7.8,
+        "load_neo4j": 4.0,
+        "kg_extract_triples": 564.4
+      },
+      "question_median_s": 8.68,
+      "question_p90_s": 11.26,
+      "question_llm_calls_mean": 1.0,
+      "questions_timed": 73
+    },
+    "graphrag": {
+      "ingest_seconds": 2256.9,
+      "ingest_extrapolated": true,
+      "ingest_llm_calls": 995,
+      "ingest_jev_calls": 0,
+      "ingest_steps": {
+        "extract_chunk": 3.2,
+        "embed_all": 39.6,
+        "duplicates": 7.8,
+        "load_neo4j": 4.0,
+        "kg_extract_triples": 564.4,
+        "graphrag_detect_communities": 0.0,
+        "graphrag_summaries": 1637.8
+      },
+      "question_median_s": 27.62,
+      "question_p90_s": 37.5,
+      "question_llm_calls_mean": 21.0,
+      "questions_timed": 35
+    },
+    "ours": {
+      "ingest_seconds": 27.8,
+      "ingest_extrapolated": false,
+      "ingest_llm_calls": 0,
+      "ingest_jev_calls": 331,
+      "ingest_steps": {
+        "extract_chunk": 3.2,
+        "embed_changed": 8.6,
+        "duplicates": 7.8,
+        "load_neo4j": 4.0,
+        "ours_extract_recommendations": 3.2,
+        "ours_link_editions": 0.7,
+        "ours_publish": 0.1
+      },
+      "question_median_s": 9.95,
+      "question_p90_s": 12.44,
+      "question_llm_calls_mean": 1.0,
+      "questions_timed": 73
+    }
+  }
+}

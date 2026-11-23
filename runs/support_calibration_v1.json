@@ -1,0 +1,51 @@
+{
+ "cases": 321,
+ "results": {
+  "scorer_cited": {
+   "verbatim": {
+    "n": 125,
+    "correct_at_0.5": 0.848,
+    "median_p": 0.75
+   },
+   "unrelated": {
+    "n": 117,
+    "correct_at_0.5": 1.0,
+    "median_p": 0.01
+   },
+   "number_changed": {
+    "n": 40,
+    "correct_at_0.5": 0.85,
+    "median_p": 0.14
+   },
+   "negated": {
+    "n": 39,
+    "correct_at_0.5": 0.872,
+    "median_p": 0.03
+   },
+   "auc": 0.975
+  },
+  "verifier_cited_passage": {
+   "verbatim": {
+    "n": 125,
+    "correct_at_0.5": 0.928,
+    "median_p": 0.84
+   },
+   "unrelated": {
+    "n": 117,
+    "correct_at_0.5": 1.0,
+    "median_p": 0.01
+   },
+   "number_changed": {
+    "n": 40,
+    "correct_at_0.5": 0.85,
+    "median_p": 0.1
+   },
+   "negated": {
+    "n": 39,
+    "correct_at_0.5": 0.872,
+    "median_p": 0.03
+   },
+   "auc": 0.986
+  }
+ }
+}

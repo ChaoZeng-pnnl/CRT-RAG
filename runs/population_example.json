@@ -1,0 +1,162 @@
+{
+ "release": 3,
+ "limit": 6,
+ "questions": {
+  "caesarean": {
+   "question": "What skin antiseptic should I use before an emergency caesarean section?",
+   "search_only": [
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0010"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0071"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0017"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0011"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0044"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0000"
+    }
+   ],
+   "cvt_rag": [
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0010",
+     "refines": "prior to elective or emergency caesarean section"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0071",
+     "refines": "prior to elective or emergency caesarean section"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0017",
+     "refines": "prior to elective or emergency caesarean section"
+    },
+    {
+     "doc_id": "a09c53c2bd03",
+     "chunk_id": "a09c53c2bd03:0019",
+     "refines": ""
+    },
+    {
+     "doc_id": "144cabf03653",
+     "chunk_id": "144cabf03653:0052",
+     "refines": ""
+    },
+    {
+     "doc_id": "7c3781feaf22",
+     "chunk_id": "7c3781feaf22:0228",
+     "refines": ""
+    }
+   ]
+  },
+  "hysterectomy": {
+   "question": "What skin antiseptic should I use before an abdominal hysterectomy?",
+   "search_only": [
+    {
+     "doc_id": "a09c53c2bd03",
+     "chunk_id": "a09c53c2bd03:0019"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0071"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0079"
+    },
+    {
+     "doc_id": "1a12d3183519",
+     "chunk_id": "1a12d3183519:0014"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0017"
+    },
+    {
+     "doc_id": "f3e61e207cc2",
+     "chunk_id": "f3e61e207cc2:0010"
+    }
+   ],
+   "cvt_rag": [
+    {
+     "doc_id": "a09c53c2bd03",
+     "chunk_id": "a09c53c2bd03:0019",
+     "refines": ""
+    },
+    {
+     "doc_id": "1a12d3183519",
+     "chunk_id": "1a12d3183519:0014",
+     "refines": ""
+    },
+    {
+     "doc_id": "4a934c41413a",
+     "chunk_id": "4a934c41413a:0016",
+     "refines": ""
+    },
+    {
+     "doc_id": "2552a848e495",
+     "chunk_id": "2552a848e495:0018",
+     "refines": ""
+    },
+    {
+     "doc_id": "a48112505623",
+     "chunk_id": "a48112505623:0007",
+     "refines": ""
+    },
+    {
+     "doc_id": "a48112505623",
+     "chunk_id": "a48112505623:0023",
+     "refines": ""
+    }
+   ]
+  }
+ },
+ "titles": {
+  "a09c53c2bd03": {
+   "title": "Surgical Site Infections Prevention and Treatment (NG125)",
+   "year": null
+  },
+  "1a12d3183519": {
+   "title": "CDC Guideline for the Prevention of Surgical Site Infection 2017",
+   "year": null
+  },
+  "144cabf03653": {
+   "title": "GTG37a - Reducing Risk of Thrombosis and Embolism during Pregnancy",
+   "year": null
+  },
+  "2552a848e495": {
+   "title": "Guidelines for pre- and intra-operative care in gynecologic/oncology surgery: Enhanced Recovery After Surgery (ERAS) Society recommendations - Part I",
+   "year": null
+  },
+  "4a934c41413a": {
+   "title": "Guidelines for perioperative care in gynecologic/oncology: Enhanced Recovery After Surgery (ERAS) Society recommendations \u2014 2019 update",
+   "year": null
+  },
+  "a48112505623": {
+   "title": "Surgical site infection prevention bundle in gynecology oncology surgery: a key element in the implementation of an enhanced recovery after surgery (ERAS) program",
+   "year": null
+  },
+  "7c3781feaf22": {
+   "title": "WHO Global Guidelines for Prevention of Surgical Site Infection (second edition)",
+   "year": null
+  },
+  "f3e61e207cc2": {
+   "title": "WHO Recommendations on Choice of Antiseptic Agent and Method of Application for Preoperative Skin Preparation for Caesarean Section",
+   "year": null
+  }
+ }
+}

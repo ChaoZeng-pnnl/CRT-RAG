@@ -1,0 +1,104 @@
+{
+  "longer_answer_won": {
+    "overall": {
+      "won": 47,
+      "decided": 56,
+      "rate": 0.839
+    },
+    "per_pair": {
+      "graphrag_mapall_vs_vector_large_k": {
+        "won": 14,
+        "decided": 15,
+        "rate": 0.933
+      },
+      "graphrag_prefiltered_vs_vector_large_k": {
+        "won": 12,
+        "decided": 14,
+        "rate": 0.857
+      },
+      "graphrag_mapall_vs_graphrag_prefiltered": {
+        "won": 7,
+        "decided": 11,
+        "rate": 0.636
+      },
+      "vector_large_k_vs_long_context": {
+        "won": 14,
+        "decided": 16,
+        "rate": 0.875
+      }
+    }
+  },
+  "length_comparable": {
+    "graphrag_mapall_vs_graphrag_prefiltered@0.8": {
+      "a": "graphrag_mapall",
+      "b": "graphrag_prefiltered",
+      "a_wins": 6,
+      "b_wins": 2,
+      "ties": 6,
+      "n": 14
+    },
+    "graphrag_mapall_vs_vector_large_k@0.8": {
+      "a": "graphrag_mapall",
+      "b": "vector_large_k",
+      "a_wins": 2,
+      "b_wins": 3,
+      "ties": 2,
+      "n": 7
+    },
+    "graphrag_prefiltered_vs_vector_large_k@0.8": {
+      "a": "graphrag_prefiltered",
+      "b": "vector_large_k",
+      "a_wins": 2,
+      "b_wins": 4,
+      "ties": 2,
+      "n": 8
+    },
+    "vector_large_k_vs_long_context@0.8": {
+      "a": "vector_large_k",
+      "b": "long_context",
+      "a_wins": 1,
+      "b_wins": 1,
+      "ties": 3,
+      "n": 5
+    },
+    "graphrag_mapall_vs_graphrag_prefiltered@0.7": {
+      "a": "graphrag_mapall",
+      "b": "graphrag_prefiltered",
+      "a_wins": 6,
+      "b_wins": 3,
+      "ties": 9,
+      "n": 18
+    },
+    "graphrag_mapall_vs_vector_large_k@0.7": {
+      "a": "graphrag_mapall",
+      "b": "vector_large_k",
+      "a_wins": 2,
+      "b_wins": 3,
+      "ties": 4,
+      "n": 9
+    },
+    "graphrag_prefiltered_vs_vector_large_k@0.7": {
+      "a": "graphrag_prefiltered",
+      "b": "vector_large_k",
+      "a_wins": 3,
+      "b_wins": 4,
+      "ties": 3,
+      "n": 10
+    },
+    "vector_large_k_vs_long_context@0.7": {
+      "a": "vector_large_k",
+      "b": "long_context",
+      "a_wins": 2,
+      "b_wins": 2,
+      "ties": 3,
+      "n": 7
+    }
+  },
+  "median_answer_chars": {
+    "graphrag_mapall": 9592,
+    "graphrag_prefiltered": 10397,
+    "vector_large_k": 6283,
+    "long_context": 5097
+  },
+  "verdict": "Pairwise preference on these answers is dominated by answer length; win rates from this metric do not support a quality claim in either direction."
+}

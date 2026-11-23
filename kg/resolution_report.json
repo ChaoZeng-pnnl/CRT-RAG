@@ -1,0 +1,33 @@
+{
+  "triples": 5161,
+  "entities_after_resolution": 3959,
+  "embedding_merges": 155,
+  "merge_examples": {
+    "abdominal palpation of uterine tonus": "abdominal palpation for uterine tonus",
+    "abdominal uterine tonus assessment": "abdominal palpation for uterine tonus",
+    "anemia correction": "correction of anemia",
+    "antimicrobial resistance surveillance": "surveillance of antimicrobial resistance",
+    "aseptic catheter insertion": "aseptic catheter insertion technique",
+    "aspiration from catheter hub": "aspiration from the catheter hub",
+    "assessment of risk factors and clinical indicators of neonatal infection": "assessment for risk factors and clinical indicators of neonatal infection",
+    "level of consciousness assessment": "assessment of level of consciousness",
+    "bladder scan": "bladder scanning",
+    "blood work monitoring (potassium, creatinine)": "blood work monitoring of potassium and creatinine",
+    "blood work monitoring of potassium and creatinine": "bloodwork monitoring of sodium, potassium and creatinine",
+    "braden scale": "braden scale assessment",
+    "chlorhexidine gluconate bathing": "daily bathing with chlorhexidine gluconate",
+    "chlorhexidine-alcohol skin antisepsis": "chlorhexidine-alcohol skin preparation",
+    "inner cannula cleaning and replacement": "cleaning or replacement of the inner cannula",
+    "inner cannula replacement": "cleaning or replacement of the inner cannula",
+    "continuous fetal monitoring": "continuous electronic fetal monitoring",
+    "continuous pulse oximetry": "continuous pulse oximetry monitoring",
+    "sustained uterine massage": "continuous uterine massage",
+    "cord clamping": "umbilical cord clamping",
+    "debridement": "wound debridement",
+    "deep abdominal palpation": "deep palpation of the abdomen",
+    "digital removal of stool": "digital removal of impacted stool",
+    "disinfectant wiping of mobile devices": "wiping mobile devices with disinfectant",
+    "early catheter removal": "early removal of catheter"
+  },
+  "similarity_threshold": 0.93
+}

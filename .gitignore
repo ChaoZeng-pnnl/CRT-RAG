@@ -1,0 +1,50 @@
+# Credentials — never commit. Use environment variables in CI/shared setups.
+.config
+.env
+
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.neo4j/
+
+# Corpus payload: large, and much of it is not redistributable (Elsevier TDM XML,
+# publisher PDFs). The manifest and the acquisition pipeline ARE committed, so the
+# corpus is reproducible from them.
+corpus/tier1/
+corpus/tier2/
+corpus/tier3/
+corpus/tier4/
+
+# Derived artefacts: regenerable from the corpus + pipeline, and large.
+chunks/chunks.jsonl
+chunks/embedding_cache/
+eval/grid_*.jsonl
+eval/mech_*.jsonl
+eval/relational_*_rel_*.jsonl
+eval/answers_*.jsonl
+eval/global_answers.jsonl
+eval/clinician_proxy_reviews.jsonl
+kg/judged_triples.jsonl
+
+# Keep: provenance manifests, result summaries, test sets, review sheets, figures.
+!corpus/metadata/
+!chunks/*.json
+!eval/*.json
+!eval/*_testset.jsonl
+!eval/*.csv
+!kg/*.json
+!kg/triples*.jsonl
+# Run outputs: the paper's numbers are computed from these, so track them
+# (JSON results and the audit log); smoke-test runs stay out.
+runs/*
+!runs/*.json
+!runs/verified_rag.sqlite
+runs/baselines_smoke*.json
+backups/
+
+# Not published: manuscript drafts and paper plans (kept on the private paper branch)
+manuscript/
+MANUSCRIPT_OUTLINE.md
+PAPER_PLAN.md
+COMPANION_PAPER_PLAN.md

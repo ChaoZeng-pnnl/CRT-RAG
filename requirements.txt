@@ -1,0 +1,19 @@
+# Corpus acquisition
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+tqdm>=4.66
+
+# Phase 7 — headless-browser retrieval (JS-rendered / bot-protected sources).
+# After installing, fetch the full Chromium build (not the headless shell,
+# which fails Cloudflare interstitials):
+#     python -m playwright install chromium --no-shell
+playwright>=1.40
+
+# Ingestion (corpus_ingest)
+pymupdf>=1.24          # PDF text + layout; the validator's extractor is not usable here
+
+# Indexing (corpus_index)
+openai>=1.40           # OpenAI-compatible client for the PNNL LiteLLM endpoint
+neo4j>=5.20            # native vector index requires Neo4j 5.13+
+python-dotenv>=1.0

@@ -1,0 +1,62 @@
+CLINICAL REVIEW — are these questions ones a perioperative gynecologic nurse would realistically ask during a shift? y/n
+id,realistic_y_n,answerable_at_bedside_y_n,comment_free_text,question,question_type,source,source_page
+1,Y,Y,,"What IV rate should I keep my post-op urogyn patient on until she's drinking, and when can I stop the fluids?",dose,AUGS,5
+2,Y,Y,,"My post-op patient can't keep anything down and needs stronger pain relief — do I push for a PCA or an epidural, and does it matter what surgery she had?",technique,NICE,28
+3,Y,Y,,It's Saturday and my post-op emergency admission needs mobilising — can I get physio and OT in over the weekend or do I have to wait until Monday?,timing,NICE,9
+4,Y,Y,,"If our surgical scrub sink only has a PCMX product, is that as good as chlorhexidine for scrubbing in?",technique,CDC,10
+5,Y,Y,,"When exactly should we be giving the prophylactic antibiotic for an elective hysterectomy, and does it cover infections that start after surgery?",timing,CDC,11
+6,Y,Y,,My patient is going for a CT with IV contrast before her surgery — what do I need to check and how long should she be NPO?,timing,OpenRN,1183
+7,Y,Y,,"Our OR runs off an oxygen concentrator instead of pipeline oxygen — what FiO2 should I actually expect it to deliver, and do I still need a cylinder in the room?",threshold,WHO,25
+8,Y,Y,,My pre-op patient just refused her ordered medication — what do I need to document and who do I have to notify?,escalation,OpenRN,854
+9,Y,Y,,"For a major PPH, how do I dose carboprost — how much, how often, and what's the max number of doses?",dose,RCOG,41
+10,Y,N,,"We've got a nursing student on the gynae theatre list this week — the surgeons here don't really do multidisciplinary rounds, so where should I place her to get team experience, and what should I have her do afterwards?",general,WHO,138
+11,Y,Y,,"How often should I be emptying my patient's urostomy pouch, and at what point does it need emptying?",timing,OpenRN,1232
+12,Y,Y,,"When I'm handing off a task in the OR, what's the right way to make sure the person I'm delegating to actually got it?",technique,WHO,138
+13,Y,Y,,"If one of my post-op patients who's pregnant has a swollen calf and pleuritic chest pain, do I wait for the ultrasound and CTPA results before we start anticoagulation?",escalation,RCOG,7
+14,Y,Y,,"For a patient scheduled for a hysterectomy tomorrow morning, when do I tell her to do her pre-op wash, and does it have to be a chlorhexidine product?",timing,CDC,1
+15,Y,Y,,"My pre-op patient was just started on an antihypertensive plus lifestyle changes — how often should she be getting her BP rechecked, and when can we stretch that out?",timing,RNAO,70
+16,Y,Y,,"If my postpartum patient isn't responding to her first-line antibiotics, when should I be pushing for IV aciclovir to be added?",escalation,RCOG,4
+17,Y,Y,,"For our open abdominal gyn-onc cases, what tidal volume and PEEP settings should anesthesia be using to cut down on postoperative lung complications?",dose,ERAS_Society,1
+18,Y,Y,,"For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be using for pain control instead?",threshold,ERAS_Society,9
+19,Y,Y,,"If I use a 3% hexachlorophene scrub regularly, how long does its antibacterial effect last and is there any absorption risk I should worry about?",dose,CDC,10
+20,Y,Y,,"For a myeloma patient on lenalidomide and steroids, what can I give for clot prevention and what aspirin dose, and how long do we keep it going?",dose,NICE,16
+21,Y,Y,,"For a post-op patient on our ward who I think might be septic, should I be using NEWS2 to score her, or is that only for certain patients?",threshold,NICE,6
+22,Y,Y,,"We've got a suspected environmental outbreak on our surgical unit — do we need to step up cleaning in the OR area, and what agent should we be using?",escalation,WHO,211
+23,N,Y,,Ho una paziente in lista per isterectomia che prende metotrexato per artrite reumatoide: dobbiamo sospenderlo prima dell'intervento per ridurre il rischio di infezione della ferita?,general,WHO,108
+24,Y,Y,,"My post-C-section patient has suspected sepsis with high risk criteria and a lactate of 4.8 — how fast do I need to get fluids in, and do I need to call critical care?",escalation,NICE,20
+25,Y,Y,,"For our laparoscopic urogyn cases, when should we be injecting local into the port sites — at insertion or at closure?",technique,AUGS,4
+26,Y,Y,,"If a hysterectomy is running long, when do I need to give a second dose of the prophylactic antibiotic?",timing,NICE,8
+27,Y,Y,,My post-op hysterectomy patient is starting scheduled oxycodone — when do I need to start a bowel regimen and what do I begin with?,timing,OpenRN,
+28,Y,Y,,My ovarian cancer patient is really anxious in pre-op and asking for something to calm her down — can I give a sedative before she goes back?,timing,ERAS_Society,1
+29,Y,Y,,"My patient is still on her combined oral contraceptive pill and is going for surgery tomorrow — does she need VTE prophylaxis, and when should it start?",escalation,ERAS_Society,1
+30,Y,Y,,We've got a 35-weeker with severe pre-eclampsia — do we need to deliver her now or can we hold off?,timing,WHO,29
+31,Y,N,,"If we bring a peer support worker in to help a patient transition home, what training and supervision should they have in place before they start?",general,RNAO,76
+32,Y,Y,,"We've got a septic mum at 30 weeks who may need delivering tonight — who makes the call on timing and mode of birth, and what do I need to have ready for the baby and for monitoring in labour?",escalation,RCOG,14
+33,Y,Y,,"My hypertensive pre-op patient says she has a glass of wine most nights — what daily and weekly alcohol limit should I be telling her, and how much wine counts as one drink?",dose,RNAO,50
+34,Y,Y,,A family member keeps using her phone at the bedside in pre-op and then touching the patient — how often should phones be disinfected and what should I tell her?,technique,OpenRN,
+35,Y,N,,I'm precepting a nursing student in the OR this week — what am I actually responsible for versus what the school covers?,general,RNAO,115
+36,Y,Y,,"If our patient's postpartum bleeding isn't settling with IV oxytocin, what's the next drug and dose we should be pulling up?",escalation,WHO,28
+37,Y,Y,,"If the anaesthetist grades our patient's airway as a Mallampati 3 before induction, what do we need to have in place before they start?",threshold,WHO,10
+38,Y,Y,,"For a pregnant patient with nausea and vomiting, is ginger actually any better than vitamin B6 by about day 3 of treatment, or can I tell her either one is fine?",general,WHO,93
+39,Y,Y,,My post-op patient is getting confused and agitated in PACU — what should I be doing at the bedside before I reach for anything sedating?,technique,OpenRN,1408
+40,Y,N,,"Our catheter policy lists some items as Category I and others as Category II — do I have to follow the Category II ones exactly, or is there room to individualize for my patient?",general,CDC,32
+41,N,N,,Our unit does D&Cs in a small procedure room down the hall — should that room be counted as an operating room when we report our OR numbers?,threshold,WHO,92
+42,Y,Y,,"For our open abdominal hysterectomy patients, what proportion should actually end up needing a PCA pump, and what should we be giving instead?",threshold,ERAS_Society,9
+43,Y,Y,,"When I catch a prescribing error before it gets to my patient, is that actually making much difference — what proportion of prescribing errors reach patients anyway?",threshold,WHO,242
+44,Y,Y,,"When I'm handing off a complex post-op patient going from our unit to a long-term care home, is a written discharge summary enough or do I need to actually speak with someone there — and who should that be?",technique,RNAO,54
+45,Y,Y,,My patient on prophylactic LMWH is booked for an elective section tomorrow morning — when does she get her last dose and how long do we have to wait before anaesthetics can do her spinal?,timing,RCOG,20
+46,Y,Y,,"One of my emergency medical admissions came in overnight — how quickly does she need to be seen by a consultant, and will she still be reviewed over the bank holiday weekend?",timing,NICE,8
+47,Y,Y,,"My post-op day 1 C-section patient has suspected sepsis but only meets one moderate to high risk criterion — how quickly does she need to be seen, and when do I need to escalate to someone senior?",timing,NICE,23
+48,Y,Y,,"For a pregnant patient starting treatment-dose enoxaparin for a VTE, which weight do I use to calculate the dose, and is it once or twice daily?",dose,RCOG,12
+49,N,N,,"Per una paziente non diabetica in post-operatorio con glicemia alta, quale valore target dovrei tenere e fin dove posso scendere senza rischi?",threshold,WHO,121
+50,Y,Y,,"For our gyn-onc patients with a thoracic epidural, how long can we expect it to actually control pain and cut opioid use, and what do we do if her blood pressure drops?",timing,ERAS_Society,5
+51,Y,Y,,"For my pre-op patient who's frail and end-of-life with a high chance of deteriorating, do I need to get advance care planning started now while she's on the ward, or is that something community services sort out after discharge?",escalation,NICE,6
+52,Y,Y,,"My patient going for a long abdominal case has Graves' disease — is povidone-iodine prep OK for her, or should I pull a different antiseptic?",escalation,WHO,57
+53,Y,Y,,"For a C-section, how quickly after the baby is out do I need to get the uterotonic in, and does giving it mean we can't delay cord clamping?",timing,WHO,26
+54,Y,Y,,"What haemoglobin levels in pregnancy should prompt investigation and possible iron treatment, and when should we switch from oral to IV iron?",threshold,RCOG,10
+55,Y,Y,,"For a patient having an elective knee replacement, what dose of aspirin do we use for VTE prophylaxis and how many days does it run for?",dose,NICE,22
+56,Y,Y,,My post-op hysterectomy patient still has her Foley in from surgery yesterday — how soon should it come out if there's no ongoing indication?,timing,CDC,37
+57,Y,N,,"When should we be introducing patient safety teaching to the nursing students who rotate through our unit — is it better to wait until they're in their later years and actually handling patients, or start it earlier?",timing,WHO,42
+58,Y,Y,,"When I'm putting ear drops in an adult in PACU, which way do I pull the pinna and how long do they need to stay lying on that side before I do the other ear?",technique,OpenRN,922
+59,Y,Y,,My post-op hysterectomy patient just got transferred to ICU — how often do I need to recheck her VTE and bleeding risk while she's there?,timing,NICE,17
+60,Y,N,,"When I'm writing a problem-focused nursing diagnosis for my post-op patient, what has to be documented before I can call it accurate — and how do I pick what to aim my interventions at?",technique,OpenRN,296

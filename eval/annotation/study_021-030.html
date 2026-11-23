@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold spans &mdash; batch study-021-030</title><style>
+:root { --bg:#fff; --fg:#1b1b1b; --line:#d8d8d8; --mut:#666;
+        --best:#0b6a2f; --bestbg:#e3f3e8; --ok:#1d4ed8; --okbg:#e6edfd; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line);
+         padding:10px 20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+header b { font-size:15px; }
+#prog { color:var(--mut); font-size:13px; }
+button { font:inherit; padding:6px 12px; border:1px solid var(--line);
+         background:#f6f6f6; border-radius:5px; cursor:pointer; }
+button.primary { background:var(--fg); color:#fff; border-color:var(--fg); }
+main { padding:20px; max-width:1000px; }
+.q { border:1px solid var(--line); border-radius:7px; margin-bottom:26px; padding:16px; }
+.q.done { border-color:var(--best); }
+.qh { font-size:17px; font-weight:600; margin:0 0 4px; }
+.meta { color:var(--mut); font-size:13px; margin-bottom:12px; }
+.verdict { margin:10px 0 14px; display:flex; gap:14px; flex-wrap:wrap; font-size:14px; }
+.verdict label { cursor:pointer; }
+h4 { margin:16px 0 2px; font-size:14px; text-transform:uppercase; letter-spacing:.04em; }
+h4 span { text-transform:none; letter-spacing:0; font-weight:400; color:var(--mut); }
+.opt { display:flex; gap:10px; padding:5px 8px; border-radius:5px; cursor:pointer;
+       border:1px solid transparent; align-items:baseline; }
+.opt:hover { background:#f4f4f4; }
+.opt .n { color:var(--mut); font-variant-numeric:tabular-nums; min-width:2.4em;
+          text-align:right; font-size:13px; }
+.opt .t { white-space:pre-wrap; }
+.opt[data-s="best"] { background:var(--bestbg); border-color:var(--best); }
+.opt[data-s="ok"]   { background:var(--okbg);  border-color:var(--ok); }
+.opt .m { min-width:1.3em; font-weight:700; }
+.opt[data-s="best"] .m::before { content:"*"; color:var(--best); }
+.opt[data-s="ok"] .m::before { content:"+"; color:var(--ok); }
+.empty { color:var(--mut); font-size:14px; padding:4px 8px; }
+.ref { margin-top:14px; font-size:14px; }
+.ref summary { cursor:pointer; color:var(--mut); }
+.ref .body { background:#fbf6e8; border-left:3px solid #d8b24a; padding:8px 10px;
+             margin-top:6px; }
+.note { margin-top:12px; }
+.note input { width:100%; font:inherit; padding:6px 8px; border:1px solid var(--line);
+              border-radius:5px; }
+.instructions { padding:0 20px 30px; max-width:1000px; }
+#out { width:100%; height:120px; font:12px/1.4 ui-monospace,monospace; display:none;
+       margin-top:14px; }
+</style></head>
+<body>
+<header>
+  <b>Gold span annotation &mdash; batch study-021-030</b>
+  <label style="font-size:13px">your initials
+    <input id="who" style="width:5em;font:inherit;padding:3px 5px" value=""></label>
+  <span id="prog"></span>
+  <span style="flex:1"></span>
+  <button onclick="show()">show JSON</button>
+  <button class="primary" onclick="download()">download answers</button>
+</header>
+<noscript><div style="margin:20px;padding:14px;border:2px solid #a11;background:#fdecec">
+This sheet needs JavaScript. If it cannot be enabled, use the spreadsheet
+fallback <code>gold_spans_all.csv</code> instead.</div></noscript>
+<main></main>
+<div class="instructions"><textarea id="out" readonly></textarea>
+<p style="color:#666;font-size:13px;max-width:62em">
+Click a candidate once to mark it <b style="color:#0b6a2f">*</b> best, twice to
+demote it to <b style="color:#1d4ed8">+</b> also acceptable, three times to clear it.
+Mark every candidate that would be a correct thing to show a nurse, not only the
+one you like most. Work is saved in this browser as you go; press
+<b>download answers</b> when you finish and send the file back.</p></div>
+<script>
+const DATA = [{"qid": "q157", "question": "My post-op patient is septic and her chart says 'penicillin allergy' \u2014 how do I know if that rules out cephalosporins or carbapenems, and what can we give instead?", "question_type": "escalation", "reference": "Take a careful allergy history first: nausea/vomiting (e.g. vomiting with co-amoxiclav) is an intolerance, not a true allergy, and shouldn't unnecessarily preclude beta-lactams. A genuine allergy means severe rash or anaphylaxis. If she had only a mild rash with penicillin, there is about a 1%-3% chance of cross-reaction with cephalosporins and carbapenems (so they may still be used). If she had anaphylaxis with penicillin, avoid all cephalosporins and carbapenems, and discuss urgently with an infection specialist \u2014 erythromycin, clindamycin or vancomycin may be appropriate alternatives.", "chunk_id": "0870a91a7cc1:0027", "source": "GTG64 - Identification and Management of Maternal Sepsis (2024, tier 1, p.7)", "fields": {"action": [{"i": 0, "text": "For more information on SARS-CoV-2", "start": 0, "end": 34}, {"i": 1, "text": "see the RCOG guidance Coronavirus (COVID-19) Infection in", "start": 35, "end": 92}, {"i": 2, "text": "Classic symptoms/features", "start": 117, "end": 142}, {"i": 3, "text": "Microbiological considerations", "start": 143, "end": 173}, {"i": 4, "text": "History of infection with", "start": 174, "end": 199}, {"i": 5, "text": "multi-resistant organisms", "start": 200, "end": 225}, {"i": 6, "text": "Gram negatives, MethicillinResistant Staphylococcus", "start": 248, "end": 299}, {"i": 7, "text": "Aureus (MRSA), Vancomycin", "start": 300, "end": 325}, {"i": 8, "text": "Resistant Enterococci (VRE)", "start": 326, "end": 353}, {"i": 9, "text": "Infection control precautions (e.g. side room)", "start": 354, "end": 400}, {"i": 10, "text": "Limits empirical antimicrobial choice", "start": 401, "end": 438}, {"i": 11, "text": "discuss urgently with infection specialist", "start": 439, "end": 481}, {"i": 12, "text": "Haemorrhagic rash, purpura", "start": 482, "end": 508}, {"i": 13, "text": "Meningococcal, pneumococcal", "start": 509, "end": 536}, {"i": 14, "text": "or GAS sepsis most likely", "start": 537, "end": 562}, {"i": 15, "text": "If recent foreign travel (or", "start": 563, "end": 591}, {"i": 16, "text": "contacts recently returned from", "start": 592, "end": 623}, {"i": 17, "text": "abroad) must consider possibility", "start": 624, "end": 657}, {"i": 18, "text": "of viral haemorrhagic fever", "start": 658, "end": 685}, {"i": 19, "text": "(Lassa Ebola etc.) [75\u201378]", "start": 686, "end": 712}, {"i": 20, "text": "Discuss urgently with infection specialist", "start": 713, "end": 755}, {"i": 21, "text": "Stringent infection control precautions", "start": 756, "end": 795}, {"i": 22, "text": "Obtain careful allergy history", "start": 806, "end": 836}, {"i": 23, "text": "intolerance not allergy )", "start": 856, "end": 881}, {"i": 24, "text": "Ensure genuine allergy history (severe rash or", "start": 882, "end": 928}, {"i": 25, "text": "anaphylaxis) otherwise could unnecessarily", "start": 929, "end": 971}, {"i": 26, "text": "preclude beta-lactams with a weak history of", "start": 972, "end": 1016}, {"i": 27, "text": "\u2018possible\u2019 allergy (e.g. vomiting with co-amoxiclav)", "start": 1017, "end": 1069}, {"i": 28, "text": "Mild rash with penicillins", "start": 1070, "end": 1096}, {"i": 29, "text": "1%\u20133% chance of cross reaction with", "start": 1097, "end": 1132}, {"i": 30, "text": "cephalosporins, carbapenems", "start": 1133, "end": 1160}, {"i": 31, "text": "Anaphylaxis with penicillins", "start": 1161, "end": 1189}, {"i": 32, "text": "Avoid all cephalosporins and carbapenems", "start": 1190, "end": 1230}, {"i": 33, "text": "Discuss with infection specialist but", "start": 1231, "end": 1268}, {"i": 34, "text": "erythromycin, clindamycin or vancomycin", "start": 1269, "end": 1308}, {"i": 35, "text": "may be appropriate alternatives", "start": 1309, "end": 1340}, {"i": 36, "text": "CPE, Carbapenemase-producing Enterobacteriaceae;", "start": 1356, "end": 1404}, {"i": 37, "text": "ESBL, Extended spectrum Beta-Lactamase;", "start": 1405, "end": 1444}, {"i": 38, "text": "GAS, Group A beta haemolytic streptococci;", "start": 1445, "end": 1487}, {"i": 39, "text": "HIV, human immunodeficiency virus;", "start": 1536, "end": 1570}, {"i": 40, "text": "MRSA, methicillin-Resistant Staphylococcus Aureus;", "start": 1571, "end": 1621}, {"i": 41, "text": "VRE, Vancomycin Resistant Enterococci.", "start": 1656, "end": 1694}, {"i": 42, "text": "TABLE 7\u202f\u202f\u202f\u202f|\u202f\u202f\u202f\u202f(Continued)", "start": 1696, "end": 1723}, {"i": 43, "text": "In suspected HSV cutaneous infection, or vulval/sacral pain/", "start": 1728, "end": 1788}, {"i": 44, "text": "parasthesia with no visible lesion, send a viral swab for PCR either from the lesion, or as a vaginal sample.", "start": 1789, "end": 1898}, {"i": 45, "text": "and hepatitis is suspected, send an EDTA (Ethylenediamine", "start": 1920, "end": 1977}, {"i": 46, "text": "tetra acetic acid) blood sample for HSV viral PCR.", "start": 1978, "end": 2028}], "quantity": []}}, {"qid": "q299", "question": "For our gyn-onc patients, who should actually be in on the pre-op counseling session, and does having the patient's family member there make any difference?", "question_type": "technique", "reference": "Pre-op counseling should be delivered in both written and oral form, and the patient along with a relative or care provider should meet with all members of the team \u2014 surgeon, anesthetist, dietician, and nurse. Patients with gynecologic cancer prefer to be well informed, and nurse support at the time of diagnosis has been shown to reduce stress levels for up to 6 months. Dedicated pre-operative counseling is recommended routinely for all patients (evidence level: moderate; recommendation grade: strong), as studies show benefit with no evidence of harm.", "chunk_id": "4a934c41413a:0004", "source": "Guidelines for perioperative care in gynecologic/oncology: Enhanced Recovery After Surgery (ERAS) Society recommendations \u2014 2019 update (2019, tier 1, p.3)", "fields": {"action": [{"i": 0, "text": "information in both written and oral form.", "start": 4, "end": 46}, {"i": 1, "text": "The patient and a relative or care provider should meet with all members of the team", "start": 47, "end": 131}, {"i": 2, "text": "including the surgeon, anesthetist, dietician, and nurse.", "start": 133, "end": 190}, {"i": 3, "text": "have shown that patients with gynecologic cancer prefer to be well", "start": 200, "end": 266}, {"i": 4, "text": "informed, and support from a nurse at the time of diagnosis can", "start": 268, "end": 331}, {"i": 5, "text": "reduce stress levels for up to 6 months.13 14", "start": 333, "end": 378}, {"i": 6, "text": "Summary and Recommendation:", "start": 379, "end": 406}, {"i": 7, "text": "Interventions and endpoints in this field vary widely.", "start": 407, "end": 461}, {"i": 8, "text": "studies show that counseling provides beneficial effects with", "start": 477, "end": 538}, {"i": 9, "text": "It is recommended that patients should", "start": 561, "end": 599}, {"i": 10, "text": "routinely receive dedicated pre-operative counseling.", "start": 601, "end": 654}, {"i": 11, "text": "Recommendation grade: strong", "start": 680, "end": 708}], "quantity": [{"i": 0, "text": "6 months", "start": 364, "end": 372}]}}, {"qid": "q063", "question": "My post-C-section patient has suspected sepsis with high risk criteria and a lactate of 4.8 \u2014 how fast do I need to get fluids in, and do I need to call critical care?", "question_type": "escalation", "reference": "Yes to both. Because she meets high risk criteria and has a lactate over 4 mmol/litre (the same applies if systolic BP is 90 mmHg or less), give an IV fluid bolus without delay \u2014 within 1 hour of identifying that she meets any high risk criteria \u2014 following the standard IV fluid recommendations for suspected sepsis. At the same time, refer to a critical care specialist or team so they can review her management, including whether she needs central venous access and starting inotropes or vasopressors. The referral can be a formal referral or simply a discussion with an intensive care specialist or the intensive care outreach team.", "chunk_id": "7250d773b47a:0030", "source": "Suspected Sepsis in Pregnant or Recently Pregnant People: Recognition, Diagnosis and Early Management (2025, tier 1, p.20)", "fields": {"action": [{"i": 0, "text": "For people with suspected sepsis who are or have recently been pregnant, meet", "start": 25, "end": 102}, {"i": 1, "text": "any high risk criteria and have either lactate over 4\u00a0mmol/litre or systolic blood", "start": 103, "end": 185}, {"i": 2, "text": "pressure of 90\u00a0mmHg or less:", "start": 186, "end": 214}, {"i": 3, "text": "\u2022 give intravenous fluid bolus without delay (within 1\u00a0hour of identifying that", "start": 215, "end": 294}, {"i": 4, "text": "they meet any high risk criteria), in line with recommendations on intravenous", "start": 295, "end": 373}, {"i": 5, "text": "fluids for people with suspected sepsis and", "start": 374, "end": 417}, {"i": 6, "text": "\u2022 refer to a critical care specialist or team for them to review the management", "start": 418, "end": 497}, {"i": 7, "text": "of the person's condition, including their need for central venous access and", "start": 498, "end": 575}, {"i": 8, "text": "initiation of inotropes or vasopressors.", "start": 576, "end": 616}, {"i": 9, "text": "Suspected sepsis in pregnant or recently pregnant people: recognition, diagnosis and early", "start": 617, "end": 707}, {"i": 10, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 761, "end": 852}, {"i": 11, "text": "Referral may be a formal referral process or discussion with a specialist in", "start": 867, "end": 943}, {"i": 12, "text": "intensive care or intensive care outreach team. [2016]", "start": 944, "end": 998}, {"i": 13, "text": "any high risk criteria and have lactate between 2\u00a0and 4\u00a0mmol/litre, give", "start": 1083, "end": 1155}, {"i": 14, "text": "intravenous fluid bolus without delay (within 1\u00a0hour of identifying that they meet", "start": 1156, "end": 1238}, {"i": 15, "text": "any high risk criteria), in line with recommendations on intravenous fluids for", "start": 1239, "end": 1318}, {"i": 16, "text": "people with suspected sepsis. [2016]", "start": 1319, "end": 1355}, {"i": 17, "text": "any high risk criteria and have lactate below 2\u00a0mmol/litre, consider giving an", "start": 1440, "end": 1518}, {"i": 18, "text": "intravenous fluid bolus (in line with recommendations on intravenous fluids for", "start": 1519, "end": 1598}, {"i": 19, "text": "people with suspected sepsis). [2016, amended 2024]", "start": 1599, "end": 1650}], "quantity": [{"i": 0, "text": "90\u00a0mmHg", "start": 198, "end": 205}, {"i": 1, "text": "1\u00a0hour", "start": 268, "end": 274}]}}, {"qid": "q111", "question": "If we bring a peer support worker in to help a patient transition home, what training and supervision should they have in place before they start?", "question_type": "general", "reference": "Peer workers should have their own lived experience with mental illness and recovery. In one study, they also completed training focused on listening skills, cultural awareness, self-disclosure and confidentiality, and were supported by clinician supervision once every two weeks plus ongoing support from an experienced peer worker.", "chunk_id": "25af75b59210:0113", "source": "Transitions in Care and Services (Best Practice Guideline) (2023, tier 2, p.76)", "fields": {"action": [{"i": 0, "text": "\uf06e Peer support was provided in person in two studies (95,101).", "start": 17, "end": 79}, {"i": 1, "text": "\uf06e In one study, a mix of face-to-face contact and telephone contact was", "start": 80, "end": 151}, {"i": 2, "text": "BEST PRACTICE GUIDELINES \u2022 www.RNAO.ca", "start": 169, "end": 207}, {"i": 3, "text": "DETAILS FROM THE EVIDENCE", "start": 250, "end": 275}, {"i": 4, "text": "\uf06e The following types of support were provided by peer workers:", "start": 301, "end": 364}, {"i": 5, "text": "\uf0a8 Assessing needs prior to a transition (101).", "start": 365, "end": 411}, {"i": 6, "text": "\uf0a8 Linking persons with community-based supports and resources (101,102).", "start": 412, "end": 484}, {"i": 7, "text": "\uf0a8 Offering supportive listening and sharing coping strategies and skills (95).", "start": 485, "end": 563}, {"i": 8, "text": "\uf0a8 Helping persons complete a personal recovery workbook.", "start": 564, "end": 620}, {"i": 9, "text": "setting personal recovery goals, making plans to re-establish a support", "start": 635, "end": 706}, {"i": 10, "text": "network, identifying early warning signs, formulating an action plan to", "start": 707, "end": 778}, {"i": 11, "text": "avoid relapse and identifying strategies to promote well-being (95).", "start": 779, "end": 847}, {"i": 12, "text": "\uf0a8 Providing persons with a basket of needed/desired items (e.g., staple", "start": 848, "end": 919}, {"i": 13, "text": "supplies, coupons, comfort items and calendars) (101).", "start": 920, "end": 974}, {"i": 14, "text": "\uf0a8 Providing practical and emotional support (102).", "start": 975, "end": 1025}, {"i": 15, "text": "\uf06e All peer workers had their own lived experience with mental illness and", "start": 1041, "end": 1114}, {"i": 16, "text": "\uf06e In one study, peer workers received training focused on listening skills,", "start": 1138, "end": 1213}, {"i": 17, "text": "cultural awareness, self-disclosure and confidentiality (95).", "start": 1214, "end": 1275}, {"i": 18, "text": "supervision by clinicians once every two weeks, and support from an", "start": 1295, "end": 1362}, {"i": 19, "text": "RESOURCES FOR PERSONS AND THEIR SUPPORT NETWORK", "start": 1430, "end": 1477}, {"i": 20, "text": "Centre for Suicide Prevention.", "start": 1492, "end": 1522}, {"i": 21, "text": "[Internet]. [place unknown]:", "start": 1523, "end": 1551}, {"i": 22, "text": "Suicide Prevention; [date known].", "start": 1563, "end": 1596}, {"i": 23, "text": "from: https://www.buddyup.ca/", "start": 1607, "end": 1636}, {"i": 24, "text": "\uf06e A suicide prevention communications campaign", "start": 1637, "end": 1683}, {"i": 25, "text": "\uf06e Includes tools and resources to provide authentic", "start": 1700, "end": 1751}, {"i": 26, "text": "conversations among men and their peers.", "start": 1752, "end": 1792}, {"i": 27, "text": "Connect with a community of support.", "start": 1793, "end": 1829}, {"i": 28, "text": "Wellness Together Canada [Internet].", "start": 1834, "end": 1870}, {"i": 29, "text": "Available from: https://www.", "start": 1920, "end": 1948}, {"i": 30, "text": "wellnesstogether.ca/en-CA/service/connect", "start": 1949, "end": 1990}, {"i": 31, "text": "\uf06e Access to numerous communities of peer support", "start": 1991, "end": 2039}, {"i": 32, "text": "for mental health and substance use.", "start": 2040, "end": 2076}], "quantity": []}}, {"qid": "q295", "question": "Can I apply these SSI prevention recommendations to our pediatric gynae cases, or are they adult-only?", "question_type": "general", "reference": "Not all of them. Some of the recommendations are either not applicable to pediatric patients or their effectiveness in children is unproven because the supporting evidence is lacking. So for pediatric cases you can't assume the recommendations carry over \u2014 each one has to be checked for whether it was developed with pediatric applicability in mind.", "chunk_id": "2678907578d4:0043", "source": "WHO Global Guidelines for Prevention of Surgical Site Infection (2016, tier 1, p.26)", "fields": {"action": [{"i": 0, "text": "ci sono raccomandazioni che sono o inapplicabili in", "start": 16, "end": 67}, {"i": 1, "text": "pediatria o di efficacia non provata per mancanza di", "start": 69, "end": 121}, {"i": 2, "text": "Il segretariato dell'OMS ha redatto la bozza dei", "start": 132, "end": 180}, {"i": 3, "text": "raccomandazioni e l'ha distribuita ai membri del GDG", "start": 222, "end": 274}, {"i": 4, "text": "per l'approvazione finale e/o i commenti.", "start": 275, "end": 316}, {"i": 5, "text": "modifiche suggerite sono state inserite in una", "start": 327, "end": 373}, {"i": 6, "text": "Se i commenti del GDG implicavano", "start": 389, "end": 422}, {"i": 7, "text": "modifiche sostanziali alla raccomandazione, tutti i", "start": 423, "end": 474}, {"i": 8, "text": "membri partecipavano a discussioni online o", "start": 475, "end": 518}, {"i": 9, "text": "telefoniche per raggiungere un accordo finale sul", "start": 519, "end": 568}, {"i": 10, "text": "E' stata quindi completata la seconda bozza,", "start": 576, "end": 620}, {"i": 11, "text": "consegnata al Gruppo Esterno di Revisione tra Pari", "start": 621, "end": 671}, {"i": 12, "text": "ulteriormente rivisto alla luce dei loro commenti.", "start": 714, "end": 764}, {"i": 13, "text": "Nella maggior parte dei casi non si \u00e8 tenuto conto", "start": 765, "end": 815}, {"i": 14, "text": "delle modifiche suggerite alla formulazione delle", "start": 816, "end": 865}, {"i": 15, "text": "raccomandazioni oppure allo scopo del documento", "start": 866, "end": 913}, {"i": 16, "text": "ma per tre raccomandazioni specifiche, la maggior", "start": 914, "end": 963}, {"i": 17, "text": "parte dei revisori ha suggerito cambiamenti simili e", "start": 964, "end": 1016}, {"i": 18, "text": "questo \u00e8 stato considerato significativo dal direttivo.", "start": 1017, "end": 1072}, {"i": 19, "text": "In questi casi, sotto la guida del metodologo, sono", "start": 1073, "end": 1124}, {"i": 20, "text": "state attivate ulteriori teleconferenze con il GDG per", "start": 1125, "end": 1179}, {"i": 21, "text": "raggiungere il consenso su piccole modifiche del", "start": 1180, "end": 1228}, {"i": 22, "text": "testo che soddisfacessero le osservazioni dei revisori.", "start": 1229, "end": 1284}, {"i": 23, "text": "Il metodologo ha assicurato che il modello GRADE", "start": 1285, "end": 1333}, {"i": 24, "text": "fosse applicato appropriatamente durante tutto il", "start": 1334, "end": 1383}, {"i": 25, "text": "processo di sviluppo delle linee guida.", "start": 1384, "end": 1423}, {"i": 26, "text": "implicato la revisione delle domande PICO e dei", "start": 1434, "end": 1481}, {"i": 27, "text": "metanalisi, compresa la partecipazione alla ri-analisi", "start": 1529, "end": 1583}, {"i": 28, "text": "quando opportuno, assicurando cos\u00ec la loro", "start": 1584, "end": 1626}, {"i": 29, "text": "esaminato tutti i profili delle evidenze e delle", "start": 1673, "end": 1721}, {"i": 30, "text": "decisioni prima e dopo le riunioni del GDG e fornito", "start": 1722, "end": 1774}, {"i": 31, "text": "indicazioni per formulare il testo e la forza delle", "start": 1775, "end": 1826}], "quantity": []}}, {"qid": "q026", "question": "How long does a trip have to be before we count travel as a VTE risk factor in a pregnant patient, and does it only count if she flew?", "question_type": "threshold", "reference": "Any long-distance travel of more than four hours counts as a VTE risk factor in pregnancy \u2014 it is not restricted to air travel. Although NICE antenatal care guidance and the RCOG Scientific Impact Paper on air travel specifically identify long-haul flights as increasing VTE risk, this guidance extends the risk factor to all travel over four hours regardless of mode. Note that pregnancy-specific data are limited, so this is extrapolated from studies in non-pregnant patients.", "chunk_id": "144cabf03653:0024", "source": "GTG37a - Reducing Risk of Thrombosis and Embolism during Pregnancy (2015, tier 1, p.11)", "fields": {"action": [{"i": 0, "text": "4.1.4 \t Immobility and long-distance travel", "start": 0, "end": 43}, {"i": 1, "text": "For immobility and long-distance travel, data for pregnancy-related risk are limited and extrapolation", "start": 44, "end": 146}, {"i": 2, "text": "from studies in nonpregnant patients is necessary.34", "start": 147, "end": 199}, {"i": 3, "text": "The NICE guideline on antenatal care42 and the RCOG Scientific Impact Paper on air travel in", "start": 200, "end": 292}, {"i": 4, "text": "pregnancy43,44 state that long-haul air travel increases the risk of VTE; this guideline considers", "start": 293, "end": 391}, {"i": 5, "text": "all long-distance (more than four hours) travel (not exclusively by air) to be a risk factor for", "start": 392, "end": 488}, {"i": 6, "text": "Some studies have demonstrated interaction between the effects of the risk factors listed", "start": 507, "end": 596}, {"i": 7, "text": "in Table 1 and Appendix II.", "start": 597, "end": 624}, {"i": 8, "text": "For example, in a Norwegian case\u2013control study,12 BMI greater", "start": 625, "end": 686}, {"i": 9, "text": "than 25 and antepartum immobilisation (defined as strict bed rest 1 week or more prior to", "start": 687, "end": 776}, {"i": 10, "text": "delivery) had a multiplicative effect on the risk for antepartum (aOR 62.3, 95% CI 11.5\u2013337.7)", "start": 875, "end": 969}, {"i": 11, "text": "and postpartum VTE (aOR 40.1, 95% CI 8.0\u2013201.5).", "start": 970, "end": 1018}], "quantity": [{"i": 0, "text": "1 week", "start": 753, "end": 759}]}}, {"qid": "q081", "question": "For our gyn-onc patients with a thoracic epidural, how long can we expect it to actually control pain and cut opioid use, and what do we do if her blood pressure drops?", "question_type": "timing", "reference": "Thoracic epidural analgesia blunts the surgical stress response and reduces pain and opioid consumption for up to 72 hours. It should be run with an opioid such as fentanyl added to the local anesthetic. If she becomes hypotensive postoperatively, that may need treatment with vasopressors \u2014 note that thoracic (versus lumbar) placement tends to cause less hypotension and less motor block. Keep in mind that in short-stay cases (1\u20132 days) an epidural can work against ERAS goals like early mobilization and catheter removal, and in gynecologic cancer surgery it has been associated with longer hospital stay and more complications.", "chunk_id": "82b0c8949b89:0022", "source": "Guidelines for postoperative care in gynecologic/oncology surgery: Enhanced Recovery After Surgery (ERAS) Society recommendations - Part II (2016, tier 1, p.5)", "fields": {"action": [{"i": 0, "text": "TEA is effective in attenuating the surgical stress re-", "start": 78, "end": 133}, {"i": 1, "text": "sponse and reducing pain and opioid consumption for up to 72 h [59,", "start": 134, "end": 201}, {"i": 2, "text": "stay of 1\u20132 days, in which case TEA may hinder achievement of other", "start": 203, "end": 270}, {"i": 3, "text": "ERAS goals such as mobilization [65] and removal of urinary catheter,", "start": 271, "end": 340}, {"i": 4, "text": "and TEA has been shown to increase hospital stay and complication", "start": 342, "end": 407}, {"i": 5, "text": "rates in gynaecologic cancer surgery [66].", "start": 408, "end": 450}, {"i": 6, "text": "tion, and should be combined with an opioid such as fentanyl.", "start": 452, "end": 513}, {"i": 7, "text": "operative hypotension may require treatment with vasopressors.", "start": 520, "end": 582}, {"i": 8, "text": "epidurals are likely to cause less hypotension [67] and motor block [68]", "start": 584, "end": 656}, {"i": 9, "text": "than those in the lumbar segments.", "start": 657, "end": 691}, {"i": 10, "text": "Spinal anesthesia without long-acting opioids does not improve", "start": 699, "end": 761}, {"i": 11, "text": "post-operative pain when compared to general anesthesia [76].", "start": 762, "end": 823}, {"i": 12, "text": "duced to avoid intra-operative hypotension and intraoperative", "start": 825, "end": 886}, {"i": 13, "text": "narcotics should be minimized to reduce side effects.", "start": 887, "end": 940}, {"i": 14, "text": "This technique has been shown to be ef\ufb01cacious for", "start": 954, "end": 1004}, {"i": 15, "text": "morphine requirement, however may not reduce morphine-related", "start": 1010, "end": 1071}, {"i": 16, "text": "Wound in\ufb01ltration with local anesthetic is safe and easy to perform,", "start": 1091, "end": 1159}, {"i": 17, "text": "modest and short-lived [83].", "start": 1161, "end": 1189}, {"i": 18, "text": "Prolongation of this analgesic effect may", "start": 1190, "end": 1231}, {"i": 19, "text": "be achieved through insertion of sub-cutaneous wound catheters [84].", "start": 1232, "end": 1300}], "quantity": [{"i": 0, "text": "72 h", "start": 192, "end": 196}, {"i": 1, "text": "1\u20132 days", "start": 211, "end": 219}]}}, {"qid": "q000", "question": "For a vaginal hysterectomy, what should I use for the vaginal prep and how does that differ from the abdominal skin prep?", "question_type": "technique", "reference": "For vaginal surgery, perform vaginal cleansing with either 4% aqueous chlorhexidine gluconate or povidone-iodine (strong recommendation, high-quality evidence). For abdominal surgical site skin preparation, use an alcohol-based agent unless contraindicated \u2014 chlorhexidine-alcohol is an appropriate choice (strong recommendation, high-quality evidence).", "chunk_id": "4edd937b5877:0024", "source": "Joint report on terminology and clinical consensus: Enhanced Recovery After Urogynecologic Surgery (AUGS-IUGA) (2022, tier 2, p.7)", "fields": {"action": [{"i": 0, "text": "Multimodal medication regimens are a staple of ERAS protocols.", "start": 23, "end": 85}, {"i": 1, "text": "Multimodal analgesia works strategically to combat", "start": 86, "end": 136}, {"i": 2, "text": "pain from different physiological pathways with the goal", "start": 137, "end": 193}, {"i": 3, "text": "of optimizing pain control and minimizing unwanted side", "start": 194, "end": 249}, {"i": 4, "text": "effects from narcotic pain medications.", "start": 250, "end": 289}, {"i": 5, "text": "throughout the continuum of perioperative care, beginning", "start": 307, "end": 364}, {"i": 6, "text": "in the preoperative area prior to surgery, continuing intraoperatively through coordination with anesthesia, and carried", "start": 365, "end": 485}, {"i": 7, "text": "on in the postoperative period.", "start": 486, "end": 517}, {"i": 8, "text": "While the body of literature", "start": 518, "end": 546}, {"i": 9, "text": "specific to multimodal protocols in urogynecology is growing, most of the information has originated from other specialties or general gynecology [52\u201355].", "start": 547, "end": 701}, {"i": 10, "text": "Table\u202f1\u2002 \u2009Recommendations for surgical site infection prophylaxis with strength and quality of evidence", "start": 702, "end": 805}, {"i": 11, "text": "Perform preoperative abdominal surgical site skin preparation with an alcohol-based agent unless contraindicated", "start": 847, "end": 959}, {"i": 12, "text": "Chlorhexidine-alcohol is an appropriate choice", "start": 960, "end": 1006}, {"i": 13, "text": "Vaginal cleansing with either 4% aqueous chlorhexidine gluconate or povidone-iodine should be performed for", "start": 1019, "end": 1126}, {"i": 14, "text": "Use first-generation cephalosporin (for example, cefazolin) or amoxicillin-clavulanic acid within 60 min of skin", "start": 1155, "end": 1267}, {"i": 15, "text": "Shower or bathe the night before surgery with chlorhexidine gluconate or soap", "start": 1304, "end": 1381}, {"i": 16, "text": "Avoid hair removal (if not essential for surgical site access or draping) and, if hair removal is indicated, use hair", "start": 1398, "end": 1515}, {"i": 17, "text": "clippers instead of a razor to remove hair", "start": 1516, "end": 1558}, {"i": 18, "text": "Maintenance of normothermia should be incorporated into perioperative care to avoid risk of infection", "start": 1568, "end": 1669}, {"i": 19, "text": "Systematic use of drains and nasogastric tubes should be avoided after abdominal surgery", "start": 1682, "end": 1770}, {"i": 20, "text": "Perioperative glucose levels should be maintained under 200 mg/dL in diabetics and non-diabetics.", "start": 1783, "end": 1880}, {"i": 21, "text": "optimize perioperative glycemic control should be included in surgical site infection reduction bundles", "start": 1893, "end": 1996}], "quantity": [{"i": 0, "text": "60 min", "start": 1253, "end": 1259}, {"i": 1, "text": "200 mg", "start": 1839, "end": 1845}]}}, {"qid": "q068", "question": "When I'm handing off a complex post-op patient going from our unit to a long-term care home, is a written discharge summary enough or do I need to actually speak with someone there \u2014 and who should that be?", "question_type": "technique", "reference": "A written summary alone isn't ideal for complex patients. Providers in both the sending and receiving settings should communicate directly by phone or videoconference to review the plan of care and confirm the person's care needs are understood \u2014 this is especially important for persons with complex needs. For a hospital-to-LTC transition, the most responsible provider in the hospital (physician or nurse practitioner) should speak directly with the physician or nurse practitioner at the LTC home. It's also expected that one designated health or social service provider leads the team and coordinates care \u2014 ideally someone based in the organization where the person will have the longest involvement (e.g., home care or LTC) \u2014 and that all providers know who is on the interprofessional team and what their roles and responsibilities are, so there is a clear communication path. This applies to any care setting where a transition occurs, not just hospital-to-home or hospital-to-rehabilitation.", "chunk_id": "25af75b59210:0081", "source": "Transitions in Care and Services (Best Practice Guideline) (2023, tier 2, p.54)", "fields": {"action": [{"i": 0, "text": "However, the certainty in the evidence is very low; therefore, the expert", "start": 0, "end": 73}, {"i": 1, "text": "panel determined the strength of the recommendation to be conditional.", "start": 74, "end": 144}, {"i": 2, "text": "Implementation Tips from the Expert Panel", "start": 166, "end": 207}, {"i": 3, "text": "\uf06e Although the evidence focused on a formal interprofessional cross-sectoral approach to support transitions from", "start": 208, "end": 321}, {"i": 4, "text": "hospital to home or hospital to rehabilitation, the expert panel emphasized that this recommendation should be", "start": 322, "end": 432}, {"i": 5, "text": "inclusive to all settings where persons and their support network encounter a transition in care.", "start": 433, "end": 530}, {"i": 6, "text": "\uf06e Health and social service organizations are to ensure that providers are aware of who is part of the", "start": 531, "end": 633}, {"i": 7, "text": "interprofessional team and their respective roles and responsibilities.", "start": 634, "end": 705}, {"i": 8, "text": "This will help to ensure a clear path of", "start": 707, "end": 747}, {"i": 9, "text": "communication among all members involved.", "start": 748, "end": 789}, {"i": 10, "text": "\uf06e It is beneficial to have one designated health or social service provider lead the team and coordinate care.", "start": 790, "end": 900}, {"i": 11, "text": "collaboration has the potential to promote effective communication and information transfer, reduce duplication", "start": 907, "end": 1018}, {"i": 12, "text": "of services, and ultimately ensure a smooth transition for persons and their support network.", "start": 1019, "end": 1112}, {"i": 13, "text": "designated provider to operate within the organization where the person will have the longest involvement (e.g.,", "start": 1136, "end": 1248}, {"i": 14, "text": "\uf06e It is beneficial for providers in both settings (i.e., the setting from which the person is transitioning and the new", "start": 1268, "end": 1387}, {"i": 15, "text": "setting) to directly communicate by phone or videoconference to discuss the plan of care and ensure the person\u2019s", "start": 1388, "end": 1500}, {"i": 16, "text": "care needs are understood.", "start": 1501, "end": 1527}, {"i": 17, "text": "This is especially important for persons with complex needs.", "start": 1529, "end": 1589}, {"i": 18, "text": "persons are transitioning between the hospital and a LTC home, it is beneficial for the most responsible provider in", "start": 1609, "end": 1725}, {"i": 19, "text": "the hospital (i.e., a physician or nurse practitioner) to directly communicate with the physician or nurse", "start": 1726, "end": 1832}, {"i": 20, "text": "practitioner in the LTC home.", "start": 1833, "end": 1862}], "quantity": []}}, {"qid": "q085", "question": "My patient is day 3 post-op after a total abdominal hysterectomy and her wound has been opened to drain pus \u2014 can I clean it with tap water or do I still need sterile saline?", "question_type": "timing", "reference": "Tap water is appropriate. Sterile saline is only needed for wound cleansing up to 48 hours after surgery; after 48 hours, tap water can be used for cleansing if the surgical wound has separated or has been surgically opened to drain pus. Patients can also be advised they may shower safely from 48 hours after surgery.", "chunk_id": "a09c53c2bd03:0026", "source": "Surgical Site Infections Prevention and Treatment (NG125) (2019, tier 1, p.13)", "fields": {"action": [{"i": 0, "text": "Use sterile saline for wound cleansing up to 48\u00a0hours after surgery. [2008]", "start": 30, "end": 105}, {"i": 1, "text": "Advise patients that they may shower safely 48\u00a0hours after surgery. [2008]", "start": 112, "end": 186}, {"i": 2, "text": "Use tap water for wound cleansing after 48\u00a0hours if the surgical wound has", "start": 193, "end": 267}, {"i": 3, "text": "separated or has been surgically opened to drain pus. [2008]", "start": 268, "end": 328}, {"i": 4, "text": "Surgical site infections: prevention and treatment (NG125)", "start": 329, "end": 387}, {"i": 5, "text": "Subject to Notice of rights (https://www.nice.org.uk/terms-andconditions#notice-of-rights).", "start": 422, "end": 513}], "quantity": [{"i": 0, "text": "48\u00a0hours", "start": 75, "end": 83}]}}];
+const BATCH = "study-021-030";
+
+// Corpus text is injected as innerHTML, and 10 of 1089 candidates in the first
+// 50 questions contain < > or &. In this corpus those are clinical content
+// ("BMI > 35", "glucose < 200 mg/dL"), so dropping them silently would hand the
+// annotator a different option than the one the selector sees.
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+const KEY = "goldspans:" + BATCH;
+let A = {};
+try { A = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { A = {}; }
+
+function rec(qid, field) {
+  A[qid] = A[qid] || { verdict: {}, marks: {}, note: "", revealed: false,
+                       revealed_before_choice: {} };
+  A[qid].marks[field] = A[qid].marks[field] || { best: null, ok: [] };
+  return A[qid];
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {}
+  const total = DATA.length * 2;
+  let done = 0;
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      const m = (a.marks || {})[f] || {};
+      if (v === "absent" || v === "unclear" || m.best !== null && m.best !== undefined) done++;
+    }
+  }
+  document.getElementById("prog").textContent = done + " / " + total + " decisions recorded";
+}
+
+function cycle(qid, field, i, el) {
+  const a = rec(qid, field), m = a.marks[field];
+  if (!a.revealed) a.revealed_before_choice[field] = false;
+  else if (a.revealed_before_choice[field] === undefined) a.revealed_before_choice[field] = true;
+  const cur = el.dataset.s || "";
+  if (cur === "") {
+    if (m.best !== null && m.best !== undefined) {
+      const p = document.querySelector('[data-q="'+qid+'"][data-f="'+field+'"][data-i="'+m.best+'"]');
+      if (p) { p.dataset.s = "ok"; if (!m.ok.includes(m.best)) m.ok.push(m.best); }
+    }
+    m.best = i; el.dataset.s = "best"; m.ok = m.ok.filter(x => x !== i);
+  } else if (cur === "best") {
+    m.best = null; el.dataset.s = "ok"; if (!m.ok.includes(i)) m.ok.push(i);
+  } else {
+    el.dataset.s = ""; m.ok = m.ok.filter(x => x !== i);
+  }
+  a.verdict[field] = (m.best !== null || m.ok.length) ? "present" : (a.verdict[field] || "");
+  const box = document.querySelector('[data-qbox="'+qid+'"]');
+  box.querySelectorAll('input[name="v-'+qid+'-'+field+'"]').forEach(r => {
+    r.checked = (r.value === a.verdict[field]);
+  });
+  save();
+}
+
+function verdict(qid, field, value) {
+  const a = rec(qid, field);
+  a.verdict[field] = value;
+  if (value !== "present") {
+    a.marks[field] = { best: null, ok: [] };
+    document.querySelectorAll('[data-q="'+qid+'"][data-f="'+field+'"]')
+      .forEach(el => el.dataset.s = "");
+    if (a.revealed_before_choice[field] === undefined)
+      a.revealed_before_choice[field] = a.revealed;
+  }
+  save();
+}
+
+function render() {
+  const main = document.querySelector("main");
+  main.innerHTML = DATA.map(it => {
+    const blocks = ["action", "quantity"].map(f => {
+      const opts = it.fields[f];
+      const desc = f === "action"
+        ? "the sentence that states what the nurse should do"
+        : "the number and unit the question asks for";
+      const rows = opts.length ? opts.map(o =>
+        '<div class="opt" data-q="'+it.qid+'" data-f="'+f+'" data-i="'+o.i+'">' +
+        '<span class="n">['+o.i+']</span><span class="m"></span>' +
+        '<span class="t">'+esc(o.text)+'</span></div>').join("")
+        : '<div class="empty">no candidate of this kind in the chunk &mdash; nothing to choose</div>';
+      return '<h4>'+f+' <span>&mdash; '+desc+'</span></h4>' +
+        '<div class="verdict">' +
+        ['present|the chunk states it (mark it below)',
+         'absent|not stated in this chunk',
+         'unclear|cannot tell'].map(x => {
+          const [v, lab] = x.split("|");
+          return '<label><input type="radio" name="v-'+it.qid+'-'+f+'" value="'+v+
+                 '" onchange="verdict(\''+it.qid+'\',\''+f+'\',\''+v+'\')"> '+lab+'</label>';
+        }).join("") + '</div>' + rows;
+    }).join("");
+    return '<section class="q" data-qbox="'+it.qid+'">' +
+      '<p class="qh">'+it.qid+'. '+esc(it.question)+'</p>' +
+      '<p class="meta">'+esc(it.source)+' &middot; chunk '+esc(it.chunk_id)+
+      ' &middot; '+esc(it.question_type)+'</p>' +
+      blocks +
+      '<details class="ref" ontoggle="if(this.open){rec(\''+it.qid+'\',\'action\').revealed=true;save();}">' +
+      '<summary>show the written reference answer (open this only AFTER choosing)</summary>' +
+      '<div class="body">'+esc(it.reference)+'</div></details>' +
+      '<div class="note"><input placeholder="one-line note (optional): why none fit, which wording is wrong, a safety concern" ' +
+      'oninput="rec(\''+it.qid+'\',\'action\').note=this.value;save();"></div>' +
+      '</section>';
+  }).join("");
+
+  document.querySelectorAll(".opt").forEach(el => {
+    el.onclick = () => cycle(el.dataset.q, el.dataset.f, +el.dataset.i, el);
+  });
+  for (const it of DATA) {
+    const a = A[it.qid]; if (!a) continue;
+    for (const f of ["action", "quantity"]) {
+      const v = (a.verdict || {})[f];
+      if (v) {
+        const r = document.querySelector('input[name="v-'+it.qid+'-'+f+'"][value="'+v+'"]');
+        if (r) r.checked = true;
+      }
+      const m = (a.marks || {})[f] || {};
+      if (m.best !== null && m.best !== undefined) {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+m.best+'"]');
+        if (el) el.dataset.s = "best";
+      }
+      (m.ok || []).forEach(i => {
+        const el = document.querySelector('[data-q="'+it.qid+'"][data-f="'+f+'"][data-i="'+i+'"]');
+        if (el) el.dataset.s = "ok";
+      });
+    }
+    const n = document.querySelector('[data-qbox="'+it.qid+'"] .note input');
+    if (n && a.note) n.value = a.note;
+  }
+  save();
+}
+
+function lines() {
+  const out = [];
+  for (const it of DATA) {
+    const a = A[it.qid] || {};
+    for (const f of ["action", "quantity"]) {
+      const m = ((a.marks || {})[f]) || { best: null, ok: [] };
+      out.push(JSON.stringify({
+        qid: it.qid, chunk_id: it.chunk_id, field: f, batch: BATCH,
+        annotator: document.getElementById("who").value.trim(),
+        verdict: ((a.verdict || {})[f]) || "",
+        best: (m.best === undefined ? null : m.best),
+        acceptable: (m.ok || []).slice().sort((x, y) => x - y),
+        n_candidates: it.fields[f].length,
+        reference_revealed_first: !!((a.revealed_before_choice || {})[f]),
+        note: a.note || ""
+      }));
+    }
+  }
+  return out.join("\n") + "\n";
+}
+
+function fail(e) {
+  // A silently blank sheet is the failure an annotator cannot report usefully.
+  // Say what broke, and name the fallback that needs no JavaScript.
+  document.querySelector("main").innerHTML =
+    '<div style="border:2px solid #a11;background:#fdecec;padding:14px;border-radius:7px">' +
+    '<b>This sheet failed to load in your browser.</b><p>Please send this message to ' +
+    'the study team, and use the spreadsheet fallback <code>gold_spans_all.csv</code> ' +
+    'in the meantime.</p><pre style="white-space:pre-wrap;font-size:12px">' +
+    esc(e && (e.stack || e.message || e)) + '</pre></div>';
+}
+
+function download() {
+  const who = document.getElementById("who").value.trim() || "anon";
+  const blob = new Blob([lines()], { type: "application/x-ndjson" });
+  const u = URL.createObjectURL(blob), a = document.createElement("a");
+  a.href = u; a.download = "gold_spans_" + BATCH + "_" + who + ".jsonl";
+  a.click(); URL.revokeObjectURL(u);
+}
+function show() {
+  const t = document.getElementById("out");
+  t.style.display = "block"; t.value = lines(); t.select();
+}
+
+try {
+  render();
+  if (!document.querySelectorAll("section.q").length)
+    throw new Error("no questions rendered (expected " + DATA.length + ")");
+} catch (e) { fail(e); }
+
+// Autosave relies on localStorage, which some managed browsers refuse. Say so
+// up front rather than losing an hour of work at the end.
+(function () {
+  let ok = false;
+  try { localStorage.setItem(KEY + ":probe", "1");
+        localStorage.removeItem(KEY + ":probe"); ok = true; } catch (e) {}
+  if (!ok) document.getElementById("prog").innerHTML =
+    '<b style="color:#a11">autosave is blocked in this browser &mdash; ' +
+    'download your answers before closing the tab</b>';
+})();
+</script>
+</body></html>

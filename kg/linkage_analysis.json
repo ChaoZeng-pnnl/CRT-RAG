@@ -1,0 +1,80 @@
+{
+  "entities": 3806,
+  "documents": 36,
+  "as_extracted": {
+    "clusters": 3806,
+    "cross_document_rate": 0.1503,
+    "entities_ge5_docs": 59,
+    "largest_cluster": 1
+  },
+  "string_normalised": {
+    "clusters": 3779,
+    "cross_document_rate": 0.1519,
+    "entities_ge5_docs": 60,
+    "largest_cluster": 3
+  },
+  "semantic_sweep": [
+    {
+      "clusters": 3789,
+      "cross_document_rate": 0.152,
+      "entities_ge5_docs": 59,
+      "largest_cluster": 3,
+      "threshold": 0.93,
+      "usable": true
+    },
+    {
+      "clusters": 3578,
+      "cross_document_rate": 0.1736,
+      "entities_ge5_docs": 65,
+      "largest_cluster": 5,
+      "threshold": 0.9,
+      "usable": true
+    },
+    {
+      "clusters": 3216,
+      "cross_document_rate": 0.1959,
+      "entities_ge5_docs": 76,
+      "largest_cluster": 11,
+      "threshold": 0.87,
+      "usable": true
+    },
+    {
+      "clusters": 2734,
+      "cross_document_rate": 0.2187,
+      "entities_ge5_docs": 91,
+      "largest_cluster": 47,
+      "threshold": 0.84,
+      "usable": true
+    },
+    {
+      "clusters": 1915,
+      "cross_document_rate": 0.235,
+      "entities_ge5_docs": 71,
+      "largest_cluster": 568,
+      "threshold": 0.8,
+      "usable": false
+    },
+    {
+      "clusters": 811,
+      "cross_document_rate": 0.1936,
+      "entities_ge5_docs": 19,
+      "largest_cluster": 2667,
+      "threshold": 0.75,
+      "usable": false
+    },
+    {
+      "clusters": 177,
+      "cross_document_rate": 0.1356,
+      "entities_ge5_docs": 1,
+      "largest_cluster": 3602,
+      "threshold": 0.7,
+      "usable": false
+    }
+  ],
+  "linkage_ceiling": {
+    "threshold": 0.84,
+    "cross_document_rate": 0.2187,
+    "entities_ge5_docs": 91
+  },
+  "note": "Ceiling is for this extraction. Concept-normalised extraction (UMLS/SNOMED or a canonical-term prompt) is an untested confound and would raise linkage by an unknown amount."
+}

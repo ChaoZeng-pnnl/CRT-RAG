@@ -1,0 +1,15 @@
+{
+  "DISCLOSURE": "AUTHOR SPOT-CHECK \u2014 the rater is a project author, NOT a clinician. Supports calibration of LLM judges only; not clinical validation.",
+  "rater": "project author (not a clinician)",
+  "n_rows": 50,
+  "correct_grounded": {
+    "marked": 50,
+    "yes": 47,
+    "rate": 0.94
+  },
+  "citation_ok": {
+    "marked": 50,
+    "yes": 47,
+    "rate": 0.94
+  }
+}

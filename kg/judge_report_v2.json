@@ -1,0 +1,62 @@
+{
+  "judge_model": "claude-fable-5-1-project",
+  "judged": 150,
+  "verdicts": {
+    "correct": 125,
+    "unsure": 4,
+    "incorrect": 20,
+    "error": 1
+  },
+  "precision_overall": 0.8620689655172413,
+  "precision_by_relation": {
+    "APPLIES_TO": {
+      "precision": 0.8823529411764706,
+      "n": 17
+    },
+    "CONTRAINDICATED_WITH": {
+      "precision": 0.8823529411764706,
+      "n": 17
+    },
+    "INCREASES_RISK_OF": {
+      "precision": 0.9333333333333333,
+      "n": 15
+    },
+    "MONITORS_FOR": {
+      "precision": 0.625,
+      "n": 16
+    },
+    "OCCURS_IN_PHASE": {
+      "precision": 0.9411764705882353,
+      "n": 17
+    },
+    "PREVENTS": {
+      "precision": 0.8125,
+      "n": 16
+    },
+    "TEMPORARILY_CONTRAINDICATED": {
+      "precision": 0.75,
+      "n": 16
+    },
+    "TIMING_DEPENDS_ON": {
+      "precision": 0.9375,
+      "n": 16
+    },
+    "TREATS": {
+      "precision": 1.0,
+      "n": 15
+    }
+  },
+  "precision_by_tier": {
+    "1": {
+      "precision": 0.8620689655172413,
+      "n": 145
+    }
+  },
+  "failure_modes": {
+    "asserted": 17,
+    "typing": 4,
+    "direction": 3,
+    "in_context": 3
+  },
+  "judged_file": "/qfs/people/zeng331/PROJECTS/NURSE/kg/judged_triples.jsonl"
+}
